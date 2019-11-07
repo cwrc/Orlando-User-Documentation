@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="21.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="\QOrlando%20User%20Documentation.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="Orlando%20User%20Documentation.xpr">
+        <folder path="DITA%20files/"/>
+        <folder path="DITA%20maps/"/>
+        <folder path="Documentation/"/>
+        <folder path="Media/"/>
+    </projectTree>
+</project>
