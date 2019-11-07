@@ -1,0 +1,1 @@
+define(function() { return [{"appname":"", "appid":"orlando_glossary", "path":"../DITA%20files/orlando_glossary.html"}]});
