@@ -2,5 +2,5 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Orlando User Manual</title>
-    <topicref href="../DITA%20files/orlando_glossary.dita"/>
+    <topicref href="../DITA%20files/orlando_glossary.dita" audience="advanced editor expert external member novice public technical" platform="Delivery Production"></topicref>
 </map>
