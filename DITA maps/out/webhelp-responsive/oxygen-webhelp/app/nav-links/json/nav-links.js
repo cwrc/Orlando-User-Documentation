@@ -1,1 +1,0 @@
-define({"title":"<span class=\"title\">Orlando User Manual</span>","topics" : [{"title":"Orlando Glossary","href":"..\/DITA%20files\/orlando_glossary.html","attributes": {"data-id":"orlando_glossary",},"menu": {"hasChildren":false,},"tocID":"orlando_glossary-d62e11","topics":[]}]});

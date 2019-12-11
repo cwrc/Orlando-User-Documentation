@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
-   <appContext helpID="orlando_glossary" path="../DITA%20files/orlando_glossary.html"/>
+   <appContext helpID="ddl"
+               path="../DITA%20files/Glossary-elements%20and%20attributes/Activism.html"/>
+   <appContext helpID="glossentry_hcc_qld_1kb"
+               path="../DITA%20files/Glossary-elements%20and%20attributes/Remuneration.html"/>
 </map>

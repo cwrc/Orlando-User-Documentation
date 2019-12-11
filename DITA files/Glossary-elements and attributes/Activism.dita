@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+    <glossentry id="ddl">
+        <glossterm>ACTIVISM</glossterm>
+        <glossdef>
+            <div>
+                <u>Definition, Placement, Relationships</u>
+                <p>This optional attribute, attached to <term keyref="">POLITICALAFFILIATION</term> in
+                    <term keyref="">BIOGRAPHY</term>, works in conjunction with three sibling attributes.
+                        <term keyref="">INVOLVEMENZ</term> and <term keyref="">Membership</term> are
+                    alternatives: select only one of the three, with <term keyref="">Activism</term>
+                    denoting the highest level of political involvement, and
+                        <cmdname>Woman-genderIssue</cmdname> for use with any one of the three.
+                    Activism has attribute values of <codeph>ActivismYes</codeph> and
+                        <codeph>ActivismNo</codeph>. </p>
+                <p>Using this attribute will help us distinguish between women who were political
+                    leaders on a large or small scale and other women whose activities were less
+                    proactive. It applies to such actions as suffragists chaining themselves to
+                    railings or women camping out at Greenham Common. Generally a founding or very
+                    active leadership role in a political organization would qualify as activism.
+                    Thus Josephine Butler, founder of the Ladies' National Association Against the
+                    Contagious Diseases Acts, qualifies as activist for having founded the
+                    organization, directed its activities, and for speaking publicly at meetings at
+                    considerable personal risk. </p>
+            </div>
+            <div>
+                <u>Example</u>
+                <codeblock>
+                    &lt;P&gt;&lt;POLITICALAFFILIATION ACTIVISM=&quot;ACTIVISTYES&quot; woman-GENDERISSUE=&quot;
+                    GENDERYES&quot; INVOLVEMENT=&quot;INVOLVEMENTYES&quot;&gt;feminist socialist&lt;/POLITICALAFFILIATION&gt;
+                    She supported the &lt;POLITICALAFFILIATION ACTIVISM=&quot;ACTIVISTNO&quot; woman-GENDERISSUE=&quot;
+                    GENDERYES&quot; MEMBERSHIP=&quot;MEMBERSHIPNO&quot; INVOLVEMENT=&quot;INVOLVEMENTYES&quot;&gt;
+                    Suffragist&lt;/POLITICALAFFILIATION&gt; cause through observation, assessment, argument and written 
+                    attacks. She did not participate in physical activism, such as chaining herself to fences or marching, 
+                    but provided strongly argued advocacy for the Suffragist movement in her periodical columns.&lt;/P&gt;
+                </codeblock>
+            </div>
+            <div>
+                <u>Practice Issues</u>
+                <p>Generally, only one of the attributes will apply in each situation. Activism, and
+                    its associated attributes--Membership and Involvement--are grounded in an
+                    implicit hierarchy. If a woman was an activist, it follows that she was also
+                    involved. You will not need to employ all three attributes to make your point,
+                    just use the attribute most applicable in your situation.</p>
+            </div>
+        </glossdef>
+    </glossentry>
+

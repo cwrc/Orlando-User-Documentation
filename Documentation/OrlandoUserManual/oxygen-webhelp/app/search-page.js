@@ -4,7 +4,6 @@
 define(["require", "config"], function() {
     require(['search'], function() {
         require([
-            'polyfill',
             'menu',
             'searchAutocomplete',
             'webhelp',

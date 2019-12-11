@@ -3,8 +3,7 @@ define(function() {
     var modulePaths = {
         // core
         "webhelp" : "core/webhelp",
-        "expand": "core/expand",
-        "polyfill": "core/polyfill",
+        "expand" : "core/expand",
         // context sensitive help
         "context-help" : "context-help/context-help",
         "context-help-map" : "context-help/context-help-map",
@@ -59,7 +58,7 @@ define(function() {
          ********************************************************/
 
         // JQuery
-        "jquery" : "../lib/jquery/jquery-3.4.1.min",
+        "jquery" : "../lib/jquery/jquery-3.1.1.min",
         // JQuery UI
         "jquery.ui" : "../lib/jquery-ui/jquery-ui.min",
         // JQuery Highlight
@@ -71,9 +70,7 @@ define(function() {
         // JQuery Bootpag
         "jquery.bootpag" : "../lib/jquery-bootpag/jquery.bootpag.min",
         // Popper
-        "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min",
-
-        "kuromoji" : "../lib/kuromoji/kuromoji"
+        "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min"
     };
 
     var shimConfig = {

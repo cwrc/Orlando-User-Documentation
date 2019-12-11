@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.1">
+<project version="21.0">
     <meta>
         <filters directoryPatterns="" filePatterns="\QOrlando%20User%20Documentation.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="21.1" xml:space="preserve">
+            <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>scenario.associations</String>
@@ -14,13 +14,26 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Orlando Technical Documentation</String>
                                         <String>Orlando Cambridge Documentation</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>DITA%20maps/Glossary.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Orlando Cambridge Documentation</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
                                         <String>DITAMAP</String>
                                     </list>
                                 </field>
@@ -55,10 +68,10 @@
                                             <Boolean>false</Boolean>
                                         </field>
                                         <field name="useAppliedConditionSet">
-                                            <Boolean>false</Boolean>
+                                            <Boolean>true</Boolean>
                                         </field>
                                         <field name="appliedConditionSet">
-                                            <String>Delivery</String>
+                                            <null/>
                                         </field>
                                         <field name="ditavalFilePath">
                                             <null/>
@@ -265,6 +278,9 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
@@ -542,6 +558,9 @@
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -817,6 +836,9 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>

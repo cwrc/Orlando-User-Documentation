@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="glossentry_hcc_qld_1kb">
+    <glossterm>REMUNERATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element, available only
+                within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">OCCUPATION</term></uicontrol>
+                </menucascade>, captures statements about non-literary earnings, whether exact (her
+                salary rose over five years from x to x) or general (she said that scrubbing floors
+                would have been better paid).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>
+                &lt;remuneration&gt;She received fifteen shillings for a six-day working week.&lt;/remuneration&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Often women's wages cannot be expressed in exact form (i.e., 20,000 pounds per year). Try to the best of your ability to capture what the wages represented, if the actual amount is unknown. E.g. <codeph>&lt;remuneration&gt;The money she earned granted her some independence from her family.&lt;remuneration/&gt;</codeph></p>
+            <p> When you encounter a writer whose earnings are recorded as a yearly salary (p.a.), please write this out as "per annum.'</p> 
+        </div>
+    </glossdef>
+</glossentry>

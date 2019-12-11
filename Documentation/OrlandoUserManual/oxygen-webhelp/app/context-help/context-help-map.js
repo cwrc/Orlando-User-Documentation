@@ -1,1 +1,1 @@
-define(function() { return [{"appname":"", "appid":"orlando_glossary", "path":"../DITA%20files/orlando_glossary.html"}]});
+define(function() { return [{"appname":"", "appid":"ddl", "path":"../DITA%20files/Glossary-elements%20and%20attributes/Activism.html"},{"appname":"", "appid":"glossentry_hcc_qld_1kb", "path":"../DITA%20files/Glossary-elements%20and%20attributes/Remuneration.html"}]});

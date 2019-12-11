@@ -110,7 +110,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
         try {
             var element = google.search.cse.element.getElement('searchresults-only0');
         } catch (e) {
-            util.debug(e);
+            console.log(e);
         }
         if (element != undefined) {
             if (input.value == '') {
@@ -148,17 +148,15 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
     }
 
     function searchAndDisplayResults(query) {
-        nwSearchFnt.performSearch(query, function(searchResult) {
-            if (searchResult.searchExpression.trim().length > 0 || searchResult.excluded.length > 0) {
-                displayResults(searchResult);
-            } else {
-                var error = searchResult.error;
-                if (typeof error != "undefined" && error.length > 0) {
-                    displayErrors(searchResult.error);
-                }
+        var searchResult = nwSearchFnt.performSearch(query);
+        if (searchResult.searchExpression.trim().length > 0 || searchResult.excluded.length > 0) {
+            displayResults(searchResult);
+        } else {
+            var error = searchResult.error;
+            if (typeof error != "undefined" && error.length > 0) {
+                displayErrors(searchResult.error);
             }
-        });
-
+        }
     }
 
     /**
@@ -370,7 +368,7 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
                 var idResult = 'foundResult' + page;
 
                 // topicID, relativePath, title, shortDescription, words, scoring, starWidth, resultID, linkID, similarResults
-                util.debug("page", page);
+                console.log("page", page);
                 var csri = new SearchResultInfo(
                     allPages[page].topicID,
                     allPages[page].relativePath,
@@ -631,8 +629,8 @@ define(['util', 'options', 'nwSearchFnt', 'searchHistoryItems', 'localization', 
 
         // The breadcrumb
         var breadcrumb = searchItem.breadcrumb;
-        util.debug('searchItem', searchItem);
-        util.debug('breadcrumb', breadcrumb);
+        console.log('si ', searchItem);
+        console.log('breadcrumb', breadcrumb);
         if (breadcrumb !== undefined && breadcrumb.length > 0) {
             // Show the breadcrumb
             var breadcrumbHtml = $('<div>', {
