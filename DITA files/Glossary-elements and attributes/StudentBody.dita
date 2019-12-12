@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="student-body">
+    <glossterm>STUDENTBODY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute attached to the
+                element <term keyref="">SCHOOL</term> (within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+                </menucascade>) records whether the school is single-sex or inclusive. This
+                attribute (with values <userinput>SingleSex</userinput> and
+                    <userinput>Co-Ed</userinput>) helps us to interpret the influence of single-sex
+                education on women writers across historical periods.</p>
+        </div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;P&gt;&lt;SCHOOL INSTITUTION=&quot;daySchool&quot;
+                INSTITUTIONLEVEL=&quot;primary&quot; STUDENTBODY=&quot;singleSex&quot;&gt;Miss
+                Hannah Spray&apos;s Ladies&apos; Day School&lt;/SCHOOL&gt;&lt;/P&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Remember this attribute and use whenever the gender makeup of a school is known.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p>The same body will have different attribute values at different dates. Many
+                universities and colleges began as all-male, then gradually admitted women. This
+                element and its attributes reflect this historical process.</p>
+        </div>
+    </glossdef>
+</glossentry>
