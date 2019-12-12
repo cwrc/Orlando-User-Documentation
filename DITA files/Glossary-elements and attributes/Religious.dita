@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="religious">
+    <glossterm>RELIGIOUS</glossterm>
+    <glossdef>
+        <div><p>This optional attribute attached to <term keyref="">SCHOOL</term> (within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+                </menucascade>) registers whether or not the school attended was a religious school
+                and tracks the changing historical significance of organized religion to women's
+                educationement, relationships. It has a value of
+                <userinput>ReligiousYes</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;P&gt;CB was educated first at &lt;SCHOOL
+                RELIGIOUS=&quot;religiousYes&quot;&gt;Rathmore Convent&lt;/SCHOOL&gt;, Dunmurry,
+                then at &lt;SCHOOL RELIGIOUS=&quot;religiousYes&quot;&gt;St Mary&apos;s
+                Convent&lt;/SCHOOL&gt;, Ascot.&lt;/P&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Only use this attribute when the school is a religious school.</p>
+        </div><div>
+            <u>Troubleshooting</u>
+            <p><b>Question: </b>If all I know is that she attended a convent school, how do I tag?
+                    </p><p><b>Answer: </b>Place the School tag on the word “convent” and use the
+                attributes whose value you can deduce, including Religious. </p>
+        </div>
+    </glossdef>
+</glossentry>
