@@ -2,5 +2,8 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Orlando User Manual</title>
-    <mapref href="Glossary.ditamap" format="ditamap"/>
+    <topichead collection-type="sequence" navtitle="Elements and Attributes Glossary ">
+        <mapref href="../DITA%20files/Glossary-elements%20and%20attributes/Glossary.ditamap"
+            format="ditamap"/>
+    </topichead>
 </map>

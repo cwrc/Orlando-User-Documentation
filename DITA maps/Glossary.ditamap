@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="urn:oasis:names:tc:dita:rng:map.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<map>
-    <title>Orlando Glossary</title>
-    <glossref href="../DITA%20files/Glossary-elements%20and%20attributes/Activism.dita"/>
-    <glossref href="../DITA%20files/Glossary-elements%20and%20attributes/Remuneration.dita"/>
-</map>

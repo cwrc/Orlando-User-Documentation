@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:map.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<map>
+    <title>Orlando Glossary</title>
+    <topicref href="Activism.dita"/>
+    <topicref href="Religious.dita"/>
+    <topicref href="Remuneration.dita"/>
+    <topicref href="ResearchNote.dita"/>
+    <topicref href="StudentBody.dita"/>
+    <topicref href="Styled.dita"/>
+</map>

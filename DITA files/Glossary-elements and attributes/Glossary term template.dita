@@ -6,8 +6,8 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>If locationtion of element attribute is expressed, tagg it as 
             <menucascade>
-                <uicontrol><term keyref="">BIOGRAPHY or WRITING</term></uicontrol>
-                <uicontrol><term keyref="">DIRECT PARENT</term></uicontrol>
+                <uicontrol><term>BIOGRAPHY or WRITING</term></uicontrol>
+                <uicontrol><term>DIRECT PARENT</term></uicontrol>
             </menucascade>. Fill in the keyref attributes once glossentry topics for the specified elements exist (use the id attribute on the glossentry element.</p></div>
         <div>
             <u>Example</u>

@@ -6,27 +6,26 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>Styled is a sub-element within <menucascade>
                     <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term keyref="">personName</term></uicontrol>
+                    <uicontrol><term keyref="">PERSONNAME</term></uicontrol>
                 </menucascade>, that refers to titles which are called courtesy titles. For example,
                 peers’ eldest sons (and their wives) often possess a title by virtue of their
                 temporary position as heir. Titles of this kind do not give a seat in the House of
                 Lords. Use Styled for all those people whose title results from their father's
                 title, e.g. Lady Mary, Lady Jane, Lady Florence Dixie, as opposed to Lady Smith and
-                Lady Jones. This tag has attributes <term keyref="">Reg</term> (in case of variant
-                spelling) and <term keyref="">WroteOrPublishedAs</term>.</p>
-        </div>
+                Lady Jones. This tag has attributes <term keyref="">REG</term> (in case of variant
+                spelling) and <term keyref="">WROTEORPUBLISHEDASYES</term>.</p></div>
         <div>
             <u>Practice Issues</u>
             <p>Do not spend too much time worrying about whether a name is titled or styled. Consult
                 on particular cases; check the textbase to see if this person is already mentioned.
-                Do not confuse this element with <term keyref="">Selfconstructed</term>. Styled does
+                Do not confuse this element with <term keyref="">SELFCONSTRUCTED</term>. Styled does
                 not refer to names she styled for herself; it is a particular type of noble
                 title.</p>
         </div>
         <div>
             <u>Troubleshooting</u>
             <p><b>Question:</b> May Sinclair chose this style of her given name, Mary Sinclair. Does
-                this take Styles tag?</p><p>
-                <b>Answer:</b> No. May Sinclair is a Self-constructed name.</p></div>
+                this take STYLED tag?</p><p>
+                <b>Answer:</b> No. May Sinclair is a self-constructed name.</p></div>
     </glossdef>
 </glossentry>

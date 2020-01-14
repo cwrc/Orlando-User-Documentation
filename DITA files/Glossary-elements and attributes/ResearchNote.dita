@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="untitled2">
+<glossentry id="research-note">
     <glossterm>RESEARCHNOTE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>Available throughout the textbase, this
-                element is not to be confused with scholarNotes that will be readable by end users.
-                ResearchNote contents will be seen only by the eyes of Orlandians. Contains comments
-                from one team member to another; which should be prefaced by initials of the writer,
-                and which are not visible in delivery. An Orlandian writing a new entry will may
-                leave Researchnotes for or receive them from another who is checking or revising;
-                these can be deleted once implemented or decided against. Retain only notes that may
-                be useful downstream, like “exhaustive search for firm date reveals nothing” or
-                “recommended visual for this writer”. (Researchnotes containing the word “visual”
-                are clues to project of illustrating Orlando.)</p></div>
+                element is not to be confused with <term keyref="">SCHOLARNOTE</term> that will be
+                readable by end users. RESEARCHNOTE contents will be seen only by the eyes of
+                Orlandians. Contains comments from one team member to another; which should be
+                prefaced by initials of the writer, and which are not visible in delivery. An
+                Orlandian writing a new entry will may leave research notes for or receive them from
+                another who is checking or revising; these can be deleted once implemented or
+                decided against. Retain only notes that may be useful downstream, like <q>exhaustive
+                    search for firm date reveals nothing</q> or <q>recommended visual for this
+                    writer</q>. (Research notes containing the word “visual” are clues to project of
+                illustrating Orlando.)</p></div>
         <div>
             <u>Practice Issues</u>
-            <p>If you encounter ResearchNotes that refer to completed actions of negligible
-                importance, feel free to delete them. However, you will want to retain researchNotes
-                that say things like "this is a typo/no it's not" because they may save us a step
-                later on. Retain researchNotes that have substantive information or queries about
-                sources or research processes. If in doubt, leave it in.</p>
+            <p>If you encounter research notes that refer to completed actions of negligible
+                importance, feel free to delete them. However, you will want to retain research
+                notes that say things like <q>this is a typo/no it's not</q> because they may save
+                us a step later on. Retain research notes that have substantive information or
+                queries about sources or research processes. If in doubt, leave it in.</p>
         </div>
     </glossdef>
 </glossentry>

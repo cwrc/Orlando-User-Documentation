@@ -9,14 +9,14 @@
                     <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
                     <uicontrol><term keyref="">EDUCATION</term></uicontrol>
                 </menucascade>) records whether the school is single-sex or inclusive. This
-                attribute (with values <userinput>SingleSex</userinput> and
-                    <userinput>Co-Ed</userinput>) helps us to interpret the influence of single-sex
+            attribute (with values <userinput>SINGLESEX</userinput> and
+                    <userinput>CO-ED</userinput>) helps us to interpret the influence of single-sex
                 education on women writers across historical periods.</p>
         </div>
         <div>
             <u>Example</u>
-            <codeblock> &lt;P&gt;&lt;SCHOOL INSTITUTION=&quot;daySchool&quot;
-                INSTITUTIONLEVEL=&quot;primary&quot; STUDENTBODY=&quot;singleSex&quot;&gt;Miss
+            <codeblock> &lt;P&gt;&lt;SCHOOL INSTITUTION=&quot;DAYSCHOOL&quot;
+                INSTITUTIONLEVEL=&quot;PRIMARY&quot; STUDENTBODY=&quot;SINGLESEX&quot;&gt;Miss
                 Hannah Spray&apos;s Ladies&apos; Day School&lt;/SCHOOL&gt;&lt;/P&gt;</codeblock>
         </div>
         <div>
