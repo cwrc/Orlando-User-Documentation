@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="psubmissions-rejections">
+    <glossterm>PSUBMISSIONSREJECTIONS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p><term>PSUMBMISSIONSREJECTIONS</term> is a
+                sub-tag belonging within <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol> and under
+                            <uicontrol><term>PRODUCTION</term></uicontrol>.</menucascade>. It holds
+                information (at least one full sentence) about daring, significant, or turning-point
+                submissions and about rejections of work by publishers. It has no mandatory or
+                optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PSUBMISSIONSREJECTIONS&gt;When DB sent the book to publishers, it was met
+                with rejections from seven major companies until it found its way to&lt;NAME&gt;T. S.
+                Eliot&lt;/NAME&gt; at &lt;ORGNAME&gt;Faber and
+                Faber&lt;/ORGNAME&gt;.&lt;/PSUBMISSIONSREJECTIONS&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

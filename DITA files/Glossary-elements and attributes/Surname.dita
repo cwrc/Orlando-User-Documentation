@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="surname">
+    <glossterm>SURNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>If locationtion of element attribute is
+                expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY or WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">PERSONNAME</term> and available only within <term
+                            keyref="">BIRTHNAME</term>
+                    </uicontrol>
+                </menucascade>. Within BirthName, it is placed last in Western usage, first in
+                Chinese. It has one optional attribute, <term keyref="">Reg</term>, for the rare
+                instances when a surname has two different spellings, and you need to use one that
+                is contested or incorrect. In this case the <term keyref="">Reg</term> attribute
+                supplies the proper form, and a <term keyref="">ScholarNote</term> should outline
+                the discrepancy.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Clara&lt;/GIVEN&gt;&lt;SURNAME&gt;Liddell&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="">PERSONNAME</term> for general name practices. Enter <term keyref="">SURNAME</term> after all given names. Do
+                not punctuate. If the birth surname is unknown, delete tag and explain in
+                <term keyref="">ScholarNote</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>
