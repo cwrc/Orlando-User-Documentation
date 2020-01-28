@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="self-defined">
+    <glossterm>SELF-DEFINED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Self-defined is an attribute attached to
+                all identity categories within CulturalFormation (<menucascade>
+                    <uicontrol><term>BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term>CULTURALFORMATION</term></uicontrol>
+                </menucascade>). Its purpose is to distinguish between people who place themselves
+                within an identity category (e.g., "Jeannette Winterson identifies as lesbian") and
+                those whom we place in that category though they themselves did not (e.g., "While
+                she denied being a lesbian, she maintained close relationships with women throughout
+                her life"). This attribute acknowledges the importance of personal, political and
+                historical placements of one's own subject position; it assumes that identities are
+                not simply labels we assign to other people but shifting categories which we both
+                place ourselves within, and, in which history places us.</p><p dir="ltr"
+                >Self-defined is an optional attribute available with Class, Denomination,
+                Ethnicity, Gender, GeogHeritage, NationalHeritage, Nationality, RaceColour, and
+                SexualIdentity. It has attribute values of "selfYes," "selfNo," "selfUnknown."</p><p
+                dir="ltr">Attribute Self-Defined on Nationality and other identity sub-tags within
+                CulturalFormation: Someone born a Briton but raised in Canada might identify with
+                either nationality or neither, or might self-identify as mixed-race but be
+                categorized as black.</p><p dir="ltr">Attribute Self-Defined on Class:
+                Self-definition doesn’t have to be overt statement, but a generalized acceptance of
+                that category. </p><p dir="ltr">Attribute Self-Defined on Denomination: Use value
+                SelfYes if there is general recognition of her faith even without a statement from
+                her.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> VA had many &amp;lt;sexualIdentity self-DEFINED=&quot;SelfYes&quot;&gt;lesbian&amp;lt;/&gt;
+                relationships during her lifetime.She identified strongly with her &amp;lt;raceColour
+                self-DEFINED=&quot;selfYes&quot;&gt;Jewish&amp;lt;/&gt; heritage.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The selfNo value is best employed in situations where the author actively repudiated
+                the class or race (or whatever) attributed to her.</p>
+        </div>
+    </glossdef>
+</glossentry>

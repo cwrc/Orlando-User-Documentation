@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="separation">
+    <glossterm>SEPARATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Sub-tag available in <menucascade>
+                    <uicontrol><term>BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term>FAMILY</term></uicontrol>
+                </menucascade>, but only within <uicontrol><term>MARRIAGE</term></uicontrol> (n.b.
+                not available in Member tags within Family, i.e. tag only if it’s the entry subject
+                who is separated, not a relative or friend). Separation captures information
+                concerning the marital conditions of the subject of your biography. Use this element
+                to indicate that a woman separated legally or officially from her husband without a
+                divorce. (Sometimes the <uicontrol><term>DIVORCE</term></uicontrol> tag may be used
+                later of the same relationship.)</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;separation&gt;Fanny Kemble signed a formal separation agreement,
+                after disputes over child custody and Butler&apos;s harsh conditions for
+                support.&amp;lt;/&gt; &amp;lt;separation&gt;ALB separated from her husband in
+                response to her family&apos;s increasing entreaties to consider her own safety,
+                realising that she was unable to help him, and that her presence worsened his
+                condition. She felt strongly that Rochement&apos;s violence was caused by illness.
+                In letters to friends, ALB stated that she felt no less affection for her husband,
+                and she was most reluctant and sad to separate from him.&amp;lt;/&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Only use for the separation of the person whose biography you are writing. Do NOT use
+                for parents, cousins or any other family member. Using this element denotes that the
+                subject of the document was separated from her/his spouse.</p>
+        </div>
+    </glossdef>
+</glossentry>
