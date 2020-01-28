@@ -1,1 +1,1 @@
-define({"title":"<span class=\"title\">Orlando User Manual</span>","topics" : [{"title":"Elements and Attributes Glossary ","href":"oxy_ex-1\/DITA%20files\/Glossary-elements%20and%20attributes\/Activism.html","menu": {"hasChildren":true,},"tocID":"tocId-d62e11","next":"tocId-d62e11",}]});
+define({"title":"","topics" : []});

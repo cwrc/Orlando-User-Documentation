@@ -1,4 +1,4 @@
-define(["stopwords", "index-1", "index-2", "index-3", "htmlFileInfoList", "link2parent", "jquery"], function(stopwords, index1, index2, index3, fileInfoList, link2parent, $) {
+define(["stopwords", "index-1", "index-2", "index-3", "htmlFileInfoList", "jquery"], function(stopwords, index1, index2, index3, fileInfoList, $) {
 
     var words = $.extend({}, index1, index2, index3);
 
@@ -17,9 +17,7 @@ define(["stopwords", "index-1", "index-2", "index-3", "htmlFileInfoList", "link2
         /**
          * File info list.
          */
-        fil : fileInfoList,
-
-        link2parent : link2parent
+        fil : fileInfoList
 
     };
 });

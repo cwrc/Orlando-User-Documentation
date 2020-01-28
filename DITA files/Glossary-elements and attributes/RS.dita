@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="rs">
+    <glossterm>RS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The RS element, available everywhere
+                throughout the textbase from Div1 level down, is a general-purpose name element for
+                all non-personal, non-geographical names, names that merit tagging for either
+                display purposes or for search and retrieval, but that are not adequately covered by
+                the name, orgName, place, or title elements. Encloses the word or words of the name
+                only. Available throughout the system, it has no attributes. Used for names of
+                objects which have names, e.g. ships. locomotives, space capsules.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;rs&amp;gt;Mayflower&amp;lt;/&amp;gt;
+                &amp;lt;rs&amp;gt;Concorde&amp;lt;/&amp;gt; &amp;lt;rs&amp;gt;Spirit of St
+                Louis&amp;lt;/&amp;gt; &amp;lt;rs&amp;gt;Hindenburg&amp;lt;/&amp;gt;
+                &amp;lt;rs&amp;gt;Orient Express&amp;lt;/&amp;gt;
+                &amp;lt;rs&amp;gt;Edsel&amp;lt;/&amp;gt; &amp;lt;rs&amp;gt;Sputnik
+                2&amp;lt;/&amp;gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p dir="ltr">Do not tag the names of wars, military campaigns, legislation, or any other
+                events with RS. Do not tag the names of mountains, mountain regions, lakes, rivers,
+                or other geographic features with RS. These examples are Regions.</p><p>Question:
+                How do I tag paintings, films, and musical scores? Answer: Use the Title element:
+                Monographic for operas, musical scores, albums, exhibitions, and films, Analytic for
+                songs (which may be part of a larger collection), and individual paintings and
+                drawings.</p></div>
+    </glossdef>
+</glossentry>

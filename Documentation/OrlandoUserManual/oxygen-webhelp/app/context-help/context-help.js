@@ -12,8 +12,7 @@ define(["require", "util"], function (require, util) {
                         if (contextId == ctxt["appid"] && (appname == undefined || appname == ctxt["appname"])) {
                             var path = ctxt["path"];
                             if (path != undefined) {
-                                var anchor = window.location.hash;
-                                window.location = path + anchor;
+                                window.location = path;
                             }
                             break;
                         }

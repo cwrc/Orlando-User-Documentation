@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="royal">
+    <glossterm>ROYAL</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Royal is a sub-tag in <menucascade>
+                    <uicontrol><term>BIOGRAPHY </term></uicontrol>
+                    <uicontrol><term>PERSONNAME</term></uicontrol>
+                </menucascade>. It refers to names, such as "Queen" or "Princess", which a person
+                has because of their royal status. This element does not capture information about
+                noble titles in general (cf. titled) but includes specifically royal names, e.g.
+                Queen Elizabeth I. It has optional attributes of reg and
+            wroteOrPublishedAs.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>
+              This has been used inconsistently: “Elizabeth I”, but “Queen Victoria”.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See personName for general name practices.</p>
+        </div>
+    </glossdef>
+</glossentry>

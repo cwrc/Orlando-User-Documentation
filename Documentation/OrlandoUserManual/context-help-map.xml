@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map>
-   <appContext helpID="activism"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/Activism.html"/>
-   <appContext helpID="religious"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/Religious.html"/>
-   <appContext helpID="remuneration"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/Remuneration.html"/>
-   <appContext helpID="research-note"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/ResearchNote.html"/>
-   <appContext helpID="student-body"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/StudentBody.html"/>
-   <appContext helpID="styled"
-               path="oxy_ex-1/DITA%20files/Glossary-elements%20and%20attributes/Styled.html"/>
-</map>
+<map/>

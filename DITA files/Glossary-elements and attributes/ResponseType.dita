@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="response-type">
+    <glossterm>RESPONSETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>ResponseType is an optional attribute
+                attached to the element rResponses (belonging to <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>RECEPTION</term></uicontrol>
+                </menucascade>) that specifies the historical timing of a response to a written work
+                through its values of "recent," "re-evaluation," or "initial." The two sibling
+                attributes are Formality and genderedResponse.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&amp;lt;rResponses RESPONSETYPE=&amp;quot;re-evaluation&amp;quot; FORMALITY=&amp;quot;formal&amp;quot;&amp;gt;An attack on
+                Joanna Baillie&amp;apos;s work in 1803 by Francis Jeffrey signalled the decline of her
+                reputation.&amp;lt;/&amp;gt; &amp;lt;rResponses RESPONSETYPE=&amp;quot;initial&amp;quot;&amp;gt;Elizabeth Cellier&amp;apos;s book
+                provoked about twenty replies at first, attacking and defending.&amp;lt;/&amp;gt;
+                &amp;lt;rResponses RESPONSETYPE=&amp;quot;recent&amp;quot;&amp;gt; In recent years, Hannah More has received much
+                blame for her treatment of Yearsley.&amp;lt;/&amp;gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use one value of ResponseType to indicate whether a response to a work occurred at or
+                close to the time of its publication ("initial") or recently ("recent").
+                "Re-evaluation" is used for a time which is neither initial nor recent, or also when
+                there has been (at any time) a significant re-evaluation of a woman writer's work
+                and its worth. Obviously judgement is involved in deciding, for instance, how recent
+                is recent.</p>
+        </div>
+    </glossdef>
+</glossentry>
