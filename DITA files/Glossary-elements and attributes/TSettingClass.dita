@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="tsetting-class">
+    <glossterm>TSETTINGCLASS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>tSettingClass is an optional attribute
+                attached to the element <uicontrol><term>TSETTINGPLACE</term></uicontrol> (and
+                belonging to <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>TEXTUAL FEATURES</term></uicontrol>
+                </menucascade>) that specifies the socio-economic status characters who feature in
+                this fictional setting (that is, the scene of a fiction, whether the place is actual
+                or imaginary). It recognizes that the setting of a novel about upper-class life may
+                differ widely from the setting of a novel centred on struggling workers’ families,
+                even though they may overlap topographically. It has one sibling attribute,
+                SettingPlaceType, and four allowable values: "upperClass," "workingClass,"
+                "middleClass," and "wideRange." The four values allow you to assign an appropriate
+                socio-economic status to a settingPlace.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&amp;lt;tSettingPlace SETTINGCLASS=&quot;workingClass&quot;
+                SETTINGPLACETYPE=&quot;real&quot;&gt;Her novel is set in Barnsley, an industrial
+                town in northern England.&amp;lt;/&gt; &amp;lt;tSettingPlace
+                SETTINGCLASS=&quot;upperClass&quot;&gt; Her writing deals with the foibles of
+                London&apos;s upper-crust society.&amp;lt;/&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
