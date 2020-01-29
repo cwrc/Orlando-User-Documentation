@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="textual-features">
+    <glossterm>TEXTUALFEATURES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Found in <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                </menucascade>, this is one of three big-bucket tags on a par with <term keyref=""
+                    >PRODUCTION</term> and <term keyref="">RECEPTION</term>. Most of the same
+                comments apply as on those tags, though TEXTUALFEATURES almost never includes
+                Chronstructs. This element addresses content and features of critical interest in
+                texts and provides space for textual analysis/close readings as perceived by project
+                members. No text is allowed directly within the TEXTUALFEATURES element; another
+                element must be opened first. Several optional elements are available here, marked
+                with an initial “t”; in addition, the elements from the other categories (<term
+                    keyref="">RECEPTION</term> and <term keyref="">PRODUCTION</term>) can be used
+                here when necessary. The optional elements most at home in TEXTUALFEATURES include:
+                    <term keyref="">TCHARACTERIZATION</term>, <term keyref=""
+                    >TCHARACTERTYPEROLE</term>, <term keyref="">TCHARACTERNAME</term>, <term
+                    keyref="">TGENRE</term>, TEGENREISSUE, TINTERTEXTUALITY, TMOTIF, TPLOT, <term
+                    keyref="">TSETTINGDATE</term>, <term keyref="">TSETTINGPLACE</term>, <term
+                    keyref="">TTECHNIQUES</term>, <term keyref="">TTHEMETOPIC</term>, <term
+                    keyref="">TTONESTYLE</term>, and <term keyref="">TVOICENARRATION</term>.
+            </p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Stages in the work’s creation, and responses to it, should be recorded in <term
+                    keyref="">PRODUCTION</term> and <term keyref="">RECEPTION</term>, unless the
+                flow of the prose makes it more convenient to treat them (briefly) here.</p>
+        </div>
+    </glossdef>
+</glossentry>

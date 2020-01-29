@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="title">
+    <glossterm>TITLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Title is a core tag, available throughout
+                the textbase from the div1 level on down, in those places where typing is allowed
+                (i. e. headings, chronProse, and shortProse). It encloses the title of a literary
+                and other work of art: convention is that an exhibition or novel, etc, takes <term
+                    keyref="">MONOGRAPHIC</term> attribute, whereas a single painting or poem, etc,
+                takes <term keyref="">ANALYTIC</term>. If a title includes a date, do not use <term
+                    keyref="">DATE</term> tag. <b>Do not</b> include any punctuation in the TITLE
+                tag that is not part of the title itself. The TITLE element encloses the title of a
+                work, whether article, book, journal (newspaper, magazine), series, or unpublished.
+                Attributes are <term keyref="">REG</term> (to record standard form as given in bibl
+                dbase; also in case of misspelling in source), <term keyref="">REND</term> (which
+                can over-ride the style sheet and display a title without italic or quotes), and
+                    <term keyref="">TITLETYPE</term>, which indicates whether the work is an
+                article, book, journal, series, or unpublished material.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;The Martyr, A
+                Drama&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;Sense and
+                Sensibility&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;analytic&quot;&gt;Sonnet
+                CXVI&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;analytic&quot;&gt;Metaphor of Metonymy?
+                The Question of Essentialism in Cixous&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;journal&quot;&gt;English Studies in Canada&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;journal&quot;&gt;The New York Times&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;series&quot;&gt;Mothers of the Novel&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;series&quot;&gt;Contemporary Authors&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;unpublished&quot;&gt;Elinor and Marianne&lt;/TITLE&gt; &lt;TITLE
+                TITLETYPE=&quot;unpublished&quot;&gt;Lady Susan&lt;/TITLE&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If you are writing about an author's work before it became a published text, you may
+                use the attribute that is appropriate for the title at that point in its evolution.
+                This means that you can use the attribute <term keyref="">UNPUBLISHED</term> if you
+                are writing about a manuscript version of a book that was later published. Of
+                course, you would only choose to do this in a situation where there's something
+                substantive to be said about the work in its unpublished state. A TITLE must be
+                tagged with its <term keyref="">TITLETYPE</term> attribute filled in every time it
+                appears in your prose. If it is not, it will not display properly. However, do not
+                tag titles in a <term keyref="">BIBCIT</term>. When tagging a series TITLE in your
+                prose, do not include the series number as part of the title. <codeph>&lt;TITLE
+                    TITLETYPE=&quot;series&quot;&gt;Olympia Press Traveller&apos;s
+                    Companion&lt;/TITLE&gt;> Series no. 105</codeph>. You will be able to enter the
+                volume and series numbers in your bibliographic citation. Gift books and annuals
+                should be treated as series. Paintings, films, and musical scores have titles. Films
+                are monographic titles. Songs that are part of a larger collection or CD are, like
+                individual poems, analytic. If you are naming an entire musical score or spoken word
+                recording or entire album, treat that title as monographic. For further guidelines
+                consult the MLA handbook.</p>
+        </div>
+        <div>
+            <u>Further Examples</u>
+            <codeblock>Vanessa Bell and Duncan Grant painted &lt;TITLE
+                TITLETYPE=&quot;monographic&quot;&gt;dining room with panels&lt;/TITLE&gt; at
+                Penns-in-the-Rocks, Withyham, Sussex. Leslie Howard starred in two British films,
+                &lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;The First of the Few&lt;/TITLE&gt;
+                and &lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;49th Parallel&lt;/TITLE&gt;.
+                Ethel Smyth&apos;s opera &lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;The
+                Boatswain&apos;s Mate&lt;/TITLE&gt; was played at Shaftesbury Theatre in London.
+                Florrie Ford, a music-hall artist, endorsed the song &lt;TITLE
+                TITLETYPE=&quot;analytic&quot;&gt;It&apos;s a long way to Tipperary&lt;/TITLE&gt;,
+                making it extremely popular.</codeblock>
+        </div>
+        <div>
+            <u>Relation to the Bibliography Database</u>
+            <p>Every title discussed or cited in the has a biblio entry to which it should be
+                linked, so unless the title and biblio entry are exactly the same, the <term
+                    keyref="">REG</term> attribute must link the title to the database entry. To
+                make the title agree, it must be EXACTLY the same in every respect (capitalisation,
+                punctuation, spacing etc) as the title in the Std Title box in the bibliographic
+                database. If this is not possible, then the <term keyref="">REG</term> attribute
+                must agree with the Alt Title or the Title Page Title in the biblio entry. Do a
+                bibliography search for any new title in the published Orlando. Identical titles
+                need discriminating, with an Alt form in the bibliography and a Reg attribute in the
+                entry. So we have, in Mary Barber entry, MB, Poems on Several Occasions, 1734; in
+                the Jane Brereton entry, JB, Poems on Several Occasions, 1744; in the Elizabeth
+                Carter entry, EC, Poems on Several Occasion, 1762, etc. All these are <term
+                    keyref="">REG</term> attribute values; in the bibliog database the same entry in
+                the Alt box needs to have the author name spelled out instead of initials. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> My title begins with the word "the": should I place "the" in the
+                title tag? </p><p><b>Answer:</b> If "the" is part of the title, it should be
+                included in the title tag in natural reading order. Sometimes it is not easy to
+                determine whether the "the" is in fact part of the title. You can find out this
+                information, by checking the Orando textbase, or the title page or the masthead of
+                newspapers or a library catalogue record.</p>
+            <p><b>Question:</b> Do I include the "The" when referring to The Times (of London) and
+                how do I distinguish it from the New York Times? </p><p>
+                <b>Answer:</b> For our project, we've chosen "Times" as the <term keyref=""
+                    >REG</term> form of the London title (a bad choice, but that’s what we decided).
+                So use “The Times” in your prose (since that title is official), but fill in the
+                attribute value without the “The”. The <term keyref="">REG</term> for the "New York
+                Times" and "Los Angeles Times" are similar: no “The”.</p>
+            <p><b>Question:</b> How do I tag government documents? </p><p><b>Answer:</b> Most
+                government publications are authored and published by the government that produces
+                them. Most government titles should be tagged as <term keyref="">MONOGRAPHIC</term>.
+                For more information consult the MLA handbook.</p>
+            <p><b>Question:</b> What attribute is the right one when tagging a government document?
+                    </p><p><b>Answer:</b> If the document is unpublished, use <term keyref=""
+                    >UNPUBLISHED</term>. If published, use <term keyref="">MONOGRAPHIC</term>.</p>
+            <p><b>Question:</b> Do I tag a title if it appears in a bitCit? </p><p><b>Answer:</b>
+                No. </p>
+            <p><b>Question:</b> Do I tag a title in a WorksCited List? </p><p><b>Answer:</b> No. </p>
+            <p><b>Question:</b> I am writing about a manuscript draft of a book that was later
+                published. Should I use the attribute for <term keyref="">MONOGRAPHIC</term> or
+                    <term keyref="">UNPUBLISHED</term>
+            </p><p><b>Answer:</b>: use whichever attribute is appropriate to the context:
+                Unpublished before the book’s publication and <term keyref="">MONOGRAPHIC</term> afterwards. </p>
+            <p><b>Question:</b> I want to tag a book of the Bible. How do I do it? </p><p><b>Answer:</b>The Bible is
+                tagged as <term keyref="">MONOGRAPHIC</term>. In the attributes, in the "rend" field, type normal. The
+                books of the Bible (Genesis, etc) are analytic, but the "rend" attribute should also
+                read "normal". </p>
+        </div>
+    </glossdef>
+</glossentry>
