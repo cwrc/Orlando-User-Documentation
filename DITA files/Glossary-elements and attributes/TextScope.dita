@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="text-scope">
+    <glossterm>TEXTSCOPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Found in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                </menucascade> only and always left empty; the attributes do the work. Used so far
+                to tie a text to its listing in the Orlando bibl database. It sits immediately
+                inside a div2, not enclosing the div2 but relating to the div2’s entire contents.
+                (Two TEXTSCOPEs or more may precede an interwoven discussion of two or more texts.)
+                TEXTSCOPE has two key attributes: <term keyref="">DBREF</term>, which contains the
+                bibliography database number of the corresponding bibliography item in Orlando’s
+                bibl database, and <term keyref="">PLACEHOLDER</term>, which contains a brief
+                mention of the work under discussion and consists of the BWW's initials, a short
+                title, and publication date. </p>
+            <p>This element must be used in conjunction with a div2. You may not use it at the div1
+                level. You do not need always to use a TEXTSCOPE for each individual text you are
+                discussing, or even for each text to which you devote an entire div2, though it is
+                unusual not to do so. Use the TEXTSCOPE to demarcate discussions of texts of some
+                significance. A useful rule of thumb is to consider whether you would enter this
+                work in the bibliography database, and whether it ought to appear in the entry
+                column Works By. If so, then use a textscope for your discussion. (This will insert
+                it in the <term keyref="">WORKSBY</term> tab.) Minor works that would not be entered
+                in the bibliography database and do not need listing, also do not require a
+                textscope.</p>
+            <p>The TEXTSCOPE is not the same as a heading (in fact it often directly repeats your
+                heading). Instead, the TEXTSCOPE demarcates the main discussion of a text for
+                searching/indexing purposes. If you follow a Link to a title, your Links screen will
+                bear the words “Main mention in [name of entry subject].” That main mention is the
+                one marked by the TEXTSCOPE. This tag is also used as a bibliographic pointer that
+                will invisibly direct end-users to the bibliographic information about the text
+                under discussion. The TEXTSCOPE tag will not appear in the reader's version of your
+                document. It is an invisible tag for linking and searching purposes. Attribute <term
+                    keyref="">PLACEHOLDER</term> on TEXTSCOPE: Purely for internal use, to
+                facilitate checking and to help catch error. (The <term keyref="">DBREF</term>
+                attribute does the heavy lifting.) </p>
+        </div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TEXTSCOPE DBREF=&quot;103427&quot; PLACEHOLDER=&quot;JB, Poems,
+                1790&quot;&gt;&lt;/TEXTSCOPE&gt; &lt;TEXTSCOPE DBREF=&quot;103464&quot;
+                PLACEHOLDER=&quot;HB, The Mousiad, 1787&quot;&gt;&lt;/TEXTSCOPE&gt; &lt;TEXTSCOPE
+                DBREF=&quot;103&quot; PLACEHOLDER=&quot;AC, The Magic Toyshop,
+                1967&quot;&gt;&lt;/TEXTSCOPE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Your TEXTSCOPE must be formatted as in the examples above, with the attributes filled
+                in. <term keyref="">DBREF</term> must include the corresponding <term keyref=""
+                    >DBREF</term> number for the text under discussion. Be sure that you have chosen
+                the <term keyref="">BIBLIOGITEM</term> for the same edition under discussion in
+                    <term keyref="">WRITING</term>. For example, if you have entered a TEXTSCOPE for
+                a discussion of Joanna Baillie's Poems published in 1790, enter the dbref number for
+                the bibliogitem citing this original publication of her Poems and not the 1994
+                reprint of Poems, 1790. The <term keyref="">PLACEHOLDER</term> should include the
+                authors initials, short title of the work, and publication year.</p>
+        </div>
+    </glossdef>
+</glossentry>
