@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="responsibility">
+    <glossterm>RESPONSIBILITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Tag historically used within <menucascade>
+                    <uicontrol><term>BIOGRAPHY or WRITING</term></uicontrol>
+                    <uicontrol><term>REVISIONDESC</term></uicontrol>
+                </menucascade>, filled in in the course of checking a document back into the system
+                after working on it. It has subtags of Date (the date of checkingin) and Item (which
+                holds an additional description, if needed, of work done) and attributes Resp (which
+                holds the initials of the team member concerned), Workstatus and Workvalue.
+                Workvalue offers the choice of I for incomplete, p for pending (i.e. complete but
+                for some particular unsolved issue), and c for complete. Workstatus offers a list of
+                categories: SUB for submitted, RWT for researched, written, and tagged, REV for
+                revised, CFB checked for bibliography, CFT checked for tagging, RBV checked by one
+                of the editorial team (“volume author”), PUB publishable, and ENH, enhanced (for
+                additions and revisions after publication).</p></div>
+        <div> </div>
+    </glossdef>
+</glossentry>

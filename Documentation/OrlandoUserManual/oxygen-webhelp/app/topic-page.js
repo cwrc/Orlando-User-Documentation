@@ -3,14 +3,12 @@
  */
 define(["require", "config"], function() {
     require([
-        'menu',
-        'toc',
+        'nav-links-loader',
         'searchAutocomplete',
         'webhelp',
         'search-init',
         'expand',
         'image-map',
-        'template-module-loader',
-        'bootstrap'
+        'template-module-loader'
     ]);
 });

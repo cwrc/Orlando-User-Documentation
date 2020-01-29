@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="setting-date-type">
+    <glossterm>SETTINGDATETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>SettingDateType is an optional attribute,
+                attached to the element <uicontrol><term>TSETTINGDATE</term></uicontrol> (in <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>TEXTUALFEATURES</term></uicontrol>
+                </menucascade>), that specifies the historical era of a setting. It has four
+                allowable values: "past", "present", "future", and "ambiguous".</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;tSettingDate SETTINGDATETYPE=&quot;future&quot;&gt;Angela
+                Carter&apos;s novel is post-apocalyptic.&amp;lt;/&gt; &amp;lt;/&gt;
+                &amp;lt;tSettingDate SETTINGDATETYPE=&quot;present&quot;&gt;Elizabeth Fenwick sets
+                her novel firmly in her own time.&amp;lt;/&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>These values are determined in relation to the date at which the text was written.
+                For example, 1984 is a futuristic novel because George Orwell wrote it in 1948.</p>
+        </div>
+    </glossdef>
+</glossentry>

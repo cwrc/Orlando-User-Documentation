@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="rresponses">
+    <glossterm>RRESPONSES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element, available in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">RECEPTION</term></uicontrol>
+                </menucascade>addresses reactions to the literary work, the oeuvre in general, or
+                the writer's role as an author/artist. It should enclose a whole sentence or more.
+                It has no mandatory or optional sub-elements, but three optional attributes:
+                responseType, Formality, and genderedResponse. ResponseType has the values of
+                "initial," "recent," and "re-evaluation." Formality has the values of "formal" and
+                "informal." GenderedResponse has the values of "genderedYes," "genderedNo," and
+                "adfeminam." In practice used mostly for reviews w attribute value Formal and for
+                comment in letters etc. w attribute Informal. Generalizations (“reviews were
+                overwhelmingly favourable”) can be used as well as more specific info. A single use
+                of this tag can encompass several distinct or contradictory opinions, so long as the
+                attribute values are the same. Fill in the keyref attributes once glossentry topics
+                for the specified elements exist (use the id attribute on the glossentry
+                element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;rResponses formality=formal genderedResponse=genderedNo&gt;Joanna Baillie
+                was criticized for her lack of stage-craft by Elizabeth
+                Inchbald.&amp;lt;/&gt;&amp;lt;rResponses formality=formal genderedResponse=genderedNo&gt;Djuna
+                Barnes&apos;s literary reputation was given a significant boost by Joseph Frank&apos;s
+                critical analysis in The Sewanee Review, citing her book as an outstanding example
+                of spatial rather than linear narrative.&amp;lt; </codeblock>
+        </div>
+        <div> </div>
+    </glossdef>
+</glossentry>

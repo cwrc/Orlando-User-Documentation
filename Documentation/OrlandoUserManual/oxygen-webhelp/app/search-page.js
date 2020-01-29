@@ -4,7 +4,7 @@
 define(["require", "config"], function() {
     require(['search'], function() {
         require([
-            'menu',
+            'nav-links-loader',
             'searchAutocomplete',
             'webhelp',
             'template-module-loader'

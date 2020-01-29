@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="rself-description">
+    <glossterm>RSelfDescription</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>rSelfDescription, a sub-element belonging
+                to <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>RECEPTION</term></uicontrol>
+                </menucascade> encloses a statement, an analysis or evaluation by an author of her
+                own work. It’s sometimes a judgement call between use of this tag and PAttitudes. It
+                has no mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;rSelfDescription&amp;gt;Djuna Barnes wrote bitterly about
+                Nightwood&amp;apos;s literary reputation: &amp;quot;there is not a person in the
+                literary world who has not heard of, read, and stolen some from Nightwood, not more
+                than three or four have mentioned my name.&amp;quot;&amp;lt;/&amp;gt;
+                &amp;lt;rSelfDescription&amp;gt;Janet Little called herself &amp;quot;a crazy
+                scribbling lass.&amp;quot;&amp;lt;/&amp;gt; &amp;lt;rSelfDescription&amp;gt;Mary
+                Scott feared that her muse would be deemed a heretic one.&amp;lt;/&amp;gt;
+            </codeblock></div>
+        <div> </div>
+    </glossdef>
+</glossentry>

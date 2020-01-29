@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="season">
+    <glossterm>SEASON</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Sub-tag within
+                        <uicontrol><term>DATESTRUCT</term></uicontrol> only. Needs narrowing down
+                through Value attribute in order to fit into timeline.</p><p dir="ltr">Attribute Reg
+                on Season: I believe redundant. So far as I know Season tag has been used to enclose
+                only Spring, Summer, Autumn/Fall (we never need to reg one of these to the other),
+                and Winter.</p><p dir="ltr">Attribute Value on Season: Convention with Season tag is
+                to reckon (more European than Canadian!) December-Feb for winter, March-May for
+                spring, June-August for summer, Sept-Nov for autumn, and to use Value of middle
+                month of the season (Certainty=”C”) unless text says e.g. “early spring”. Use zeroes
+                in these numbers to make two digits: 12 but 08 and 04.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> datestruct CERTAINTY C VALUE=”1351-04-”&gt;&amp;lt;season C
+                VALUE=”04”&gt;Spring&amp;lt;/&gt; &amp;lt;year CERTAINTY=”Cert” value
+                1351”&gt;1351&amp;lt;/&gt;&amp;lt;/&gt; </codeblock></div>
+        <div> </div>
+    </glossdef>
+</glossentry>

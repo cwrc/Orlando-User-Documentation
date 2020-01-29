@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="self-constructed">
+    <glossterm>SELFCONSTRUCTED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>SelfConstructed is a sub-element within <menucascade>
+                    <uicontrol><term>BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term>PERSONNAME</term></uicontrol>
+                </menucascade> to capture names which a person chooses to uss in her everyday life,
+                not only as her pseudonym. As the element name suggests, these are names she applies
+                to herself and, for example, writes on her checks as well as signs her books with.
+                Whereas a Pseudonym applies to a particular text or group of texts, SelfConstructed
+                signifies a name a writer elected to live by, like Maya Angelou or Hilary Mantel. It
+                has optional attributes for nameSignifier, reg, and wroteOrPublishedAs.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;selfConstructed
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Loy, Mina&amp;lt;/&gt;
+                &amp;lt;selfConstructed WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;
+                &gt;Esther&amp;lt;\&gt;&amp;lt;scholarNote&gt;&amp;lt;p&gt;HB published as Hester
+                initially but later used Esther, possibly to align herself with the Old Testament
+                form of the name. &amp;lt;\&gt;&amp;lt;\&gt;
+                &amp;lt;selfConstructed&gt;Brett&amp;lt;/&gt;&amp;lt;shortprose&gt;&amp;lt;P&gt;Dorothy
+                Brett chose to call herself by one name only.&amp;lt;/&gt;&amp;lt;/&gt; </codeblock>
+        </div>
+    </glossdef>
+</glossentry>

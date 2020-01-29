@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="serialization">
+    <glossterm>Serialization</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belonging conceptually in <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>PRODUCTION</term></uicontrol>
+                </menucascade> encloses a statement about (see attributes) either sections of a book
+                appearing sequentially in a newspaper or magazine, or gradual publication, one
+                section or one volume at a time. It has one optional attribute attached,
+                FormOfSerialization with values of "volumeForm" and "periodicalForm”.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;pSerialization
+                FormofSerialization=”PeriodicalForm”&amp;gt;AL&amp;apos;s novel was serialized in
+                the Atlantic Monthly.&amp;lt;/&amp;gt; &amp;lt;pSerialization
+                FormofSerialization=”VolumeForm”&amp;gt;EL issued her book one section at a time at
+                irregular intervals.&amp;lt;/&amp;gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Question: How would I distinguish the "periodicalForm" of serial publication from
+                other kinds of periodical publication? Answer: Use the element periodicalPublication
+                when the author published the odd article, poem or short story in a periodical. If
+                the author published a whole novel in one periodical in instalments, then use the
+                element serialization with an attribute value of "periodicalForm."</p>
+        </div>
+    </glossdef>
+</glossentry>

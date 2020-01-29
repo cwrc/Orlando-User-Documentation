@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="scholar-note">
+    <glossterm>SCHOLARNOTE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>ScholarNote is a content tag available
+                throughout the system, in <menucascade>
+                    <uicontrol><term>BIOGRAPHY or WRITING</term></uicontrol>
+                </menucascade> documents, free-standing <menucascade>
+                    <uicontrol><term>EVENTS</term></uicontrol>
+                </menucascade>, and in <menucascade>
+                    <uicontrol><term>BIBLIOGRAPHY</term></uicontrol>
+                </menucascade>. You cannot write prose directly into this tag, but must enclose it
+                also in a &lt;P> tag. The element contains further information of a specialized or
+                scholarly nature that is removed to a note in order not to interrupt the flow of the
+                entry. In Chronstructs it is placed after the Chronprose but inside the Chronstruct
+                tag; in ShortProse, it goes at the end of the &lt;p> tag, but inside it.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &amp;lt;chronstruct&gt;&amp;lt;date&gt;About 612
+                BC&amp;lt;/&gt;&amp;lt;chronprose&gt; Sappho was probably born in the late seventh
+                century BC (Archaic period), possibly at Eresus if not at Mytilene, in either case
+                on the Greek island of Lesbos, close to the coast of
+                Asia.&amp;lt;/&gt;&amp;lt;scholarnote&gt;&amp;lt;p&gt;The &amp;lt;socalled &gt;
+                facts &amp;lt;/&gt; of her life, if not riskily deduced from her poems, come from
+                sources written well after her
+                death.&amp;lt;bibcits&gt;&amp;lt;bibcit&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;/&gt;
+                Sarah Daniels. &amp;lt;shortprose&gt;&amp;lt;p&gt;The woman who kills herself is
+                welcomed by the alternative Trinity of Old Woman, Tall Woman, and Young Woman, who
+                says&amp;lt;quote &gt; my daughter who bled in a shed for you—and for
+                many.&amp;lt;/&gt;&amp;lt;bibcits&gt;&amp;lt;bibcit&gt;&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;scholarnote&gt;&amp;lt;P&gt;This
+                echoes or parodies the consecration prayer in the Communion service in the Anglican
+                Book of Common
+                Prayer.&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;/&gt;</codeblock>
+        </div>
+        <div> </div>
+    </glossdef>
+</glossentry>

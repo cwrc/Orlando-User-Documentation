@@ -50,28 +50,27 @@
 }
 
 /* Tooltip positioning. */
-@media screen {
-	[data-tooltip-position="left"] .wh-tooltip {
-	    top: -0.5em;
-	    right: calc(100% + 1em);
-	}
-	
-	[data-tooltip-position="right"] .wh-tooltip {
-	    top: -0.5em;
-	    left: calc(100% + .4em);
-	}
-	
-	[data-tooltip-position="top"] .wh-tooltip {
-	    bottom: 100%;
-	}
-	
-	[data-tooltip-position="bottom"] .wh-tooltip {
-	    top: 100%;
-	}
-	
-	[data-tooltip-position="hidden"] .wh-tooltip {
-	    display:none;
-	}
+
+[data-tooltip-position="left"] .wh-tooltip {
+    top: -0.5em;
+    right: calc(100% + 1em);
+}
+
+[data-tooltip-position="right"] .wh-tooltip {
+    top: -0.5em;
+    left: calc(100% + .4em);
+}
+
+[data-tooltip-position="top"] .wh-tooltip {
+    bottom: 100%;
+}
+
+[data-tooltip-position="bottom"] .wh-tooltip {
+    top: 100%;
+}
+
+[data-tooltip-position="hidden"] .wh-tooltip {
+    display:none;
 }
 
 /* Tooltip arrow. */
