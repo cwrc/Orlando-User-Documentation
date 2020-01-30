@@ -41,6 +41,12 @@
                 Reg’d Region tag. She travelled across the United States, stopping in
                 &lt;PLACE&gt;&lt;SETTLEMENT CURRENT=&quot;New York City&quot; REG=&quot;East
                 Village&quot;&gt;East Village&lt;/SETTLEMENT&gt;&lt;REGION REG=&quot;New
-                York&quot;/&gt;&lt;GEOG REG=&quot;USA&quot;/&gt;&lt;/PLACE&gt;</p></div>
+                York&quot;/&gt;&lt;GEOG REG=&quot;USA&quot;/&gt;&lt;/PLACE&gt;</p><p>To provide an
+                adequate amount of context for a settlement, please add region and/or geog tags. A
+                fixed list of settlements not requiring region/geog tags appears in the glossary
+                entry for region. Please consult this list if you are unsure as to whether you need
+                to supply more context. Include the word <q>Town</q> for places which use town in
+                their designation. For example, Camden Town and Hobart Town.</p><p>You can also
+                consult the London Boroughs list.</p></div>
     </glossdef>
 </glossentry>
