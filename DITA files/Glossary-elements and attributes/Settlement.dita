@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>SETTLEMENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Settlement, a sub-element of
+                        <uicontrol><term>PLACE</term></uicontrol> available everywhere in Orlando
+                        (<uicontrol><term>LIFE</term></uicontrol> and
+                        <uicontrol><term>WRITING</term></uicontrol> docs and free-standing events),
+                captures the names of cities, towns, villages, hamlets and areas within larger
+                settlements (for example, districts of London). It encloses just the name of the
+                place, without punctuation. Settlement has optional attributes for Current and Reg.
+                For districts of London or other large cities it is mandatory to use Current
+                attribute for city name and Reg for district name. We need to provide for search
+                results that will deliver *either* London *or* Chelsea, *either* New York *or*
+                Manhattan, and using both attributes is so far the only way to achieve
+            this.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&amp;lt;place&amp;gt;&amp;lt;settlement REG=”Chelsea”
+                CURRENT=”London”&amp;gt;Chelsea&amp;lt;/&amp;gt;&amp;lt;Region=”Middlesex”&amp;lt;/&amp;gt;&amp;lt;Geog
+                REG=”England”&amp;gt;&amp;lt;/&amp;gt;&amp;lt;/&amp;gt;
+                &amp;lt;place&amp;gt;&amp;lt;settlement CURRENT=&amp;quot;St Petersburg”
+                REG=”Leningrad”&amp;gt;Leningrad&amp;lt;/&amp;gt;&amp;lt;Geog=”Russia”&amp;gt;&amp;lt;/&amp;gt;&amp;lt;/&amp;gt;.&amp;lt;place&amp;gt;&amp;lt;placename&amp;gt;British
+                Museum&amp;lt;/&amp;gt;&amp;lt;settlement
+                REG=&amp;quot;London&amp;quot;&amp;gt;&amp;lt;Region=”Middlesex”&amp;lt;/&amp;gt;&amp;lt;Geog
+                REG=”England”&amp;gt;&amp;lt;/&amp;gt;&amp;lt;/&amp;gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See place for general practice issues. More than one settlement sub-element is not
+                allowed within a single Place element: use attributes to provide two names
+                    (<codeph>&lt;PLACE&gt;&lt;SETTLEMENT CURRENT=&quot;New York City&quot;
+                    REG=&quot;East Village&quot;&gt;East Village&lt;/SETTLEMENT&gt;&lt;REGION
+                    REG=&quot;New York&quot;/&gt;&lt;GEOG
+                    REG=&quot;USA&quot;/&gt;&lt;/PLACE&gt;</codeph>). Do NOT use two settlement tags
+                to indicate two different cities. If your sentence reads <q>She travelled across the
+                    United States, stopping in New York and Chicago</q>, you must include two
+                separate place elements to capture the two settlements, each with its empty but
+                Reg’d Region tag. She travelled across the United States, stopping in
+                &lt;PLACE&gt;&lt;SETTLEMENT CURRENT=&quot;New York City&quot; REG=&quot;East
+                Village&quot;&gt;East Village&lt;/SETTLEMENT&gt;&lt;REGION REG=&quot;New
+                York&quot;/&gt;&lt;GEOG REG=&quot;USA&quot;/&gt;&lt;/PLACE&gt;</p></div>
+    </glossdef>
+</glossentry>
