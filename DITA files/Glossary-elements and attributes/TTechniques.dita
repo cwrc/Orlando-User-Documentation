@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="ttechniques">
+<glossentry id="t-techniques">
     <glossterm>TTECHNIQUES</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>This tag belongs under<menucascade>
+        <div><u>Definition, Placement, Relationships</u><p>This tag within<menucascade>
                     <uicontrol><term keyref="">WRITING</term></uicontrol>
                     <uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol>
-                </menucascade>, and encloses a statement not about a writer’s technique generally
-                but about specific tools, as listed in available attribute values. Applies to the
+                </menucascade>  encloses a statement not about a writer’s technique generally but
+                about specific tools, as listed in available attribute values. Applies to the
                 structural components and devices of language used to create literary effects. It
                 has no mandatory or optional sub-elements. One optional attribute, <term keyref=""
                     >TECHNIQUETYPE</term>, has values <term keyref="">VERSIFICATION</term>, <term
                     keyref="">NON-STANDARDENGLISH</term>, <term keyref="">DICTION</term>, <term
-                    keyref="">AURALEFFECTS</term>, and <term keyref="">IMAGERY</term>" For a fuller
+                    keyref="">AURALEFFECTS</term>, and <term keyref="">IMAGERY</term>. For a fuller
                 discussion of these values, see <term keyref="">TECHNIQUETYPE</term>.</p></div>
         <div>
             <u>Example</u>
