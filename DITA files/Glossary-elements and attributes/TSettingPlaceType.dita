@@ -5,23 +5,23 @@
     <glossterm>TSETTINGPLACETYPE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>tSettingPlaceType is an optional
-                attribute attached to the element <uicontrol><term>SETTINGPLACE</term></uicontrol>
-                (belonging conceptually to <uicontrol><term>TEXTUALFEATURES</term></uicontrol>) in
-                        <uicontrol><term>WRITING</term></uicontrol> documents. It is modified by
-                three values: "fictive," "real" and "identifiable." "Fictive" signals imaginary
-                settings or locations; "real" identifies those that are actual; "identifiable"
+                attribute attached to the element <term keyref="">SETTINGPLACE</term>
+                in <menucascade><uicontrol><term keyref="">WRITING</term></uicontrol><uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol></menucascade>. It is modified by
+                three values: <userinput>fictive</userinput>, <userinput>real</userinput> and <userinput>identifiable</userinput>. <userinput>fictive</userinput> signals imaginary
+                settings or locations; <userinput>real</userinput> identifies those that are actual; <userinput>identifiable</userinput>
                 applies in situations where the name of a location has been changed but is obviously
                 modelled on a real place. For example, Margaret Laurence calls Neepawa, Manitoba,
-                “Manawaka” in her novels, but we can identify it as Neepawa. tSettingClass is a
-                sibling to tSettingPlaceType, which further describes the location of the fiction by
+                “Manawaka” in her novels, but we can identify it as Neepawa. <term keyref="">tSettingClass</term> is a
+                sibling to <term keyref="">tSettingPlaceType</term>, which further describes the location of the fiction by
                 specifying which ranks of society there are involved.</p></div>
         <div>
-            <u>Example</u>
-            <codeblock> &amp;lt;tSettingPlace SETTINGPLACETYPE=&quot;real&quot;&gt;Elizabeth Cary
-                Falkland&apos;s play is set in Palestine, which was then a province of the Roman
-                Empire.&amp;lt;/&gt; &amp;lt;tSettingPlace
-                SETTINGPLACETYPE=&quot;fictive&quot;&gt;All of Willa Smyth&apos;s poems are set in
-                an imaginary land called Sneed.&amp;lt;/&gt;</codeblock>
+            <u>Examples</u>
+            <codeblock> &lt;TSETTINGPLACE SETTINGPLACETYPE="real">Elizabeth Cary
+                Falkland's play is set in Palestine, which was then a province of the Roman
+                Empire.&lt;/TSETTINGSPLACE></codeblock>
+            <codeblock> &lt;TSETTINGPLACE
+                SETTINGPLACETYPE="fictive">All of Willa Smyth's poems are set in
+                an imaginary land called Sneed.&lt;/TSETTINGPLACE></codeblock>
         </div>
     </glossdef>
 </glossentry>
