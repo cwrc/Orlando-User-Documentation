@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-theme-topic">
+    <glossterm>TTHEMETOPIC</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Belonging in <menucascade>
+                    <uicontrol><term>WRITING</term></uicontrol>
+                    <uicontrol><term>TEXTUALFEATURES</term></uicontrol>
+                </menucascade>, TTHEMETOPIC is a very flexible tag. It has no controlled vocabulary
+                associated with it, but can contain any information. It may enclose much more than a
+                single word; may record central themes, side issues in a text, or objects of
+                observation or discussion. Place tags, for instance, often appear within TTHEMETOPIC
+                tags in accounts of travel literature, and <term keyref="">NAME</term> tags within
+                accounts of biography and criticism. (Accounts of place as it operates in fiction
+                use a <term keyref="">TSETTINGPLACE</term> tag.) This element applies to both theme
+                and topic. Theme is the central idea in a text stated either directly or indirectly;
+                topic applies to interesting subjects appearing in a work that might not aspire to
+                the status of a "theme". The tag is useful in describing examples of genres such as
+                educational or non-fictional texts. It has no mandatory or optional sub-elements or
+                attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TTHEMETOPIC&gt;forced marriage&lt;/TTHEMETOPIC&gt; &lt;TTHEMETOPIC&gt;
+                Oriental, African, pastoral, medieval, and contemporary subjects&lt;/TTHEMETOPIC&gt;
+                &lt;TTHEMETOPIC&gt; Colonial oppression&lt;/TTHEMETOPIC&gt;</codeblock>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p>Theme differs from motif in being less tightly defined, generally informing an
+                entire literary work. Topic can be used if a woman wrote a book about cooking, a
+                non-fiction work on stitchery, or an educational text which uses the Napoleonic wars
+                for its examples. A novel might equally dwell on the topic of cookery or war, or it
+                might have military courage or women’s domestic involvement as a theme.</p>
+        </div>
+    </glossdef>
+</glossentry>

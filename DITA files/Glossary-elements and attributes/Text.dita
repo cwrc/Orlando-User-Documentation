@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="text">
+    <glossterm>TEXT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Located within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+                </menucascade>, this tag records texts significant in educational development, early
+                reading matter which exerted a formative influence, rather than even major
+                influences on her writing, if encountered in maturity.Such texts will probably not
+                be entered here but within her Writing document. Encloses generally just a title or
+                author name, but can enclose a phrase, e.g Greek myth and legend, or German fairy
+                tales. </p>
+            <p>This has one optional attribute, <term keyref="">REG</term> which allows you to
+                standardize the name of the author or title of the book (either of which might be
+                tagged as TEXT) in cases where you have been unable to do in the prose. Used for
+                expanding or fully identifying either Name or Title: <codeph>&lt;TEXT
+                    REG=&quot;Eliot, George”&gt;Eliot&lt;/TEXT&gt;, &lt;TEXT REG=&quot;The Mill on
+                    the Floss&quot;&gt;Maggie Tulliver&lt;/TEXT&gt; &lt;div&gt;</codeph></p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;TEXT&gt;&lt;TITLE TITLETYPE=&quot;Monographic&quot;&gt;Old
+                Testament&lt;/TITLE&gt;&lt;/TEXT&gt; and &lt;TEXT&gt;&lt;TITLE
+                TITLETYPE=&quot;Monographic&quot;&gt;Paradise Lost&lt;/TITLE&gt;&lt;/TEXT&gt; by the
+                age of six.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Title tag is mandatory around texts. </p><p>It is fine to tag commonly recognized names like
+                Skakespeare or Milton as texts as well as names within the education element, but
+                only do so if reading such an author carried real significance for the BWW. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Should Jane Eyre be entered as a text within Jean Rhys' <term keyref="">BIOGRAPHY</term> because Wide Sargasso Sea is a rewriting of it?
+                </p><p><b>Answer:</b> No. Jane Eyre will be tagged as <term keyref="">INTERTEXTUALITY</term> in <term keyref="">WRITING</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>

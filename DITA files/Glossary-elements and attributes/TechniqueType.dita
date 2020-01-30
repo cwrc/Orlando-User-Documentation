@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="technique-type">
+    <glossterm>TECHNIQUETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Located in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">TTECHNIQUES</term></uicontrol>
+                </menucascade>, this tag belongs conceptually to <term keyref="">TTECHNIQUES</term>.
+                Its five allowable values are <term keyref="">VERSIFICATION</term>, <term keyref=""
+                    >NON-STANDARDENGLISH</term>, <term keyref="">DICTION</term>
+                <term keyref="">IMAGERY</term>, and <term keyref="">AURALEFFECTS</term>. <term
+                    keyref="">VERSIFICATION</term> applies to literary effects achieved by metre or
+                stanza-form. <term keyref="">DICTION</term> applies to effects achieved by the
+                choice and arrangement of words. Examples include the use of latinate, flowery,
+                archaic, or affected language. <term keyref="">NON-STANDARDENGLISH</term> applies to
+                uses of eccentric or uneducated syntax, regional speech, or dialect. <term keyref=""
+                    >IMAGERY</term> refers to literary effects that rely on figures of speech such
+                as personification, metaphor, or simile. <term keyref="">AURALEFFECTS</term>
+                captures writing that employs onomatopiea, alliteration, internal rhyme, or other
+                techniques relying on audible features of language like plosives, sibilants,
+                fricatives, etc. Fill in the keyref attributes once glossentry topics for the
+                specified elements exist (use the id attribute on the glossentry element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;TTECHNIQUES TECHNIQUETYPE=&quot;versification&quot;&gt;HY&apos;s
+                favourite form was ballad metre.&lt;/TTECHNIQUES&gt; &lt;TTECHNIQUES
+                TECHNIQUETYPE=&quot;non-standardEnglish&quot;&gt;JG&apos;s third novel differs from
+                the first two in that the narrator uses patois.&lt;/TTECHNIQUES&gt; &lt;TTECHNIQUES
+                TECHNIQUETYPE=&quot;imagery&quot;&gt;LK displayed an unusual fondness for heroic
+                similes, inspired perhaps by her translations from Greek.&lt;/TTECHNIQUES&gt;
+                &lt;TTECHNIQUES TECHNIQUETYPE=&quot;diction&quot;&gt;In her third poem, EPW
+                attempted to imitate Elizabethan language. &lt;/TTECHNIQUES&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>In cases where the author uses a variety of techniques that you are discussing
+                together, or if you are unsure of a literary technique, you may either leave this
+                attribute unfilled or supply more than one tag with different attribute values.</p>
+        </div>
+    </glossdef>
+</glossentry>
