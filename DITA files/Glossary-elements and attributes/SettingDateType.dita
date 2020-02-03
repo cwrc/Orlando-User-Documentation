@@ -5,9 +5,9 @@
     <glossterm>SETTINGDATETYPE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>SettingDateType is an optional attribute,
-                attached to the element <uicontrol><term>TSETTINGDATE</term></uicontrol> (in <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>TEXTUALFEATURES</term></uicontrol>
+                attached to the element <term keyref="">TSETTINGDATE</term> (in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol>
                 </menucascade>), that specifies the historical era of a setting. It has four
                 allowable values: "past", "present", "future", and "ambiguous".</p></div>
         <div>
