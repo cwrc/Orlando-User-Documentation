@@ -9,10 +9,12 @@
                 who is the subject of the document is male, female, unknown or transgender. It is
                 placed in the Orlando Header preceding your document. If you receive your writing
                 document as a template, this attribute will already contain a value of
-                <q>female</q>. Change it if you are working on anyone but a woman
-                writer.</p><p>There are four allowable values attached to this attribute:
-                    <q>male</q>, <q>female</q>, <q>unknown</q> and <q>transgendered</q>. Use
-                    <q>unknown</q> in situations where no known historical name directs you to any
-                clues about the author's sex. (Pseudonyms might well be cross-dressed.)</p></div>
+                    <userinput>female</userinput>. Change it if you are working on anyone but a
+                woman writer.</p><p>There are four allowable values attached to this attribute:
+                    <userinput>male</userinput>, <userinput>female</userinput>,
+                    <userinput>unknown</userinput> and <userinput>transgendered</userinput>. Use
+                    <userinput>unknown</userinput> in situations where no known historical name
+                directs you to any clues about the author's sex. (Pseudonyms might well be
+                cross-dressed.)</p></div>
     </glossdef>
 </glossentry>
