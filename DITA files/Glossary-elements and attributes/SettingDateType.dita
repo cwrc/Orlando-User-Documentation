@@ -9,13 +9,15 @@
                     <uicontrol><term keyref="">WRITING</term></uicontrol>
                     <uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol>
                 </menucascade>), that specifies the historical era of a setting. It has four
-                allowable values: "past", "present", "future", and "ambiguous".</p></div>
+                allowable values: <userinput>past</userinput>, <userinput>present</userinput>,
+                    <userinput>future</userinput>, and <userinput>ambiguous</userinput>.</p></div>
         <div>
-            <u>Example</u>
-            <codeblock> &amp;lt;tSettingDate SETTINGDATETYPE=&quot;future&quot;&gt;Angela
-                Carter&apos;s novel is post-apocalyptic.&amp;lt;/&gt; &amp;lt;/&gt;
-                &amp;lt;tSettingDate SETTINGDATETYPE=&quot;present&quot;&gt;Elizabeth Fenwick sets
-                her novel firmly in her own time.&amp;lt;/&gt; </codeblock>
+            <u>Examples</u>
+            <codeblock> &lt;TSETTINGDATE SETTINGDATETYPE=&quot;future&quot;&gt;Angela Carter&apos;s
+                novel is
+                post-apocalyptic.&lt;/TSETTINGDATE&gt;</codeblock><codeblock>&lt;TSETTINGDATE
+                SETTINGDATETYPE=&quot;present&quot;&gt;Elizabeth Fenwick sets her novel firmly in
+                her own time.&lt;/TSETTINGDATE&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
