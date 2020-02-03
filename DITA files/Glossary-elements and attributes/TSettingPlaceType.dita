@@ -5,6 +5,7 @@
     <glossterm>TSETTINGPLACETYPE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>tSettingPlaceType is an optional
+<<<<<<< HEAD
                 attribute attached to the element <term keyref="">SETTINGPLACE</term> (belonging
                 conceptually to <term keyref="">TEXTUALFEATURES</term>) in <term keyref=""
                     >WRITING</term> documents. It is modified by three values:
@@ -24,5 +25,25 @@
                 Empire.&lt;/TSETTINGPLACE&gt;</codeblock><codeblock>&lt;TSETTINGPLACE
                 SETTINGPLACETYPE=&quot;fictive&quot;&gt;All of Willa Smyth&apos;s poems are set in
                 an imaginary land called Sneed.&lt;/TSETTINGPLACE&gt;</codeblock></div>
+=======
+                attribute attached to the element <term keyref="">SETTINGPLACE</term>
+                in <menucascade><uicontrol><term keyref="">WRITING</term></uicontrol><uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol></menucascade>. It is modified by
+                three values: <userinput>fictive</userinput>, <userinput>real</userinput> and <userinput>identifiable</userinput>. <userinput>fictive</userinput> signals imaginary
+                settings or locations; <userinput>real</userinput> identifies those that are actual; <userinput>identifiable</userinput>
+                applies in situations where the name of a location has been changed but is obviously
+                modelled on a real place. For example, Margaret Laurence calls Neepawa, Manitoba,
+                “Manawaka” in her novels, but we can identify it as Neepawa. <term keyref="">tSettingClass</term> is a
+                sibling to <term keyref="">tSettingPlaceType</term>, which further describes the location of the fiction by
+                specifying which ranks of society there are involved.</p></div>
+        <div>
+            <u>Examples</u>
+            <codeblock> &lt;TSETTINGPLACE SETTINGPLACETYPE="real">Elizabeth Cary
+                Falkland's play is set in Palestine, which was then a province of the Roman
+                Empire.&lt;/TSETTINGSPLACE></codeblock>
+            <codeblock> &lt;TSETTINGPLACE
+                SETTINGPLACETYPE="fictive">All of Willa Smyth's poems are set in
+                an imaginary land called Sneed.&lt;/TSETTINGPLACE></codeblock>
+        </div>
+>>>>>>> 23883552f5a0414f294d164e167fda87e3cc7f17
     </glossdef>
 </glossentry>
