@@ -5,16 +5,16 @@
     <glossterm>RESEARCHNOTE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>Available throughout the textbase, this
-                element is not to be confused with <term keyref="">SCHOLARNOTE</term> that will be
-                readable by end users. RESEARCHNOTE contents will be seen only by the eyes of
-                Orlandians. Contains comments from one team member to another; which should be
-                prefaced by initials of the writer, and which are not visible in delivery. An
-                Orlandian writing a new entry will may leave research notes for or receive them from
-                another who is checking or revising; these can be deleted once implemented or
-                decided against. Retain only notes that may be useful downstream, like <q>exhaustive
-                    search for firm date reveals nothing</q> or <q>recommended visual for this
-                    writer</q>. (Research notes containing the word “visual” are clues to project of
-                illustrating Orlando.)</p></div>
+                element is not to be confused with <term keyref="scholar-note">SCHOLARNOTE</term>
+                that will be readable by end users. <term keyref="research-note">RESEARCHNOTE</term>
+                contents will be seen only by the eyes of Orlandians. Contains comments from one
+                team member to another; which should be prefaced by initials of the writer, and
+                which are not visible in delivery. An Orlandian writing a new entry will may leave
+                research notes for or receive them from another who is checking or revising; these
+                can be deleted once implemented or decided against. Retain only notes that may be
+                useful downstream, like <q>exhaustive search for firm date reveals nothing</q> or
+                    <q>recommended visual for this writer</q>. (Research notes containing the word
+                <q>visual</q> are clues to project of illustrating Orlando.)</p></div>
         <div>
             <u>Practice Issues</u>
             <p>If you encounter research notes that refer to completed actions of negligible
