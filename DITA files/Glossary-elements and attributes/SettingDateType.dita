@@ -4,20 +4,16 @@
 <glossentry id="setting-date-type">
     <glossterm>SETTINGDATETYPE</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>SettingDateType is an optional attribute,
-                attached to the element <term keyref="">TSETTINGDATE</term> (in <menucascade>
-                    <uicontrol><term keyref="">WRITING</term></uicontrol>
-                    <uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol>
+        <div><u>Definition, Placement, Relationships</u><p>SETTINGDATETYPE is an optional attribute,
+                attached to the element <term keyref="t-setting-date">TSETTINGDATE</term> (in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
                 </menucascade>), that specifies the historical era of a setting. It has four
                 allowable values: <userinput>past</userinput>, <userinput>present</userinput>,
                     <userinput>future</userinput>, and <userinput>ambiguous</userinput>.</p></div>
         <div>
             <u>Examples</u>
-            <codeblock> &lt;TSETTINGDATE SETTINGDATETYPE=&quot;future&quot;&gt;Angela Carter&apos;s
-                novel is
-                post-apocalyptic.&lt;/TSETTINGDATE&gt;</codeblock><codeblock>&lt;TSETTINGDATE
-                SETTINGDATETYPE=&quot;present&quot;&gt;Elizabeth Fenwick sets her novel firmly in
-                her own time.&lt;/TSETTINGDATE&gt;</codeblock>
+            <codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;future&quot;&gt;Angela Carter&apos;s novel is post-apocalyptic.&lt;/TSETTINGDATE&gt;</codeblock><codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;present&quot;&gt;Elizabeth Fenwick sets her novel firmly in her own time.&lt;/TSETTINGDATE&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
