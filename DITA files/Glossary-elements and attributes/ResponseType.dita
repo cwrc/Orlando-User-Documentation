@@ -4,30 +4,29 @@
 <glossentry id="response-type">
     <glossterm>RESPONSETYPE</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>ResponseType is an optional attribute
-                attached to the element rResponses (belonging to <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>RECEPTION</term></uicontrol>
+        <div><u>Definition, Placement, Relationships</u><p>RESPONSETYPE is an optional attribute
+                attached to the element RRESPONSES (belonging to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
                 </menucascade>) that specifies the historical timing of a response to a written work
-                through its values of "recent," "re-evaluation," or "initial." The two sibling
-                attributes are Formality and genderedResponse.</p></div>
+                through its values of <userinput>recent</userinput>,
+                    <userinput>re-evaluation</userinput>, or <userinput>initial</userinput>. The two
+                sibling attributes are <term keyref="formality">FORMALITY</term> and <term
+                    keyref="genderedresponse">GENDEREDRESPONSE</term>.</p></div>
         <div>
-            <u>Example</u>
-            <codeblock>&amp;lt;rResponses RESPONSETYPE=&amp;quot;re-evaluation&amp;quot; FORMALITY=&amp;quot;formal&amp;quot;&amp;gt;An attack on
-                Joanna Baillie&amp;apos;s work in 1803 by Francis Jeffrey signalled the decline of her
-                reputation.&amp;lt;/&amp;gt; &amp;lt;rResponses RESPONSETYPE=&amp;quot;initial&amp;quot;&amp;gt;Elizabeth Cellier&amp;apos;s book
-                provoked about twenty replies at first, attacking and defending.&amp;lt;/&amp;gt;
-                &amp;lt;rResponses RESPONSETYPE=&amp;quot;recent&amp;quot;&amp;gt; In recent years, Hannah More has received much
-                blame for her treatment of Yearsley.&amp;lt;/&amp;gt;</codeblock>
+            <u>Examples</u>
+            <codeblock>&lt;RRESPONSES RESPONSETYPE=&quot;re-evaluation&quot; FORMALITY=&quot;formal&quot;&gt;An attack on Joanna Baillie&apos;s work in 1803 by Francis Jeffrey signalled the decline
+of her reputation.&lt;/RRESPONSES&gt;</codeblock><codeblock>&lt;RRESPONSES RESPONSETYPE=&quot;initial&quot;&gt;Elizabeth Cellier&apos;s book provoked about twenty replies at first, attacking and defending.&lt;/RRESPONSES&gt;</codeblock><codeblock>&lt;RRESPONSES RESPONSETYPE=&quot;recent&quot;&gt; In recent years, Hannah More has received much blame for her treatment of Yearsley.&lt;/RRESPONSES&gt; </codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>Use one value of ResponseType to indicate whether a response to a work occurred at or
-                close to the time of its publication ("initial") or recently ("recent").
-                "Re-evaluation" is used for a time which is neither initial nor recent, or also when
-                there has been (at any time) a significant re-evaluation of a woman writer's work
-                and its worth. Obviously judgement is involved in deciding, for instance, how recent
-                is recent.</p>
+            <p>Use one value of <term keyref="response-type">RESPONSETYPE</term> to indicate whether
+                a response to a work occurred at or close to the time of its publication
+                    (<userinput>initial</userinput>) or recently (<userinput>recent</userinput>).
+                    <userinput>Re-evaluation</userinput> is used for a time which is neither initial
+                nor recent, or also when there has been (at any time) a significant re-evaluation of
+                a woman writer's work and its worth. Obviously judgement is involved in deciding,
+                for instance, how recent is recent.</p>
         </div>
     </glossdef>
 </glossentry>
