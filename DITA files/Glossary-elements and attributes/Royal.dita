@@ -4,22 +4,21 @@
 <glossentry id="royal">
     <glossterm>ROYAL</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>Royal is a sub-tag in <menucascade>
-                    <uicontrol><term>BIOGRAPHY </term></uicontrol>
-                    <uicontrol><term>PERSONNAME</term></uicontrol>
-                </menucascade>. It refers to names, such as "Queen" or "Princess", which a person
-                has because of their royal status. This element does not capture information about
-                noble titles in general (cf. titled) but includes specifically royal names, e.g.
-                Queen Elizabeth I. It has optional attributes of reg and
-            wroteOrPublishedAs.</p></div>
+        <div><u>Definition, Placement, Relationships</u><p>ROYAL is a sub-tag in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY </term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It refers to names, such as <q>Queen</q> or <q>Princess</q>, which a
+                person has because of their royal status. This element does not capture information
+                about noble titles in general (cf. titled) but includes specifically royal names,
+                e.g. Queen Elizabeth I. It has optional attributes of <term keyref="reg">REG</term>
+                and <term keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock>
-              This has been used inconsistently: “Elizabeth I”, but “Queen Victoria”.</codeblock>
+            <codeblock> This has been used inconsistently: <q>Elizabeth I</q>, but <q>Queen Victoria</q>.</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>See personName for general name practices.</p>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices.</p>
         </div>
     </glossdef>
 </glossentry>
