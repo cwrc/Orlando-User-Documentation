@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="title-page-title">
+    <glossterm>TITLEPAGETITLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p> A field available within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                </menucascade>. TITLEPAGETITLE is used in conjunction with the Standard title. It
+                captures the full title of a work as it appears in your bibliographic source, often
+                including a subtitle.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>We do not need to record all title-page titles without exception; we want to record
+                the long titles of important texts, or long titles which have interesting content.
+                Seventeenth-century titles can be as long as an exhaustive plot summary: it is ok to
+                end with an ellipsis. The Title Page Title of <i>Millenium Hall</i> is <i>A
+                    Description of Millenium Hall and the Country Adjacent Together with the
+                    Characters of the Inhabitants and Such Historical Anecdotes and Reflections as
+                    May Excite in the Reader Proper Sentiments of Humanity, and Lead the Mind to the
+                    Love of Virtue</i>. Because this is a key text in the history of women's
+                writing, we record the entire title-page title. </p>
+            <p><b>Question:</b> Should we record title page titles which indicate the genre of a work, such
+                as A Play, A Poem, A Novel? </p><p><b>Answer:</b> In general, no. This is not a hard-and-fast rule, however, and if you
+                think that this kind of a subtitle is useful for disambiguation, or conveys
+                important information, or is interesting in some way, then you can record it. For
+                example, the title-page title of <i>Jane Eyre</i> is <i>Jane Eyre: An
+                    Autobiography</i>, an interesting assertion about the genre of the novel. </p>
+            <p><b>Question:</b> Should we record the entire title page title of early works, or can
+                we abbreviate? </p><p><b>Answer:</b> Please feel free to abbreviate very lengthy title-page titles by means
+                of ellipsis. There are no rules for this; it will be up to you to decide how much of
+                the title you will transcribe. For instance, <i>An Essay on the Art of Ingeniously
+                    Tormenting, With Proper Rules for the Exercise of That Pleasant Art</i> ends
+                here in the modern edition but continues in the original; <i>An Essay to Revive the
+                    Ancient Education of Gentlewomen, In Religion, Manners, Arts and Tongues</i>
+                ends after nine words in a modern ed., but continues even further in the original.
+                In each of these cases Orlando gives more than the recent editors, capturing
+                interesting evidence of the authors’ purposes..</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-type-of-press">
+    <glossterm>PTYPEOFPRESS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>If locationtion of element attribute is
+                expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It encloses a word or brief statement, records certain specifics
+                about the kind of printing operation involved. It has no mandatory or optional
+                sub-elements or attributes. Often used in conjunction with <term
+                    keyref="p-mode-of-publication">PMODEOFPUBLICATION</term>, it is mostly used for
+                small, unusual, or experimental publishing ventures. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;PTYPEOFPRESS&gt;trade publisher&lt;/PTYPEOFPRESS&gt;
+                &lt;PTYPEOFPRESS&gt;mercury&lt;/PTYPEOFPRESS&gt; </codeblock>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-tone-style">
+    <glossterm>TTONESTYLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element can be found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="t-textual-features">TTEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It contains a phrase or full sentence or more. It applies to the
+                    <q>characteristic manner of expression; how a particular writer says things; the
+                    reflection of a writer's attitude, manner, mood, and moral outlook</q> and the
+                means of expressing that manner or mood (Penguin Dictionary of Literary Terms.) This
+                tag encloses a statement of a far more undirected and general character than the
+                contents of the <term keyref="t-technqiues">TTECHNIQUES</term> tag. It has no
+                mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TTONESTYLE&gt; Margaret Catchpole writes vividly (with sometimes
+                impenetrable spelling) and exaggerates the dangers of the new
+                country.&lt;/TTONESTYLE&gt; &lt;TTONESTYLE&gt;The style of the letters said to be
+                written by Lady Mary Wortley Montagu and Hervey is rousing but controlled, with
+                greater economy and forcefulness than Hervey achieves when writing
+                alone.&lt;/TTONESTYLE&gt; &lt;TTONESTYLE&gt; Eleanor Porden&apos;s poem is patriotic
+                and somewhat martial in tone.&lt;/TTONESTYLE&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

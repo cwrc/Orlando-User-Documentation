@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="title-type">
+    <glossterm>TITLETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>An attribute of <term keyref="title"
+                    >TITLE</term> (mandatory), TITLETYPE indicates whether a title is a part of
+                another work, an entire work, a journal, or a series. Use it throughout the
+                textbase. It has the following values: <term keyref="analytic">ANALYTIC</term>
+                (article, poem, or other item published as part of a larger item); <term
+                    keyref="monographic">MONOGRAPHIC</term> (book or collection, including both
+                single volumes in a multi-volume work or the whole set of volumes); <term
+                    keyref="journal">JOURNAL</term> (including magazines and newspapers, the entire
+                publication; pieces in journal are <term keyref="analytic">ANALYTIC</term>); <term
+                    keyref="series">SERIES</term>; <term keyref="unpublished">UNPUBLISHED</term>,
+                including manuscripts and conference papers. (Dissertations have generally been
+                classed as <term keyref="monographic">MONOGRAPHIC</term>.)</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;Timetables of
+                History&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;Encyclopedia
+                Britannica&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;journal&quot;&gt;Illustrated
+                London News&lt;/TITLE&gt; &lt;TITLE TITLETYPE=&quot;journal&quot;&gt;New York
+                Tribune&lt;/TITLE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Every title that is tagged must be labelled with the TITLETYPE attribute for two
+                purposes: searching and display. (A title with no attribute value will not be fitted
+                with italics or quotes.)</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What exactly is a series? </p><p><b>Answer:</b> A group of independent monographs linked
+                together by a shared series title. That is, the publisher has supplied a collective
+                title apart from the individual title of each item. The individual items may or may
+                not be numbered. Examples are Virago Modern Classics, Mothers of the Novel
+                (published by Pandora), Olympia Press Traveller's Companion Series, Contemporary
+                Authors, The Dictionary of Literary Biography, British Children's Writers,
+                1800-1880. If you are not sure whether or not something is a series title, check its
+                full record in a library catalogue.</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="titled">
+    <glossterm>TITLED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This subtag is located in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It captures titles of nobility, sometimes more than one held
+                successively, by a woman in right of her husband or less commonly of herself. It has
+                attributes for <term keyref="REG">REG</term> (use for variant spelling) and <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term> (use Yes or leave
+                blank).Ranks are duchess, marchioness, countess, viscountess, Lady, and Dame.
+                    (<q>Lady</q> is confusing; it’s the correct title of a baron’s or baronet’s or
+                knight’s wife, but also a kind of abbreviation or familiar form of everything else
+                below a duchess). Many sources confuse TITLED with <term keyref="styled"
+                    >STYLED</term>, but even in this matter we can aim at accuracy. Titled within
+                    <term keyref="person-name">PERSONNAME</term> should record titles borne by a
+                writer, even if we choose her first and last names as the Standard. When in doubt
+                ask advice.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TITLED&gt;Lady Barnard&lt;/TITLED&gt; &lt;TITLED&gt;Baroness of
+                Cramond&lt;SCHOLARNOTE&gt;&lt;P&gt; EC was given a title nominally in her own right
+                in 1628 because her husband was barred from the award, being a
+                judge.&lt;/SCHOLARNOTE&gt;&lt;/P&gt;&lt;/TITLED&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="styled">STYLED</term> for difference between peers and peeresses
+                (Titled) and their children (Styled). Include complete titled name in element and
+                not just name of title: <q>Baroness Abergavenny</q>, not just <q>Baroness.</q>
+                <q>Dame Mary Bloggs</q> has been granted her title as an honour; <q>Mary, Lady
+                    Bloggs</q> has married a man with a title. </p>
+        </div>
+    </glossdef>
+</glossentry>

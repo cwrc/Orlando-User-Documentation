@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="topic">
+    <glossterm>TOPIC</glossterm>
+    <glossdef>
+        <div><p>If locationtion of element attribute is expressed, tagg it as An element used in
+                writing and encoding Orlando’s early stages but never implemented. It was to enclose
+                topics from a pre-determined list of major historical topics including some of the
+                scope and complexity of <q>witchcraft</q> or the <q>second world war</q>. For each of these
+                the briefest possible account (a single paragraph) would be written, outlining key
+                facts and dates. A links screen would point users towards this central description,
+                as well as to all the uses of the tag elsewhere. It would be a major task to
+                implement this tag, which has fallen out of use, though the results could be
+                interesting and valuable.</p></div>
+    </glossdef>
+</glossentry>
