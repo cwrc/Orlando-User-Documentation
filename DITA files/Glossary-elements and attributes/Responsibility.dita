@@ -10,7 +10,7 @@
                     <uicontrol><term>REVISIONDESC</term></uicontrol>
                 </menucascade>, filled in in the course of checking a document back into the system
                 after working on it. It has subtags of <term keyref="date">DATE</term> (the date of
-                checkingin) and <term keyref="item">ITEM</term> (which holds an additional
+                checking in) and <term keyref="item">ITEM</term> (which holds an additional
                 description, if needed, of work done) and attributes <term keyref="resp">RESP</term>
                 (which holds the initials of the team member concerned), <term keyref="work-status"
                     >WORKSTATUS</term> and <term keyref="work-value">WORKVALUE</term>. <term
