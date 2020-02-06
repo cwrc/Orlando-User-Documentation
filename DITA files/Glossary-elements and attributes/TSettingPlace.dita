@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="untitled2">
+<glossentry id="t-setting-place">
     <glossterm>TSETTINGPLACE</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>tSettingPlace, belonging conceptually to <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>TEXTUALFEATURES</term></uicontrol>
+        <div><u>Definition, Placement, Relationships</u><p>TSETTINGPLACE, belonging conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textualfeatures">TEXTUALFEATURES</term></uicontrol>
                 </menucascade>, addresses the real or imaginary place in which a fictional (not a
-                factual) text is set. Encloses statement, with a tagged Place (or several) included
-                if possible. N.b. be as specific as you can: “in the Auvergne” is more useful than
-                “in France”. This element has no mandatory or optional sub-elements but has two
-                optional attributes, <uicontrol><term>SETTINGCLASS</term></uicontrol> and
-                        <uicontrol><term>SETTINGPLACETYPE</term></uicontrol>. SettingClass has
-                values of "upperClass," "workingClass," "middleClass," and "wideRange." (recognizing
-                the separate existence of, e.g., both well-heeled London and squalid underbelly
-                London). The attribute settingPlaceType has the values "fictive," "real,"
-                "identifiable." tSettingPlace can be used twice of the same text, with different
-                SettingPlaceType attribute values, in the case of e.g. an imaginary house set at an
-                actual address.</p></div>
+                factual) text is set. Encloses statement, with a tagged <term keyref="place"
+                    >PLACE</term> (or several) included if possible. N.b. be as specific as you can:
+                    <q>in the Auvergne</q> is more useful than <q>in France</q>. This element has no
+                mandatory or optional sub-elements but has two optional attributes, <term
+                    keyref="setting-class">SETTINGCLASS</term> and <term keyref="setting-place-type"
+                    >SETTINGPLACETYPE</term>. SettingClass has values of
+                    <userinput>upperClass</userinput>, <userinput>workingClass</userinput>,
+                    <userinput>middleClass</userinput>, and <userinput>wideRange</userinput>
+                (recognizing the separate existence of, e.g., both well-heeled London and squalid
+                underbelly London). The attribute <term keyref="t-setting-place-type"
+                    >TSETTINGPLACETYPE</term> has the values <userinput>fictive</userinput>,
+                    <userinput>real</userinput>, and <userinput>identifiable</userinput>. <term
+                    keyref="t-setting-place">TSETTINGPLACE</term> can be used twice of the same
+                text, with different SettingPlaceType attribute values, in the case of e.g. an
+                imaginary house set at an actual address.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> &amp;lt;tSettingPlace SETTINGPLACETYPE=&quot;real&quot;&gt; The characters
-                enjoy an all-expense paid vacation
-                to&amp;lt;place&gt;&amp;lt;geog&gt;Thailand&amp;lt;/&gt;&amp;lt;/&gt;&amp;lt;/&gt;
+            <codeblock>&lt;TSETTINGPLACE SETTINGPLACETYPE=&quot;real&quot;&gt; The characters enjoy
+                an all-expense paid vacation to
+                &lt;PLACE&gt;&lt;GEOG&gt;Thailand&lt;/GEOG&gt;&lt;/&gt;&lt;/PLACE&gt;&lt;/TSETTINGPLACE.
             </codeblock>
         </div>
         <div>
