@@ -4,16 +4,15 @@
 <glossentry id="settlement">
     <glossterm>SETTLEMENT</glossterm>
     <glossdef>
-<<<<<<< HEAD
         <div><u>Definition, Placement, Relationships</u><p>Settlement, a sub-element of <term
-                    keyref="">PLACE</term> available everywhere in Orlando, captures the names of
-                cities, towns, villages, hamlets and areas within larger settlements (for example,
-                districts of London). It encloses just the name of the place, without punctuation.
-                Settlement has optional attributes for Current and Reg. For districts of London or
-                other large cities it is mandatory to use Current attribute for city name and Reg
-                for district name. We need to provide for search results that will deliver *either*
-                London *or* Chelsea, *either* New York *or* Manhattan, and using both attributes is
-                so far the only way to achieve this.</p></div>
+                    keyref="place">PLACE</term> available everywhere in Orlando, captures the names
+                of cities, towns, villages, hamlets and areas within larger settlements (for
+                example, districts of London). It encloses just the name of the place, without
+                punctuation. Settlement has optional attributes for Current and Reg. For districts
+                of London or other large cities it is mandatory to use Current attribute for city
+                name and Reg for district name. We need to provide for search results that will
+                deliver *either* London *or* Chelsea, *either* New York *or* Manhattan, and using
+                both attributes is so far the only way to achieve this.</p></div>
         <div>
             <u>Examples</u>
             <codeblock>&lt;PLACE&gt;&lt;SETTLEMENT REG=&quot;Chelsea&quot;&gt;&lt;/SETTLEMENT&gt;
@@ -23,35 +22,10 @@
                 Museum&lt;/PLACENAME&gt;&lt;SETTLEMENT
                 REG=&quot;London&quot;&gt;&lt;/SETTLEMENT&gt;&lt;REGION&gt;=&quot;Middlesex&quot;&lt;/REGION&gt;&lt;GEOG
                 REG=&quot;England”&gt;&lt;/GEOG&gt;/PLACE&gt;</codeblock>
-=======
-        <div><u>Definition, Placement, Relationships</u><p>Settlement, a sub-element of
-                        <uicontrol><term keyref="">PLACE</term></uicontrol> available everywhere in Orlando
-                entries and free-standing events), captures the names of cities, towns, villages,
-                hamlets and areas within larger settlements (for example, districts of London). It
-                encloses just the name of the place, without punctuation. Settlement has optional
-                attributes for <term keyref="">CURRENT</term> and <term keyref="">REG</term>. For districts of London or other large cities it is
-                mandatory to use Current attribute for city name and Reg for district name. We need
-                to provide for search results that will deliver *either* London *or* Chelsea,
-                *either* New York *or* Manhattan, and using both attributes is so far the only way
-                to achieve this.</p></div>
-        <div>
-            <u>Example</u>
-            <codeblock><PLACE>
-                <SETTLEMENT REG="Chelsea" CURRENT="London">Chelsea</SETTLEMENT>
-                <REGION REG="Middlesex"/>
-                <GEOG REG="England"/>
-            </PLACE></codeblock>
-            <codeblock>
-                <PLACE><SETTLEMENT CURRENT="St Petersburg” REG="Leningrad">Leningrad</>
-                    <GEOG REG=Russia"/></PLACE>
-            </codeblock>
-            <codeblock><PLACE><PLACENAME>British Museum</PLACENAME><SETTLEMENT REG="London"/><REGION REG="Middlesex"/><GEOG REG="England"/></PLACE>
-            </codeblock>
->>>>>>> 23883552f5a0414f294d164e167fda87e3cc7f17
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>See <term keyref="">PLACE</term> for general practice issues. More than one settlement sub-element is not
+            <p>See place for general practice issues. More than one settlement sub-element is not
                 allowed within a single Place element: use attributes to provide two names
                     (<codeph>&lt;PLACE&gt;&lt;SETTLEMENT CURRENT=&quot;New York City&quot;
                     REG=&quot;East Village&quot;&gt;East Village&lt;/SETTLEMENT&gt;&lt;REGION
