@@ -4,19 +4,17 @@
 <glossentry id="religious">
     <glossterm>RELIGIOUS</glossterm>
     <glossdef>
-        <div><p>This optional attribute attached to <term keyref="">SCHOOL</term> (within <menucascade>
-                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+        <div><p>This optional attribute attached to <term keyref="school">SCHOOL</term> (within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
                 </menucascade>) registers whether or not the school attended was a religious school
                 and tracks the changing historical significance of organized religion to women's
                 educationement, relationships. It has a value of
                 <userinput>RELIGIOUSYES</userinput>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> &lt;P&gt;CB was educated first at &lt;SCHOOL
-                RELIGIOUS=&quot;RELIGIOUSYES&quot;&gt;Rathmore Convent&lt;/SCHOOL&gt;, Dunmurry,
-                then at &lt;SCHOOL RELIGIOUS=&quot;RELIGIOUSYES&quot;&gt;St Mary&apos;s
-                Convent&lt;/SCHOOL&gt;, Ascot.&lt;/P&gt;</codeblock>
+            <codeblock>&lt;P&gt;CB was educated first at &lt;SCHOOL RELIGIOUS=&quot;RELIGIOUSYES&quot;&gt;Rathmore Convent&lt;/SCHOOL&gt;, Dunmurry, then at &lt;SCHOOL RELIGIOUS=&quot;RELIGIOUSYES&quot;&gt;St Mary&apos;s
+Convent&lt;/SCHOOL&gt;, Ascot.&lt;/P&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
@@ -24,8 +22,8 @@
         </div><div>
             <u>Troubleshooting</u>
             <p><b>Question: </b>If all I know is that she attended a convent school, how do I tag?
-            </p><p><b>Answer: </b>Place the <term keyref="">SCHOOL</term> tag on the word “convent” and use the
-                attributes whose value you can deduce, including <term>RELIGIOUS</term>. </p>
+            </p><p><b>Answer: </b>Place the <term keyref="school">SCHOOL</term> tag on the word <q>convent</q> and use the
+                attributes whose value you can deduce, including <term>RELIGIOUS</term>.</p>
         </div>
     </glossdef>
 </glossentry>

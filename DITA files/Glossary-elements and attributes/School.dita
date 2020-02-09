@@ -6,31 +6,32 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This content sub-element, available only
                 within <menucascade>
-                    <uicontrol><term>BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term>EDUCATION</term></uicontrol>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
                 </menucascade>, can record either the specific name or a description of an
-                educational institution. Its attributes are Reg, Institution (capturing type of
-                school). InstitutionLevel (from primary to post-secondary), Religious (to identify
-                schools teaching a particular faith), and StudentBody (with attributes Co-Ed and
-                SingleSex). Encloses name of institution (Ilminster Grammar School; St Anne’s
-                College,, Oxford University) or description if no name is available (a convent
-                school, a short-lived typing school). Should be used in combination with Orgname for
-                institutions prominent enough to be potentially named elsewhere in the system, but
-                not for those unlikely ever to be mentioned again (Miss Brodie’s Academy for Young
-                Ladies)..</p><p dir="ltr">Attribute Reg on School allows you to express the name of
-                the school in a standard form if you have been unable to do in your prose, and is
-                useful for long-established schools that have changed their names. Colleges at
-                collegiate universities take college name, double comma, university name (Trinity
-                College,, University of Toronto). A few ancient universities named for places take
-                the form without “of”: Oxford University.</p></div>
+                educational institution. Its attributes are <term keyref="reg">REG</term>, <term
+                    keyref="institution">INSTITUTION</term> (capturing type of school), <term
+                    keyref="institution-level">INSTITUTIONLEVEL</term> (from primary to
+                post-secondary), <term keyref="religious">RELIGIOUS</term> (to identify schools
+                teaching a particular faith), and <term keyref="student-body">STUDENTBODY</term>
+                (with attributes <term keyref="co-ed">CO-ED</term> and <term keyref="single-sex"
+                    >SINGLESEX</term>). Encloses name of institution (Ilminster Grammar School; St
+                Anne’s College,, Oxford University) or description if no name is available (a
+                convent school, a short-lived typing school). Should be used in combination with
+                    <term keyref="org-name">ORGNAME</term> for institutions prominent enough to be
+                potentially named elsewhere in the system, but not for those unlikely ever to be
+                mentioned again (Miss Brodie’s Academy for Young Ladies).</p><p dir="ltr">Attribute
+                    <term keyref="reg">REG</term> on <term keyref="school">SCHOOL</term> allows you
+                to express the name of the school in a standard form if you have been unable to do
+                in your prose, and is useful for long-established schools that have changed their
+                names. Colleges at collegiate universities take college name, double comma,
+                university name (Trinity College,, University of Toronto). A few ancient
+                universities named for places take the form without <q>of</q>: Oxford
+                University.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> VW received her BA from &amp;lt;school
-                INSTITUTIONLEVEL="post-secondary">Cambridge University.&amp;lt;/> WP's early
-                education included governesses and &amp;lt;school
-                INSTITUTION="daySchool">dayschools&amp;lt;/>. She also attended
-                &amp;lt;school>Wycombe Abbey School&amp;lt;/> and &amp;lt;school>St Leonard's
-                School&amp;lt;/>.&amp;lt;/>&amp;lt;/>&amp;lt;/> &amp;lt;/></codeblock>
+            <codeblock>VW received her BA from <SCHOOL INSTITUTIONLEVEL="post-secondary">Cambridge University</SCHOOL>. WP's early education included governesses and <SCHOOL INSTITUTION="day-school">dayschools</SCHOOL>. She also attended <SCHOOL>Wycombe Abbey School</SCHOOL> 
+and <SCHOOL>St Leonard's School</SCHOOL>.</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
@@ -39,14 +40,16 @@
                 well-known girls’ schools. The Orlando textbase supplies details on the first, but
                 reveals that the second was a name borne by several schools, which therefore needs
                 its location given if possible as well as attributes supplied.</p><p dir="ltr">All
-                identifiable insitutions ALSO require an "orgName" tag. You will not need to use
-                "orgName" when referring to a dayschool with no known proper name. All universities
-                should be given an attribute for InstitutionLevel with post-secondary marked off. If
-                all you know is what kind of school she attended (for example, "boarding school")
-                but not the name of the specific institution, include it in a school tag with the
-                appropriate attributes marked. Try to ensure all appropriate attributes are filled
-                in, using the tagger’s best judgement if evidence is thin. (n.b. Oxbridge colleges
-                that had years as SingleSex (male) are now CoEd.)</p>
+                identifiable insitutions ALSO require an <term keyref="org-name">ORGNAME</term> tag.
+                You will not need to use <term keyref="org-name">ORGNAME</term> when referring to a
+                dayschool with no known proper name. All universities should be given an attribute
+                for <term keyref="institution-level">INSTITUTIONLEVEL</term> with post-secondary
+                marked off. If all you know is what kind of school she attended (for example,
+                    <q>boarding school</q>) but not the name of the specific institution, include it
+                in a school tag with the appropriate attributes marked. Try to ensure all
+                appropriate attributes are filled in, using the tagger’s best judgement if evidence
+                is thin. (n.b. Oxbridge colleges that had years as <term keyref="single-sex"
+                    >SINGLESEX</term>) (male) are now <term keyref="co-ed">CO-ED</term>.)</p>
         </div>
     </glossdef>
 </glossentry>
