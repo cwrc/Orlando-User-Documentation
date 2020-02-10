@@ -7,15 +7,15 @@
         <div><u>Definition, Placement, Relationships</u><p>An attribute of <term keyref="title"
                     >TITLE</term> (mandatory), TITLETYPE indicates whether a title is a part of
                 another work, an entire work, a journal, or a series. Use it throughout the
-                textbase. It has the following values: <term keyref="analytic">ANALYTIC</term>
-                (article, poem, or other item published as part of a larger item); <term
-                    keyref="monographic">MONOGRAPHIC</term> (book or collection, including both
-                single volumes in a multi-volume work or the whole set of volumes); <term
-                    keyref="journal">JOURNAL</term> (including magazines and newspapers, the entire
-                publication; pieces in journal are <term keyref="analytic">ANALYTIC</term>); <term
-                    keyref="series">SERIES</term>; <term keyref="unpublished">UNPUBLISHED</term>,
+                textbase. It has the following values: <userinput>analytic</userinput> (article,
+                poem, or other item published as part of a larger item);
+                    <userinput>monographic</userinput> (book or collection, including both single
+                volumes in a multi-volume work or the whole set of volumes);
+                    <userinput>journal</userinput> (including magazines and newspapers, the entire
+                publication; pieces in journal are <userinput>analytic</userinput>);
+                    <userinput>series</userinput>; <userinput>unpublished</userinput>,
                 including manuscripts and conference papers. (Dissertations have generally been
-                classed as <term keyref="monographic">MONOGRAPHIC</term>.)</p></div>
+                classed as <userinput>monographic</userinput>.)</p></div>
         <div>
             <u>Example</u>
             <codeblock>&lt;TITLE TITLETYPE=&quot;monographic&quot;&gt;Timetables of
@@ -32,14 +32,14 @@
         </div>
         <div>
             <u>Troubleshooting</u>
-            <p><b>Question:</b> What exactly is a series? </p><p><b>Answer:</b> A group of independent monographs linked
-                together by a shared series title. That is, the publisher has supplied a collective
-                title apart from the individual title of each item. The individual items may or may
-                not be numbered. Examples are Virago Modern Classics, Mothers of the Novel
-                (published by Pandora), Olympia Press Traveller's Companion Series, Contemporary
-                Authors, The Dictionary of Literary Biography, British Children's Writers,
-                1800-1880. If you are not sure whether or not something is a series title, check its
-                full record in a library catalogue.</p>
+            <p><b>Question:</b> What exactly is a series? </p><p><b>Answer:</b> A group of
+                independent monographs linked together by a shared series title. That is, the
+                publisher has supplied a collective title apart from the individual title of each
+                item. The individual items may or may not be numbered. Examples are Virago Modern
+                Classics, Mothers of the Novel (published by Pandora), Olympia Press Traveller's
+                Companion Series, Contemporary Authors, The Dictionary of Literary Biography,
+                British Children's Writers, 1800-1880. If you are not sure whether or not something
+                is a series title, check its full record in a library catalogue.</p>
         </div>
     </glossdef>
 </glossentry>

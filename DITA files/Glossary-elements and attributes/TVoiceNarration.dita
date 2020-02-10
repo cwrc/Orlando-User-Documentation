@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-voice-narration">
+    <glossterm>TVOICENARRATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>TVOICENARRATION is available within <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>.It encloses a statement or discussion, and has no mandatory or
+                optional sub-elements or attributes. It addresses the question of how a story is
+                told: who speaks (first-person, multiple voices, omniscient or unreliable narrator,
+                interpolations, use of fictional documents, etc), and sometimes the character or
+                situation of the narrator(s).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TVOICENARRATION&gt;Because the novel is overpopulated with characters,
+                the narrator intrudes sometimes inelegantly in order to keep the plot on
+                track.&lt;/TVOICENARRATION&gt; &lt;TVOICENARRATION&gt;As a matter of strategy, Anne
+                Askew assumed a stance of humility, but stated her beliefs boldly and
+                clearly.&lt;/TVOICENARRATION&gt; &lt;TVOICENARRATION&gt;Joanna Baillie writes in
+                this novel as an unlearned person to every unlearned reader of common
+                understanding.&lt;/TVOICENARRATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

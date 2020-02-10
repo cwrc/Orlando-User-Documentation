@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="wrote-or-published-as">
+    <glossterm>WROTEORPUBLISHEDAS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute can be found in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">PERSONNAME</term></uicontrol>
+                </menucascade>. It has sub-elements <term keyref="birth-name">BIRTHNAME</term>,
+                    <term keyref="professional-title">PROFESSIONALTITLE</term>, <term
+                    keyref="indexed">INDEXED</term>, <term keyref="married">MARRIED</term>, <term
+                    keyref="nickname">NICKNAME</term>, <term keyref="pseudonym">PSEUDONYM</term>,
+                    <term keyref="religious-name">RELIGIOUSNAME</term>, <term keyref="royal"
+                    >ROYAL</term>, <term keyref="self-constructed">SELFCONSTRUCTED</term>, <term
+                    keyref="styled">STYLED</term>, <term keyref="titled">TITLED</term>}. (Note:
+                attribute WROTEORPUBLISHEDAS on <term keyref="pseudonym">PSEUDONYM</term> should
+                always be Yes.) This attribute will allow us to track all the different names women
+                writers published under: authors have sometimes used a nickname or married name on
+                title-pages, though most published under their standard name or pseudonym(s). This
+                attribute works in conjunction with the authorname in the bibliography to link the
+                author’s standard name with the name a text was published under. It has an attribute
+                value of <q>WrotePublishedAsYes</q> to be selected when the name entered is the name
+                used for publication.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;MARRIED
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Ferguson&lt;/MARRIED&gt;&lt;DATAITEM&gt;.
+                &lt;PSEUDONYM WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;&gt;Eunice
+                Buckley&lt;/PSEUDONYM&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use this attribute. It is important, and needs to be used systematically. Ignore if
+                the person did not publish under the name captured. This attribute is attached to
+                    <term keyref="birth-name">BIRTHNAME</term>, not its sub-tags <term
+                    keyref="surname">SURNAME</term> and <term keyref="given">GIVEN</term>. If she
+                used her surname but not all her given names when she published, still include
+                attribute. If she used given names but not patronym, do not use the attribute.
+                    <codeph> E.g. &lt;BIRTHNAME
+                    WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;&gt;&lt;GIVEN&gt;Mary&lt;/GIVEN&gt;&lt;GIVEN&gt;Kathleen&lt;/GIVEN&gt;&lt;GIVEN&gt;McCrory&lt;/GIVEN&gt;&lt;SURNAME&gt;Ackland&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;
+                </codeph></p>
+        </div>
+    </glossdef>
+</glossentry>
