@@ -4,25 +4,22 @@
 <glossentry id="self-constructed">
     <glossterm>SELFCONSTRUCTED</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>SelfConstructed is a sub-element within <menucascade>
-                    <uicontrol><term>BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term>PERSONNAME</term></uicontrol>
+        <div><u>Definition, Placement, Relationships</u><p>SELFCONSTRUCTED is a sub-element within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
                 </menucascade> to capture names which a person chooses to uss in her everyday life,
-                not only as her pseudonym. As the element name suggests, these are names she applies
-                to herself and, for example, writes on her checks as well as signs her books with.
-                Whereas a Pseudonym applies to a particular text or group of texts, SelfConstructed
-                signifies a name a writer elected to live by, like Maya Angelou or Hilary Mantel. It
-                has optional attributes for nameSignifier, reg, and wroteOrPublishedAs.</p></div>
+                not only as her <term keyref="pseudonym">PSEUDONYM</term>. As the element name
+                suggests, these are names she applies to herself and, for example, writes on her
+                cheques as well as signs her books with. Whereas a <term keyref="pseudonym"
+                    >PSEUDONYM</term> applies to a particular text or group of texts, <term
+                    keyref="self-constructed">SELFCONSTRUCTED</term> signifies a name a writer
+                elected to live by, like Maya Angelou or Hilary Mantel. It has optional attributes
+                for <term keyref="name-signifier">NAMESIGNIFIER</term>, <term keyref="reg"
+                    >REG</term>, and <term keyref="wrote-or-published-as"
+                >WROTEORPUBLISHEDAS</term>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> &amp;lt;selfConstructed
-                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Loy, Mina&amp;lt;/&gt;
-                &amp;lt;selfConstructed WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;
-                &gt;Esther&amp;lt;\&gt;&amp;lt;scholarNote&gt;&amp;lt;p&gt;HB published as Hester
-                initially but later used Esther, possibly to align herself with the Old Testament
-                form of the name. &amp;lt;\&gt;&amp;lt;\&gt;
-                &amp;lt;selfConstructed&gt;Brett&amp;lt;/&gt;&amp;lt;shortprose&gt;&amp;lt;P&gt;Dorothy
-                Brett chose to call herself by one name only.&amp;lt;/&gt;&amp;lt;/&gt; </codeblock>
+            <codeblock><SELFCONSTRUCTED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">Loy, Mina</SELFCONSTRUCTED></codeblock><codeblock><SELFCONSTRUCTED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">Esther</SELFCONSTRUCTED><SCHOLARNOTE> HB published as Hester initially but later used Esther, possibly to align herself with the Old Testament form of the name.</SCHOLARNOTE>.</codeblock><codeblock><SELFCONSTRUCTED>Brett</SELFCONSTRUCTED><SHORTPROSE><P>Dorothy Brett chose to call herself by one name only.</P></SHORTPROSE>.</codeblock>
         </div>
     </glossdef>
 </glossentry>
