@@ -4,30 +4,37 @@
 <glossentry id="textual-features">
     <glossterm>TEXTUALFEATURES</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>Found in <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                </menucascade>, this is one of three big-bucket tags on a par with <term keyref=""
-                    >PRODUCTION</term> and <term keyref="">RECEPTION</term>. Most of the same
-                comments apply as on those tags, though TEXTUALFEATURES almost never includes
-                Chronstructs. This element addresses content and features of critical interest in
-                texts and provides space for textual analysis/close readings as perceived by project
-                members. No text is allowed directly within the TEXTUALFEATURES element; another
+        <div><u>Definition, Placement, Relationships</u><p>Found in <term keyref="writing"
+                    >WRITING</term>, this is one of three big-bucket tags on a par with <term
+                    keyref="production">PRODUCTION</term> and <term keyref="reception"
+                    >RECEPTION</term>. Most of the same comments apply as on those tags, though
+                    <term keyref="textual-features">TEXTUALFEATURES</term> almost never includes
+                    <term keyref="chron-struct">CHRONSTRUCT</term>s. This element addresses content
+                and features of critical interest in texts and provides space for textual
+                analysis/close readings as perceived by project members. No text is allowed directly
+                within the <term keyref="textual-features">TEXTUALFEATURES</term> element; another
                 element must be opened first. Several optional elements are available here, marked
                 with an initial “t”; in addition, the elements from the other categories (<term
-                    keyref="">RECEPTION</term> and <term keyref="">PRODUCTION</term>) can be used
-                here when necessary. The optional elements most at home in TEXTUALFEATURES include:
-                    <term keyref="">TCHARACTERIZATION</term>, <term keyref=""
-                    >TCHARACTERTYPEROLE</term>, <term keyref="">TCHARACTERNAME</term>, <term
-                    keyref="">TGENRE</term>, TEGENREISSUE, TINTERTEXTUALITY, TMOTIF, TPLOT, <term
-                    keyref="">TSETTINGDATE</term>, <term keyref="">TSETTINGPLACE</term>, <term
-                    keyref="">TTECHNIQUES</term>, <term keyref="">TTHEMETOPIC</term>, <term
-                    keyref="">TTONESTYLE</term>, and <term keyref="">TVOICENARRATION</term>.
+                    keyref="reception">RECEPTION</term> and <term keyref="production"
+                    >PRODUCTION</term>) can be used here when necessary. The optional elements most
+                at home in <term keyref="textual-features">TEXTUALFEATURES</term> include: <term
+                    keyref="t-characterization">TCHARACTERIZATION</term>, <term
+                    keyref="t-character-type-role">TCHARACTERTYPEROLE</term>, <term
+                    keyref="t-character-name">TCHARACTERNAME</term>, <term keyref="t-genre"
+                    >TGENRE</term>, <term keyref="t-genre-issue">TGENREISSUE</term>, <term
+                    keyref="t-intertextuality">TINTERTEXTUALITY</term>, <term keyref="t-motif"
+                    >TMOTIF</term>, <term keyref="t-plot">TPLOT</term>, <term
+                    keyref="t-setting-date">TSETTINGDATE</term>, <term keyref="t-setting-place"
+                    >TSETTINGPLACE</term>, <term keyref="t-techniques">TTECHNIQUES</term>, <term
+                    keyref="t-theme-topic">TTHEMETOPIC</term>, <term keyref="t-tone-style"
+                    >TTONESTYLE</term>, and <term keyref="t-voice-narration">TVOICENARRATION</term>.
             </p></div>
         <div>
             <u>Practice Issues</u>
             <p>Stages in the work’s creation, and responses to it, should be recorded in <term
-                    keyref="">PRODUCTION</term> and <term keyref="">RECEPTION</term>, unless the
-                flow of the prose makes it more convenient to treat them (briefly) here.</p>
+                    keyref="production">PRODUCTION</term> and <term keyref="reception"
+                    >RECEPTION</term>, unless the flow of the prose makes it more convenient to
+                treat them (briefly) here.</p>
         </div>
     </glossdef>
 </glossentry>
