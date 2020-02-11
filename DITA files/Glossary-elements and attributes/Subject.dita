@@ -9,32 +9,37 @@
                     <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
                     <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
                 </menucascade>, generally encloses a word or phrase, and records areas of study
-                which are significant to a writer's education. It has one attribute, <term keyref="reg"
-                    >REG</term>, to explain non-standard terms (<codeph>&lt;SUBJECT REG="HISTORY”&gt;kings
-                and queens of England&lt;/&gt;</codeph>). We are particularly interested in subjects which
-                influenced her writing (for example, she studied archeology and her first novel was
-                set at an archeological dig), classical language studies for women writers in the
-                early period (recording the importance of ancient languages as a masculine domain,
-                and the acquisition of translation skills), and other subjects which were
-                non-traditional for women (for example, engineering). Tag reading and writing as
-                    subjects only during periods when they were remarkable.
-                Be selective about subjects, depending on breadth of
-                curriculum and how much information is available. Fill in the keyref attributes once
-                glossentry topics for the specified elements exist (use the id attribute on the
-                glossentry element.</p></div>
+                which are significant to a writer's education. It has one attribute, <term
+                    keyref="reg">REG</term>, to explain non-standard terms (<codeph>&lt;SUBJECT
+                    REG="HISTORY”&gt;kings and queens of England&lt;/&gt;</codeph>). We are
+                particularly interested in subjects which influenced her writing (for example, she
+                studied archeology and her first novel was set at an archeological dig), classical
+                language studies for women writers in the early period (recording the importance of
+                ancient languages as a masculine domain, and the acquisition of translation skills),
+                and other subjects which were non-traditional for women (for example, engineering).
+                Tag reading and writing as subjects only during periods when they were remarkable.
+                Be selective about subjects, depending on breadth of curriculum and how much
+                information is available. Fill in the keyref attributes once glossentry topics for
+                the specified elements exist (use the id attribute on the glossentry
+            element.</p></div>
         <div>
             <u>Example</u>
             <codeblock> VA's father, horrified at her relationship with a young woman, sent her to a
                 Domestic Training College at Eastbourne, to learn &lt;SUBJECT&gt;Domestic
                 Economy&lt;/SUBJECT&gt;. Her mother ensured that SA was given a thorough education
-                that included &lt;SUBJECT&gt;Latin&lt;/SUBJECT&gt;, &lt;SUBJECT&gt;mathematics&lt;/SUBJECT&gt;,
-                &lt;SUBJECT&gt;philosophy&lt;/SUBJECT&gt;, and &lt;SUBJECT&gt;political economy&lt;/SUBJECT&gt;</codeblock>
+                that included &lt;SUBJECT&gt;Latin&lt;/SUBJECT&gt;,
+                &lt;SUBJECT&gt;mathematics&lt;/SUBJECT&gt;,
+                &lt;SUBJECT&gt;philosophy&lt;/SUBJECT&gt;, and &lt;SUBJECT&gt;political
+                economy&lt;/SUBJECT&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>Only subjects which had a significant impact or were central to the person should be tagged. If her major in university was geography, or if she took a course in it which interested her particularly, then tag it; if she studied geography as part of a wide-ranging syllabus in secondary school, probably not.
-                Use a separate subject tag for each subject specified. Do not put one tag around a phrase like <q>she studied history, philosophy, and literature</q>.
-            </p>
+            <p>Only subjects which had a significant impact or were central to the person should be
+                tagged. If her major in university was geography, or if she took a course in it
+                which interested her particularly, then tag it; if she studied geography as part of
+                a wide-ranging syllabus in secondary school, probably not. Use a separate subject
+                tag for each subject specified. Do not put one tag around a phrase like <q>she
+                    studied history, philosophy, and literature</q>. </p>
         </div>
     </glossdef>
 </glossentry>

@@ -19,9 +19,9 @@
             <u>Practice Issues</u>
             <p>Do not spend too much time worrying about whether a name is titled or styled. Consult
                 on particular cases; check the textbase to see if this person is already mentioned.
-                Do not confuse this element with <term keyref="self-constructed">SELFCONSTRUCTED</term>. Styled does
-                not refer to names she styled for herself; it is a particular type of noble
-                title.</p>
+                Do not confuse this element with <term keyref="self-constructed"
+                    >SELFCONSTRUCTED</term>. Styled does not refer to names she styled for herself;
+                it is a particular type of noble title.</p>
         </div>
         <div>
             <u>Troubleshooting</u>
