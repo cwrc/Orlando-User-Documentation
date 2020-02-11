@@ -5,9 +5,9 @@
     <glossterm>STUDENTBODY</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This optional attribute attached to the
-                element <term keyref="">SCHOOL</term> (within <menucascade>
-                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+                element <term keyref="school">SCHOOL</term> (within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
                 </menucascade>) records whether the school is single-sex or inclusive. This
             attribute (with values <userinput>SINGLESEX</userinput> and
                     <userinput>CO-ED</userinput>) helps us to interpret the influence of single-sex
