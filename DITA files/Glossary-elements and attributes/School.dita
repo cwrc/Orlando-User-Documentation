@@ -30,8 +30,9 @@
                 University.</p></div>
         <div>
             <u>Example</u>
-            <codeblock>VW received her BA from <SCHOOL INSTITUTIONLEVEL="post-secondary">Cambridge University</SCHOOL>. WP's early education included governesses and <SCHOOL INSTITUTION="day-school">dayschools</SCHOOL>. She also attended <SCHOOL>Wycombe Abbey School</SCHOOL> 
-and <SCHOOL>St Leonard's School</SCHOOL>.</codeblock>
+            <codeblock>VW received her BA from &lt;SCHOOL INSTITUTIONLEVEL=&quot;post-secondary&quot;&gt;Cambridge University&lt;/SCHOOL&gt;. WP&apos;s early education included
+governesses and &lt;SCHOOL INSTITUTION=&quot;day-school&quot;&gt;dayschools&lt;/SCHOOL&gt;. She also attended &lt;SCHOOL&gt;Wycombe Abbey School&lt;/SCHOOL&gt;
+and &lt;SCHOOL&gt;St Leonard&apos;s School&lt;/SCHOOL&gt;.</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
