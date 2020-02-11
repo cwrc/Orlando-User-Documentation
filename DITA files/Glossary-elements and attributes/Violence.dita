@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="violence">
+    <glossterm>VIOLENCE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>One of the sixteen structuring big-bucket
+                content tags in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                </menucascade>. Defined as integral to mapping a woman's life.
+                It has no attributes or sub-elements. It is placed in a document according to the
+                broadly chronological sequence of life-events. It represents an early decision by
+                the Orlando team not to separate different kinds of violence by different encoding,
+                but to encompass together institutional, marital, and other violence (marketplace
+                whippings for Quaker preachers, wartime bombing, and family abuse). Record all
+                instances of physical, sexual, and undue emotional abuse within this element,
+                whether the person was the victim or the perpetrator. We are particularly interested
+                in the effects of violence against women on the history of women's writing and the
+                historical, social and political issues surrounding violence against women. This
+                element is not reserved for actual acts of violence, but can include a discussion of
+                the effects, short- and long-term, of exposure to violence. In some cases available
+                data may need to be divided between Violence and some other element, e.g. Family or
+                Location or Politics or Health.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> &lt;VIOLENCE&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;PEG refers to the
+                rather regular blows from her mother as a part of her education, but one which she,
+                obviously, does not condone. She cites the ill effects of such parenting on herself
+                and her
+                siblings.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/VIOLENCE&gt;</codeblock><codeblock>
+                &lt;VIOLENCE&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;29 July
+                1901&lt;/DATE&gt;&lt;/CHRONSTRUCT&gt;&lt;CHRONPROSE&gt;Walter Chapman, the mentally
+                unstable postmaster at Grayshott, murdered his wife Emily, not long after FT ceased
+                working at the Grayshott Post
+                Office.&lt;/CHRONPROSE&gt;&lt;/DIV2&gt;&lt;/VIOLENCE&gt;</codeblock><codeblock>
+                &lt;VIOLENCE&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;When FT worked in Grayshott,
+                she initially had a room in the living quarters behind the post office, where the
+                Chapmans lived, and overheard loud domestic strife between Walter and his wife. She
+                was also present when Walter fired a revolver at imaginary burglars, and spoke
+                wildly of enemies, with whom he thought FT was in league, but she left the employ of
+                the post office before the murder occurred. FT was deeply disturbed on reading
+                reports of the murder, feeling that if she had reported Walter&apos;s violent
+                behaviour to the police, she might have prevented Emily&apos;s death. Given the
+                current attitudes to marriage and domestic violence in the village, she knew that
+                the police would likely be unsympathetic and unwilling to interfere in domestic
+                strife but felt that she bore some portion of the blame for Emily&apos;s death by
+                having said nothing.&lt;/VIOLENCE&gt;&lt;/DIV2&gt;&lt;/SHORTPROSE&gt;&lt;/P&gt;
+            </codeblock>
+        </div>
+    </glossdef>
+</glossentry>

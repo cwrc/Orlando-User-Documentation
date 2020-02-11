@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="woman-gender-issue">
+    <glossterm>WOMAN-GENDERISSUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is available in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">POLITICALAFFILIATION</term></uicontrol>
+                </menucascade>. It designates whether or not a person's political engagement
+                involves a specific gender issue. This tag has three mutually exclusive sibling
+                attributes, <term keyref="activism">ACTIVISM</term>, <term keyref="involvement"
+                    >INVOLVEMENT</term>, and <term keyref="membership">MEMBERSHIP</term>; it may be
+                used in conjunction with any of them. It has attribute values of
+                    <userinput>GenderYes</userinput> and <userinput>GenderNo</userinput>. Since we
+                are interested in women's writing from the perspective of an analysis of gender, we
+                wish to record all political involvement regarding gender issues. Use this attribute
+                whenever the political organization, activity, or affiliation you are describing
+                involves women's issues or female political subjectivity (identification as women)
+                very broadly defined. This includes a petition by women even if the subject of the
+                petition was not gender-specific, as well as more obvious issues such as suffrage,
+                marriage law, female employment, etc. A gender issue does not necessarily and
+                exclusively refer to feminist issues but could include such woman-specific
+                activities as anti-feminist organizations or anti-choice activists. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>In Crick, Northamptonshire, SM took up &lt;POLITICALAFFILIATION
+                ACTIVISM=&quot;activistYes&quot;
+                WOMAN-GENDERISSUE=&quot;genderYes&quot;&gt;suffragette
+                activism&lt;/POLITICALAFFILIATION&gt;, selling the pamphlet Votes for Women in the
+                street. Her work was supported by her husband, but caused scandal in their old-style
+                rural parish.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

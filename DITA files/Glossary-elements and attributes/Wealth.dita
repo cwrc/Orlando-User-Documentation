@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="wealth">
+    <glossterm>Wealth</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Wealth is a Div1 content element, one of
+                the 16 major biography elements defined as integral to mapping a woman's life. It
+                has no content sub-elements or attributes. This element should be used in a position
+                that makes chronological sense in the flow of the document, and may be used more
+                than once to record changes in her money situation. It captures information about a
+                writer's financial standing, more precise and detailed than what is conveyed within
+                the Class and Occupation elements. We are particularly interested in whether or not
+                her finances provided the material conditions necessary for writing. Information
+                concerning inheritance, unearned income, tax matters, spouse’s income, pensions and
+                personal financial disasters should be captured here, but not any income directly
+                derived from literary activity, which belongs in the <term keyref="writing"
+                    >WRITING</term> doc.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;WEALTH&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;In
+                &lt;DATE&gt;1825&lt;/DATE&gt;, AG was offered a pension of ¥100 per annum from
+                &lt;NAME STANDARD=&quot;George IV, King&quot;&gt;George IV&lt;/NAME&gt;. At first
+                she rejected this as too little, but then accepted
+                it.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/&gt;&lt;/WEALTH&gt;
+                &lt;WEALTH&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;GH began to play a major role
+                in providing her family&apos;s income after the publication of her first novel. She
+                continued to support not only her mother and brothers but also her husband while he
+                was reading for the
+                Bar.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;DIV2&gt;&lt;/WEALTH&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>We should try to standardize amounts, when possible, using terms such as <q>per
+                    annum</q> as opposed to the abbreviation p.a.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If she married into a wealthy family and this changed her financial
+                status, does this event belong in wealth, class, or family?</p><p>
+                <b>Answer:</b> See Class. This needs your judgement, but is probably a case where
+                the same fact needs more than one mention, from different aspects. </p>
+        </div>
+    </glossdef>
+</glossentry>

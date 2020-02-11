@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Sub-tag of <term keyref="date-struct"
+                    >DATESTRUCT</term>, available throughout the textbase. Contains just the four
+                digits of the year concerned, with no text or punctuation. Can be modified by
+                attributes <term keyref="value">VALUE</term>, <term keyref="type">TYPE</term>, <term keyref="reg">REG</term>,
+                and <term keyref="certainty">CERTAINTY</term>.</p></div>
+    </glossdef>
+</glossentry>
