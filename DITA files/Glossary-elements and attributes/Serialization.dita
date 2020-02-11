@@ -5,27 +5,26 @@
     <glossterm>Serialization</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This element belonging conceptually in <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>PRODUCTION</term></uicontrol>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
                 </menucascade> encloses a statement about (see attributes) either sections of a book
                 appearing sequentially in a newspaper or magazine, or gradual publication, one
-                section or one volume at a time. It has one optional attribute attached,
-                FormOfSerialization with values of "volumeForm" and "periodicalForm”.</p></div>
+                section or one volume at a time. It has one optional attribute attached, <term
+                    keyref="form-of-serialization">FORMOFSERIALIZATION</term> with values of
+                    <userinput>VOLUMEFORM</userinput> and
+            <userinput>PERIODICALFORM</userinput>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> &amp;lt;pSerialization
-                FormofSerialization=”PeriodicalForm”&amp;gt;AL&amp;apos;s novel was serialized in
-                the Atlantic Monthly.&amp;lt;/&amp;gt; &amp;lt;pSerialization
-                FormofSerialization=”VolumeForm”&amp;gt;EL issued her book one section at a time at
-                irregular intervals.&amp;lt;/&amp;gt; </codeblock>
+            <codeblock>&lt;PSERIALIZATION FORMOFSERIALIZATION=&quot;PERIODICALFORM&quot;&gt;AL&apos;s novel was serialized in the Atlantic Monthly.&lt;/PSERIALIZATION&gt;</codeblock><codeblock>&lt;PSERIALIZATION FORMOFSERIALIZATION=&quot;VolumeForm”&gt;EL issued her book one section at a time at irregular intervals.&lt;/PSERIALIZATION&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>Question: How would I distinguish the "periodicalForm" of serial publication from
-                other kinds of periodical publication? Answer: Use the element periodicalPublication
-                when the author published the odd article, poem or short story in a periodical. If
-                the author published a whole novel in one periodical in instalments, then use the
-                element serialization with an attribute value of "periodicalForm."</p>
+            <p>Question: How would I distinguish the <userinput>PERIODICALFORM</userinput> of serial
+                publication from other kinds of periodical publication?</p><p>Answer: Use the
+                element <term keyref="periodical-publication">PERIODICALPUBLICATION</term> when the
+                author published the odd article, poem or short story in a periodical. If the author
+                published a whole novel in one periodical in instalments, then use the element
+                serialization with an attribute value of <userinput>PERIODICALFORM</userinput>.</p>
         </div>
     </glossdef>
 </glossentry>
