@@ -22,6 +22,6 @@
                 04.</p></div>
         <div>
             <u>Example</u>
-            <codeblock><DATESTRUCT CERTAINTY="C" VALUE="1351-04-"><SEASON> "C" VALUE="04” SPRING </SEASON><YEAR CERTAINTY="Cert" VALUE="1351"></YEAR></DATESTRUCT></codeblock></div>
+            <codeblock>&lt;DATESTRUCT CERTAINTY=&quot;C&quot; VALUE=&quot;1351-04-&quot;&gt;&lt;SEASON&gt; &quot;C&quot; VALUE=&quot;04” SPRING&lt;/SEASON&gt;&lt;YEAR CERTAINTY=&quot;Cert&quot; VALUE=&quot;1351&quot;&gt;&lt;/YEAR&gt;&lt;/DATESTRUCT&gt;</codeblock></div>
     </glossdef>
 </glossentry>

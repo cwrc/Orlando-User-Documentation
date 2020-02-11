@@ -19,7 +19,8 @@
                 >WROTEORPUBLISHEDAS</term>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock><SELFCONSTRUCTED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">Loy, Mina</SELFCONSTRUCTED></codeblock><codeblock><SELFCONSTRUCTED WROTEORPUBLISHEDAS="WROTEPUBLISHEDASYES">Esther</SELFCONSTRUCTED><SCHOLARNOTE> HB published as Hester initially but later used Esther, possibly to align herself with the Old Testament form of the name.</SCHOLARNOTE>.</codeblock><codeblock><SELFCONSTRUCTED>Brett</SELFCONSTRUCTED><SHORTPROSE><P>Dorothy Brett chose to call herself by one name only.</P></SHORTPROSE>.</codeblock>
+            <codeblock>&lt;SELFCONSTRUCTED WROTEORPUBLISHEDAS=&quot;WROTEPUBLISHEDASYES&quot;&gt;Loy, Mina&lt;/SELFCONSTRUCTED&gt;</codeblock><codeblock>SELFCONSTRUCTED WROTEORPUBLISHEDAS=&quot;WROTEPUBLISHEDASYES&quot;&gt;Esther&lt;/SELFCONSTRUCTED&gt;&lt;SCHOLARNOTE&gt;HB published as Hester initially
+but later used Esther, possibly to align herself with the Old Testament form of the name.&lt;/SCHOLARNOTE&gt;.</codeblock><codeblock>&lt;SELFCONSTRUCTED&gt;Brett&lt;/SELFCONSTRUCTED&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Dorothy Brett chose to call herself by one name only.&lt;/P&gt;&lt;/SHORTPROSE&gt;.</codeblock>
         </div>
     </glossdef>
 </glossentry>

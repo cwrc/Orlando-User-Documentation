@@ -40,7 +40,8 @@
                 general recognition of her faith even without a statement from her.</p></div>
         <div>
             <u>Example</u>
-            <codeblock>VA had many <SEXUALIDENTITY SELFDEFINED="SELFYES">lesbian</SEXUALIDENTITY> relationships during her lifetime. She identified strongly with her <RACECOLOUR SELF-DEFINED="SELFYES">Jewish</RACECOLOUR> heritage</codeblock>
+            <codeblock>VA had many &lt;SEXUALIDENTITY SELFDEFINED=&quot;SELFYES&quot;&gt;lesbian&lt;/SEXUALIDENTITY&gt; relationships during her lifetime. She identified
+strongly with her &lt;RACECOLOUR SELF-DEFINED=&quot;SELFYES&quot;&gt;Jewish&lt;/RACECOLOUR&gt; heritage.</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
