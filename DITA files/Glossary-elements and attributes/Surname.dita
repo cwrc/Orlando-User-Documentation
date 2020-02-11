@@ -6,23 +6,25 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This sub-element of <term keyref=""
                     >PERSONNAME</term>, available only within <menucascade>
-                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term keyref="">BIRTHNAME</term></uicontrol>
-                </menucascade> captures the last name of a person at birth. Within <term keyref="">BIRTHNAME</term>, it is
-                placed last in Western usage, first in Chinese. It has one optional attribute, <term
-                    keyref="">REG</term>, for the rare instances when a surname has two different
-                spellings, and you need to use one that is contested or incorrect. In this case the
-                    <term keyref="">REG</term> attribute supplies the proper form, and a <term
-                    keyref="">SCHOLARNOTE</term> should outline the discrepancy.</p></div>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="birth-name">BIRTHNAME</term></uicontrol>
+                </menucascade> captures the last name of a person at birth. Within <term
+                    keyref="birth-name">BIRTHNAME</term>, it is placed last in Western usage, first
+                in Chinese. It has one optional attribute, <term keyref="reg">REG</term>, for the
+                rare instances when a surname has two different spellings, and you need to use one
+                that is contested or incorrect. In this case the <term keyref="reg">REG</term>
+                attribute supplies the proper form, and a <term keyref="scholar-note"
+                    >SCHOLARNOTE</term> should outline the discrepancy.</p></div>
         <div>
             <u>Example</u>
             <codeblock>&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Clara&lt;/GIVEN&gt;&lt;SURNAME&gt;Liddell&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>See <term keyref="">PERSONNAME</term> for general name practices. Enter <term keyref="">SURNAME</term> after all given names. Do
-                not punctuate. If the birth surname is unknown, delete tag and explain in
-                <term keyref="">ScholarNote</term>.</p>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices. Enter <term
+                    keyref="surname">SURNAME</term> after all given names. Do not punctuate. If the birth
+                surname is unknown, delete tag and explain in <term keyref="scholar-note"
+                >SCHOLARNOTE</term>.</p>
         </div>
     </glossdef>
 </glossentry>

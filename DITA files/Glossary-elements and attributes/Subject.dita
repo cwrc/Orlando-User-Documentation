@@ -6,11 +6,11 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>I.e. subject of study. This content
                 sub-element in <menucascade>
-                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                    <uicontrol><term keyref="">EDUCATION</term></uicontrol>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
                 </menucascade>, generally encloses a word or phrase, and records areas of study
-                which are significant to a writer's education. It has one attribute, <term keyref=""
-                    >Reg</term>, to explain non-standard terms (<codeph>&lt;SUBJECT REG="HISTORY”&gt;kings
+                which are significant to a writer's education. It has one attribute, <term keyref="reg"
+                    >REG</term>, to explain non-standard terms (<codeph>&lt;SUBJECT REG="HISTORY”&gt;kings
                 and queens of England&lt;/&gt;</codeph>). We are particularly interested in subjects which
                 influenced her writing (for example, she studied archeology and her first novel was
                 set at an archeological dig), classical language studies for women writers in the
