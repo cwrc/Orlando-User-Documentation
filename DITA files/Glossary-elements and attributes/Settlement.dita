@@ -15,13 +15,8 @@
                 both attributes is so far the only way to achieve this.</p></div>
         <div>
             <u>Examples</u>
-            <codeblock>&lt;PLACE&gt;&lt;SETTLEMENT REG=&quot;Chelsea&quot;&gt;&lt;/SETTLEMENT&gt;
-                CURRENT=&quot;London&quot;&gt;Chelsea&lt;/PLACE&gt;</codeblock><codeblock>&lt;PLACE&gt;&lt;SETTLEMENT
-                CURRENT=&quot;St Petersburg&quot;
-                REG=&quot;Leningrad&quot;&gt;Leningrad&lt;/SETTLEMENT&gt;&lt;GEOG&gt;=&quot;Russia&quot;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeblock><codeblock>&lt;PLACE&gt;&lt;PLACENAME&gt;British
-                Museum&lt;/PLACENAME&gt;&lt;SETTLEMENT
-                REG=&quot;London&quot;&gt;&lt;/SETTLEMENT&gt;&lt;REGION&gt;=&quot;Middlesex&quot;&lt;/REGION&gt;&lt;GEOG
-                REG=&quot;England”&gt;&lt;/GEOG&gt;/PLACE&gt;</codeblock>
+            <codeblock>&lt;PLACE&gt;&lt;SETTLEMENT REG=&quot;Chelsea&quot;&gt;&lt;/SETTLEMENT&gt;CURRENT=&quot;London&quot;&gt;Chelsea&lt;/PLACE&gt;</codeblock><codeblock>&lt;PLACE&gt;&lt;SETTLEMENT CURRENT=&quot;St Petersburg&quot; REG=&quot;Leningrad&quot;&gt;Leningrad&lt;/SETTLEMENT&gt;&lt;GEOG&gt;=&quot;Russia&quot;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeblock><codeblock>&lt;PLACE&gt;&lt;PLACENAME&gt;British Museum&lt;/PLACENAME&gt;&lt;SETTLEMENT REG=&quot;London&quot;&gt;&lt;/SETTLEMENT&gt;&lt;REGION&gt;=&quot;Middlesex&quot;&lt;/REGION&gt;&lt;GEOG
+REG=&quot;England”&gt;&lt;/GEOG&gt;/PLACE&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
