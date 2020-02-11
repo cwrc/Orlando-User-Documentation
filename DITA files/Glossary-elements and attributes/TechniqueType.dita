@@ -4,24 +4,27 @@
 <glossentry id="technique-type">
     <glossterm>TECHNIQUETYPE</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>Located in <menucascade>
-                    <uicontrol><term keyref="">WRITING</term></uicontrol>
-                    <uicontrol><term keyref="">TTECHNIQUES</term></uicontrol>
-                </menucascade>, this tag belongs conceptually to <term keyref="">TTECHNIQUES</term>.
-                Its five allowable values are <term keyref="">VERSIFICATION</term>, <term keyref=""
-                    >NON-STANDARDENGLISH</term>, <term keyref="">DICTION</term>
-                <term keyref="">IMAGERY</term>, and <term keyref="">AURALEFFECTS</term>. <term
-                    keyref="">VERSIFICATION</term> applies to literary effects achieved by metre or
-                stanza-form. <term keyref="">DICTION</term> applies to effects achieved by the
-                choice and arrangement of words. Examples include the use of latinate, flowery,
-                archaic, or affected language. <term keyref="">NON-STANDARDENGLISH</term> applies to
-                uses of eccentric or uneducated syntax, regional speech, or dialect. <term keyref=""
+        <div><u>Definition, Placement, Relationships</u><p>This tag is located in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="ttechniques">TTECHNIQUES</term></uicontrol>
+                </menucascade>. Its five allowable values are <term keyref="versification"
+                    >VERSIFICATION</term>, <term keyref="non-standard-english"
+                    >NONSTANDARDENGLISH</term>, <term keyref="diction">DICTION</term>
+                <term keyref="imagery">IMAGERY</term>, and <term keyref="aural-effects"
+                    >AURALEFFECTS</term>. <term keyref="versification">VERSIFICATION</term> applies
+                to literary effects achieved by metre or stanza-form. <term keyref="diction"
+                    >DICTION</term> applies to effects achieved by the choice and arrangement of
+                words. Examples include the use of latinate, flowery, archaic, or affected language.
+                    <term keyref="non-standard-english">NONSTANDARDENGLISH</term> applies to uses of
+                eccentric or uneducated syntax, regional speech, or dialect. <term keyref="imagery"
                     >IMAGERY</term> refers to literary effects that rely on figures of speech such
-                as personification, metaphor, or simile. <term keyref="">AURALEFFECTS</term>
-                captures writing that employs onomatopiea, alliteration, internal rhyme, or other
-                techniques relying on audible features of language like plosives, sibilants,
-                fricatives, etc. Fill in the keyref attributes once glossentry topics for the
-                specified elements exist (use the id attribute on the glossentry element.</p></div>
+                as personification, metaphor, or simile. <term keyref="aural-effects"
+                    >AURALEFFECTS</term> captures writing that employs onomatopiea, alliteration,
+                internal rhyme, or other techniques relying on audible features of language like
+                plosives, sibilants, fricatives, etc. Fill in the keyref attributes once <term
+                    keyref="gloss-entry">GLOSSENTRY</term> topics for the specified elements exist
+                (use the <term keyref="id">ID</term> attribute on the <term keyref="gloss-entry"
+                    >GLOSSENTRY</term> element).</p></div>
         <div>
             <u>Example</u>
             <codeblock> &lt;TTECHNIQUES TECHNIQUETYPE=&quot;versification&quot;&gt;HY&apos;s
