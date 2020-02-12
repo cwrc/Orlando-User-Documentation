@@ -2,27 +2,26 @@
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <glossentry id="tsetting-date">
-    <glossterm>TSettingDate</glossterm>
+    <glossterm>TSETTINGDATE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This element in <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>TEXTUALFEATURES</term></uicontrol>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
                 </menucascade> pertains the time in which a fictional story is set relative to the
                 writer's time, not the reader's. It should contain a statement, which may include a
-                specific date like "1789," or general description, "in the future," or should relate
-                to a recognizable event like "after the First World War." N.b. use for works of
-                fiction (including drama and poetry) only, not for history, biography, or travel
-                writing. Encloses a statement, incorporating a tagged date or a broad definition of
-                period. Has no mandatory or optional sub-elements, but one optional attribute,
-                        <uicontrol><term>SETTINGDATETYPE</term></uicontrol>, with values of "past,"
-                "present," "future," and "ambiguous." Tag as time present only if contemporaneity is
+                specific date like <q>1789</q>, or general description, such as <q>in the
+                future</q>, or should relate to a recognizable event like <q>after the First World
+                    War</q>. N.b. use for works of fiction (including drama and poetry) only, not
+                for history, biography, or travel writing. Encloses a statement, incorporating a
+                tagged date or a broad definition of period. Has no mandatory or optional
+                sub-elements, but one optional attribute, <term keyref="setting-date-type"
+                    >SETTINGDATETYPE</term>, with values of <userinput>PAST</userinput>,
+                    <userinput>PRESENT</userinput>, <userinput>FUTURE</userinput>, and
+                    <userinput>AMBIGUOUS</userinput>. Tag as time present only if contemporaneity is
                 in some way relevant, not if it’s merely assumed.</p></div>
         <div>
             <u>Example</u>
-            <codeblock> &amp;lt;tSettingDate SETTINGDATETYPE=&quot;future&quot;&gt;The novel is set
-                post-apocalyptic Israel.&amp;lt;/&gt; &amp;lt;tSettingDate
-                SETTINGDATETYPE=&quot;past&quot;&gt;This gothic romance, set in the
-                fifteenth-century, features three notable characters.&amp;lt;/&gt; </codeblock>
+            <codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;FUTURE&quot;&gt;The novel is set post-apocalyptic Israel.&lt;/TSETTINGDATE&gt;</codeblock><codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;PAST&quot;&gt;This gothic romance, set in the fifteenth-century, features three notable characters.&lt;/TSETTINGDATE&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
