@@ -4,26 +4,25 @@
 <glossentry id="tsetting-class">
     <glossterm>TSETTINGCLASS</glossterm>
     <glossdef>
-        <div><u>Definition, Placement, Relationships</u><p>tSettingClass is an optional attribute
-                attached to the element <uicontrol><term>TSETTINGPLACE</term></uicontrol> (and
+        <div><u>Definition, Placement, Relationships</u><p>TSETTINGCLASS is an optional attribute
+                attached to the element <term keyref="t-setting-place">TSETTINGPLACE</term> (and
                 belonging to <menucascade>
-                    <uicontrol><term>WRITING</term></uicontrol>
-                    <uicontrol><term>TEXTUAL FEATURES</term></uicontrol>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
                 </menucascade>) that specifies the socio-economic status characters who feature in
                 this fictional setting (that is, the scene of a fiction, whether the place is actual
                 or imaginary). It recognizes that the setting of a novel about upper-class life may
                 differ widely from the setting of a novel centred on struggling workers’ families,
-                even though they may overlap topographically. It has one sibling attribute,
-                SettingPlaceType, and four allowable values: "upperClass," "workingClass,"
-                "middleClass," and "wideRange." The four values allow you to assign an appropriate
-                socio-economic status to a settingPlace.</p></div>
+                even though they may overlap topographically. It has one sibling attribute, <term
+                    keyref="setting-place-type">SETTINGPLACETYPE</term>, and four allowable values:
+                    <userinput>UPPERCLASS</userinput>, <userinput>WORKINGCLASS</userinput>,
+                    <userinput>MIDDLECLASS</userinput>, and <userinput>WIDERANGE</userinput>. The
+                four values allow you to assign an appropriate socio-economic status to a
+                    <term>SETTINGPLACE</term>.</p></div>
         <div>
             <u>Example</u>
-            <codeblock>&amp;lt;tSettingPlace SETTINGCLASS=&quot;workingClass&quot;
-                SETTINGPLACETYPE=&quot;real&quot;&gt;Her novel is set in Barnsley, an industrial
-                town in northern England.&amp;lt;/&gt; &amp;lt;tSettingPlace
-                SETTINGCLASS=&quot;upperClass&quot;&gt; Her writing deals with the foibles of
-                London&apos;s upper-crust society.&amp;lt;/&gt;</codeblock>
+            <codeblock>&lt;TSETTINGPLACE SETTINGCLASS=&quot;WORKINGCLASS&quot; SETTINGPLACETYPE=&quot;REAL&quot;&gt;Her novel is set in Barnsley, an industrial town in northern
+England.&lt;/TSETTINGPLACE&gt;</codeblock><codeblock>&lt;TSETTINGPLACE SETTINGCLASS=&quot;UPPERCLASS&quot;&gt; Her writing deals with the foibles of London&apos;s upper-crust society.&lt;/TSETTINGPLACE&gt;</codeblock>
         </div>
     </glossdef>
 </glossentry>
