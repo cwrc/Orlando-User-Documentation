@@ -20,12 +20,12 @@
                     <userinput>AMBIGUOUS</userinput>. Tag as time present only if contemporaneity is
                 in some way relevant, not if it’s merely assumed.</p></div>
         <div>
-            <u>Example</u>
+            <u>Examples</u>
             <codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;FUTURE&quot;&gt;The novel is set post-apocalyptic Israel.&lt;/TSETTINGDATE&gt;</codeblock><codeblock>&lt;TSETTINGDATE SETTINGDATETYPE=&quot;PAST&quot;&gt;This gothic romance, set in the fifteenth-century, features three notable characters.&lt;/TSETTINGDATE&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>We are privileging the author's relationship to the setting date. Therefore, 1984 is
+            <p>We are privileging the author's relationship to the setting date. Therefore, <i>1984</i> is
                 still a novel set in the future because it was written as such.</p>
         </div>
     </glossdef>
