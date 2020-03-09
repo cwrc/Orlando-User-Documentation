@@ -2,7 +2,7 @@
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <glossentry id="wealth">
-    <glossterm>Wealth</glossterm>
+    <glossterm>WEALTH</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>Wealth is a Div1 content element, one of
                 the 16 major biography elements defined as integral to mapping a woman's life. It

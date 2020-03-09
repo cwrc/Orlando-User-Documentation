@@ -16,9 +16,9 @@
             <u>Example</u>
             <codeblock>&lt;TVOICENARRATION&gt;Because the novel is overpopulated with characters,
                 the narrator intrudes sometimes inelegantly in order to keep the plot on
-                track.&lt;/TVOICENARRATION&gt; &lt;TVOICENARRATION&gt;As a matter of strategy, Anne
+                track.&lt;/TVOICENARRATION&gt;</codeblock><codeblock> &lt;TVOICENARRATION&gt;As a matter of strategy, Anne
                 Askew assumed a stance of humility, but stated her beliefs boldly and
-                clearly.&lt;/TVOICENARRATION&gt; &lt;TVOICENARRATION&gt;Joanna Baillie writes in
+                clearly.&lt;/TVOICENARRATION&gt;</codeblock><codeblock> &lt;TVOICENARRATION&gt;Joanna Baillie writes in
                 this novel as an unlearned person to every unlearned reader of common
                 understanding.&lt;/TVOICENARRATION&gt;</codeblock>
         </div>

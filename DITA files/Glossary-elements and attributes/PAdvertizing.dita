@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-advertizing">
+    <glossterm>PADVERTIZING</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PADVERTIZING, available anywhere in <term
+                    keyref="writing">WRITING</term> documents though belonging conceptually with the
+                    <term keyref="production">PRODUCTION</term> aspect, attends to the details
+                surrounding the promotion and marketing of a text. For instance, you may want to
+                discuss examples of interesting publicity or promotional stunts. This element has no
+                mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PADVERTIZING&gt;Jane Smith&apos;s Poems on Several Occasions was
+                advertised in several newspapers from 17 September
+                1731.&lt;/PADVERTIZING&gt;</codeblock><codeblock> &lt;PADVERTIZING&gt;To publicize
+                Amelia Bundlekin&apos;s forthcoming book of poetry (1966), three of her friends
+                dangled naked from Nelson’s Column.&lt;/PADVERTIZING&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Eighteenth-century prefaces that call themselves advertisements are not to be dealt
+                with here. This tag is also not to be used for instances of advertising for other
+                books when those ads are printed in the book under discussion.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> A bi-plane writes advertising in the sky in <i>Mrs Dalloway</i>. Do I tag it as
+                advertising? </p><p><b>Answer:</b> No, do not tag as advertising its appearance as subject-matter,
+                but only about the promotional efforts directed to the book as a commodity.</p>
+        </div>
+    </glossdef>
+</glossentry>

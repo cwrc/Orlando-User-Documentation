@@ -7,20 +7,22 @@
         <div><u>Definition, Placement, Relationships</u><p>One of the sixteen structuring big-bucket
                 content tags in <menucascade>
                     <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
-                </menucascade>. Defined as integral to mapping a woman's life.
-                It has no attributes or sub-elements. It is placed in a document according to the
-                broadly chronological sequence of life-events. It represents an early decision by
-                the Orlando team not to separate different kinds of violence by different encoding,
-                but to encompass together institutional, marital, and other violence (marketplace
-                whippings for Quaker preachers, wartime bombing, and family abuse). Record all
-                instances of physical, sexual, and undue emotional abuse within this element,
-                whether the person was the victim or the perpetrator. We are particularly interested
-                in the effects of violence against women on the history of women's writing and the
-                historical, social and political issues surrounding violence against women. This
-                element is not reserved for actual acts of violence, but can include a discussion of
-                the effects, short- and long-term, of exposure to violence. In some cases available
-                data may need to be divided between Violence and some other element, e.g. Family or
-                Location or Politics or Health.</p></div>
+                </menucascade>. Defined as integral to mapping a woman's life. It has no attributes
+                or sub-elements. It is placed in a document according to the broadly chronological
+                sequence of life-events. It represents an early decision by the Orlando team not to
+                separate different kinds of violence by different encoding, but to encompass
+                together institutional, marital, and other violence (marketplace whippings for
+                Quaker preachers, wartime bombing, and family abuse). Record all instances of
+                physical, sexual, and undue emotional abuse within this element, whether the person
+                was the victim or the perpetrator. We are particularly interested in the effects of
+                violence against women on the history of women's writing and the historical, social
+                and political issues surrounding violence against women. This element is not
+                reserved for actual acts of violence, but can include a discussion of the effects,
+                short- and long-term, of exposure to violence. In some cases available data may need
+                to be divided between Violence and some other element, e.g. <term keyref="family"
+                    >FAMILY</term> or <term keyref="location">LOCATION</term> or <term
+                    keyref="politics">POLITICS</term> or <term keyref="health"
+            >HEALTH</term>.</p></div>
         <div>
             <u>Example</u>
             <codeblock> &lt;VIOLENCE&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;PEG refers to the

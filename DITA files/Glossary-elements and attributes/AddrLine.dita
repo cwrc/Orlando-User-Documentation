@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="addrline">
+    <glossterm>ADDRLINE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>AddrLine is the required sub-element of
+                    <term keyref="address">ADDRESS</term>, available throughout the textbase. For
+                definition of an address, see <term keyref="address">ADDRESS</term>. One or more
+                AddrLine sub-elements can be included in an Address tag. Place around the prose
+                specifying the address and exclude punctuation from the tag.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="address">ADDRESS</term> for practice issues.</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -5,8 +5,7 @@
     <glossterm>WORKSCITED</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>WORKSCITED is an informal but complete
-                list of sources used and cited in a <term keyref="biography">BIOGRAPHY</term> or
-                    <term keyref="writing">WRITING</term> document, positioned at the end of that
+                list of sources used and cited in an entry document, positioned at the end of that
                 document, before <term keyref="biogprose">BIOGRPROSE</term>. Each text is to be
                 placed within a separate <term keyref="source">SOURCE</term> tag. You should ensure
                 that all these sources are also entered in the bibliography database. Contents of

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="address">
+    <glossterm>ADDRESS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>ADDRESS, a sub-element within <term
+                    keyref="place">PLACE</term>, captures the specific address where a person lived
+                or where a specific and significant event occurred. It is available within Biography
+                and Writing documents and in free-standing events, and is placed around one or more
+                    <userinput>AddrLine</userinput>. <userinput>AddrLine</userinput> is a required
+                sub-element before words are allowed. Address has two optional attributes,
+                    <userinput>Current</userinput> and <userinput>Reg</userinput>.</p><p> This
+                element might be used in the future for mapping Orlando data. Before tagging an
+                address, consider whether it is significant enough to capture in XML (if a woman
+                writer lived at the address, capture it; if she visited a friend there, probably
+                not). Often for recent writers many addresses are available. Don't include them all.
+                Include only those significant to the document you are writing. Use Reg attribute
+                only in case of obsolete or wrong spelling (within quote); use Current and Reg when
+                street name or number has changed.</p>
+            <p> The following types of information can be captured under address: </p><ul>
+                <li>Private house names (a British phenomenon) and numbered street address (Dunromin
+                    or The Nook is part of Address; Sissinghurst Castle is a <term
+                        keyref="place-name">PLACENAME</term>).</li>
+                <li> Street names and squares when they act as addresses and not placenames.</li>
+                <li>Lanes, Terraces, Places, Walks</li>
+                <li>Parts of streets: i.e., Upper Wimpole Street [Note: provide
+                        <userinput>Reg</userinput> attribute for "Wimpole" in order to ensure the
+                    address is indexed in the appropriate place.]</li>
+            </ul></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;ADDRESS&gt;&lt;ADDRLINE&gt;14 Queen&apos;s Row&lt;/ADDRLINE&gt;
+                &lt;/ADDRESS&gt;</codeblock><codeblock> &lt;ADDRESS&gt;&lt;ADDRLINE&gt;George
+                Terrace&lt;/ADDRLINE&gt;&lt;/ADDRESS&gt; </codeblock><codeblock>
+                &lt;ADDRESS&gt;&lt;ADDRLINE&gt;Commercial Road&lt;/ADDRLINE&gt;&lt;/ADDRESS&gt;
+                </codeblock><codeblock> She lived in
+                &lt;PLACE&gt;&lt;ADDRESS&gt;&lt;ADDRLINE&gt;King
+                Street&lt;/ADDRESS&gt;&lt;ADDRLINE&gt;&lt;/PLACE&gt; in
+                &lt;SETTLEMENT&gt;London&lt;/SETTLEMENT&gt;&lt;REGION
+                REG=”Middlesex”&gt;&lt;/REGION&gt;&lt;GEOG REG=”England”&lt;/GEOG&gt;. British
+                practice uses &quot;in&quot; not &quot;on&quot; for streets etc. </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <place keyref="place">PLACE</place> for general practice issues. Do not
+                abbreviate Street, Avenue, Boulevard, etc. Spell out names in full. Do not put a
+                number sign (#) before street numbers in addresses. 14 Queen's Row Use multiple
+                address lines as you would when addressing an envelope for mailing. See <term
+                    keyref="place-name">PLACENAME</term> for distinction between Address and
+                Placename. </p>
+        </div>
+    </glossdef>
+</glossentry>

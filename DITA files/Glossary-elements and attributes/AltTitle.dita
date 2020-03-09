@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="alt-title">
+    <glossterm>ALTTITLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Alt Title (Alternate Title in
+                Bibliography searches in published text), a category in the Bibliography Database,
+                is the not-as-common title that a work is known by, such as an earlier title later
+                replaced, or the title of an American edition. It is used in conjunction with a
+                    <term>REGTITLE</term> in the bibl db record.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The Alternate Title field can also be used when entering translations by writers with
+                entries. Use Alternate Title box to record the title before translation when.
+                Elizabeth Inchbald's <i>The Child of Nature</i> is a translation of <i>Zélie; ou,
+                    L'ingénue, so The Child of Nature</i> is the main title of her work, and
+                    <i>Zélie; ou, L'ingénue</i> is its Alternate Title.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><i>The Far-Away Bride</i> (a short form of the title as published in the USA) is
+                listed as the Alternate Title of Stella Benson’s <i>Tobit Transplanted.</i>
+            </p><p><i>The Lacedemonian Mercury</i> is the Alternate Title of a seventeenth-century
+                periodical which switched to this title after being launched as <i>The London
+                    Mercury</i>.</p>
+        </div>
+    </glossdef>
+</glossentry>

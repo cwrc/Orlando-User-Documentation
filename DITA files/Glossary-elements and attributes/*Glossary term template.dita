@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>If locationtion of element attribute is expressed, tagg it as 
+            <menucascade>
+                <uicontrol><term keyref="">BIOGRAPHY or WRITING</term></uicontrol>
+                <uicontrol><term keyref="">DIRECT PARENT</term></uicontrol>
+            </menucascade>. Fill in the keyref attributes once glossentry topics for the specified elements exist (use the id attribute on the glossentry element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>
+               1. paste the example from the GDrive document and make sure you correct all the well-formedness errors Oxygen will point out. 
+               2. copy the corrected fragment from Oxygen and escape special characters at <xref href="https://www.freeformatter.com/xml-escape.html#ad-output">https://www.freeformatter.com/xml-escape.html#ad-output</xref>
+               3. Copy the escaped text back into OXygen to replace the non-escaped code
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If this section contains an in-line xml example, use <codeph></codeph>, with the same instructions as above for codeblock.</p> 
+        </div>
+    </glossdef>
+</glossentry>
