@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="anonymous-publications">
+    <glossterm>ANONYMOUSPUBLICATIONS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>If a woman writer published a text
+                anonymously, enter <q>anonymous</q> as attribute in the element <term
+                    keyref="p-authorship">PAUTHORSHIP</term> in <term keyref="writing"
+                    >WRITING</term> docs. In tags concerning a particular text, Orlando counts <q>by
+                    a lady</q> as anonymous rather than pseudonymous publication.</p></div>
+    </glossdef>
+</glossentry>

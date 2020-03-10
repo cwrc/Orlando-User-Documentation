@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="anchored">
+    <glossterm>ANCHORED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A carry over from the TEI guidelines, the
+                Anchored attribute is not specific to the work being carried out on the Orlando
+                Project. Its purpose is to indicate whether or not a Note element is anchored in a
+                source text that is being tagged. It contains values of "yes" (copy text indicates
+                the place of attachment of the note) and "no" (copy text does not indicate the place
+                of attachment for the note). In principle Note is available anywhere in the
+                textbase, but do not use unless otherwise instructed.</p></div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-attitudes">
+    <glossterm>PATTITUDES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PATTITUDES, an element belonging with the
+                    <term keyref="production">PRODUCTION</term> material but available anywhere in
+                    <term keyref="writing">WRITING</term> documents, is better expressed with the
+                lengthy phrase: <q>attitudes to gender, writing, gender and writing, or writing as a
+                    woman.</q> It captures comment on a writer's beliefs and assumptions about the
+                practice and profession of writing and the relationship of gender to it. Her
+                attitudes may be surmised from her own specific comments about what writing means to
+                her, or from a very general reading of her oeuvre. It captures material less
+                goal-oriented than the element <term keyref="p-motives">PMOTIVES</term>, which deals
+                with particular reasons for writing. PATTITUDES has no mandatory or optional
+                sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PATTITUDES&gt;Elizabeth Grant writes, &lt;QUOTE&gt;the Colonel now calls
+                me Madame de Staël and he will forget someday that we are not alone. Dear me what an
+                honour it is to belong to such a genius. I will make the children pay more respect
+                to me I declare.&lt;/QUOTE&gt;
+                &lt;/PATTITUDES&gt;</codeblock><codeblock>&lt;PATTITUDES&gt;Elizabeth Wolferstan had
+                long meant to publish but admits that she could not enter into print without
+                feelings of extreme diffidence.&lt;/PATTITUDES&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>When discussing an author's attitudes to her own writing, especially those which do
+                not take her gender into account, consider <term keyref="r-self-description"
+                    >RSELFDESCRIPTION</term> as complementary or alternative PATTITUDES. For the
+                following example, RSELFDESCRIPTION was selected rather than PATTITUDES: <q>JB makes
+                fun of her own style as overdecorated and out of date.</q> </p>
+        </div>
+    </glossdef>
+</glossentry>

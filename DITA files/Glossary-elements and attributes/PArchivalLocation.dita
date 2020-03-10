@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-archival-location">
+    <glossterm>PARCHIVALLOCATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It contains at least a sentence of information about where
+                significant copies/manuscripts (of her work) or evidence about her resides. It
+                should contain a tagged <term keyref="place">PLACE</term> (e.g. public library at
+                Northallerton) or an <term keyref="orgname">ORGNAME</term> (Folger Shakespeare
+                Library) except in occasional instances of <q>privately owned</q> or equivalent.
+                This element offers data for tracking mss or significant printed copies, collections
+                now extant, copies historically lost or found or only heard of.</p></div>
+        <div>
+            <u>Examples</u>
+            <codeblock>&lt;PARCHIVALLOCATION&gt;The &lt;ORGNAME&gt;Bodleian Library&lt;/ORGNAME&gt;
+                has Elizabeth Falkland&apos;s presentation copy to James Clayton, formerly fellow of
+                St John&apos;s College, Oxford, who wrote prefatory verses for
+                it.&lt;/PARCHIVALLOCATION&gt; </codeblock><codeblock> &lt;PARCHIVALLOCATION&gt;The
+                William Andrews Clark Memorial Library has recently acquired the original letters by
+                Hannah More on which William Roberts based his 1834 Memoirs of
+                More.&lt;/PARCHIVALLOCATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

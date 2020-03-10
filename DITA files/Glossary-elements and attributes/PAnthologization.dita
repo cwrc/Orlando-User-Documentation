@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-anthologization">
+    <glossterm>PANTHOLOGIZATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>An element in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. PANTHOLOGIZATION should enclose a sentence or more, including a
+                title or an editor’s name. It has no mandatory or optional attributes or
+                sub-elements, but you may want to include with the anthology title a press (captured
+                in <term keyref="orgname">ORGNAME</term>), dates, and other significant writers'
+                names. This element creates a record of a work's selection for and appearance in
+                anthologies; it contains relevant details surrounding significant instances when a
+                text is anthologized (how it's framed; how it's described; how frequently it is
+                chosen). Used (not exclusively) for inclusion in important modern or contemporary
+                collections (e.g. Gilbert and Gubar, Palgrave, Norton), or for first or significant
+                appearance in historical ones. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PANTHOLOGIZATION&gt;Anne Askew&apos;s writing was excerpted in Thomas
+                Bentley&apos;s <i>Monument of Matrones</i>,
+                1582.&lt;/PANTHOLOGIZATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Discussion is also warranted when anthology editors have presented a narrow or
+                selective notion of a writer’s oeuvre. <codeph>&lt;PANTHOLOGIZATION&gt;Emily Brontë
+                    is presented as a poet longing for death in a 1951
+                    anthology.&lt;/PANTHOLOGIZATION&gt;</codeph>
+            </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> My author edited anthologies; do I include that here? </p><p> <b>Answer:</b> No. If the
+                author herself edited an anthology, record that in genre with a genreName attribute
+                for anthology. </p>
+        </div>
+    </glossdef>
+</glossentry>
