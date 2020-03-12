@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-character-type/role">
+    <glossterm>TCHARACTERTYPE/ROLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It allows you to capture information about the societal roles of
+                characters. If the character is noteworthy for being married, single, a fallen
+                woman, a teacher/governess, an immigrant, a suffragist, an invalid, a down-trodden
+                housewife, or a mother, record it here. The tag should contain one- or two-word or
+                slightly longer summations (e.g. charismatic fascist leader, a fragile pensioner
+                formerly a powerful businesswoman). There are no optional or mandatory sub-elements,
+                though you may want to use this element in conjunction with the <term
+                    keyref="t-characterization">TCHARACTERIZATION</term> element and possibly with
+                    <term keyref="t-character-name">TCHARACTERNAME</term>. An optional attribute,
+                Protagonist, with values of <userinput>male</userinput> and
+                    <userinput>female</userinput>, is used when appropriate to distinguish
+                protagonists or central figures from others.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TCHARACTERTYPE/ROLE PROTAGONIST=&quot;female&quot;&gt;a spirited but pure
+                heroine&lt;/TCHARACTERTYPE/ROLE&gt;</codeblock>
+            <codeblock>a &lt;TCHARACTERTYPE/ROLE&gt;fashionable
+                courtesan&lt;/TCHARACTERTYPE/ROLE&gt; </codeblock><codeblock>a
+                &lt;TCHARACTERTYPE/ROLE&gt;villain,</codeblock>
+            <codeblock> a marital and political tyrant&lt;/TCHARACTERTYPE/ROLE&gt;</codeblock>
+            <codeblock>a &lt;TCHARACTERTYPE/ROLE&gt;wise
+                woman&lt;/TCHARACTERTYPE/ROLE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Your possible vocabulary is not systematized in any way, allowing you full
+                descriptive powers. Your discussion could be enriched by terms such as protagonist,
+                antagonist, villain, and stereotype, but these are suggestions only and not meant to
+                be prescriptive.</p>
+        </div>
+    </glossdef>
+</glossentry>
