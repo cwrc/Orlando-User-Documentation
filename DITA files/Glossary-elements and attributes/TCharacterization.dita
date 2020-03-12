@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-characterization">
+    <glossterm>TCHARACTERIZATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element can be found in expressed,
+                tagg it as <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                </menucascade>. Belonging conceptually to TextualFeatures, captures general and
+                relevant information and comment about those fictional characters who populate an
+                author's work. It contains at least a full statement. It often contains the
+                ancillary elements <term keyref="t-character-type/role">TCHARACTERTTYPE/ROLE</term>
+                or <term keyref="t-character-name">TCHARACTERNAME</term>, but it has no mandatory or
+                optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TCHARACTERIZATION&gt;MG cites the psychopathic Bruno as exemplifying the
+                way that, as a novelist, she is able to love even her repellent
+                characters.&lt;/TCHARACTERIZATION&gt; </codeblock><codeblock>
+                &lt;TCHARACTERIZATION&gt;These people in the present day, of varied ethnicity, class
+                status, and personal ideology (whose incompatible inner worlds make up the story),
+                are all affected in various, unquantifable ways by the now long-past British Empire;
+                they live in the shadow of its decline&lt;/TCHARACTERIZATION&gt;
+                </codeblock><codeblock> &lt;TCHARACTERIZATION&gt;Elizabeth Pipe Wolferstan&apos;s
+                fairy tales feature several delightful fairies.
+                &lt;/TCHARACTERIZATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use for general statements about the fictional characters in a writer’s oeuvre or
+                particular work, rather than describing a particular individual. Often used to flag
+                the use of actual models in fiction. If you want to write about one particular
+                character's role, see <term keyref="t-character-name">TCHARACTERNAME</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>

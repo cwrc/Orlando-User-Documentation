@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-character-name">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>TCHARACTERNAME, an element in the <term
+                    keyref="writing">WRITING</term> section of entries, conceptually part of the
+                    <term keyref="textual-features">TEXTUALFEATURES</term> component, allows us to
+                tag the names of significant characters. It should contain only the character's
+                name. It has no mandatory sub-elements, although you may want to use this in
+                conjunction with the <term keyref="t-characterization">TCHARACTERIZATION</term>
+                element and perhaps with the <term keyref="t-character-type/role"
+                    >TCHARACTERTTYPE/ROLE</term> element. One optional attribute, <term keyref="reg"
+                    >REG</term>, allows you to regularize the name of the character when the name is
+                not otherwise clear in your text (e.g. adding either a first or last name to the
+                other). The <term keyref="reg">REG</term> attribute here works the same way as the
+                    <term keyref="reg">REG</term> attribute for <term keyref="name"
+            >NAME</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TCHARACTERNAME&gt;Heathcliff&lt;/TCHARACTERNAME&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Not</b> to be confused with <term keyref="name">NAME</term>, meaning that of
+                someone real, not fictional. In some cases of historical fiction, both tags might be
+                called for. Do not tag the Marys and Johns in every novel; if you have a first name
+                and last name, still don’t tag without considering first,<q> Is it worthwhile?</q>
+                (Sometimes it is: fun to watch the gradual proliferation of fictional Emmas before
+                Austen’s.) Use this tag whenever an identifiable character name merits recording.
+                However, you should only apply it to characters created by the writer named in your
+                document. If the author knowingly refers to a character in another writer's work,
+                use the <term keyref="t-intertextuality">TINTERTEXTUALITY</term> element. Include
+                the title of the originary text where possible and meaningful. For example,
+                Christian Isobel Johnstone appropriates the name of Margaret Dods from a Walter
+                Scott novel for one of her own characters, but if she merely based a character on
+                his Dods you would tag “Margaret Dods” with <term keyref="t-intertextuality"
+                    >TINTERTEXTUALITY</term> and not TCHARACTERNAME. </p>
+        </div>
+    </glossdef>
+</glossentry>

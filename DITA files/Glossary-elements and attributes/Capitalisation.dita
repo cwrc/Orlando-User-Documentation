@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="capitalisation">
+    <glossterm>CAPITALISATION</glossterm>
+    <glossdef>
+        <div><u>Definition</u><p>This entry addresses issues of capitalisation across the
+                project.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Capitalize parliament when its relevance as an institution is clearly part of the
+                discussion, for example, if Parliament enacts legislation. But not otherwise: <q>She
+                was a highly effective speaker in parliament.</q> We must capitalise the Houses of
+                Lords and Commons. </p>
+        </div>
+    </glossdef>
+</glossentry>

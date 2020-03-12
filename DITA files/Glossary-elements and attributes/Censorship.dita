@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="cencorship">
+    <glossterm>CENCORSHIP</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute modifies <term
+                    keyref="r-penalties">RPENALTIES</term>, an element conceptually part of
+                Reception in the <term keyref="writing">WRITING</term> section of entries. If a book
+                is censored, we consider that a type of penalty. This attribute has one allowable
+                value, <term keyref="cencorship-yes">CENCORSHIPYES</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RPENALTIES CENSORSHIP=&quot;censorshipYes&quot;&gt; Elizabeth Cellier and
+                her printer were both arrested and made to give security for their future good
+                behaviour. Copies of the book were burned. &lt;/RPENALTIES&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

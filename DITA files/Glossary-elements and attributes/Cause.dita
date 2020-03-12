@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="cause">
+    <glossterm>CAUSE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>An optional sub-element in<menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="death">DEATH</term></uicontrol>
+                </menucascade>. Fill in the keyref attributes once glossentry topics for the
+                specified elements exist (use the id attribute on the glossentry element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>9 November 1969 VA died of &lt;CAUSE&gt;cancer&lt;/CAUSE&gt; at her home in
+                Frome, Vauchurch. November 1852 AAB died in London from &lt;CAUSE&gt;cancer of the
+                uterus&lt;/CAUSE&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If there was more than one cause for her death or if the cause of death is contested,
+                include multiple cause elements.</p>
+        </div>
+    </glossdef>
+</glossentry>
