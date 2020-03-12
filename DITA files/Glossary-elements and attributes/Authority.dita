@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="authority">
+    <glossterm>AUTHORITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Part of the project's system for
+                cataloguing its own electronic files, the authority element occurs in the
+                publication statement element in every document in the textbase. It contains the
+                name of the person or organization responsible for the construction of an sgml file,
+                in this case containing (only) the words “Orlando Project”. This element will
+                normally be filled in when you receive your document template.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AUTHORITY&gt;Orlando Project&lt;/AUTHORITY&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

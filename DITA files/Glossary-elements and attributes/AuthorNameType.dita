@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="author-name-type">
+    <glossterm>AuthorNameType</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is attached to <term
+                    keyref="p-authorship">PAUTHORSHIP</term> and belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It allows us to distinguish between different kinds of authorship
+                issues such as anonymous and pseudonymous texts, and texts whose authorship is
+                claimed on other title-pages. It is modified by one of three values:
+                    <userinput>anonymous</userinput>, <userinput>pseudonymous</userinput> and
+                    <userinput>allusiveAuthorship</userinput>. It has sibling attributes: <term
+                    keyref="authorship-controversy">AUTHORSHIPCONTROVERSY</term>, <term
+                    keyref="controversy-date">CONTROVERSYDATE</term> and <term
+                    keyref="collaboration">COLLABORATION</term>. See individual glossary entries for
+                those definitions.</p></div>
+        <div>
+            <u>Example</u>
+            <p> The most commonly used values are anonymous and pseudonymous; allusive authorship
+                has about half as many examples as the others. <codeblock>&lt;PAUTHORSHIP
+                    AUTHORNAMETYPE=&quot;anonymous&quot;&gt;Joanna Baillie&apos;s A Series of Plays
+                    was published anonymously in 1798 and attributed to Sir Walter
+                    Scott.&lt;/PAUTHORSHIP&gt; </codeblock><codeblock>&lt;PAUTHORSHIP
+                    AUTHORNAMETYPE=&quot;pseudonymous&quot;&gt; To accept this work as Henrietta
+                    Battier&apos;s raises some problems for her biography: her single use of the
+                    name Polly Pindar, her presence at Ipswich, and her detailed interest in events
+                    or persons local to nearby Yarmouth.&lt;/PAUTHORSHIP&gt;
+                    </codeblock><codeblock>&lt;PAUTHORSHIP
+                    AUTHORNAMETYPE=&quot;pseudonymous&quot;&gt;&quot;Michael Field&quot; was the
+                    pseudonym adopted by Katharine Harris Bradley and Edith Emma
+                    Cooper.&lt;/PAUTHORSHIP&gt;</codeblock></p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use value of <term keyref="allusive">ALLUSIVE</term> for title-page statements such as <q>By the Author of Jane Eyre.</q>
+                However, the authorship claim <q>By A Lady</q> should be considered Anonymous.</p>
+        </div>
+    </glossdef>
+</glossentry>

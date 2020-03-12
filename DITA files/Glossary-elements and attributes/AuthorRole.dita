@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="author-role">
+    <glossterm>AUTHORROLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>AUTHOR ROLE is a field in the Bibliography Database
+                which describes an individual's involvement in a work. If the person entered in the
+                    <term keyref="standard-name">STANDARDNAME</term> field is the sole author of the
+                work being cited, leave this field at its default, or blank, setting.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Author Role has several possible options: <ul>
+                    <li>Editor</li>
+                    <li> Translator</li>
+                    <li> Compiler</li>
+                    <li> Adaptor</li>
+                    <li> Contributor</li>
+                    <li> Illustrator</li>
+                    <li> Introduction</li>
+                    <li> Revised</li>
+                </ul> If you are entering a bibrecord for an introduction or preface, this should be
+                entered as an analytic title within the book (part) workform. Do not choose "introd"
+                in the <term keyref="author-role">AUTHORROLE</term> field; it will be redundant
+                because the name will appear as author of the "Introduction." </p>
+        </div>
+    </glossdef>
+</glossentry>

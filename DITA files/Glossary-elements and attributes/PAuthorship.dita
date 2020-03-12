@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-authorship">
+    <glossterm>PAUTHORSHIP</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PAUTHORSHIP is available within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It enables discussion of issues surrounding a text's authorship. Use
+                only where authorship or claims to authorship are some kind of issue: not where a
+                text is merely flagged as “by Jane Jones” (unless such flagging is rare for this
+                author). Encloses statement or debate, defined in the relevant attributes:
+                AuthornameType, AuthorshipControversy, ControversyDate, and Collaboration.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PAUTHORSHIP&gt; Joanna Baillie&apos;s A Series of Plays (one on love, one
+                on hate) was published anonymously in 1798 and attributed to Sir Walter
+                Scott.&lt;/PAUTHORSHIP&gt; </codeblock><codeblock> &lt;PAUTHORSHIP&gt;In the
+                convent, Lucy Cary (if not either her sister Ann or her sister Mary) wrote her
+                mother&apos;s life, &quot;by One of Her
+                Daughters.&quot;&lt;/PAUTHORSHIP&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If you have a title-page saying the author is known as the <q>Author of Jane
+                    Eyre,</q> use the <term keyref="allusive">ALLUSIVE</term> attribute. For a
+                fuller discussion, see AuthorNameType</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="order">
+    <glossterm>ORDER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Order is a field in the Bibliography
+                Database which records the order in which the authors' names will appear in the
+                final bibliographic citation. This field is filled only for multiply-authored
+                texts.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If the final citation should read <q>James W. Marquart, Sheldon Ekland Olson, and
+                    Jonathan R. Sorenson</q>, then enter each author name (lastname, firstname, if
+                the standard form is firstname lastname) in bibliography, in the <term
+                    keyref="standard-name">STANDARDNAME</term> field. If you enter (from this
+                example) Sorenson before Marquart, then you will need to change the numbers in the
+                ORDER field. You only need to use ORDER if you have more than one of each Link Type.
+                If you have one monographic author and one subsidiary editor, for example, you do
+                not need to specify the order of the names because these names will appear in
+                different parts of the citation.</p>
+        </div>
+    </glossdef>
+</glossentry>
