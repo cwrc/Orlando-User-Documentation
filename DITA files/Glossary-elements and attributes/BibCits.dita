@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="bib-cits">
+    <glossterm>BIBCITS</glossterm>
+    <glossdef>
+        <div><u>Definition</u><p>Each <term keyref="bib-cit">BIBCIT</term> tag standing alone has to be
+                enclosed in the tag BIBCITS. More than one BIBCIT tags in the same position share a
+                single BIBCITS tag.</p></div>
+    </glossdef>
+</glossentry>

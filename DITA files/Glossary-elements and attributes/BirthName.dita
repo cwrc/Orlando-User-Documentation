@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="birth-name">
+    <glossterm>BIRTHNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>BIRTHNAME is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                </menucascade>. It captures all the names a person was assigned at birth. Inside
+                    <term keyref="data-struct">DATASTRUCT</term> and <term keyref="data-item"
+                    >DATAITEM</term>, it serves as a structural holding bucket for the elements
+                    <term keyref="surname">SURNAME</term> and <term keyref="given">GIVEN</term>. It
+                has two attributes: <term keyref="reg">REG</term> and <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATAITEM&gt;&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Blanche&lt;/GIVEN&gt;
+                &lt;SURNAME&gt;Oram&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt;</codeblock><codeblock>
+                &lt;DATAITEM&gt;&lt;BIRTHNAME
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;&lt;given&gt;Louisa&lt;/&gt;&lt;/&gt;
+                &lt;BIRTHNAME&gt;&lt;GIVEN&gt;Anne&lt;/GIVEN&gt;&lt;SURNAME&gt;Twamley&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices. In
+                instances where her standard name is identical to her BIRTHNAME, the name must still
+                be repeated inside a BIRTHNAME element to capture the names in <term
+                    keyref="surname">SURNAME</term> and <term keyref="given">GIVEN</term>. Include
+                the entire BIRTHNAME inside one <term keyref="data-item">DATAITEM</term>. See <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term> for discussion of how
+                to use attribute for BIRTHNAME. Attribute <term keyref="reg">REG</term> on
+                BIRTHNAME: sometimes records apparent mistakes in register of births. </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="biography">
+    <glossterm>BIOGRAPHY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>BIOGRAPHY is the large, all-encompassing
+                element in all BIOGRAPHY entry sections. It incorporates everything that goes into
+                this section.</p><p>There are two attributes on BIOGRAPHY which ask you to identify
+                the sex and the country of origin for the kind of person who is the subject of your
+                entry. The <term keyref="sex">SEX</term> attribute has values for female, male,
+                transgender, nonbinary, and unknown. Transgender should be used only when the
+                subject of the biography identifies as such, and is defined in the following way:
+                someone whose gender identity differs from their physical sex as assigned at birth.
+                They include pre-operative and post-operative transsexuals; transgenderists (persons
+                living full-time in a gender opposite from their birth sex with no desire to pursue
+                surgery); transvestites (preferred term: cross-dressers, those whose gender
+                expression occasionally differs from their birth sex); "mannish" or "passing" women,
+                whose gender expression is masculine and who are often assumed to be lesbians,
+                though this is not necessarily the case. Transsexual and transgender persons can be
+                female-to-male (transsexual or transgendered men) as well as male-to-female
+                (transsexual or transgendered women). The person attribute has values for
+                    <userinput>BRWwriter</userinput>, <userinput>historical figure</userinput>,
+                    <userinput>writer</userinput>, and <userinput>IBRWriter</userinput>. Use <userinput>writer</userinput>
+                when creating documents for writers who are not British and/or female; use <userinput>IBRWriter</userinput>
+                for writers who can be classified as British and <term keyref="international">International</term>.</p></div>
+    </glossdef>
+</glossentry>

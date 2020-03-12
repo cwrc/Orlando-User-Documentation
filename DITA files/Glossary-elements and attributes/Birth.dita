@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="birth">
+    <glossterm>BIRTH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Birth is one of the 16 major <term
+                    keyref="biography">BIOGRAPHY</term> elements defined as integral to mapping a
+                woman's life. It captures information concerning the date, place, birth position and
+                context of a person's birth where known. Birthdates should be entered in <term
+                    keyref="chronstruct">CHRONSTRUCT</term> form where available, for extraction
+                from individual biography documents to be placed within other general chronologies.
+                This mandatory element is usually the second Div1 content element in a BIOGRAPHY
+                section (after <term keyref="person-name">PERSONNAME</term>). It will almost always
+                include a chronstruct for date of birth, and has one sub-element, <term
+                    keyref="birth-position">BIRTHPOSITION</term>, for capturing position in family
+                (attributes <userinput>Eldest</userinput>, <userinput>Youngest</userinput>,
+                    <userinput>Only</userinput>), or more general description</p></div>
+        <div>
+            <u>Example</u>
+            <p>Birth should be entered as a chronology event with the form <q>HB was born in
+                    London,</q> but also with some detail if possible to make a more interesting
+                statement. Please use a full sentence with the verb in past tense. Whenever possible
+                a place should be given for a woman writer's birth, to facilitate mapping of
+                locations. </p><p> Only one place tag should be included inside birth elements; it
+                is assumed that the place tagged within birth is the location of the woman writer's
+                birth and will be mapped accordingly. If you want to record a place of baptism, do
+                it in attached <term keyref="short-prose">SHORTPROSE</term>. Should contain a
+                CHRONSTRUCT if there is solid information; if birthdate is a mystery Birth should
+                contain a <term keyref="short-prose">SHORTPROSE</term> including a tagged date with
+                attribute indicating uncertainty. Identify place of birth if possible, describe and
+                tag position in family where known; do not tag parents’ names here.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What happens if the birth date is unknown?</p><p>
+                <b>Answer:</b> Since birth is a required element, include a sentence conveying the
+                information that birth date is unknown or uncertain or contested. In these
+                instances, it is suggested that the researcher include a research note detailing the
+                sources they have checked trying to locate a date so that research will not be
+                duplicated. </p>
+        </div>
+    </glossdef>
+</glossentry>

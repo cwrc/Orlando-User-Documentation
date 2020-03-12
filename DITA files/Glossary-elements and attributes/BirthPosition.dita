@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="birth-position">
+    <glossterm>BIRTHPOSITION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>BIRTHPOSITION is an optional sub-element
+                located within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="birth">BIRTH</term></uicontrol>
+                </menucascade>. It captures information about a writer's position within her family.
+                In systematically capturing information about BIRTHPOSITION, we are providing
+                material for investigating its influence, especially in relation to gender position.
+                It has values <userinput>Eldest</userinput>, <userinput>Youngest</userinput>, or
+                    <userinput>Only</userinput>. Choice of attribute value may be a judgement call
+                in face of blended families or siblings dying very young. Bear in mind the way this
+                attribute value reflects conditions of a writer’s childhood. Such statements as "She
+                was the middle one of five daughters" may be included in the <term
+                    keyref="chron-prose">CHRONPROSE</term> recording her birth or may be placed in a
+                    <term keyref="short-prose">SHORT-PROSE</term> element following the <term
+                    keyref="chron-struct">CHRONSTRUCT</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;BIRTH&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1976&lt;/DATE&gt;&lt;CHRONPROSE&gt;
+                HB was born.&lt;CHRONPROSE&lt;BIRTHPOSITION POSITION=eldest&gt;She was the eldest of
+                five daughters.&lt;/DATE&gt;&lt;/CHRONSTRUCT&gt;&lt;/BIRTH&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Pay attention to the attributes and include where possible, preferably within a
+                sentence, though an empty BIRTHPOSITION element with the attribute of eldest is also
+                possible.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If all I know is that she was the eldest of five daughters, how and where
+                do I include this in the biography? </p><p> <b>Answer:</b> If possible, construct a sentence
+                including this information and place in the <term
+                    keyref="chron-prose">CHRONPROSE</term> or following a <term keyref="short-prose">SHORT-PROSE</term>.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>
