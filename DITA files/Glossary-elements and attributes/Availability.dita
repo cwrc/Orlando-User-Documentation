@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="availability">
+    <glossterm>AVAILABILITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element, contained in the
+                OrlandoHeder, potentially provides information about the availability of a text,
+                including restrictions on use, distribution, or copyright status. It could be placed
+                anywhere in the textbase, but is currently not used by the Orlando Project. A
+                hold-over from the TEI Header, this element refers to texts that are transcribed as
+                electronic editions. It has one attribute, Status, with values of
+                    <userinput>free</userinput> (ie the text is freely available),
+                    <userinput>unknown</userinput>, and <userinput>restricted</userinput>.
+            </p></div>
+    </glossdef>
+</glossentry>

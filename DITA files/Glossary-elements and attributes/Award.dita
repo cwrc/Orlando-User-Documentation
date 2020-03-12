@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="award">
+    <glossterm>AWARD</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>.It captures important educational awards given to future writers, and
+                contains the name of the award, or occasionally a sentence concerning it. It has
+                optional attributes of <term keyref="award-type">AWARDTYPE</term> and <term
+                    keyref="reg">REG</term>. REG allows you to regularize the name of an award when
+                you have not been able to express it in a standard form in the prose.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AWARD AWARDTYPE=&quot;Prize&quot;&gt;History Prize&lt;/AWARD&gt;
+                &lt;AWARD AWARDTYPE=&quot;Scholarship&quot;&gt;Fulbright
+                scholarship&lt;/AWARD&gt;</codeblock>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Should the Nobel Prize or other Writing prizes be included here? </p><p>
+                <b>Answer:</b> No. All awards associated with writing go in Writing DTD. </p>
+            <p><b>Question:</b> A writer wins a scholarship but we don't have a name for it. Do I
+                tag it as an award? </p><p><b>Answer:</b> maybe. If it was in the early period when
+                any scholarship or awards for women's education were rare, then yes. Also tag it if
+                it was obviously a big deal but we don't have full information about it. Generally,
+                we would like to have the name of the award. </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="author-summary">
+    <glossterm>AUTHORSUMMARY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>AUTHORSUMMARY is placed at the opening of
+                    <term keyref="writing">WRITING</term> entries. As the equivalent of a Div1, it
+                occurs outside any Div1, standing on its own. It is devised for researchers to make
+                summary statements about an author before opening individual <term
+                    keyref="production">PRODUCTION</term>, <term keyref="reception"
+                >RECEPTION</term>, or <term keyref="textual-feautures">TEXTUALFEATURES</term>
+                elements. You are encouraged to use this element to preface the writing document of
+                each woman writer. It is useful both for minor writers about whom little is known,
+                and for major writers whose work needs to be summarized before launching into the
+                details. It must be as brief as possible, while situating its subject as to period,
+                most characteristic genres, and reasons for interest in her. It allows use of three
+                main sub-elements: <term keyref="extent-of-oeuvre">EXTENTOFOEUVRE</term>, <term
+                    keyref="genre-name">GENRENAME</term>, and <term keyref="generic-range"
+                    >GENERICRANGE</term>. If you need to say more, then move into a PRODUCTION,
+                RECEPTION, or TEXTUALFEATURES element. The usual Div1 inclusions are also available
+                within <term keyref="author-summary">AUTHORSUMMARY</term>: <term keyref="name"
+                    >NAME</term>, <term keyref="date">DATE</term>, <term keyref="place"
+                >PLACE</term>, and <term keyref="org-name">ORGNAME</term>. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AUTHORSUMMARY&gt;&lt;SHORTPROSE&gt;&lt;P&gt;&lt;GENERICRANGE&gt;Anne
+                Clifford&apos;s known writings fall into two groups: the diaries she kept as a young
+                woman, and the writings of her old age, which mix
+                &lt;GENRENAME&gt;diary&lt;/GENRENAME&gt;,
+                &lt;GENRENAME&gt;autobiography&lt;/GENRENAME&gt;, and writing about her
+                family.&lt;GENERICRANGE/&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/AUTHORSUMMARY&gt;
+                </codeblock><codeblock>
+                &lt;AUTHORSUMMARY&gt;&lt;SHORTPROSE&gt;&lt;P&gt;&lt;EXTENTOFOEUVRE&gt;Elizabeth
+                Cellier&apos;s output amounts to three pamphlets on topical religious and gender
+                issues.&lt;/EXTENTOFOEUVRE&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/AUTHORSUMMARY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Although this element can in principle be used anywhere, the beginning of the
+                document is its normal place. You should limit its length to roughly 160 words where
+                possible. Be sure to tag all instances of <term keyref="genre-names"
+                    >GENRENAMES</term> appearing in the AUTHORSUMMARY in addition to tagging the
+                GENERICRANGE (where possible). Note that this paragraph is part of the WRITING
+                schema, not <term keyref="life">LIFE</term>. It displays, however, on the Overview
+                screen not the WRITING screen; some repetition is therefore permissible. Needs to be
+                brief for effective display, while providing information on the author’s period and
+                most characteristic genres, and what is of greatest interest about her.</p>
+        </div>
+    </glossdef>
+</glossentry>

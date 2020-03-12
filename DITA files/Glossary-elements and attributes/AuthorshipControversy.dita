@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="authorship-controversy">
+    <glossterm>AUTHORSHIPCONTROVERSY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is attached to <term
+                    keyref="p-authorship">PAUTHORSHIP</term> and tied conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>.It reflects the difficulties scholars sometimes encounter when trying
+                to identify the authorship of a text. It has four values,
+                    <uicontrol>forgery</uicontrol>, <uicontrol>spurious</uicontrol>,
+                    <uicontrol>misattribution</uicontrol>, and <uicontrol>doubtful</uicontrol>,
+                which all refer to specific difficulties in attributing or discerning authorship.
+                This attribute works in conjunction with the attribute <term
+                    keyref="controversy-date">CONTROVERSYDATE</term> to specify whether the
+                controversy is settled or still ongoing.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PAUTHORSHIP AUTHORNAMETYPE=&quot;pseudonymous&quot;
+                AUTHORSHIPCONTROVERSY=&quot;doubtful&quot; CONTROVERSYDATE=&quot;present&quot;&gt;To
+                accept this work as Henrietta Battier&apos;s poses some problems for her biography:
+                her single use of the name Polly Pindar, her presence at Ipswich, and her detailed
+                interest in events or persons local to nearby Yarmouth.&lt;/PAUTHORSHIP&gt;
+                </codeblock><codeblock> &lt;PAUTHORSHIP
+                AUTHORSHIPCONTROVERSY=&quot;misattribution&quot;
+                CONTROVERSYDATE=&quot;historical&quot;&gt;AG&apos;s reputation was such (after the
+                publication of Memoirs) that Waverley was ascribed to
+                her.&lt;/PAUTHORSHIP&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

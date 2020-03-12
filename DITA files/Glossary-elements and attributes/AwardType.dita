@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="award-type">
+    <glossterm>AWARDTYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is on the element <term
+                    keyref="award">AWARD</term> found within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>. It distinguishes between the different kinds of awards:
+                    <userinput>scholarship</userinput>, <userinput>prize</userinput>, and
+                    <userinput>other</userinput>. An entrance scholarship to Oxford or winning first
+                prize in a Spelling Bee: distinguishing between awards will help understand the
+                material conditions affecting women's education. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AWARD AWARDTYPE=&quot;Prize&quot;&gt;History Prize&lt;/AWARD&gt;&lt;AWARD
+                AWARDTYPE=&quot;Scholarship&quot;&gt;Fulbright scholarship&lt;/AWARD&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Scholarships include bursaries. The value <userinput>other</userinput> has been used
+                rarely, for unusual marks of distinction.</p>
+        </div>
+    </glossdef>
+</glossentry>
