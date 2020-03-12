@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-best-known-work">
+    <glossterm>RBESTKNOWNWORK</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>RBESTKNOWNWORK is an element belonging to
+                the <term keyref="reception">RECEPTION</term> aspect of entries, though available
+                anywhere in the <term keyref="writing">WRITING</term> section. It identifies the
+                single work whose reputation exceeds others, according to external criteria (best
+                known in literary circles), and can occur once per genre for some writers. It
+                encloses a statement, not just a title (which is highly desirable here). It should
+                be placed in a <term keyref="chronstruct">CHRONSTRUCT</term> if that fits the sense,
+                and should normally not be used in a <term keyref="short-prose">SHORTPROSE</term> if
+                there is more than one chronStruct in the Div2.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RBESTKNOWNWORK&gt;Anne Grant&apos;s best known work today (though it is
+                known without her name) must be “Oh where, tell me where, is your Highland laddie
+                gone.”&lt;/RBESTKNOWNWORK&gt; </codeblock><codeblock> &lt;RBESTKNOWNWORKk&gt;Anne
+                Barnard&apos;s “Auld Robin Gray” always enjoyed great
+                popularity.&lt;/RBESTKNOWNWORK&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><i>Black Beauty</i> and <i>Little Black Sambo</i> are best-known works. Woolf's <i>To
+                    The Lighthous</i>e would be her best-known work while <i>The Waves</i> is a
+                landmark text for signalling a major shift in writing style. A work can be both a
+                    <q>best known work</q> and a <q>landmark text</q>: <i>Uncle Tom's Cabin</i>, for
+                instance. The <q>landmark</q> effect can be either social or literary. See <term
+                    keyref="landmark-text">LANDMARKTEXT</term>. N.b. use of this tag puts any
+                associated CHRONSTRUCT among the <term keyref="milestones">MILESTONES</term> of this
+                entry.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> How can I distinguish a best-known text from a Landmark Text?
+                    </p><p><b>Answer:</b> See discussion in Practice Issues and see <term
+                    keyref="landmark-text">LANDMARKTEXT</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>

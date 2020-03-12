@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="bib-cit">
+    <glossterm>BIBCIT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>BIBCIT is an element, available nearly everywhere from
+                the Div0 level down, is designed to capture bibliographical information in much the
+                same way as an MLA parenthetical citation. Each BIBCIT or group of <term
+                    keyref="bib-cits">BIBCITS</term> must be enclosed in a BIBCITS tag. All research
+                information and quotations must be followed by a BIBCIT indicating the source of
+                this information or quotation. There are a few exceptions to this rule. Discussion
+                of a BWW's texts associated with <term keyref="textual-features"
+                    >TEXTUALFEATURES</term> (in the <term keyref="writing">WRITING</term> sections
+                of entries) do not require BIBCITS if they are the product of the Project member
+                writing the document. The Orlando Project's BIBCITS follow MLA style: <q>Pedersen
+                    90; Holton, Suffrage 107-8; qtd. in Hume 76.</q> However, much of this
+                information, including the author's name, short title, and the abbreviation "qtd.
+                in," will be stored in attributes and rendered through various stylesheets. In its
+                final form within an SGML document, the text of a BIBCIT will contain page, or
+                volume and page, numbers only, and may sometimes even be empty if no page number is
+                required (in the case of alphabetically arranged reference books, for example).
+                BIBCITS go just inside the end tag of whatever piece of information they apply to
+                (but outside a <codeph>&lt;quote&gt;</codeph> tag unless the quote is long enough
+                for indenting). In events documents, for example, BIBCITS go before the end tag for
+                the whole <term keyref="chronstruct">CHRONSTRUCT</term>. In author entries, bibCits
+                for chronEvents should occur just before the closing tag; and bibCits that refer to
+                entire paragraphs should appear inside the closing <codeph>&lt;/q&gt;</codeph> tag.
+                You need to have a BIBCIT after each direct quotation, and please use them as
+                frequently as necessary throughout the prose writing in your doc to make the job
+                easier for source checkers. </p></div>
+        <div><u>Relationships</u><p>This element is equivalent to other globally available elements
+                such as <term keyref="title">TITLE</term>, <term keyref="scholar-note"
+                    >SCHOLARNOTE</term>, and <term keyref="research-note">RESEARCHNOTE</term>.The
+                BIBCIT tag has three different attributes: BIBCIT PLACEHOLDER: the bibcit
+                placeholder retains the text of the original, MLA-style BIBCIT. Note that <term
+                    keyref="place-holder">PLACEHOLDER</term> normally includes author short name,
+                short title (reg form not necessary) and publication date. DBREF: the dbref, or
+                database reference number, is the number of Orlando’s corresponding bibliographic
+                citation for the source cited; this number can be determined by looking up the
+                source in the bibliography database. <term keyref="qtd-in">QTDIN</term>: attribute
+                whose value <userinput>QTDIMYES</userinput> applies to those quotations which would
+                be preceded by <q>qtd. in</q>; for example, if you are providing a quotation from a
+                BWW and your source is a secondary source which imbeds this quotation within its own
+                text. When you quote from a quoted passage in a secondary source (eg, a biography
+                which quotes from diaries, letters, etc), then you choose the attribute
+                    <codeph>QTDIN=”QTDINYES"</codeph>. This will get rendered down the road; you do
+                not need to write in the words <q>qtd. in</q>. When writing documents, fill in the
+                BIBCIT attributes as you proceed. As a courtesy to future source-checkers, provide
+                the author and/or short title in both the BIBCIT Placeholder and in the actual text
+                of the BIBCIT proper; source checkers will delete everything but page or page
+                equivalent from the BIBCIT text as they check each reference.</p></div>
+        <div>
+            <u>Examples</u>
+            <p>Here's how you should handle information that is derived from a footnote in your
+                primary source: Crook 127n9 takes no punctuation and no spaces (except between the
+                author's last name and the page reference). You should use this only when the
+                information you cite comes from the footnote. </p><p>Here's how you should handle
+                citations from continuously paginated multi-volume references: short title volume
+                number (year): issue number, date (in parentheses), page number. E.g. <q>Athanæum
+                    1370 (April 1854): 117.</q> Include month and day as well as year where
+                possible. If you have only the year or only the volume, then use the following
+                model: <q>Punch 254: 62. TLS (1963): 941.</q>
+            </p><p> When a series has issue numbers as well as volume numbers, and page numbering
+                begins at one with each new issue, then follow this model: volume number: issue
+                number (date): page number. E.g. <q>Writers Unlimited 12: 3 (Summer 1999): 40.</q>
+            </p><p> For alphabetically-arranged reference works, page numbers are not required
+                provided that it is clear which article is being used. For example, biographical
+                dictionaries do not require page numbers unless you are using an entry about someone
+                other than the subject of your document. Some examples of single-volume
+                alphabetically arranged reference works which do not require page numbers are: <ul>
+                    <li>Berney, K.A., ed. Contemporary Women Dramatists, 1994</li>
+                    <li> Boylan, Henry, ed. A Dictionary of Irish Biography, 1978</li>
+                    <li> Brady, Anne M. and Brian Cleeve, A Biographical Dictionary of Irish
+                        Writers, 1985</li>
+                    <li> Buck, Clare, ed. Bloomsbury Guide to Women's Literature,1992</li>
+                    <li> Harris, Sharon, ed. American Women Writers to 1800, 1996</li>
+                    <li> Hartnoll, Phyllis, ed. The Oxford Companion to Theatre 4th ed., 1983</li>
+                    <li> Klein, Kathleen Gregory, ed. Great Women Mystery Writers, 1994</li>
+                    <li> Joanne Shattock, The Oxford Guide to British Women Writers, 1993</li>
+                    <li> Paul Schleuter and June Schleuter, An Encyclopedia of British Women
+                        Writers, 1988</li>
+                    <li> Janet Todd, ed. Dictionary of British Women Writers, 1989</li>
+                    <li> Janet Todd, ed. A Dictionary of British and American Women Writers,
+                        1660-1800, 1985</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>BibCits and Quotes</b> All quote tags should be followed by a BIBCIT as if the
+                sentence had normal spacing without the bibCit. It was originally opened by Queen
+                Victoria as the People's Palace, a place of <codeph>&lt;QUOTE DIRECT=”Y”&gt;rational
+                    and instructive entertainment and of artistic
+                    enjoyment&lt;/QUOTE&gt;&lt;BIBCIT&gt;&lt;/BIBCIT&gt;</codeph> for the people of
+                East London. <b>Note:</b> Unlike the MLA style of documentation, there should be no
+                space between the BIBCIT and whatever goes before it, whether that is a closing
+                quote tag or end-of-sentence punctuation. There is no space between the end of the
+                quote and the beginning of the BIBCIT, but there is a space after the BIBCIT before
+                the following word.</p><p>If a single source is quoted multiple times in one
+                sentence, the BIBCIT should immediately follow the end of the sentence. Note: if
+                source is used to supply information beyond the quotation, then a BIBCIT must ALSO
+                be included there according to standard BibCit practice. If a person other than the
+                author of the work cited in the BibCit is quoted then use the QtdInYes value on the
+                QTDIN attribute of the BibCit. If one Quote tag (attribute value Direct=<q>N</q>) is
+                embedded inside another (attribute value Direct=<q>Y</q>), do not use QTDINYES. Page
+                ranges should not repeat numbers (e.g. 65-6 NOT 65-66, except in the teens: 16-17
+                NOT 16-7). Every quote should have a BIBCIT. When you use the abbreviation ff (=this
+                and following pages) in a BIBCIT, it does not need a period. Spacing should read
+                properly when the BIBCIT is removed. If you are using two books by one author in the
+                same document, use short titles to distinguish between the two: lastname, short
+                title, ##. Use a BIBCIT for each, with correct DBREF number for each. BLC or other
+                shelfmarks. Do not use these in <term keyref="bibliography"
+                    >BIBLIOGRAPHY</term>. Mention them in the prose only in the case of extremely
+                rare material. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> How do I BIBCIT a publication <term keyref="chronstruct"
+                    >CHRONSTRUCT</term> when my source is the book itself? </p><p>
+                <b>Answer:</b> Every <term keyref="chronstruct">CHRONSTRUCT</term> needs a BIBCIT,
+                so consider citing a library catalogue. In <term keyref="short-prose"
+                    >SHORTPROSE</term> and &lt;p&gt;, don't worry about adding a BIBCIT; a <term
+                    keyref="research-note">RESEARCHNOTE</term> specifying the source of the
+                information (the title page of the book, for instance) will make more sense than
+                trying to manufacture a BIBCIT. For multi-volume reference works, include both
+                volume and page numbers. You must also specify which edition of the reference work
+                you are using. This information does not need to appear in the BIBCIT itself, but it
+                must appear in the corresponding bibrecord in the bibl db, and you must make sure
+                that the DBREF number you provide is for the correct edition. </p>
+        </div>
+    </glossdef>
+</glossentry>
