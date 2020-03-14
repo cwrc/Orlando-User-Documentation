@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="chron-column">
+    <glossterm>CHRONCOLUMN</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>CHRONCOLUMN is a mandatory attribute on
+                the element <term keyref="chron-struct">CHRONSTRUCT</term> (available throughout the
+                textbase), which designates a given event as belonging to a subject-specific
+                “column” - that is, to appear in different faceted searches - in Orlando
+                chronologies. It has four values: <userinput>NationalInternational</userinput>,
+                    <userinput>BritishWomenWriters,</userinput>
+                <userinput>WritingClimate,</userinput> and <userinput>SocialClimate.</userinput> The
+                same event can be assigned to more than one CHRONCOLUMN, and each may have a
+                different <term keyref="relevance">RELEVANCE</term> value. In searches where
+                CHRONCOLUMN is not specified, the event will appear with the icon of the one
+                assigned first. Interpretation of values <userinput>SocialClimate</userinput> and
+                    <userinput>NationalInternational</userinput> is fluid, and we should remember to
+                counter our culture’s tendency to see the political as more significant than the
+                social. </p><p> The attribute values carry the following connotations: </p><p>
+                <userinput>National/International Events</userinput><ul>
+                    <li> British-centric events with major implications in Europe, colonies, or
+                        world-wide;</li>
+                    <li> major foreign events which affected Britain either politically or socially
+                        (eg., Russian Revolution);</li>
+                    <li> establishment of major national and international organizations (e.g.
+                        League of Nations, Oxfam, International Labour Organization);</li>
+                    <li> change in status of countries' governing structure, especially colonies,
+                        former colonies, and close allies (e.g. independence, coups);</li>
+                    <li> British monarchs’ accession;</li>
+                    <li> British general elections; major British and other military engagements
+                        (e.g. in Europe, in India, Boer War, major campaigns of WWI and II) </li>
+                </ul>
+            </p><p><userinput>Social Climate</userinput> The items in this column will frequently
+                refer not to discrete events but to larger trends or practices affecting women; this
+                means <term keyref="date-ranges">DATERANGES</term> as well as <term keyref="dates"
+                    >DATES</term>, often approximate. (note: please always the <term keyref="value"
+                    >VALUE</term> attribute on approximate or uncertain dates).<ul>
+                    <li> The following are types of information appropriate to this column:
+                        advances, developments, or regressions in the areas of technology, science,
+                        medicine, law</li>
+                    <li> education </li>
+                    <li>conditions surrounding or affecting domestic conditions: housing, clothes,
+                        food and food supply, family well-being </li>
+                    <li>women's political office or involvement in political organisations e.g. the
+                        dates of a non-writing but historically significant woman's election to
+                        office. (Many events will be listed in the NationalandInternational column
+                        as well--e.g. Lady Astor as first woman to take her seat in the House of
+                        Commons.)</li>
+                </ul>
+            </p><p><userinput>Writing Climate</userinput><ul>
+                    <li>texts and events associated with male writers </li>
+                    <li>texts and events associated with non-British women writers</li>
+                    <li> information about copyright, print technology, book trade, etc.</li>
+                </ul></p><p><userinput>British Women's Writing</userinput><ul>
+                    <li>texts and events associated with British women writers individually or as a
+                        class </li>
+                    <li> material conditions affecting British women's writing in particular</li>
+                </ul>
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHRONSTRUCT CHRONCOLUMN=&quot;nationalInternational&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;July 1800&lt;/DATE&gt;&lt;CHRONPROSE&gt;The
+                Combination Act outlawed trade unions and
+                strikes.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;nationalInternational&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;29 September 1938&lt;/DATE&gt;&lt;CHRONPROSE&gt;The
+                Munich Pact granted the Sudetenland region of what later became Czechoslovakia to
+                Germany.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt; </codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;socialClimate&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1889&lt;/DATE&gt;&lt;CHRONPROSE&gt;An informal
+                alliance was struck between the Women’s Co-operative Guild and the Women&apos;s
+                Trade Union
+                Association&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;socialClimate&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1730&lt;/DATE&gt;&lt;CHRONPROSE&gt;The first pair of
+                cotton stockings ever made in England, at Nottingham, initiated the manufacture of
+                hosiery.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt; </codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;writingClimate&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1891&lt;/DATE&gt;&lt;CHRONPROSE&gt;Printing began at
+                the Kelmscott Press, founded by William Morris and Emery
+                Walker.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt; </codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;writingClimate&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1763&lt;/DATE&gt;&lt;CHRONPROSE&gt; Christopher
+                Smart’s A Song to David was published.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;
+                </codeblock><codeblock> &lt;CHRONSTRUCT
+                CHRONCOLUMN=&quot;BritishWomenWriters&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1978&lt;/DATE&gt;&lt;CHRONPROSE&gt;Gillian Allnutt
+                published The Rag and Bone Man&apos;s Daughter Imagines a Happy
+                Family.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;BritishWomenWriters&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1792&lt;/DATE&gt;&lt;CHRONPROSE&gt;Elizabeth Inchbald
+                met William Godwin, writer, radical reformer, and rationalist
+                philosopher.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>
+                &lt;CHRONSTRUCT CHRONCOLUMN=&quot;BritishWomenWriters&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;August 1949&lt;/DATE&gt;&lt;CHRONPROSE&gt;An anonymous
+                gift from the Society of Authors enabled ME and her husband to spend a holiday in
+                Ireland . The journal she wrote on holiday was sent to her benefactor, Winifred
+                Bryher.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>N.b. <term keyref="chron-prose">CHRONPROSE</term> should be complete sentence in past
+                tense. The CHRONCOLUMN attribute values are not always conceptually clean when it
+                comes to tagging actual research. Please fill out the attribute(s) according to the
+                column(s) that you think best for the chronology item at hand. If you want to
+                question the category you have used, please use a research note to do so.
+                    <codeph>&lt;CHRONSTRUCT CHRONCOLUMN=&quot;BritishWomenWriters&quot; &gt;&lt;DATE
+                    CERTAINTY=&quot;cert&quot;&gt;February 1938&lt;/DATE&gt;&lt;CHRONPROSE&gt;The
+                    Spinster began publication, campaigning for pensions for unmarried working women
+                    at 55.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;RESEARCHNOTE&gt;SRF: I have put
+                    this in the BWW column; should it be in writing climate instead? Or
+                    socialClimate? Or several?&lt;/RESEARCHNOTE&gt;</codeph>
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

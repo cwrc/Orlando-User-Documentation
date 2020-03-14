@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="childlessness">
+    <glossterm>CHILDLESSNESS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is found within
+                expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="family">FAMILY</term></uicontrol>
+                </menucascade>. It captures the fact that a woman had no children. We hope to
+                facilitate research on the material effects of having or not having children on a
+                woman writer's life. In order to do so, we must systematize information about women
+                who did not have children. This element also allows us to capture discussions of
+                significant issues such as infertility that led to life-long childlessness and how
+                that affected the writer's life. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHILDLESSNESS&gt;MS’s single recorded pregnancy resulted in the birth of
+                a stillborn son.&lt;/CHILDLESSNESS&gt; </codeblock><codeblock>
+                &lt;CHILDLESSNESS&gt;Their marriage remained
+                childless.&lt;/CHILDLESSNESS&gt;</codeblock><codeblock> &lt;CHILDLESSNESS&gt;Their
+                decision not to have children seems to have sprung entirely from his preference . .
+                . . Her diary somewhat cryptically records quarrels over the issue of having
+                children; yet she evidently never insisted.&lt;/CHILDLESSNESS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If you know that a woman had no children, say so within this element. If she never
+                married but you have no proof she never had children, do not lightly assume she was
+                childless. Stillborn births, infertility problems and miscarriages can be mentioned
+                here but should in any case be mentioned within a <term keyref="health"
+                    >HEALTH</term> tag, attribute value <term keyref="female-body"
+                >FEMALEBODY</term>. You may mention them in CHILDLESSNESS only if she never had any
+                children or if childlessness was a long-term issue for her: using this element
+                signifies that a woman was childless all or most of her life or remained without
+                surviving offspring. </p>
+        </div>
+    </glossdef>
+</glossentry>

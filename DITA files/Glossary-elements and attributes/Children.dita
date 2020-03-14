@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="children">
+    <glossterm>CHILDREN</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element can be found in
+                expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="family">FAMILY</term></uicontrol>
+                </menucascade>. It systematizes information concerning the number of children a
+                woman had and is meant to capture issues around children rather than a discussion of
+                specific children. It allows us to discuss her children in general outside the
+                context of this or that child. It should be placed around the whole sentence
+                describing the number of children she had. You can systematically capture the number
+                of children in the attached attribute <term keyref="number">NUMBER</term>. It is
+                clearly related to the element CHILDLESSNESS, but it is very seldom that both are
+                used in the same entry.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHILDREN NUMBER=&quot;2&quot;&gt;LF had a son and a
+                daughter.&lt;/CHILDREN&gt; </codeblock><codeblock>&lt;CHILDREN
+                NUMBER=&quot;5&quot;&gt;MI gave birth to five children.&lt;/CHILDREN&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Often all we know is that a woman writer had five children; therefore, there is no
+                information to include within a specific member sub-element. However, we do not want
+                to lose the information that she was a mother and we capture it by including the
+                general comment and placing this tag around the fact that she had five children. If
+                a woman had three children from her first marriage and two from her second, we want
+                to capture the TOTAL number of children she had. This means that the <term
+                    keyref="number">NUMBER</term> attribute on each Children element would read
+                    <q>5.</q> The Number attribute should be filled out wherever possible. Do not
+                include a discussion of a specific child within this element. Open a <term
+                    keyref="member">MEMBER</term>=<term keyref="child">CHILD</term> sub-element. Complications in pregnancy,
+                fertility treatment, etc. resulting in children can be mentioned under CHILDREN if
+                this seems appropriate as well as under <term keyref="health"
+                >HEALTH</term>=<term keyref="feamle-body">FEMALEBODY</term>.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Are stepchildren to be included in the number of children? Or just
+                birth and adopted children? <b>Answer:</b> Include stepchildren. The CHILDREN
+                element is meant to direct our user to a discussion of women's involvement with
+                their children and stepchildren can be as important and central to a woman's life as
+                the children to whom she gave birth. </p>
+        </div>
+    </glossdef>
+</glossentry>
