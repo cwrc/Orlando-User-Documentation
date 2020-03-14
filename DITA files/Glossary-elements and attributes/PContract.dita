@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="untitled2">
-    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+<glossentry id="p-contract">
+    <glossterm>PCONTRACT</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>PCONTRACT belongs to <menucascade>
                     <uicontrol><term keyref="writing">WRITING</term></uicontrol>
