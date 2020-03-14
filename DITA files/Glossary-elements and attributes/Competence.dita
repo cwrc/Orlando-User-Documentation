@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="competence">
+    <glossterm>COMPETENCE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is located in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It is attached to the attribute <term keyref="language"
+                    >LANGUAGE</term> and allows the tagger to express whether or not the specified
+                language was the person's mother-tongue. We hope to facilitate researchers
+                interested in studying women writers who wrote in English but whose first language
+                was not English. This attribute has values of <userinput>mother</userinput> and
+                    <userinput>other</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Her mother-tongue was &lt;LANGUAGE
+                COMPETENCE=mother&gt;German&lt;/LANGUAGE&gt; but as a child she could also converse
+                in &lt;LANGUAGE COMPETENCE=other&gt;Yiddish&lt;/LANGUAGE&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Please use the attribute in all instances where the language specified was her
+                mother-tongue. The default value is <userinput>other</userinput>.</p>
+        </div>
+    </glossdef>
+</glossentry>

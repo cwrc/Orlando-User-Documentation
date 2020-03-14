@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="class-issue">
+    <glossterm>CLASSISSUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>CLASSISSUE is a significant sub-element
+                in expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It is used to discuss the significance of class in a person's life.
+                In conjunction with the <term keyref="class">CLASS</term> element, CLASSISSUE allows
+                us to capture nuanced material about how the socio-economic conditions of her family
+                and herself affected her life and writing. We understand that class is a shifting
+                category and that a person's class position changes over the course of her life, for
+                example on marriage. We also understand that class categories are historically and
+                culturally specific. The CLASSISSUE element is meant to capture discussions of these
+                complexities and allow for the historical and biographical specificities of one's
+                relation to class. Within CLASSISSUE, you can if you need to access any of the other
+                subelements appropriate to the discussion of CULTURALFORMATION: <term keyref="class"
+                    >CLASS</term>, <term>DENOMINATION</term>, <term keyref="ethnicity"
+                    >ETHNICITY</term>, <term keyref="gender">GENDER</term>, <term
+                    keyref="geo-herritage">GEOGHERRITAGE</term>, <term keyref="language"
+                    >LANGUAGE</term>, <term keyref="national-herritage">NATIONALHERRITAGE</term>,
+                    <term keyref="nationality">NATIONALITY</term>, <term
+                    keyref="political-affiliation">POLITICALAFFILIATION</term>, <term
+                    keyref="race-colour">RACECOLOUR</term>, and <term keyref="sexual-identity"
+                    >SEXUALIDENTITY</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DIV2&gt;&lt;CULTURALFORMATION&gt;&lt;CLASSISSUE&gt;IW shows how hazy are
+                class boundaries at this date. Her father &lt;CLASS
+                SOCIALRANK=&quot;gentry&quot;&gt;owned a little land&lt;/CLASS&gt;; her brother was
+                a &lt;CLASS SOCIALRANK=&quot;professional&quot;&gt;university-educated
+                lawyer&lt;/CLASS&gt; and poet; yet she and her sisters seem to have worked as
+                &lt;CLASS SOCIALRANK=&quot;servant&quot;&gt;servants&lt;/CLASS&gt; (perhaps skilled
+                servants) in London. She sounds like a middle-class town-dweller, who thinks in
+                terms of commerce before religion or
+                rank.&lt;/CLASSISSUE&gt;&lt;/&gt;&lt;/CULTURALFORMATION&gt;&lt;/DIV2&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If you can, include a <term keyref="class">CLASS</term> element or elements within
+                CLASSISSUE to specify the class to which this discussion applies.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If she married into a wealthy family and this changed her financial
+                status, does this event belong in <term keyref="wealth">WEALTH</term>, CLASSISSUE,
+                or <term keyref="family">FAMILY</term>? <b>Answer:</b> Changes in her class status
+                should be described within <term keyref="cultural-formation"
+                    >CULTURALFORMATION</term> and within CLASSISSUE, with <term keyref="class"
+                    >CLASS</term> elements, and should be placed in the document about when the
+                change occurred, perhaps following a statement about the marriage (in the element
+                    <term keyref="family">FAMILY</term>). </p>
+        </div>
+    </glossdef>
+</glossentry>

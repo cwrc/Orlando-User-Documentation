@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="collaboration">
+    <glossterm>COLLABORATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is attached to <term
+                    keyref="p-authorship">PAUTHORSHIP</term> and belongs conceptually to <term
+                    keyref="writing">WRITING</term>
+                <term keyref="production">PRODUCTION</term>. It allows us to distinguish those texts
+                authored by more than a single author. It has one value,
+                    <userinput>CollaborationYes</userinput>, and three sibling attributes: <term
+                    keyref="authorship-controversy">AUTHORSHIPCONTROVERSY</term>, <term
+                    keyref="controversy-date">CONTROVERSYDATE</term>, and <term
+                    keyref="author-name-type">AUTHORNAMETYPE</term>. See individual glossary entries
+                for those definitions.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PAUTHORSHIP COLLABORATION=&quot;collaborationYes&quot;&gt;With C. H. B.
+                Kitchin and Alan Porter, VB edited Oxford Poetry, 1920.&lt;/PAUTHORSHIP&gt;
+                </codeblock><codeblock> &lt;PAUTHORSHIP
+                COLLABORATION=&quot;collaborationYes&quot;&gt;Edith Somerville and MR published a
+                sequel to their most successful book: Further Experiences of an Irish R.
+                M.&lt;/PAUTHORSHIP&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><userinput>CollaborationYes</userinput> should be used in cases where the title page
+                lists more than one author name, or when sources say that a significant contribution
+                went unrecognized.</p>
+        </div>
+    </glossdef>
+</glossentry>

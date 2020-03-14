@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="contested-behaviour">
+    <glossterm>CONTESTEDBEHAVIOUR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>CONTESTEDBEHAVIOUR is located in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>. It records instances of significant actions or behaviour in school
+                which was frowned on. This element particularly tracks young women's rebelliousness
+                in the face of restrictive educational institutions.It is to be placed around the
+                complete sentence(s) describing the behaviour.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CONTESTEDBEHAVIOUR&gt;Asked in 1914 to write an essay on patriotism, she
+                produced a stinging indictment of Britain and the
+                King.&lt;/CONTESTEDBEHAVIOUR&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PCONTRACT belongs to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It captures descriptions (a phrase or sentence or more) of the
+                formal or informal agreement between a writer and a publisher. It also takes in
+                anything about written agreements around publication, film and translation rights,
+                royalties, etc. Often used within the tag <term keyref="p-relations-with-publisher"
+                    >PRELATIONSWITHPUBLISHER</term>. It has no mandatory or optional sub-elements or
+                attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PCONTRACT&gt;Routledge agreed to publish her memoirs only if she removed
+                all libelous remarks regarding her relationship with
+                Kennedy.&lt;/PCONTRACT&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
