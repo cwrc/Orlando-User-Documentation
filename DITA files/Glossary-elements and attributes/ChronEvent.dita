@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="chron-event">
+    <glossterm>CHRONEVENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>CHRONEVENT is an element contained by a
+                    <term keyref="div1">DIV1</term>, that holds together a single <term
+                    keyref="chron-struct">CHRONSTRUCT</term> element and perhaps an optional <term
+                    keyref="short-prose">SHORTPROSE</term>: all relevant information pertaining to a
+                free-standing chronology event as well as its explanatory material. Each CHRONEVENT
+                should have at least one <term keyref="bib-cit">BIBCIT</term> associated with it. In
+                author entries (both <term keyref="biography">BIOGRAPHY</term> and <term
+                    keyref="writing">WRITING</term> sections), CHRONEVENTS are not needed:
+                CHRONSTRUCTS (sometimes followed in the same <term keyref="div2">DIV2</term> by a
+                contextual or explanatory <term keyref="short-prose">SHORTPROSE</term>) do without
+                this element. CHRONEVENTs have in the past been collected in an events document
+                ready for processing into the system. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHRONEVENT&gt;&lt;CHRONSTRUCT
+                CHRONCOLUMN=&quot;writingClimate&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1960&lt;/DATE&gt;&lt;CHRONPROSE&gt;The trial by jury
+                of Penguin Books regarding the publication of Lady Chatterly&apos;s Lover by D.H.
+                Lawrence began at the Old Bailey.
+                &lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/CHRONEVENT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Those
+                called in as expert witnesses included E.M. Forster, Helen Gardner, C. Day Lewis,
+                Dilys Powell, Professor Vivian de Sola Pinto, Janet Adam Smith, Sir Stanley Unwin,
+                and Dame Rebecca
+                West.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;BIBCITS&gt;&lt;BIBCIT&gt;Craig
+                163&lt;/BIBCIT&gt;&lt;/BIBCITS&gt;</codeblock><codeblock>
+                &lt;CHRONEVENT&gt;&lt;CHRONSTRUCT
+                CHRONCOLUMN=&quot;nationalInternational&quot;&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1911&lt;/DATE&gt;&lt;CHRONPROSE&gt;The Local
+                Authorities (Ireland) Qualification of Women Act gave women the right to become
+                councillors or aldermen on Iriah county
+                councils.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/CHROEVENT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Women
+                in England, Wales and Scotland had received this same right in
+                1907.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;BIBCITS&gt;&lt;BIBCIT&gt;Halevy
+                519&lt;/BIBCIT&gt;&lt;/BIBCITS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Individual CHRONEVENTS will appear in search results on the over-arching project
+                chronology or within subject-specific timelines and time-specific timelines. Because
+                of the multiple contexts in which a CHRONEVENT can appear, it is vital that each
+                event be conceptually independent. Please make sure that all pronouns used in a
+                CHRONEVENT have their referent in the chronProse of that event. Also make sure that
+                all <term keyref="name">NAME</term>S, <term keyref="date">DATE</term>S, <term
+                    keyref="place">PLACE</term>S, and <term keyref="org-name">ORGNAME</term>S are
+                tagged once per CHRONEVENT.</p>
+        </div>
+    </glossdef>
+</glossentry>

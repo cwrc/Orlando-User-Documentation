@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-circulation">
+    <glossterm>PCIRCULATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element can be found in expressed,
+                tagg it as <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It is used to discuss the way in which a work was distributed to the
+                wider world and the breadth of its reach: this is the place to discuss print-runs,
+                comments about best-sellers, belated popularity, and also personal distribution by
+                the author, presentation copies, etc. It has no mandatory or optional attributes or
+                sub-elements.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PCIRCULATION&gt;Hannah More&apos;s first edition sold out in less than
+                two weeks. It reached 11 editions within nine months and in HM&apos;s lifetime
+                thirty editions of 1,000 copies each were printed in the
+                US.&lt;/PCIRCULATION&gt;</codeblock><codeblock> &lt;PCIRCULATION&gt;The poems of
+                Currer, Acton, and Bell sold only two copies despite a print run of
+                200.&lt;/PCIRCULATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element may also be used when discussing publications in periodicals, but you
+                should use the <term keyref="periodical-publication">PERIODICALPUBLICATION</term> tag in addition.</p>
+        </div>
+    </glossdef>
+</glossentry>

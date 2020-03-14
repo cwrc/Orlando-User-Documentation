@@ -5,7 +5,7 @@
     <glossterm>BIBCIT</glossterm>
     <glossdef>
         <div><u>Definition, Placement</u><p>BIBCIT is an element, available nearly everywhere from
-                the Div0 level down, is designed to capture bibliographical information in much the
+                the <term keyref="div0">DIV0</term> level down, is designed to capture bibliographical information in much the
                 same way as an MLA parenthetical citation. Each BIBCIT or group of <term
                     keyref="bib-cits">BIBCITS</term> must be enclosed in a BIBCITS tag. All research
                 information and quotations must be followed by a BIBCIT indicating the source of

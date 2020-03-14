@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="chron-struct">
+    <glossterm>CHRONSTRUCT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A CHRONSTRUCT, available through the
+                textbase, is an element that holds together and therefore associates a <term
+                    keyref="date">DATE</term> with the <term keyref="chron-prose">CHRONPROSE</term>
+                that describes an event. It can contain only these two sub-elements plus a <term
+                    keyref="bib-cit">BIBCIT</term>. You are not permitted to type directly into this
+                element. A CHRONSTRUCT can include only one <term keyref="date">DATE</term>,
+                DateRange, or DateStruct followed by the <term keyref="chron-prose"
+                    >CHRONPROSE</term>. Although you may not include two <term keyref="date"
+                    >DATE</term>s before the <term keyref="chron-prose">CHRONPROSE</term>, you are
+                allowed to use the <term keyref="date">DATE</term> element again inside the
+                chronProse if needed. </p><p> In free-standing events a CHRONSTRUCT is contained by
+                a <term keyref="chron-event">CHRONEVENT</term>. In entries (<term keyref="biography"
+                    >BIOGRAPHY</term> and <term keyref="writing">WRITING</term> sections), it
+                normally appears inside a <term keyref="div2">DIV2</term> tag. CHRONSTRUCT is better
+                inside than without a <term keyref="div2">DIV2</term> tag (though the schema allows
+                either), for consistency and rendering search results. In all cases it is modified
+                by the required <term keyref="chron-column">CHRONCOLUMN</term> attribute. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHRONSTRUCT
+                CHRONCOLUMN=&quot;NATIONALINTERNATIONAL&quot;&gt;&lt;DATE&gt;July
+                1832&lt;/DATE&gt;&lt;CHRONPROSE&gt;The Friends of the Oppressed was established by a
+                group of politically active London
+                women.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock> &lt;CHRONSTRUCT
+                CHRONCOLUMN=&quot;NATIONALINTERNATIONAL&quot;&gt;&lt;DATE&gt;1 April
+                1905&lt;/DATE&gt;&lt;CHRONPROSE&gt;Penny Post became available one-way from the
+                United Kingdom to Australia.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Because CHRONSTRUCTS may be removed from the documents in which they were created and
+                be placed in search results alongside unrelated information, always make sure that
+                you put enough information in a CHRONSTRUCT for it to make sense when read out of
+                context. make sure that any <term keyref="name">NAME</term>S, <term keyref="date"
+                    >DATE</term>S, <term keyref="place">PLACE</term>S, and <term keyref="org-name"
+                    >ORGNAME</term>S are tagged inside a CHRONSTRUCT. Also, do not use pronouns in a
+                CHRONSTRUCT unless their referent is also present.</p>
+        </div>
+    </glossdef>
+</glossentry>

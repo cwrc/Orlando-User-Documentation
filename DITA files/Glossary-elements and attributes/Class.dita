@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="class">
+    <glossterm>CLASS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is found in<menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It is sometimes within <term keyref="class-issue">CLASSISSUE</term>.
+                Unlike <term keyref="class-issue">CLASSISSUE</term>, which contains detailed
+                discussion of her class position, CLASS is meant to capture an identifying word or
+                phrase. From this element users can generate lists of women writers who were
+                working-class or aristocratic or whatever. It has optional attributes: Self-defined
+                and <term keyref="social-rank">SOCIALRANK</term>. The latter offers a range of
+                values, allowing you to express class in a standard way. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>JB was born into a &lt;CLASS
+                SOCIALRANK=&quot;gentry&quot;&gt;propertied&lt;/CLASS&gt;
+                family.</codeblock><codeblock> MM grew up in a &lt;CLASS
+                SOCIALRANK=&quot;professional&quot;&gt;&quot;landowning,
+                parliamentary&quot;&lt;/CLASS&gt; family, but was faced with financial difficulties
+                once she &lt;CLASS SOCIALRANK=&quot;gentry&quot;&gt;inherited her father&apos;s
+                estate&lt;/CLASS&gt; along with its heavy debts.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The structured vocabulary to be used for CLASS and <term keyref="social-rank"
+                    >SOCIALRANK</term> is imperfect. Try to use the term that best suits your
+                writer. Use multiple times if her class position shifted throughout her life.
+                Include a <term keyref="social-rank">SOCIALRANK</term> attribute if you can. When
+                there is much doubt around this classification, say so in the prose, and consider
+                using the <term keyref="class-issue">CLASSISSUE</term> tag.</p>
+        </div>
+    </glossdef>
+</glossentry>

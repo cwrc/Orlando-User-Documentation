@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="chron-prose">
+    <glossterm>CHRONPROSE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>CHRONPROSE is an element within <term
+                    keyref="chron-struct">CHRONSTRUCT</term>, preceded by a <term keyref="date"
+                    >DATE</term> element and available throughout the textbase, that briefly relates
+                the essential facts of a chronology event. It should contain no more than one or two
+                pithy sentences so that its appearance will be suitable to the layout and conceptual
+                framing of either print or electronic chronologies. Try to work in words that may be
+                the subject of searches, the kind we used to put in <term keyref="key-word-class"
+                    >KEYWORDCLASS</term> (atrocity, celebration, climate, first). </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Always use full past tense in a CHRONPROSE element rather than telegraphic
+                style: &lt;CHRONPROSE&gt;The term suffragette was first used in the Daily
+                Mail.&lt;/CHRONPROSE&gt; In this example, the expression &quot;was first used&quot;
+                is preferable to &quot;first used.&quot;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Should I repeat the date of a chronology event inside the CHRONPROSE? As a rule, no.
+                However, there may be times when you feel you need to contextualize a date or
+                provide an alternative or extra date in your CHRONPROSE. Feel free to do this,
+                tagging the date only if you feel it vital that it be tagged from the
+                research/retrieval perspective, but make sure that the date you want the chronology
+                item to be sorted under is the <term keyref="date">DATE</term> element of your <term
+                    keyref="chron-struct">CHRONSTRUCT</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>
