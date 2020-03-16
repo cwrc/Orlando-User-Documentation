@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="controversy-date">
+    <glossterm>CONTROVERSYDATE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Attached to <term keyref="p-authorship"
+                    >PAUTHORSHIP</term>, this attribute belongs conceptually in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It designates the current standing of a controversy surrounding
+                authorship. It has three values (<userinput>present</userinput>,
+                    <userinput>historical</userinput> and <userinput>ongoing</userinput>) and should
+                be used in conjunction with the attribute <term keyref="authorship-controversy"
+                    >AUTHORSHIPCONTROVERSY</term>, which defines the kind of controversy under
+                discussion. If debate about authorship is of long standing it is
+                    <userinput>ongoing</userinput>; if it stems from recent scholarship it is
+                    <userinput>present</userinput>; if scholars are felt to have settled the issue,
+                it is <userinput>historical</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PAUTHORSHIP AUTHORSHIPCONTROVERSY=&quot;misattribution&quot;
+                CONTROVERSYDATE=&quot;historical&quot;&gt;Reaction to Joanna Baillie&apos;s A Series
+                of Plays was quite favourable and stirred debate about the author&apos;s identity.
+                At first they were attributed to Walter Scott.&lt;/PAUTHORSHIP&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This attribute should always be used in conjunction with the attribute <term
+                    keyref="authorship-controversy">AUTHORSHIPCONTROVERSY</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>

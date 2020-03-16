@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-copyright">
+    <glossterm>PCOPYRIGHT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is located in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">PRODUCTION</term></uicontrol>
+                </menucascade>. It captures all information about the nature of the copyright of the
+                text and the relationship of the text to copyright. It encloses a phrase or
+                sentence, and you may want to (but do not have to) include a title tag as well. It
+                has no mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PCOPYRIGHT&gt;Elizabeth Barrett Browning&apos;s publisher suspended plans
+                to publish her 1850 book of poems when another publisher pirated an edition. Because
+                there was no copyright agreement between the US and Britain, and because the two
+                publishers struck a gentlemen&apos;s agreement, EBB was never
+                paid.&lt;/PCOPYRIGHT&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element should be used only when there is a specific issue involving the
+                copyright of a text or texts. If plagiarism is at issue, please use <term
+                    keyref="p-authorship">PAUTHORSHIP</term>. May need to be used in conjunction
+                with <term keyref="p-contract">PCONTRACT</term> or another tag to render its
+                material searchable from more than one angle.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> My author sued her best friend for plagiarising her novel and
+                infringing copyright. Do I use the PCOPYRIGHT tag? <b>Answer:</b> Only if the issue
+                of copyright is prominent in the case. Use <term keyref="r-penalties"
+                    >RPENALTIES</term> and perhaps <term keyref="p-authorship"
+                >PAUTHORSHIP</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>

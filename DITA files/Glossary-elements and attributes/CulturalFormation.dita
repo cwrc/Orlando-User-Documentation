@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="cultural-formation">
+    <glossterm>CULTURALFORMATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>CULTURALFORMATION, in the <term keyref="biography"
+                    >BIOGRAPHY</term> section of entries, is one of the 16 major <term keyref="div1"
+                    >DIV1</term> content elements defined as integral to mapping a woman's life. It
+                is generally the next element after the <term keyref="birth">BIRTH</term> tag. It
+                refers to the constitution of a British Woman Writer's subjectivity and includes a
+                number of different ways for you to talk about the pertinent issues. It can either
+                enclose a general overview of her identity positions or can act as the bucket that
+                holds comment on the more specific elements of <term keyref="religion"
+                    >RELIGION</term>, <term keyref="class">CLASS</term>, <term keyref="gender"
+                    >GENDER</term>, <term keyref="sexuality">SEXUALITY</term>, <term
+                    keyref="race-and-ethnicity">RACEANDETHNICITY</term>, and <term
+                    keyref="nationality">NATIONALITY</term>. This element addresses the imbrication
+                of the triad race/class/gender; it allows you to say <q>She came from a Scottish
+                    dissenting family</q> without having to separate the different elements that
+                would be systematized as <term keyref="religion">RELIGION</term> or <term
+                    keyref="nationality">NATIONALITY</term>. We imagine that our use of the element
+                will be consonant with the direction that scholarship is taking in its treatment of
+                race, nationality, etc.: not treating them as transhistorical or isolated categories
+                but looking at the way two or more categories intersect for a particular group at a
+                particular historical period. We aim to provide our users with two ways of accessing
+                information around issues of a writer's subject positioning. Placing the identifying
+                category elements around her religious denomination (<q>Quaker</q>), sexual identity
+                    (<q>lesbian</q>), or nationality (<q>Scottish</q>), for example, will point our
+                end users toward writers whom they may be interested in researching (for example,
+                    <q>Contemporary Scottish women's writing</q>). Placing a larger discussion
+                within one of the general sub-elements (<term keyref="classissue">CLASSISSUE</term>,
+                    <term keyref="religion">RELIGION</term>, etc.) will allow us to extract and
+                compare all significant discussions of certain issues, providing our end users with
+                a complex weave of information through which to analyse the construction of
+                subjectivity. </p></div>
+        <div>
+            <u>Relationships</u>
+            <p>CULTURALFORMATIOn has two levels of sub-elements. The first set contains the
+                following anchored sub-elements (to be placed around discussion of issues) which in
+                turn have their own subject-specific sub-elements. The first set includes <term
+                    keyref="classissue">CLASSISSUE</term>, <term keyref="gender-issue"
+                    >GENDERISSUE</term>, <term keyref="nationality-issue">NATIONALITYISSUE</term>,
+                    <term keyref="race-and-ethnicity">RACEANDETHNICITY</term>, <term
+                    keyref="religion">RELIGION</term>, and <term keyref="sexuality"
+                >SEXUALITY</term>. Whether or not any sub-element from this first set is selected,
+                the following second set of sub-elements is available (to be placed around the
+                identifying word or phrase): <term keyref="race-colour">RACECOLOUR</term>, <term
+                    keyref="gender-identity">GENDERIDENTITY</term>, <term keyref="class"
+                    >CLASS</term>, <term keyref="national-herritage">NATIONALHERITAGE</term>, <term
+                    keyref="nationality">NATIONALITY</term>, <term keyref="geog-herritage"
+                    >GEOGHERRITAGE</term>, <term keyref="ethinicity">ETHNICITY</term>, <term
+                    keyref="denomination">DENOMINATION</term>, <term keyref="language"
+                    >LANGUAGE</term>, <term keyref="political-affiliation"
+                    >POLITICALAFFILIATION</term>, <term keyref="sexual-identity"
+                    >SEXUALIDENTITY</term>.</p>
+        </div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CULTURALFORMATION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;MH&apos;s
+                family were &lt;NATIONALITY&gt;Scottish&lt;/NATIONALITY&gt;. Her mother&apos;s
+                family were &lt;DENOMINATION&gt;Quaker&lt;/DENOMINATION&gt; on the maternal side,
+                both soberly respectable and artistic. Her maternal grandfather was
+                &lt;NATIONALHERRITAGE
+                FOREBEAR=&quot;grandfather&quot;&gt;Scottish-Irish&lt;/NATIONALHERRITAGE&gt;, and
+                committed to Home Rule. Her father&apos;s family were plain Scottish
+                &lt;CLASS&gt;working
+                people&lt;/CLASS&gt;.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/CULTURALFORMATION&gt;
+                </codeblock><codeblock>
+                &lt;CULTURALFORMATION&gt;&lt;SEXUALITY&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;VB,
+                perhaps defensively, staunchly proclaimed her &lt;SEXUALIDENTITY
+                SELF-DEFINED=&quot;selfYes&quot; &gt;heterosexuality&lt;/SEXUALIDENTITY&gt; in the
+                face of rumours of a lesbian relationship between her and Winifred Holtby. During
+                her final illness, she scribbled a note which read: &quot;I loved Winifred, but I
+                was not in love with
+                her.&quot;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/SEXUALITY&gt;&lt;/CULTURALFORMATION&gt; </codeblock>
+            <p>The above is an example of a more specific discussion of her sexuality that benefits
+                from the selection of the <term keyref="sexuality">SEXUALITY</term> sub-element
+                around the <term keyref="sexual-identity">SEXUALIDENTITY</term> element.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>To the best of your ability, include a summary statement concerning her subject
+                position following the chronology event of her birth. Do not separate this with a
+                heading but try to have the prose flow out of her <term keyref="birth">BIRTH</term>
+                statement.</p><p> Do not necessarily enter all the information you have about her
+                cultural formation subject position in the general overview statement at the
+                beginning of your document. For a discussion of events in her life around these
+                categories (for example, a religious conversion, her first lesbian sexual
+                experience, etc.), open a CULTURALFORMATION element later in the document at the
+                appropriate chronological place. </p><p> Use the specific sub-elements (<term
+                    keyref="class-issue">CLASSISSUE</term>, <term keyref="race-and-ethnicity"
+                    >RACEANDETHNICITY</term>, etc.) when you can offer some detail about one area of
+                particular pertinence to a woman's identity where only a limited amount of
+                information exists, open the CULTURALFORMATION element, open a <term keyref="div2"
+                    >DIV2</term>, and then describe the jumble of identity issues in a <term
+                    keyref="short-prose">SHORTPROSE</term> with any variety of inclusions. But where
+                a particular issue like religion affected her life more than others, you can open
+                CULTURALFORMATION, then open the sub-element <term keyref="religion"
+                >RELIGION</term>, then open a <term keyref="div2">DIV2</term>; the <term
+                    keyref="short-prose">SHORTPROSE</term> that follows will still contain
+                inclusions but all or mostly those relating to religion, such as <term
+                    keyref="denomination">DENOMINATION</term>.</p><p> All information contained
+                within this element, specifically the sub-elements directed towards identifying
+                categories, apply to the person who is the subject of the biography. Do NOT use, for
+                example, <term keyref="geog-herritage">GEOGHERRITAGE</term> to tag the fact that her
+                employer or partner was Caribbean </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="current-alternative-term">
+    <glossterm>CURRENTALTERNATIVETERM</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is attached to a
+                number of tags in the <term keyref="biography">BIOGRAPHY</term> section of entries:
+                    <term keyref="political-affiliation">POLITICALAFFILIATION</term>, <term
+                    keyref="job">JOB</term>, <term keyref="sexual-identity">SEXUALIDENTITY</term>,
+                    <term keyref="gender-identity">GENDERIDENTITY</term>, <term
+                    keyref="denomination">DENOMINATION</term>, <term keyref="nationality"
+                    >NATIONALITY</term>, and <term keyref="national-herritage"
+                    >NATIONALHERRITAGE</term>. It allows you to capture changes in terminology over
+                time. The older name in your prose (Sappphic, Deist, amanuensis) may not be familiar
+                to your readers or helpful for indexing purposes; it may therefore need explanation.
+                There are no values associated with this attribute; rather, you should type in the
+                current alternative name as you understand it.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DENOMINATION CURRENTALTERNATIVETERM=&quot;Agnostic&quot;&gt;did not
+                subscribe to any formal religion&lt;/DENOMINATION&gt; </codeblock><codeblock>
+                &lt;POLITICALAFFILIATION
+                CURRENTALTERNATIVETERM=&quot;Conservative&quot;&gt;Tory&lt;/POLITICALAFFILIATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

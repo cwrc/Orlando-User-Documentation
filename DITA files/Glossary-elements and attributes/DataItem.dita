@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="data-item">
+    <glossterm>DATAITEM</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is found within expressed,
+                tagg it as <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. es, is an element that contains an individual piece of tabular
+                information. Any further information that is written in a full sentence must be
+                placed in a <term keyref="p">P</term> element (within <term keyref="short-prose"
+                    >SHORTPROSE</term> or <term keyref="scholar-note">SCHOLARNOTE</term>). A <term
+                    keyref="data-item">DATAITEM</term> is always contained within a <term
+                    keyref="data-struct">DATASTRUCT</term> element.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Open a new DATAITEM for each discrete piece of tabular information. For example, the
+                contents of a <term keyref="married">MARRIED</term> element (in <term keyref="person-name">PERSONNAME</term>) might look as follows:
+                <codeph>&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;MARRIED&gt;Ward&lt;/MARREIED&gt;&lt;/DATAITEM&gt;
+                &lt;DATAITEM&gt;&lt;MARRIED&gt;Smith&lt;/MARRIED&gt;&lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;</codeph>
+            </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p>If this section contains an in-line xml example, use <codeph/>, with the same
+                instructions as above for codeblock.</p>
+        </div>
+    </glossdef>
+</glossentry>
