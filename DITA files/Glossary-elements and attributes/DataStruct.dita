@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="data-struct">
+    <glossterm>DATASTRUCT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A DATASTRUCT is a container element for
+                one or more <term keyref="data-item">DATAITEM</term>, that is an individual piece of
+                tabular data. It is used only inside a <term keyref="div-2">DIV2</term> within <term
+                    keyref="person-name">PERSONNAME</term>, in the <term keyref="biography"
+                    >BIOGRAPHY</term> section of entries.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Rachel&lt;/GIVEN&gt;
+                &lt;GIVEN&gt;Mary&lt;/GIVEN&gt;&lt;SURNAME&gt;Costelloe&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt;
+                &lt;DATAITEM&gt;&lt;MARRIED
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Strachey&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>DATASTRUCTS are currently used on the project only for recording names of entry
+                subjects as consistent tabular information. </p>
+        </div>
+    </glossdef>
+</glossentry>

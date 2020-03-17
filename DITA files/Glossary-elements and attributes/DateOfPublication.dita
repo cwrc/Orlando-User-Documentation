@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="date-of-publication">
+    <glossterm>DATEOFPUBLICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DATEOFPUBLICATION and <term
+                    keyref="original-date-of-publication">ORIGINALDATEOFPUBLICATION</term> are
+                fields in the Bibliography Database which record the publication date(s) of the work
+                you are listing. They also have fields for <userinput>Date Value</userinput>,
+                    <userinput>Sort Date</userinput> or <userinput>Date Reg</userinput>,
+                    <userinput>No Date</userinput> and <userinput>Emended
+            Date</userinput>.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Enter the date of publication if known in the DATEOFPUBLICATION field. For books,
+                enter a year date only. For newspaper articles, etc, enter the date as day month
+                year: 23 January 1978. </p><p>DATEOFPUBLICATION is the default field for publication
+                dates. It contains the original date of publication for each text unless you are
+                citing a reprint or new edition and want to differentiate between the date of that
+                version and the date when the work was first published. <userinput>Sort
+                    Date</userinput>, or <userinput>Date Reg</userinput>, records the date to be
+                used for sorting purposes in the bibliography database. Typically, the sort date for
+                books is the year of publication followed by two hyphens: 1923--. For journal
+                articles it takes the form year-month or year-month-day: 1978-01- or 1978-01-23. In
+                the case of entire journals or a work published in successive volumes, where the
+                DATEOFPUBLICATION spans more than a year (1752-3 or January 1850 to December 1870),
+                the <userinput>Sort Date</userinput> is by first appearance: 1752-- or 1850-01-.
+                </p><p>If you do not have a date of publication, select <userinput>No
+                    Date</userinput>. </p><p>If you are supplying an emended date -- supplying a
+                date for a book with no date of publication on the title page, or correcting an
+                incorrect date on a title page -- do not enter the emended date in square brackets.
+                Enter the correct date in the DATEOFPUBLICATION field and select the emended date
+                option; the square brackets will be rendered through style sheets. </p>
+        </div>
+    </glossdef>
+</glossentry>

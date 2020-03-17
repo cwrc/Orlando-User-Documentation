@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="date">
+    <glossterm>DATE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A sub-element of DATESTRUCT (a global
+                element used anywhere in the textbase, modified by the <term keyref="value"
+                    >VALUE</term> and <term keyref="certainty">CERTAINTY</term> attributes), DAY is
+                used to tag the specific day on which an event occurred. It should contain only the
+                numeric value of a date. The text inside the tag might occasionally contain two or
+                more contested dates, but these dates should be resolved to a single date in the
+                VALUE attribute on <term keyref="date-struct">DATESTRUCT</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DAY VALUE=&quot;23&quot;&gt;21st or 23rd&lt;/DAY&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

@@ -30,10 +30,10 @@
         <div>
             <u>Troubleshooting</u>
             <p><b>Question:</b> My author sued her best friend for plagiarising her novel and
-                infringing copyright. Do I use the PCOPYRIGHT tag? <b>Answer:</b> Only if the issue
-                of copyright is prominent in the case. Use <term keyref="r-penalties"
-                    >RPENALTIES</term> and perhaps <term keyref="p-authorship"
-                >PAUTHORSHIP</term>.</p>
+                infringing copyright. Do I use the PCOPYRIGHT tag?</p><p>
+                <b>Answer:</b> Only if the issue of copyright is prominent in the case. Use <term
+                    keyref="r-penalties">RPENALTIES</term> and perhaps <term keyref="p-authorship"
+                    >PAUTHORSHIP</term>.</p>
         </div>
     </glossdef>
 </glossentry>

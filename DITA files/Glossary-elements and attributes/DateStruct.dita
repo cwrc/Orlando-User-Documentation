@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="date-struct">
+    <glossterm>DATESTRUCT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DATESTRUCT is one of three global
+                elements, along with <term keyref="date-range">DATERANGE</term> and <term
+                    keyref="date">DATE</term>, used all across the textbase in places where it is
+                possible to type text (paragraphs, <term keyref="chron-struct">CHRONSTRUCT</term>,
+                    <term keyref="chron-prose">CHRONPROSE</term>). (One of the three is mandatory in
+                every CHRONSTRUCT.) DATESTRUCT is used to tag all singular dates (not ranges) for
+                which individual components (day, month, year) have varying degrees of certainty or
+                for which only a general season is known. It contains only the text that is
+                pertinent to expressing the date at hand and should exclude all unnecessary
+                punctuation. It is modified by the <term keyref="value">VALUE</term> and <term
+                    keyref="certainty">CERTAINTY</term> attributes; every DATESTRUCT no matter how
+                it is typed into your prose must contain a Value attribute for the dateStruct as a
+                whole. The sub-elements of DATESTRUCT are <term keyref="day">DAY</term>, <term
+                    keyref="month">MONTH</term>, <term keyref="year">YEAR</term>, and <term
+                    keyref="season">SEASON</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATESTRUCT CERTAINTY=&quot;C&quot;
+                VALUE=&quot;1868-07-&quot;&gt;&lt;SEASON CERTAINTY=”C”&gt;Summer&lt;/SEASON&gt;
+                &lt;YEAR CERTAINTY=”CERT”&gt;1868&lt;/YEAR&gt;Summer 1868&lt;/DATESTRUCT&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Each DATESTRUCT should be given a VALUE attribute expressed in standard form. See
+                glossary entry on VALUE. In practice, since very early in the life in the textbase,
+                this hugely complex machinery has been disregarded. Events dated by a season have
+                mostly been entered as a date with a single <codeph>Certainty=”C”</codeph>
+                attribute, without specifying that the year is certain though the month isn’t. (And
+                if the source does not specify early or late we have generally taken winter as c.
+                January, spring as c. April, summer as c. July, and autumn/fall as c. October.)</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="date-range">
+    <glossterm>DATERANGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Global element for recording stretches of
+                time; can be used everywhere where it is possible to type text (paragraphs, <term
+                    keyref="chron-struct">CHRONSTRUCT</term>, <term keyref="chron-prose"
+                    >CHRONPROSE</term>). Every CHRONSTRUCT requires either <term keyref="date"
+                    >DATE</term>, DATERANGE, or <term keyref="date-struct">DATESTRUCT</term>.
+                Chronology search results deliver DATERANGEs before DATEs, as a useful reminder that
+                history consists more of processes than of events. Can be used in a CHRONSTRUCT
+                instead of DATE, but we try to be very selective about using DATERANGE for extended
+                periods like an entry subject’s university career, job, etc, because on the whole a
+                start date gives a more useful result. Through use of the <term keyref="certainty"
+                    >CERTAINTY</term> attribute DATERANGE can define a certain span (of a journey, a
+                lecture course etc.) or an uncertain point in a span. It contains only the text that
+                is pertinent to expressing the range of dates at hand and should exclude all
+                unnecessary punctuation. It has attributes <term keyref="calendar">CALENDAR</term>,
+                    <term keyref="certainty">CERTAINTY</term>, <term keyref="to">TO</term>, <term
+                    keyref="from">FROM</term>, and <term keyref="exact">EXACT</term>. The three last
+                attributes combine to perform the same function that the <term keyref="value"
+                    >VALUE</term> attribute performs in DATE and DATESTRUCT subelements.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATERANGE&gt;1899-March 1902&lt;/DATERANGE&gt;
+                </codeblock><codeblock>Late in the &lt;DATERANGE FROM=&quot;1947&quot;
+                TO=&quot;1949&quot;
+                EXACT=&quot;none&quot;&gt;40s&lt;/DATERANGE&gt;</codeblock><codeblock> &lt;DATERANGE
+                CERTAINTY=&quot;roughlyDated&quot; FROM=&quot;1847-05-11&quot;
+                TO=&quot;1847-07-30&quot; EXACT=&quot;none&quot;&gt;During the
+                voyage&lt;/DATERANGE&gt; to the colonies, she received word that her novel was
+                accepted for publication.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>When entering DATERANGEs, follow the standard written format of
+                standardDate1-standardDate2 (12 October 1933-23 October 1933). Such dates do not
+                need to be standardised in the to and from attributes. When tagging a DateRange of
+                years, please make sure you write the years numerically in full. For instance, do
+                not write 1722-25, but 1722-1725. The following date expressions do not need to be
+                regularized in attributes: <codeph>&lt;DATERANGE&gt;1899-1902&lt;/DATERANGE&gt;
+                    </codeph><codeph> &lt;DATERANGE&gt;14 August 1742-12 March
+                    1745&lt;/DATERANGE&gt;</codeph><codeph>&lt;DATERANGE&gt;April 1900-June
+                    1900&lt;/DATERANGE&gt; </codeph><codeph>&lt;DATERANGE&gt;1899-March
+                    1902&lt;/DATERANGE&gt; </codeph><codeph> &lt;DATERANGE&gt;27 January 1645-March
+                        1656&lt;/DATERANGE&gt; </codeph><codeph>&lt;DATERANGE&gt;23 May
+                    1972-1983&lt;/DATERANGE&gt;</codeph> Any dates that are not expressed in this
+                regular fashion will need to have a To, From, and Exact attributes filled in.
+                </p><p> When using a broad DateRange in a chronStruct, please remember the event
+                will be sorted according to its opening date. </p><p> The attribute Exact combines
+                with Certainty values to indicate reliability of dates at each end of the range
+                specified, e.g.<codeph> &lt;DATERANGE CERTAINTY=&quot;Cert&quot;
+                    FROM=&quot;1847-05-11&quot; TO=&quot;1847-07-30&quot;
+                    EXACT=&quot;FROM&quot;&gt;From mid-May to the end of July
+                    1847&lt;/DATERANGE&gt;</codeph> This means the start date is certain; the end
+                date is less so. </p><p>
+                <b>Checklist:</b> Make sure that each date you tag conforms to the following
+                practice checklist </p><p>
+                <ul>
+                    <li>In checking, make sure format is correct: 7 January 1898 (the date can be
+                        truncated from the left but not from the right). Are there any typos? Remove
+                        any leading 0 in single-digit text dates.</li>
+                    <li> If you are checking attributes, make sure format is correct: 1983-01-10,
+                        1983-01-, 1983--. Make sure leading 0 is present for single-digit months and
+                        days. Make sure both hyphens are present. Add text to tag if it is missing
+                        (especially in chronStruct) </li>
+                    <li>Where necessary, move spaces/punctuation (or add spaces) outside tag to
+                        ensure doc reads properly </li>
+                    <li>Remove any <term keyref="bib-cit">BIBCIT</term> in the tag and place them in
+                        the appropriate place remove any research notes from inside the tag and
+                        place them just outside the end tag (or delete it they are trivial and the
+                        problem has been fixed) </li>
+                    <li>Remove any empty date tags.</li>
+                </ul>
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

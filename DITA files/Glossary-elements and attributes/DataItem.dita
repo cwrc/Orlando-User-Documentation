@@ -17,15 +17,20 @@
         <div>
             <u>Practice Issues</u>
             <p>Open a new DATAITEM for each discrete piece of tabular information. For example, the
-                contents of a <term keyref="married">MARRIED</term> element (in <term keyref="person-name">PERSONNAME</term>) might look as follows:
-                <codeph>&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;MARRIED&gt;Ward&lt;/MARREIED&gt;&lt;/DATAITEM&gt;
-                &lt;DATAITEM&gt;&lt;MARRIED&gt;Smith&lt;/MARRIED&gt;&lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;</codeph>
+                contents of a <term keyref="married">MARRIED</term> element (in <term
+                    keyref="person-name">PERSONNAME</term>) might look as follows:
+                    <codeph>&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;MARRIED&gt;Ward&lt;/MARREIED&gt;&lt;/DATAITEM&gt;
+                    &lt;DATAITEM&gt;&lt;MARRIED&gt;Smith&lt;/MARRIED&gt;&lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;</codeph>
             </p>
         </div>
         <div>
             <u>Troubleshooting</u>
-            <p>If this section contains an in-line xml example, use <codeph/>, with the same
-                instructions as above for codeblock.</p>
+            <p><b>Question:</b> Should Birthname use separate DataItems for <term keyref="surname"
+                    >SURNAME</term> and <term keyref="given">GIVEN</term> names?
+                    </p><p><b>Answer:</b> No. For the purposes of the project a <term
+                    keyref="birth-name">BIRTHNAME</term> is considered a single DATAITEM.
+                <codeph>&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Elizabeth&lt;/GIVEN&gt;&lt;SURNAME&gt;Barrett&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;</codeph>
+            </p>
         </div>
     </glossdef>
 </glossentry>
