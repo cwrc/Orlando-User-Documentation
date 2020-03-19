@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-destruction-of-work">
+    <glossterm>RDESTRUCTIONOFWORK</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term is belongs conceptually to<menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                </menucascade>. marks a work destroyed by the author or others. It can include
+                actual destruction, or requests for or threats of destruction whether or not they
+                were carried out. It can also be used for incomplete destruction, in which part of a
+                work, or a particular copy, was expunged; it encompasses book-burning or requests to
+                destroy a manuscript after the author’s death. This element, which should contain a
+                full sentence, has an optional attribute, <term keyref="destroyed-by"
+                    >DESTROYEDBY</term>, with values of <userinput>self</userinput> and
+                    <userinput>other</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> 1. paste the example from the GDrive document and make sure you correct all
+                the well-formedness errors Oxygen will point out. 2. copy the corrected fragment
+                from Oxygen and escape special characters at <xref
+                    href="https://www.freeformatter.com/xml-escape.html#ad-output"
+                    >https://www.freeformatter.com/xml-escape.html#ad-output</xref> 3. Copy the
+                escaped text back into OXygen to replace the non-escaped code </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If the destruction of the work was also an act of censorship, be sure to also use the
+                element <term keyref="penalties">PENALTIES</term> with the attribute for
+                censorship.</p>
+        </div>
+    </glossdef>
+</glossentry>

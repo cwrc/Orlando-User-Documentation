@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="degree">
+    <glossterm>DEGREE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>. It captures all degrees (BA, MA, PhD), diplomas, certificates, etc.
+                received by the entry subject. It goes around the name of the degree, and has one
+                optional attribute, <term keyref="reg">REG</term>, which allows you to express the
+                degree in a standard way if you have been unable to do so in your prose. (Oxford
+                gives a D.Phil. where others give a PhD, which would be the REG form.)</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>May 1968 HB received a &lt;DEGREE&gt;BA&lt;/DEGREE&gt; from Cambridge
+                University. </codeblock><codeblock> May 1968 HB received an &lt;DEGREE&gt;Honours BA
+                in English&lt;/DEGREE&gt; from Cambridge University.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Question:</b> Is CBE a degree?</p><p><b>Answer:</b> No, it means Companion of the
+                British Empire. If given in recognition of achievements in literature, save it for
+                the <term keyref="recognition">RECOGNITION</term> and <term
+                    keyref="recognition-name">RECOGNITIONNAME</term> elements in the <term
+                    keyref="writing">WRITING</term> subset. If given for other life achievements,
+                then record the information in the appropriate chronological place in <term
+                    keyref="biography">BIOGRAPHY</term> tags, within the <term keyref="occupation"
+                    >OCCUPATION</term> or <term keyref="politics">POLITICS</term> element. </p>
+            <p><b>Question:</b> Should an honorary degree go in Education?</p><p><b>Answer:</b> No;
+                it is a form of recognition and should be tagged in WRITING as RECOGNITION. </p>
+            <p><b>Question:</b> My writer attended a university before it granted degrees to women;
+                however, she placed first in her class. How do I mark this?</p><p><b>Answer:</b> Put
+                a <term keyref="degree">DEGREE</term> tag around whatever phrase in the sentence
+                comes closest to describing a certificate or whatever.</p>
+        </div>
+    </glossdef>
+</glossentry>

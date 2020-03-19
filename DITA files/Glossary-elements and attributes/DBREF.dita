@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="dbref">
+    <glossterm>DBREF</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DBREF is a mandatory attribute on the
+                elements <term keyref="text-scope">TEXTSCOPE</term> (in <term keyref="writing"
+                    >WRITING</term> sections of entries only) and <term keyref="bibcit"
+                    >BIBCIT</term> (throughout the textbase). It should be filled in with the
+                bibliographic identifying number of this text in the Orlando Bibliographic Database
+                (or its successor). It does the work of linking all citations of that text, and in
+                the case of works by authors who have entries, of linking every mention of the text
+                to the main information or discussion in that author’s WRITING section. </p></div>
+    </glossdef>
+</glossentry>

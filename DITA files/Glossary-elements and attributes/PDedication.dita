@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-dedication">
+    <glossterm>PDEDICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element can be found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It is used to indicate a dedication of a work. It includes name
+                where possible, and sometimes quote; has no mandatory or optional sub-elements or
+                attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PDEDICATION&gt;She included a dedication to her 152
+                subscribers.&lt;/PDEDICATION&gt;.</codeblock><codeblock>&lt;PDEDICATIONn&gt;HM
+                dedicated the novel in finished form to her companion Jane
+                Harrison.&lt;/PDEDICATION&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Include this information if you can, especially for earlier periods. You can also tag
+                this way a dedication promised but not implemented. (It was once a practice
+                important in raising funds as well as a statement of emotional connection.)</p>
+        </div>
+    </glossdef>
+</glossentry>

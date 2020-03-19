@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="div0">
+    <glossterm>DIV0</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DIV0 (i.e. level-0 text division) is the
+                largest structural element permitted in any Orlando document. SGML works on the
+                principle that all information in a document exists hierarchically, or, stated
+                otherwise, that all types of information can be contained in other types of
+                information. For the Orlando Project, DIV0 is the element that contains everything
+                in a document except the cataloguing information that is contained in the Orlando
+                Header. It is a required element immediately following the <term
+                    keyref="orlando-header">ORLANDOHEADER</term> in every type of document. All
+                other elements (excluding those found in the ORLANDOHEADER) are contained within a
+                DIV0.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;EVENTS&gt;&lt;ORLANDOHEADER&gt;. . . All project cataloguing information
+                is tagged here. . . &lt;/ORLANDOHEADER&gt;&lt;DIV0&gt;All subsequent document
+                sub-divisions occur here. . . &lt;/DIV0&gt;&lt;/EVENTS&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

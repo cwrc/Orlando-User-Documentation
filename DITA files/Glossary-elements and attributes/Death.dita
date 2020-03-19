@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="death">
+    <glossterm>DEATH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DEATH is one of the 16 major content
+                elements defined as integral to mapping a woman's life in the Biography sections of
+                entries. Where possible it captures information concerning the date, place, and
+                cause of a writer's death. (Its single sub-element is <term keyref="cause"
+                    >CAUSE</term>.) Death dates should be entered in <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> form and will be extracted from individual entries to appear
+                in other general chronology search results. For most biographies, except those whose
+                subjects are still alive, the DEATH element will be the last <term keyref="div1"
+                    >DIV1</term> content element. (Occasionally it might be followed by posthumous
+                information another <term keyref="div1">DIV1</term> on <term keyref="family"
+                    >FAMILY</term> or <term keyref="wealth">WEALTH</term>.) In all but a very few
+                cases it will include a Chronstruct for the person's death date. (Burial, if
+                mentioned, should be in an attached <term keyref="short-prose">SHORTPROSE</term>,
+                    <codeph>&lt;P&gt;</codeph>.).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;HEADING&gt;Death&lt;/HEADING&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;11
+                July 1926&lt;/DATE&gt;&lt;CHRONPROSE&gt;GB died in &lt;PLACE&gt;&lt;SETTLEMENT&gt;
+                Baghdad&lt;/SETTLEMENT&gt;&lt;/PLACE&gt;.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;She
+                had been depressed for some time, and she took an overdose of sleeping pills to end
+                her life. While private accounts of her death acknowledge her
+                &lt;cause&gt;suicide&lt;/&gt;, the public record states that she died of natural
+                causes.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt; </codeblock><codeblock>
+                &lt;HEADING&gt;Death&lt;/HEADING&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;24
+                March 1920&lt;/DATE&gt;&lt;CHRONPROSE&gt;MAW died in
+                &lt;PLACE&gt;&lt;SETTLEMENT&gt;London&lt;/SETTLEMENT&gt;&lt;/PLACE&gt; from
+                gradual&lt;CAUSE&gt;heart
+                failure&lt;/CAUSE&gt;.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;She
+                is buried at Aldbury, Hertfordshire.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;
+                </codeblock><codeblock>
+                &lt;HEADING&gt;Death&lt;/HEADING&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;EN died
+                sometime &lt;DATE CERTAINTY=”BY”&gt;before
+                1975.&lt;/DATE&gt;&lt;/P&gt;&lt;/DIV2&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Death should be entered as a <term keyref="chron-struct">CHRONSTRUCT</term> whose
+                bare bones are something like <q>HB died in London of cancer.</q> Variations or
+                details always welcome to avoid a tabulated-data feel. To the best of the
+                researcher's ability, a <term keyref="place">PLACE</term> should be given (and
+                tagged with any available detail from <term keyref="address">ADDRESS</term> onwards)
+                to enable mapping.</p><p> Only one PLACE tag should be included inside DEATH
+                elements; it is assumed that the PLACE tagged within the CHRONSTRUCT of the DEATH
+                element is the location where she died and will be mapped accordingly. If the burial
+                place is also known and you wish to tag it as a place, please put the information in
+                a SHORTPROSE after the CHRONSTRUCT describing the author's death.</p><p> To the best
+                of the researcher’s ability, a <term keyref="cause">CAUSE</term> of death should be
+                included. If information about place and cause is lacking, perhaps mention age at
+                death.</p><p> If the death date is unknown, please include a research note list of
+                sources consulted in researching the date so that research will not be
+                duplicated.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u><p><b>Question:</b> What if there is no death date for a woman
+                writer from the 17th century?</p><p><b>Answer:</b> According to the best information
+                you have, you might include a <term keyref="chron-struct">CHRONSTRUCT</term> with
+                    <term keyref="certainty">CERTAINTY</term> attribute value <q>C</q>, <q>By</q> or
+                    <q>After</q> so that the event could be reasonably slotted into the chronology.
+                If the probability seems so low that a CHRONSTRUCT would be misleading, write a
+                    <term keyref="short-prose">SHORTPROSE</term> including a <term keyref="date"
+                    >DATE</term> tagged in the same way. </p><p>
+                <codeph>&lt;SHORTPROSE&gt;&lt;P&gt;The date of ET’s death is unknown: no more is
+                    heard of her &lt;DATE Value=”1698--” CERTAINTY=”After”&gt;after her book was
+                    published.&lt;/DATE&gt;&lt;/SHORTPROSE&gt;&lt;/P&gt;</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>

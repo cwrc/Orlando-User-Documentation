@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="denomination">
+    <glossterm>DENOMINATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element can be found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It is specifically grouped with the larger <term keyref="religion"
+                    >RELIGION</term> sub-element. Used to capture the names of religious beliefs and
+                denominations associated with a person's life, we are defining DENOMINATION very
+                broadly to include a wide range of categories from Christian to atheist to Buddhist
+                to Seekers to Clapham Sect. While we recognize that many of the denominations listed
+                below are conceptually different (for example, Buddhism is on a different
+                hierarchical, conceptual level from Calvinist), for the purposes of this Project we
+                are overlooking these distinctions.</p>
+            <p>This element goes around the name of the denomination. To the best of your ability,
+                select a name from the list of controlled vocabulary below and phrase your sentence
+                to include the proper name (i.e. use <q>She was a Quaker</q> rather than
+                    <q>Quakerism was her religion</q>). The tag has optional attributes of <term
+                    keyref="current-alternative-term">CURRENTALTERNATIVETERM</term>, <term
+                    keyref="self-defined">SELF-DEFINED</term>, and <term keyref="reg">REG</term>,
+                which allows you to express the denomination in a standard form if you have been
+                unable to do so in your prose.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CULTURALFORMATION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt; PJB was a
+                &lt;NATIONALITY&gt;Scottish&lt;/NATIONALITY&gt; writer and her later work reveals a
+                &lt;DENOMINATION&gt;Unitarian&lt;/DENOMINATION&gt;
+                bent.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/CULTURALFORMATION&gt;</codeblock><codeblock>
+                &lt;CULTURALFORMATION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;UT converted
+                from&lt;DENOMINATION REG=Anglican&gt;Anglicanism&lt;/DENOMINATION&gt; to
+                &lt;DENOMINATION REG=Roman Catholic&gt;
+                Catholicism.&lt;/DENOMINATION&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/CULTRUALFORMATION&gt;
+                </codeblock><codeblock>
+                &lt;CULTURALFORMATION&gt;&lt;RELIGION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Her
+                adoptive parents were &lt;DENOMINATION&gt;Pentecostal
+                Evangelists.&lt;/DENOMINATION&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/RELIGION&gt;&lt;/CULTURALFORMATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>To the best of your ability, use the list of controlled vocabulary for denominations
+                below. If your denomination is not included in this list, use the name best suited
+                to your writer. </p><p><ul>
+                    <li>Atheist</li>
+                    <li> Agnostic</li>
+                    <li> Anglican</li>
+                    <li> Bahai</li>
+                    <li> Baptist</li>
+                    <li> Buddhist</li>
+                    <li> Christian Scientist</li>
+                    <li> Congregationalist</li>
+                    <li> Deist</li>
+                    <li> Hindu</li>
+                    <li> Islamic</li>
+                    <li> Jehovah Witness</li>
+                    <li> Judaism</li>
+                    <li> Methodist</li>
+                    <li> Mennonite</li>
+                    <li> Mormon</li>
+                    <li> Nihilist</li>
+                    <li> Plymouth Brethren</li>
+                    <li> Presbyterian</li>
+                    <li> Puritan</li>
+                    <li> Quaker</li>
+                    <li> Roman Catholic</li>
+                    <li> Scientologist</li>
+                    <li> Spritualist</li>
+                    <li> Sufi</li>
+                    <li> Transcendentalist</li>
+                    <li> Unitarian</li>
+                    <li> Vodun</li>
+                    <li> Zoroastrian</li>
+                </ul>
+            </p><p>Because we use the principle of following the author's own terminology, it is not
+                always possible to achieve a standard naming of the same denomination. For example,
+                Anglicanism may also appear under the names <q>Church of England</q> or <q>Church of
+                    Ireland.</q> When you can, use the <term keyref="reg">REG</term> attribute to
+                standardize these names to <q>Anglican.</q> And avoid using lengthy descriptive
+                phrases to describe the denomination; use instead a noun descriptor. N.b. entities
+                like the Anglican Church, Roman Cathollic Church, Islam, need to be tagged with an
+                    <term keyref="org-name">ORGNAME</term> as well as <term keyref="denomination"
+                    >DENOMINATION</term>, so that searches will find writers belonging to them,
+                along with other data about them. For the purposes of this project, we consider
+                Atheism and agnosticism as denominations. Obviously, calling atheism a religious
+                denomination is an oxymoron but conceptually, we have linked these together.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What should I do if I don't know the specific religion of my writer
+                and all I know is that she was Christian?</p><p><b>Answer:</b> When nothing more
+                specific is known, include Christian as a denomination (<term keyref="org-name"
+                    >ORGNAME</term> Christianity). But bear in mind that baptism or marriage in a
+                parish church in England is presumptive evidence of at least tenuous Anglicanism. </p>
+            <p><b>Question:</b> Is <q>Jewish</q> a <term keyref="denomination">DENOMINATION</term>?
+                    <term keyref="race">RACE</term>? <term keyref="ethnicity"
+                    >ETHNICITY</term>?</p><p><b>Answer:</b> Can be tagged as any of these, depending
+                on data. If DENOMINATION, the REG form is Judaism. </p>
+        </div>
+    </glossdef>
+</glossentry>

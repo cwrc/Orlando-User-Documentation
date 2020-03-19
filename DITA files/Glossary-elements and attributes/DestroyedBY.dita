@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="destroyed-by">
+    <glossterm>DESTROYEDBY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term is located in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                    <uicontrol><term keyref="r-destruction-of-work"
+                        >RDESTRUCTIONOFWORK</term></uicontrol>
+                </menucascade>. It allows you to indicate whether the writer herself destroyed her
+                work. It has two allowable values: <userinput>self</userinput> and
+                    <userinput>other</userinput>. Their meanings are fairly
+            self-explanatory.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RDESTRUCTIONOFWORK DESTROYEDBY=&quot;self&quot;&gt;When she realized that
+                her book was actually in print, Millie Connought spent a frenzied evening throwing
+                complimentary copies into the fire-pit in her
+                backyard.&lt;/RDESTRUCTIONOFWORK&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Question:</b> My author threw away a manuscript of an unpublished work. Do I tag
+                it here?</p><p>
+                <b>Answer:</b> Yes.</p>
+        </div>
+    </glossdef>
+</glossentry>

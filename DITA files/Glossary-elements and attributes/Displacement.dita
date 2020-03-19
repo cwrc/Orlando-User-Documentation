@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="displacement">
+    <glossterm>DISPLACEMENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This opetional element is found in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">PRODUCTION</term></uicontrol>
+                    <uicontrol><term keyref="p-material-conditions"
+                        >PMATERIALCONDITIONS</term></uicontrol>
+                </menucascade>. It applies to information about women who wrote from a displaced
+                position (geographical or physical in some sense). It has one possible value (apart
+                from <userinput>Unspecified</userinput>):
+                <userinput>DisplacementYes</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMATERIALCONDITIONS DISPLACEMENT=&quot;displacementyes&quot;&gt;When
+                Margaret Laurence followed her then-husband to
+                &lt;PLACE&gt;&lt;GEOG&gt;Africa&lt;/GEOG&gt;&lt;/PLACE&gt;; the imposed exile from
+                &lt;PLACE&gt;&lt;GEOG&gt;Canada&lt;/GEOG&gt;&lt;/PLACE&gt;, followed by an extended
+                residence in &lt;PLACE&gt;&lt;GEOG&gt;England &lt;/GEOG&gt;&lt;/PLACE&gt;, stirred
+                her desire to write.&lt;/PMATERIALCONDITIONS&gt;</codeblock><codeblock>
+                &lt;PMATERIALCONDITIONSDISPLACEMENT=&apos;&apos;displacementyes&quot;&gt;After her
+                outrageous behaviour in the winter of 1922, Sally Jones Wemyss-Smith was banished to
+                her parents’ country house, never to see London again. There she began on her next
+                book.&lt;/PMATERIALCONDITIONS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Keep in mind that this is a material condition, not a psychological or imaginary one.
+                This applies only to physical and/or geographical displacement. Also it’s about
+                conditions for writing <term keyref="migration">MIGRATION</term> or displacement as
+                life events go in the <term keyref="biography">BIOGRAPHY</term> section, in <term
+                    keyref="location">LOCATION</term>.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What if the woman writer felt psychologically displaced from her
+                community? Do I discuss it here? </p><p><b>Answer:</b> No. This attribute does not
+                apply to psychological states.</p>
+        </div>
+    </glossdef>
+</glossentry>

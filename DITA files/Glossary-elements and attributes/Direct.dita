@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="direct">
+    <glossterm>DIRECT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DIRECT is an attribute of the <term
+                    keyref="quote">QUOTE</term> element, available throughout the textbase, and is
+                intended to indicate whether a source is being quoted directly or indirectly. It
+                carries values of <userinput>y</userinput> (yes), <userinput>n</userinput> (no), and
+                    <userinput>unspecified</userinput>. For display purposes, it is necessary to set
+                off direct quotations (double quotation marks) from indirect ones, that is quotes
+                within quotes (single quotation marks). Quotations always use
+                    direct=<userinput>yes</userinput> unless a quote within a quote is
+            involved.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;QUOTE DIRECT=&quot;y&quot;&gt;one of the three great prose books written
+                by women.&lt;/QUOTE&gt;</codeblock><codeblock>&lt;QUOTE DIRECT=&quot;y&quot;&gt;the
+                great manufactory in which the faculties of man construct words that answer all the
+                purposes of man&lt;/QUOTE&gt;</codeblock><codeblock>&lt;QUOTE
+                DIRECT=&quot;y&quot;&gt;more honoured and flattered than by any other event in her
+                life.&lt;/QUOTE&gt;</codeblock><codeblock>&lt;QUOTE DIRECT=&quot;y&quot;&gt;the
+                rapid pace with which an infant society has urged on its progress from virtuous
+                simplicity, to the dangerous &lt;QUOTE DIRECT=&quot;n&quot;&gt;knowledge of good and
+                evil.&lt;/QUOTE&gt;&lt;/QUOTE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>You do not need to worry about this attribute if you are quoting your sources
+                directly--our systems will assume that any attribute that is not filled in will mean
+                that the quotation is direct. If you use an indirect quotation, please make sure you
+                fill in the attribute to <userinput>n</userinput>.</p><p><codeph>&lt;QUOTE&gt;The rapid pace with which an
+                    infant society has urged on its progress from virtuous simplicity, to the
+                    dangerous &lt;QUOTE DIRECT=&quot;n&quot;&gt;knowledge of good and
+                    evil.&lt;/QUOTE&gt;&lt;/QUOTE&gt;</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>
