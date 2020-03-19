@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="div1">
+    <glossterm>DIV1</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DIV1 (i.e. level-1 text division) is an
+                element that marks the second largest structural division in a document of any kind
+                within the textbase. In <term keyref="events">EVENTS</term> documents (used in early
+                stages in the work), DIV1 was contained inside a DIV0 and contained one or more
+                    <term keyref="chron-event">CHRONEVENT</term>s, each with <term keyref="bib-cit"
+                    >BIBCIT</term>. In <term keyref="biography">BIOGRAPHY</term> sections of
+                entries, DIV1 follows heading and standard (name) elements inside a <term
+                    keyref="div0">DIV0</term>. It often contains a <term keyref="heading"
+                    >HEADING</term>, then one of a number of anchored content tags, such as Birth,
+                    <term keyref="death">DEATH</term>, or <term keyref="education">EDUCATION</term>.
+                In <term keyref="writing">WRITING</term> sections, a DIV1 occurs following a DIV0
+                and contains an optional heading followed by one or more <term keyref="div2"
+                    >DIV2</term>s.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DIV0&gt;&lt;HEADING&gt;Biography&lt;/HEADING&gt;&lt;STANDARD&gt;Abdy,
+                Maria&lt;/STANDARD&gt;&lt;DIV1&gt;All subsequent document sub-divisions occur here.
+                . . &lt;/DIV1&gt;&lt;/DIV0&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

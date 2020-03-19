@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="div2">
+    <glossterm>DIV2</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>DIV2 (i.e. level-2 text division) is an element that
+                marks the third largest structural division in all types of textbase
+            documents.</p></div>
+        <div>
+            <u>Practice Guidelines</u>
+            <p>In <term keyref="writing">WRITING</term> sections of entries, make sure that the
+                    <term keyref="div2">DIV2</term> level contains all of the <term
+                    keyref="production">PRODUCTION</term>, <term keyref="textual-features"
+                    >TEXTUALFEATURES</term>, or <term keyref="reception">RECEPTION</term> elements
+                which refer to the text or texts under consideration here (often named in a <term
+                    keyref="text-scope">TEXTSCOPE</term> for the <term keyref="div2">DIV2</term>
+                level). Place <term keyref="heading">HEADING</term>s immediately inside the DIV2
+                element, and they will display as Sub-headings. Place <term keyref="text-scope"
+                    >TEXTSCOPE</term>s to follow the HEADING, or the DIV2 element. In <term
+                    keyref="biography">BIOGRAPHY</term> sections, DIV2s go inside big-bucket tags
+                    (<term keyref="birth">BIRTH</term>, <term keyref="cultural-formation"
+                    >CULTURALFORMATION</term>, etc.); in WRITING sections they enclose such tags.
+                Each DIV2 element should normally not contain more than one publication event unless
+                extra ones record serialization or later editions or reissues of the central one.
+                TEXTSCOPEs should be entered after DIV2 tags (and after a HEADING tag if there is
+                one rendered as a sub-heading) and <b>NOT</b> after DIV1 tags. </p>
+        </div>
+    </glossdef>
+</glossentry>

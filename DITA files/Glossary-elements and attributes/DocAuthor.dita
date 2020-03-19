@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="doc-author">
+    <glossterm>DOCAUTHOR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A carry over from the TEI, DOCAUTHOR is
+                an element that contains the name of the author of the document at hand. It is
+                contained within the fileDesc--titleStmt area of the <term keyref="orlando-header"
+                    >ORLANDOHEADER</term>. It contains no sub-elements or unique attributes. It is
+                currently not used, because the Orlando Project has implemented a much more robust
+                method of tracking document responsibility through its responsibility element. Do
+                not use this element unless otherwise instructed.</p></div>
+    </glossdef>
+</glossentry>

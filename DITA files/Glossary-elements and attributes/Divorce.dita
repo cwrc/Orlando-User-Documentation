@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="divorce">
+    <glossterm>Divorce</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element can be found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="family">FAMILY</term></uicontrol>
+                </menucascade>. Aside from the FAMILY tag, it is also found in <term
+                    keyref="marriage">MARRIAGE</term>. It should include a statement, not just the
+                word <userinput>divorce</userinput>. Use <term keyref="separation">SEPARATION</term>
+                when she was separated without a legal divorce. Appearance of the DIVORCE element in
+                a biography document will signify that the subject of the biography was divorced: do
+                    <b>not</b> use the element about a divorce between her parents or
+            others.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DIVORCE&gt;AT divorced James McInnes on the grounds of cruelty and
+                adultery and received custody of their three children. &lt;/DIVORCE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Again, only use for the divorce of the person whose biography you are writing. Do
+                    <b>NOT</b> use this element for the divorces of her parents, cousins or any
+                other family member. Using this element denotes that the subject of the document was
+                divorced.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Can this element be used for a case where a marriage is
+                annulled?</p><p>
+                <b>Answer:</b> Yes. </p>
+        </div>
+    </glossdef>
+</glossentry>

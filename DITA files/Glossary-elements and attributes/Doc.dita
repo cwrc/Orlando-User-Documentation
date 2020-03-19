@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="doc">
+    <glossterm>DOC</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DOC is an attribute associated with
+                hypertext linking tags throughout the textbase. It supplies information about the
+                target document of a link in a fashion that is meaningful to system processing. It
+                is available on the xref and xptr elements and requires an sgml entity as its
+                value.</p></div>
+        <div>
+            <u>Example</u>
+            <p>this tag is not implemented to the point where reliable examples exist.</p>
+        </div>
+    </glossdef>
+</glossentry>
