@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="enjamb">
+    <glossterm>ENJAMB</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>ENJAMB in an attribute of the <term keyref="L">L</term> (line)
+                element, used to indicate, in any document, the occurrence of enjambment on a line
+                of poetry. It allows typing text within it. A carry over from the TEI guidelines,
+                this attribute will not likely be used on the Orlando Project.</p></div>
+    </glossdef>
+</glossentry>

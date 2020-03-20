@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="entity">
+    <glossterm>ENTITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>ENTITY is an attribute of the <term
+                    keyref="figure">FIGURE</term> element, available in every kind of document; it
+                names an external ENTITY within which a graphic image of a figure is stored,
+                requiring an SGML external entity as its value. This ENTITY tells the system how to
+                find the actual graphic file of the figure.</p></div>
+    </glossdef>
+</glossentry>

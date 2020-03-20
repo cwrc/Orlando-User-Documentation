@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="employer">
+    <glossterm>EMPLOYER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is located in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="occupation">OCCUPATION</term></uicontrol>
+                </menucascade>. It captures the names of a person's employers. We are interested in
+                tracking if particular kinds of organizations and institutions that supported
+                women's work or attracted women writers more than others. This element generally
+                encloses just a <term keyref="name">NAME</term> or <term keyref="org-name"
+                    >ORGNAME</term>, though it may enclose a few words (<q>a series of department
+                    stores</q>).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>MS was a tutor at &lt;EMPLOYER&gt;&lt;ORGNAME&gt;Manchester
+                University&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>An <term keyref="org-name">ORGNAME</term> element must be placed around employers
+                that are organizations.</p><p>She worked for the
+                    <codeph>&lt;EMPLOYER&gt;&lt;ORGNAME&gt;BBC&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;.</codeph></p><p>A
+                Name element must be placed around all employers who are
+                    individuals.</p><p><codeph>She worked for &lt;EMPLOYER&gt;&lt;ORGNAME&gt;George
+                    Herber&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;.</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>

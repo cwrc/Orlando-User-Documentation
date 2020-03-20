@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="erotic">
+    <glossterm>EROTIC</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is attached to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="intimate-relationships"
+                        >INTIMATERELATIONSHIPS</term></uicontrol>
+                </menucascade>. allows us to distinguish intimate relationships that were erotic
+                and/or explicitly sexual from intimate relationships that were not, through its
+                three potential values: <userinput>eroticYes</userinput>,
+                    <userinput>eroticNo</userinput>, and <userinput>eroticPossibly</userinput>.
+                EROTIC in this context suggests that sexuality was an issue in the relationship
+                whether or not it was acted upon, in either same-sex and opposite-sex relations. In
+                not wishing to assume that heterosexual relations between sexual partners are the
+                only standard for intimate relationships, we include both erotic and non-erotic
+                intimate relationships as central to a woman's life and use this attribute to
+                distinguish between the two. This attribute also seeks to redress the historical and
+                ideological silence placed upon women's same-sex relationships; it recognizes that
+                biographical information concerning these and other relationships often is
+                impossible to uncover, and therefore allows for an attribute value of
+                    <userinput>eroticPossibly</userinput> that registers the possibility of a sexual
+                relationship, when, in the absence of biographical proof, it is impossible to claim
+                such as fact.</p><p>If definite information affirms that the relationship was erotic
+                (in feeling or in action), select <userinput>eroticYes</userinput>. If your research
+                suggests a strong possibly of an erotic attachment but this cannot be confirmed,
+                select <userinput>eroticPossibly</userinput>. <userinput>EroticNo</userinput> may be
+                used in cases where the entry subject rejected the option of an erotic relationship,
+                or when marriage arrangements blatantly disregarded personal preference, as well as
+                for e.g. familial intimate association.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;INTIMATERELATIONSHIPS EROTIC=&quot;eroticYes&quot;&gt;
+                &lt;CHRONSTRUCT&gt;&lt;DATERANGE&gt;1931-1940&lt;/DATERANGE&gt;&lt;CHRONPROSE&gt;PF
+                and poet and civil servant Humbert Wolfe were
+                lovers.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/INTIMATERELATIONSHIPS&gt;</codeblock><codeblock>
+                &lt;INTIMATERELATIONSHIPS
+                EROTIC=&quot;eroticPossibly&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Margiad
+                Evans had an intense emotional relationship with the paralysed violinist, Jan Rosé,
+                grieved when he died from heart disease, and noted later that if he had lived, she
+                might have died of
+                feeling.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/INTIMATERELATIONSHIPS&gt;</codeblock><codeblock>
+                &lt;INTIMATERELATIONSHIPS EROTIC=&quot;eroticNo&quot;&gt;
+                &lt;SHORTPROSE&gt;&lt;P&gt;She and her sister were very close as children and
+                remained so for their entire
+                lives.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/INTIMATERELATIONSHIPS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What if all I know about a woman writer is that she lived with a man
+                but don't know whether or not they were sexually involved?</p><p>
+                <b>Answer:</b>Use your judgement about an acceptable level of assumption. While we
+                do not want to assume that just because people lived together or were married that
+                they had an erotic relation, we can reasonably gather from biographical information
+                whether sexuality was an issue in the relationship.</p>
+        </div>
+    </glossdef>
+</glossentry>

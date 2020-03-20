@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="emph">
+    <glossterm>EMPH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Short for emphasis, EMPH signifies
+                emphasis placed by writer of entry (use very sparingly) or which is part of source
+                quoted. In the latter case it may represent italic or bold or small caps in source.
+                It is available throughout the textbase from the Div1 level down everywhere that
+                typing is allowed (<term keyref="heading">HEADING</term>s, <term
+                    keyref="chron-prose">CHRONPROSE</term>, <term keyref="short-prose"
+                    >SHORTPROSE</term>), and surrounds only those words that should be set apart
+                typographically from surrounding text. When transcribing <term keyref="quote"
+                    >QUOTE</term>s from texts (mostly early ones) which over-use emphatic
+                typography, you may choose not to reproduce it (with a <term keyref="scholar-note"
+                    >SCHOLARNOTE</term> to that effect). This tag has no required sub-elements or
+                unique attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Eliza Fenwick, who had recently decided &lt;EMPH&gt;not&lt;/EMPH&gt; to join
+                her daughter in Barbados, embarked with her son on the two-month voyage there. In
+                the following example emphasis is marked as coming from the original source, a
+                letter from Mary Taylor to Charlotte Brontë: &lt;QUOTE&gt;You talk of women working.
+                And this first duty, this necessity you seem to think that
+                &lt;EMPH&gt;some&lt;/EMPH&gt; women may indulge in -- if they give up marriage and
+                don&apos;t make themselves too disagreeable to the other sex. You are a coward and a
+                traitor. A woman who works is by that alone better than one who does
+                not.&lt;/QUOTE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>EMPH will likely be used very rarely in project documents. Designed for the TEI, emph
+                is best used by projects recording pre-existing texts where words have been
+                emphasized by typography but the encoder has no indication of why the words have
+                been set off. If you are considering using the emph element, please consult the
+                glossary for the <term keyref="foreign">FOREIGN</term>, <term keyref="r">R</term>s,
+                    <term keyref="so-called">SOCALLED</term>, and <term keyref="title">TITLE</term>
+                elements to ensure that your purposes are not better served by one of these
+                elements.</p>
+        </div>
+    </glossdef>
+</glossentry>
