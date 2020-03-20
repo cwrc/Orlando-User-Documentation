@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="education">
+    <glossterm>EDUCATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>EDUCATION is one of the 16 major, <term
+                    keyref="div1">DIV1</term> elements defined as integral to mapping a woman's life
+                in the <term keyref="biography">BIOGRAPHY</term> section of entries. <term
+                    keyref="education">EDUCATION</term> contains all information about a person's
+                educational experience. Particular emphasis is placed on where and when she went to
+                school (content tagging here will provide important links between different women
+                writers who had the same teacher or went to the same school), gender issues (the
+                conditions affecting women's access to education), and subjects studied (making
+                connections between a subject studied by the writer and topics of her writing). In
+                most instances this element will directly follow the <term keyref="family"
+                    >FAMILY</term> element capturing information about the subject’s parents, and
+                education from primary to post-secondary will be included in the same element. But
+                it can be used repeatedly in one entry to reflect chronology or to apply different
+                attribute values - when, for example, the subject attended university later in life.
+                This tag has content sub-elements: <term keyref="award">AWARD</term>, <term
+                    keyref="companion">COMPANION</term>, <term keyref="contested-behaviour"
+                    >CONTESTEDBEHAVIOUR</term>, <term keyref="degree">DEGREE</term>, <term
+                    keyref="instructor">INSTRUCTOR</term>, <term keyref="school">SCHOOL</term>,
+                    <term keyref="subject">SUBJECT</term>, <term keyref="text">TEXT</term>. It has
+                an optional attribute, <term keyref="mode">MODE</term>, used to register whether the
+                education took place at home, in an institution or self-driven. Though optional,
+                this attribute should be used whenever you know what value to fill in. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;EDUCATION
+                MODE=&quot;institutional&quot;&gt;&lt;DIV2&gt;&lt;HEADING&gt;Lady Margaret
+                Hall&lt;/HEADING&gt;
+                &lt;CHRONSTRUCT&gt;&lt;DATE&gt;1886&lt;/DATE&gt;&lt;CHRONPROSE&gt;GB began studies
+                at &lt;SCHOOL INSTITUTIONLEVEL=&quot;post-secondary&quot;
+                STUDENTBODY=&quot;singleSex&quot;&gt;Lady Margaret Hall, Oxford
+                University&lt;/SCHOOL&gt;.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Her
+                experience at Oxford was shaped by the strict segregation of the sexes that she
+                experienced there. One of her history instructors had a separate table on the
+                platform for his women students which meant that they were sitting with their backs
+                to
+                him&lt;P&gt;.&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/EDUCATION&gt;</codeblock><codeblock>&lt;EDUCATION
+                MODE=&quot;institutional&quot;&gt;&lt;DIV2&gt;&lt;HEADING&gt;Early
+                Education&lt;/HEADING&gt;&lt;SHORTPROSE&gt;&lt;P&gt;While growing up in Manchester,
+                IB attended both &lt;SCHOOL INSTITUTION=&quot;daySchool&quot;
+                INSTITUTIONLEVEL=&quot;primary&quot; STUDENTBODY=&quot;singleSex&quot;&gt;Miss
+                Hannah Spray&apos;s Ladies&apos; Day School&lt;/SCHOOL&gt; at Dale Street and
+                &lt;SCHOOL&gt;Green Street
+                School&lt;/SCHOOL&gt;.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/EDUCATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Remember to use the <term keyref="mode">MODE</term> attribute, inserting multiple
+                education elements if necessary in order to use the appropriate attribute. Some
+                    <term keyref="chron-struct">CHRONSTRUCT</term>s welcome (e.g. entering and
+                graduating from university) but be selective with them.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What if I have a writer who was educated in her home by her brother
+                but then went on to study at a boarding school?</p><p><b>Problem:</b> The Mode
+                attribute to capture either domestic and institutional education is attached to the
+                Div1 element and only one can be selected.</p><p><b>Answer:</b>Include two
+                successive <term keyref="div1">DIV1</term> elements -- one for her domestic
+                education and another for her education at boarding school.</p>
+            <p><b>Question:</b> How do you tag a school that she taught at?</p><p><b>Answer:</b> Put
+                it under Occupation. This why it needs an <term keyref="org-name">ORGNAME</term> tag
+                as well as a <term keyref="school">SCHOOL</term> tag.</p><p> </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="doc-title">
+    <glossterm>DOCTITLE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>DOCTITLE is an element in the <term
+                    keyref="orlando-header">ORLANDOHEADER</term> that contains the title of the
+                document at hand (of any kind) for cataloguing purposes. This title will be in the
+                template for most of the documents created on the Orlando Project, but will need to
+                be filled in for any documents created without a template. DOCTITLE is contained
+                within the <term keyref="file-desc">FILEDESC</term>--<term keyref="title-stmt"
+                    >TITLESTMT</term> area of the <term keyref="orlando-header"
+                >ORLANDOHEADER</term>. It contains no sub-elements and has one attribute, type,
+                which we are currently not using in conjunction with this element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Lucy Aiken: writingLucy Aiken: biographyCensorship: 1890-1960British
+                Broadcasting Corporation Chronology</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

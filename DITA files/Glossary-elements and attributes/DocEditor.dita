@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="doc-editor">
+    <glossterm>DOCEDITOR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A carry over from the TEI, DOCEDITOR is
+                an element that contains the name of the editor of the document at hand. Currently
+                this element is not used, because the Orlando Project has implemented a much more
+                robust method of tracking document responsibility through its responsibility
+                element. It is contained within the <term keyref="file-desc">FILEDESC</term>--<term
+                    keyref="title-stmt">TITLESTMT</term> area of the <term keyref="orlando-header"
+                    >ORLANDOHEADER</term>. It has no sub-elements. It has one unique attribute,
+                role, which has a default value of <q>editor</q>. Do not use this element unless
+                otherwise instructed.</p></div>
+    </glossdef>
+</glossentry>

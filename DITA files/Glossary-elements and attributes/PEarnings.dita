@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-earnings">
+    <glossterm>PEARNINGS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PEARNINGS is conceptually related to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It comments both on the value/amount of her literary earnings and
+                her attitude towards them. This means earnings, direct or indirect, from writing,
+                not from a day job (which is to be tagged as <term keyref="remuneration"
+                    >REMUNERATION</term>, in <term keyref="occupation">OCCUPATION</term>, in the
+                    <term keyref="biography">BIOGRAPHHY</term> section). It also sometimes encloses
+                comment on a writer’s feelings or statements about her earnings. It is often used
+                with <term keyref="p-contract">PCONTRACT</term> or other tags relating to
+                publication process. It should enclose more than just a figure: a sentence-length
+                statement of her revenue derived from writing, which can be a numeric or text-based
+                and includes intangible or unspecified earnings (favours granted, other types of
+                exchanges or barters.) If using a numeric value, remember to insert an entity for
+                the pound sign: ¥</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PEARNINGS&gt;Letters from the Mountains brought Ann Grant what she
+                considered real wealth.&lt;/PEARNINGS&gt;</codeblock><codeblock>&lt;PEARNINGS&gt;Hannah More had made over
+                ¥30,000 from her publications.&lt;/PEARNINGS&gt; &lt;PEARNINGS&gt;The proceeds from
+                Elizabeth Grant&apos;s early periodical publications allegedly saved the family from
+                financial ruin.&lt;/PEARNINGS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If this section contains an in-line xml example, use <codeph/>, with the same
+                instructions as above for codeblock.</p>
+        </div>
+    </glossdef>
+</glossentry>

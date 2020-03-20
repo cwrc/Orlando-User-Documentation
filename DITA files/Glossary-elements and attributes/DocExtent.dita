@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="doc-extent">
+    <glossterm>DOCEXTENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>A carry over from the TEI, DOCEXTENT is
+                an element that describes the approximate size of the electronic text as stored on
+                some carrier medium, specified in any convenient units. It is contained within <term
+                    keyref="file-desc">FILEDESC</term> in the <term keyref="orlando-header"
+                    >ORLANDOHEADER</term>. It contains no sub-elements, other than the standard
+                linking elements. It has no unique attributes. Do not use unless otherwise
+                instructed.</p></div>
+    </glossdef>
+</glossentry>
