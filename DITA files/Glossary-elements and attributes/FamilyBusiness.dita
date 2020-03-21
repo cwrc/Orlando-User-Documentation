@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="family-business">
+    <glossterm>FAMILYBUSINESS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This is an optional element found within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="occupation">OCCUPATION</term></uicontrol>
+                    <uicontrol><term keyref="job">JOB</term></uicontrol>
+                </menucascade>. It has one value, <term keyref="family-business-yes"
+                    >FAMILYBUSINESSYES</term>, allows us to track the extent to which women's work
+                took place within a family business (meaning the economic, bread-winning business
+                carried on within the family and not, unfortunately, domestic work).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>P. D. A. Thomas invited his daughter, MHR, to work as his &lt;JOB
+                FAMILYBUSINESS=&quot;FamilyBusinessYes&quot;&gt; personal
+                assistant&lt;/JOB&gt;.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="exact">
+    <glossterm>EXACT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>An attribute of DATERANGE, available in
+                every kind of document, EXACT indicates varying degrees of certainty in the values
+                given the <term keyref="to">TO</term> and <term keyref="from">FROM</term>
+                attributes. One of these may be flagged as exact by the values on this attribute, or
+                both, or neither. It is a way of stretching the <term keyref="certainty"
+                    >CERTAINTY</term> attribute to function in a tag which has two dates to apply it
+                to. It has the values <userinput>none</userinput>, <userinput>to</userinput>,
+                    <userinput>from</userinput>, and <userinput>both</userinput>. Attribute From (on
+                    <term keyref="date-range">DATERANGE</term>) flags the Certainty attribute value
+                as applying to the date on which the range begins. Attribute <term keyref="to"
+                    >TO</term> (on <term keyref="date-range">DATERANGE</term>) flags the <term
+                    keyref="certainty">CERTAINTY</term> attribute value as applying to the date on
+                which the range ends.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATERANGE FROM=&quot;1906&quot; TO=&quot;1910&quot;
+                EXACT=&quot;both&quot;&gt;1906 to
+                1910&lt;/DATERANGE&gt;</codeblock><codeblock>&lt;DATERANGE FROM=&quot;1983&quot;
+                TO=&quot;1986&quot; EXACT=&quot;none&quot;&gt; mid-1980s&lt;/DATERANGE&gt;She
+                attended boarding school from &lt;DATERANGE FROM=&quot;1812&quot;
+                TO=&quot;1815&quot; EXACT=&quot;from&quot;&gt;1812 until 1815&lt;/DATERANGE&gt;,
+                although there is no record of her leaving the school.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use the EXACT attribute to refer specifically to the individual components of your
+                DATERANGE. If you need to express a certainty statement about your dateRange as a
+                whole, then use the <term keyref="certainty">CERTAINTY</term> attribute.</p><p><codeph>Some
+                time in the &lt;DATERANGE CERTAINTY=&quot;roughlyDated&quot; FROM=&quot;1960&quot;
+                TO=&quot;1969&quot; EXACT=&quot;both&quot;&gt;1960s&lt;/DATERANGE&gt; she quit her
+                job.</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>

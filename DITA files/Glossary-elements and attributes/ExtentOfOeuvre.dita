@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="extent-of-oeuvre">
+    <glossterm>EXTENTOFOEUVRE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element, used only within <term
+                    keyref="author-summary">AUTHORSUMMARY</term> and normally containing at least a
+                full sentence, will be particularly useful in summing up the careers of minor
+                writers. Describe here the amount of a woman's writing (fifteen novels; only one
+                text that survives; a diary over 60 years) and remember that this will be <b>OUR</b>
+                view of the work. The AUTHORSUMMARY is attached to <term keyref="">WRITING</term> in
+                entries, but displayed on the <term keyref="over-view">OVERVIEW</term> screen.
+                Because of this, it will likely form the first impression of the entry subject for
+                many users. There are no allowable sub-elements or attributes for this
+            element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AUTHORSUMMARY&gt;&lt;SHORTPROSE&gt;&lt;P&gt;&lt;EXTENTOFOEUVRE&gt;Elizabeth
+                Cellier&apos;s output amounts to three pamphlets on topical religious and gender
+                issues.&lt;/EXTENTOFOEUVRE&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/AUTHORSUMMARY&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="ethnicity">
+    <glossterm>ETHNICITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Ethnicity is a sub-tag within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It is sometimes also within <term keyref="race-and-ethnicity"
+                    >RACEANDETHNICITY</term>. ETHNICITY captures information about a person's ethnic
+                position. See <term keyref="race-and-ethnicity">RACEANDETHNICITY</term> for a
+                detailed description of the complexities of this element. ETHNICITY encloses the
+                word or phrase that best describes the person's ethnicity. It has optional
+                attributes of <term keyref="fore-bear">FOREBEAR</term>, <term keyref="self-defined"
+                    >SELF-DEFINED</term>, and <term keyref="reg">REG</term>, which last allows you
+                to standardize an ethnic label if you have been unable to do so in your
+            prose.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>GM was &lt;ETHNICITY&gt;Jewish&lt;/ETHNICITY&gt; and, with her family, fled
+                Czechoslovakia in the year that Hitler invaded.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

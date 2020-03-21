@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="family">
+    <glossterm>FAMILY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, relationships</u><p>Family is a <term keyref="div1"
+                    >DIV1</term> content element, one of the 16 major elements in the <term
+                    keyref="biography">BIOGRAPHY</term> section of entries, defined as integral to
+                mapping a woman's life. FAMILY contains all information about a person's family life
+                (both her birth family and her married family) and, when no member sub-element is
+                used, captures general family information and allows for a discussion of multiple
+                family members at the same time. If you wish to discuss a specific family member
+                (for example, husband or mother) open a member sub-element in order to structure
+                information like the names and jobs of writers' mothers. For the purposes of
+                Orlando, we are defining <q>family</q> in the strict sense of the state-sanctioned
+                institution. We acknowledge the politically offensive nature of constructing the
+                    <q>family</q> as including only biological, by-marriage and by-adoption members.
+                But, in order to ensure that we do not erase the material and ideological effects of
+                this construction, we do not want to merge alternative families with
+                state-sanctioned families, thereby hiding their very real differences. By including
+                alternative families under <term keyref="intimate-relationship"
+                    >INTIMATERELATIONSHIP</term> we hope to facilitate research on the politics of
+                the family. If the woman had a lifelong relationship with a lover whom she did not
+                marry, but the relationship played itself out in a family-like manner, then tag
+                family <term keyref="member">MEMBER</term>=<userinput>partner</userinput>. If they
+                defined their relationship in opposition to the heterosexual family, then it
+                probably should be tagged in the <term keyref="intimate-relationship"
+                    >INTIMATERELATIONSHIP</term> element.</p><p>In most instances, a <term
+                    keyref="family">FAMILY</term> element will be placed after <term keyref="birth"
+                    >BIRTH</term> and <term keyref="cultural-formation">CULTURALFORMATION</term> to
+                introduce her parents and general early family life. The element (and its
+                sub-elements, <term keyref="member">MEMBER</term>, <term keyref="children"
+                    >CHILDREN</term>, <term keyref="childlessness">CHILDLESSNESS</term>, <term
+                    keyref="separation">SEPARATION</term> and <term keyref="divorce">DIVORCE</term>)
+                can be used again later in the document to discuss her married family, or later
+                developments within her birth family. Any combination of multiple member
+                sub-elements and general <term keyref="family">FAMILY</term> discussion can be used
+                within one <term keyref="div1">DIV1</term>
+                <term keyref="family">FAMILY</term> element. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;FAMILY&gt;&lt;MEMBER
+                RELATION=&quot;mother&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;IK&apos;s
+                mother, &lt;NAME&gt;Elizabeth Fraser&lt;/NAME&gt; married IK&apos;s father secretly
+                during a ball.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/MEMBER&gt; &lt;MEMBER
+                RELATION=&quot;father&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;IK&apos;s
+                father, &lt;name&gt;William Fordyce&lt;/&gt;, was an &lt;job&gt;army
+                captain&lt;/&gt;and &lt;job&gt;cupbearer&lt;/&gt; to George
+                III.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/MEMBER&gt;&lt;/FAMILY&gt;</codeblock><codeblock>
+                &lt;FAMILY&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;In the eight years following
+                her marriage, Frances Trollope had &lt;CHILDREN NUMBER=&quot;7&quot;&gt;seven
+                children&lt;/CHILDREN&gt;, but only her eldest and youngest sons survived her. She
+                was interested in her children&apos;s education, teaching her eldest son, Thomas, to
+                read at a young
+                age.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/FAMILY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Open a <term keyref="member">MEMBER</term> sub-element if you wish to discuss a specific family member. If not,
+                leave discussion within the general element FAMILY.</p><p> For general discussions
+                of her children do not open a member sub-element but try to include a <term keyref="children">CHILDREN</term>
+                sub-element. For individual discussions of one child, open a MEMBER
+                sub-element.</p><p> In order to structure information about parents, even if all you
+                know is the name of her mother and father, you need to include separate family
+                MEMBER sub-elements for each. This will break up your prose but is necessary to
+                generate, for our end user, a list of all jobs and significant activities of her
+                mother, husband or father.</p><p> Do not put parents’ names in <term keyref="data-item">DATAITEM</term>s. Wherever
+                possible, include a short summary sentence about her mother or father. When all you
+                know is the name, include the sentence <q>CGB's mother was born Georgina
+                Hill.</q></p><p> Unless the <term keyref="heading">HEADING</term>s <q>Mother</q> and <q>Father</q> (as
+                sub-headings, i.e. within a <term keyref="dvi2">DIV2</term>) are required by the
+                length of the discussion, do not use them. A single Heading, <q>Family</q> or
+                    <q>Birth and Family</q> or <q>Birth and Background</q>, is often preferable.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>
