@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-first-literary-activity">
+    <glossterm>PFIRSTLITERARYACTIVITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is conceptually a part of <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It captures the first significant writing activity, published or
+                otherwise, of the subject. It should not be used for publications unless there's
+                strong evidence that the publication actually sprang from the actual earliest
+                writing activity. This element should contain a full sentence spelling out if
+                possible (and tagging) the title of the work, its date of creation of publication,
+                and its <term keyref="t-genre">TGENRE</term>. Avoid tagging other dates while still
+                within this element, to ensure that the one tagged date refers to the first literary
+                activity. This element should occur in a <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> if possible; using it will put the <term
+                    keyref="chron-struct">CHRONSTRUCT</term> into <term keyref="mile-stone"
+                    >MILESTONE</term> on the <term keyref="over-view">OVERVIEW</term> screen. It has
+                no mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PFIRSTLITERARYACTIVITY&gt;Joanna Baillie&apos;s first play, Arnold, is,
+                lost.&lt;/PFIRSTLITERARYACTIVITY&gt; &lt;PFIRSTLITERARYACTIVITY&gt;Eleanor Ann
+                Porden was planning an essay periodical in &lt;DATE&gt;1815&lt;/DATE&gt; when her
+                long poem, The Veils or the Triumph of Constancy, written at age 16,
+                appeared.&lt;/PFIRSTLITERARYACTIVITY&gt;</codeblock><codeblock>&lt;PFIRSTLITERARYACTIVITY&gt;The
+                future Mary Wortley Montagu seems to have circulated her writings among a group of
+                young women including probably Mary Monck. She copied them in two surviving albums,
+                from one of which pages were cut out, apparently following a reprimand for
+                writing.&lt;/PFIRSTLITERARYACTIVITY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Fill this in for all writers where known and where appropriate. From the examples,
+                you can see that it is not always appropriate to impose a title or date on the
+                information; use discretion.</p>
+        </div>
+    </glossdef>
+</glossentry>

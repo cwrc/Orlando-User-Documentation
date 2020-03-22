@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="foreign">
+    <glossterm>FOREIGN</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The FOREIGN element, available everywhere
+                in the textbase from the <term keyref="div1">DIV1</term> level on down where typing
+                is allowed (i.e. <term keyref="heading">HEADING</term>, <term keyref="chron-prose"
+                    >CHRONPROSE</term>, <term keyref="short-prose">SHORTPROSE</term>). It identifies
+                and encloses a word or phrase as belonging to some language other than that of the
+                surrounding text. It has two unique attributes, <term keyref="lang">LANG</term>
+                (i.e. language), where the language of the word or phrase marked can be typed, and
+                    <term keyref="reg">REG</term>, where a translation of the foreign phrase can be
+                provided if necessary and possible. Foreign has no required sub-elements. It is
+                permissible but unusual for other globally available elements (i.e. <term
+                    keyref="name">NAME</term> or <term keyref="org-name">ORGNAME</term>) to appear
+                within it.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>AD received high praise from Berlioz. He is cited as having said of her,
+                &lt;FOREIGN LANG=&quot;French&quot;&gt;Si elle ne s&apos;approchait pas, c&apos;est
+                le piano qui marcherait vers elle,&lt;/FOREIGN&gt; and &lt;FOREIGN
+                LANG=&quot;French&quot;&gt;c&apos;est plus qu&apos;une musicienne, c&apos;est la
+                mélodie.&lt;/FOREIGN&gt;</codeblock><codeblock>&lt;FOREIGN LANG=&quot;French&quot;
+                REG=&quot;pilot&apos;s licence&quot;&gt;brevet de pilote
+                d&apos;aeroplane&lt;/FOREIGN&gt;</codeblock><codeblock>&lt;FOREIGN
+                LANG=&quot;Gaelic&quot; REG=&quot;House of Sorrow&quot;&gt;Broin
+                Bearg&lt;/FOREIGN&gt;</codeblock><codeblock>&lt;FOREIGN REG=&quot;Silent
+                Ones&quot;&gt;Ekumeku&lt;FOREIGN/&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If using the FOREIGN tag in addition to a title tag for the names of books, films
+                etc., only give a translation when the English title is known--in other words, don't
+                guess at a translation; if you don't know, or the book has not been translated or
+                the film subtitled or dubbed. In those cases just leave the Reg attribute
+                empty.</p><p>Do not use the Foreign tag around the names of political/parliamentary
+                bodies and groups: e.g. Sinn Fein, Cumann na mBan, Nazi party.</p>
+            <p> Do not use a Foreign element for foreign expressions that have entered common
+                English usage such as, chic, en route, debutante, and panache. Other foreign words,
+                such as Luftwaffe, Blitzkrieg, Krystalnacht, and Sinn Fein, will be recognizable in
+                English but not part of English idiom. Tag these words with the foreign element but
+                do not provide translations for them. If you are having trouble distinguishing
+                between words that have become idiomatic and those that have not, ask yourself:
+                    <q>if I were putting this word in an academic paper would I need to italicize
+                    it?</q> If the answer is yes, then tag it; if the answer is no, then don't tag
+                it.</p><p>You do not have to use the <term keyref="reg">REG</term> attribute to
+                provide translations of all foreign expressions. If, however, your source provides a
+                translation, you may use the Reg attribute to add this information. </p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Question:</b> I have a foreign organization name; do I use the foreign tag or the
+                    <term keyref="org-name">ORGNAME</term> tag?</p><p>
+                <b>Answer:</b> Most foreign organizations should be anglicized in your prose and put
+                inside the ORGNAME tag. In such cases you may use the reg attribute of ORGNAME to
+                preserve the original spelling of the organization.</p><p><codeph>&lt;ORGNAME
+                REG=&quot;Universitaet Muenchen&quot;&gt;University of Munich&lt;/ORGNAME&gt;</codeph>. Some
+                organizations are commonly known in English by their name in their own language (the
+                Sorbonne, the Louvre, the Bibliotheque Nationale, La Scala). Use an orgName tag for
+                such institutions, but do not anglicise them or use the Reg attribute for
+                translation purposes. E.g. <codeph>&lt;ORGNAME&gt;La Scala&lt;/ORGNAME&gt;</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>

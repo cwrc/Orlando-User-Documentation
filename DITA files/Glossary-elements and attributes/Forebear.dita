@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="forebear">
+    <glossterm>FOREBEAR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is attached to
+                various categories within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. These categories include: <term keyref="ethnicity">ETHNICITY</term>,
+                    <term keyref="geog-herritage">GEOGHERRITAGE</term>, <term
+                    keyref="national-heritage">NATIONALHERRITAGE</term>, and <term
+                    keyref="race-colour">RACECOLOUR</term>. It has the following attribute values:
+                    <term keyref="mother">MOTHER</term>, <term keyref="father">FATHER</term>, <term
+                    keyref="parents">PARENTS</term>, <term keyref="grandfather">GRANDFATHER</term>,
+                    <term keyref="grandmother">GRADNMOTHER</term>, <term keyref="grandparents"
+                    >GRANDPARENTS</term>, <term keyref="aunt">AUNT</term>, <term keyref="uncle"
+                    >UNCLE</term>, <term keyref="other">OTHER</term>, <term keyref="family"
+                    >FAMILY</term>. FOREBEAR allows the tagger to specify the family member from
+                whom the information in the element derives.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Both of Aguilar&apos;s parents were presumably &lt;RACECOLOUR
+                FOREBEAR=&quot;parents&quot;&gt;white&lt;/RACECOLOUR&gt; and of Spanish-
+                &lt;RACECOLOUR FOREBEAR=&quot;parents&quot;&gt;Jewish&lt;/RACECOLOUR&gt;
+                descent.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If none of the attribute values apply, use <q>other.</q></p>
+        </div>
+    </glossdef>
+</glossentry>

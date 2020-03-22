@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="formality">
+    <glossterm>FORMALITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This is an optional attribute found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                    <uicontrol><term keyref="r-responses">RRESPONSES</term></uicontrol>
+                </menucascade>. which allows you to indicate whether a response to a work was formal
+                or informal. <userinput>Formal</userinput> means that the response was printed or
+                otherwise made public; <userinput>informal</userinput> refers to private opinion
+                expressed in a letter or in conversation, or in those incidents more difficult to
+                define: a hearty slap on the back, rude looks from strangers on buses, a snubbing by
+                her social set. It has two associated <term keyref="value">VALUE</term>s:
+                    <userinput>formal</userinput> and <userinput>informal</userinput>. It has
+                sibling attributes of <term keyref="gendered-response">GENDEREDRESPONSE</term> and
+                    <term keyref="response-type">RESPONSETYPE</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RRESPONSES FORMALITY=&quot;formal&quot;
+                RESPONSETYPE=&quot;re-evaluation&quot;&gt;An attack on Joanna Baillie&apos;s work
+                written by Francis Jeffrey signalled the decline of her
+                reputation.&lt;/RRESPONSES&gt;</codeblock><codeblock>&lt;RRESPONSES FORMALITY=&quot;formal&quot;
+                REPONSETYPE=&quot;initial&quot;&gt;While praising Hannah More&apos;s style and her
+                skill at manipulating readers, Smith damned the novel as overly
+                moralized.&lt;/RRESPONSES&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The <userinput>informal</userinput> value is less frequently used because it is harder to identify.</p>
+        </div>
+    </glossdef>
+</glossentry>

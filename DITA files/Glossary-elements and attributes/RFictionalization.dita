@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-fictionalization">
+    <glossterm>RFICTIONALIZATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs within <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">RECEPTION</term></uicontrol>
+                </menucascade>. It refers to the appearance of author as fictitious character in
+                someone’s later writings - Aphra Behn as freedom fighter, Ada Byron as detective
+                etc. (but not recasting of her works, for which use <term keyref="r-she-influenced"
+                    >RSHEINFLUENCED</term>). It should contain a full sentence, and any titles that
+                occur within it should be tagged as such. It has no mandatory or optional attributes
+                or sub-elements.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use this element when the fictional work follows and responds to the entry subject
+                and her work. To point backwards from her work to earlier texts, use the
+                Intertextuality element.</p><p>
+                <codeph>&lt;FICTIONALIZEDTREATMENT&gt;Jane Urquhart&apos;s Changing Heaven uses a
+                    fictional composite of Emily Brontë as a character in the
+                    work.&lt;/FICTIONALIZEDTREATMENT&gt;</codeph> (This would appear in EB’s entry.)
+            </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p>This element differs from the influence elements because <term keyref="influence"
+                    >INFLUENCE</term> is more general; this is applied specifically to one kind of
+                response.</p>
+        </div>
+    </glossdef>
+</glossentry>
