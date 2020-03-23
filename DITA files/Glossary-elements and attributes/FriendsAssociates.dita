@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="friends-associates">
+    <glossterm>FRIENDSASSOCIATES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>FRIENDSASSOCIATES is one of the 16 major
+                content elements defined as integral to mapping a woman's life in the <term
+                    keyref="biography">BIOGRAPHY</term> section of her entry. Because of the ability
+                of our electronic literary history to make links between people, mapping the
+                friendships and personal connections of writers is a very high priority.
+                Systematizing the people that a woman writer knew will allow us to make hitherto
+                unrecognized connections between writers. This original research will provide users
+                with a wealth of information about personal, political, intellectual, and other
+                relationships. To the best of your ability, try to include summary statements about
+                her friendships and associations, paying particular attention to her connections
+                with notable literary and/or historical figures. The title Friendship and Associates
+                is meant to reflect the fact that not all of a woman's associates may be friends.
+                Therefore you may, within this element, discuss enmities, business relations, or
+                associations that are not strictly friendships. It also provides a way to indicate
+                that a woman writer had coffee with Samuel Johnson on one notable day, but that they
+                weren't necessarily friends. Discussions of friendships or relationships that
+                impinged upon the woman's sense of her own sexuality, would be best captured within
+                either Sexuality or <term keyref="intimate-relationships"
+                    >INTIMATERELATIONSHIPS</term>. Sometimes, however, the same name needs repeating
+                in both FRIENDSASSOCIATES and <term keyref="intimate-relationships"
+                    >INTIMATERELATIONSHIPS</term>. Pay attention to chronology: you may need to open
+                this element several times for different life-stages. To the best of your ability,
+                try to include a <term keyref="chron-struct">CHRONSTRUCT</term> for initial meetings
+                that became central and defining personal friendships. See example below regarding
+                Elizabeth Inchbald's lifelong friendship with Sarah Siddons. This element has one
+                content sub-element, <term keyref="lives-with">LIVESWITH</term>. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHRONSTRUCT&gt;&lt;DATE
+                CERTAINTY=&quot;cert&quot;&gt;1776&lt;/DATE&gt;&lt;CHRONPROSE&gt;EI met actress
+                &lt;NAME&gt;Sarah Siddons&lt;/NAME&gt;, who became a lifelong friend, while both
+                were working for &lt;NAME STANDARD=Younger, Joseph&gt;Joseph
+                Younger&apos;s&lt;/NAME&gt;
+                company.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>
+                &lt;CHRONPROSE&gt;Before departing for Quebec, FB attended a farewell party with
+                &lt;NAME&gt;Samuel Johnson&lt;/NAME&gt; and other literary friends. &lt;NAME&gt;
+                Hannah Moore&lt;/NAME&gt; and &lt;NAME&gt;Anna Seward &lt;/NAME&gt; were among the
+                invited
+                guests.&lt;/CHRONPROSE&gt;</codeblock><codeblock>&lt;SHORTPROSE&gt;&lt;P&gt;Rebecca
+                West spent summers in the south of France with various friends, including
+                &lt;NAME&gt;John Van Druten&lt;/NAME&gt;,&lt;NAME&gt;Beverly
+                Nichols&lt;/NAME&gt;,&lt;NAME&gt;G. B. Stern&lt;/NAME&gt;, &lt;NAME&gt;Pamela
+                Frankau&lt;/NAME&gt; and &lt;NAME standard=Frere, Pat (Wallace)&gt;Pat (Wallace)
+                Frere&lt;/NAME&gt;. The friendship between Rebecca West and Pamela Frankau was
+                ruptured when West published a novel denigrating Pamela&apos;s
+                lover&lt;NAME&gt;Humbert Wolfe&lt;/NAME&gt;.&lt;/P&gt; &lt;P&gt;Over her lifetime,
+                Rebecca West made countless friends even in her old age. Her friends included
+                literary colleagues such as &lt;NAME&gt;Rose Macaulay&lt;/NAME&gt; and
+                &lt;NAME&gt;DorothyThompson&lt;/NAME&gt;. Other longtime friends included
+                &lt;NAME&gt;Joyce Seligman&lt;/NAME&gt; and her husband &lt;NAME STANDARD=”Seligman,
+                Hugh”&gt;Hugh&lt;/NAME&gt;, and &lt;NAME&gt;Ruth Lowinsky &lt;/NAME&gt;. Ruth was
+                Rebecca&apos;s closest friend for thirty years, and her death in 1958 was a great
+                loss for West.&lt;/P&gt;&lt;/SHORTPROSE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>All names captured in name tags within a FRIENDSASSOCIATES element are assumed to be
+                either friends or associates of the subject of the biography. In the following
+                example, tag Mary Hays but not Mary Wollstonecraft. She began a correspondence with
+                    <NAME>Mary Hays</NAME> (friend of fellow Jacobin feminist, Mary Wollstonecraft).
+                Any significant associations with her publishers are not normally to be included
+                under FriendsAssociates. Relations with her publisher are better captured within the
+                Writing section of entries, where you can specify whether the relationship was
+                predominantly personal or professional. Her friendships and connections with other
+                writers should be noted within FRIENDSASSOCIATES. If these relations involved her
+                literary influence on the other writer or the writer's literary or artistic
+                influence on her, discussion of this should be included in her <term
+                    keyref="writing">WRITING</term> section. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Charlotte Smith had a longtime relationship with her publisher. Does
+                it go in her Biography section as FRIENDSASSOCIATES?</p><p>
+                <b>Answer:</b> This will involve a judgement call concerning the extent of her
+                relationship. Because Smith's connection with her publisher was a significant
+                personal relationship, capture a mention of it under this element in her <term
+                    keyref="biography">BIOGRAPHY</term> section, but include the full discussion of
+                the relationship within her <term keyref="writing">WRITING</term> section.</p>
+            <p>
+                <b>Question:</b> Should friendships with other writers be included under
+                FRIENDSASSOCIATES?</p><p> EH was an early correspondent of G. B.Shaw, suggesting to
+                him that he should write plays, while he in turn encouraged her writing.</p><p>
+                <b>Answer:</b> This will involve a judgement call. Since the focus of our project is
+                writing, we are emphasizing how these relationships affected her writing more than
+                her life. In most instances where a direct influence is at issue, discussion of the
+                relationship will be captured within her <term keyref="writing">WRITING</term>
+                section. Mention her connection with Shaw in FRIENDSASSOCIATES but include
+                discussion of their mutual influence in her <term keyref="writing">WRITING</term>
+                section.</p>
+            <p>
+                <b>Question:</b> Should Vera Brittain and Wininfred Holtby's relationship be under
+                FRIENDSASSOCIATES or <term keyref="intimate-relationships"
+                    >INTIMATERELATIONSHIPS</term>?</p><p>
+                <b>Answer:</b> See <term keyref="intimate-relationships"
+                    >INTIMATERELATIONSHIPS</term>. The short answer is some mention in each. </p>
+        </div>
+    </glossdef>
+</glossentry>

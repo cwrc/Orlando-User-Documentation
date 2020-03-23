@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="form-of-serialization">
+    <glossterm>FORMOFSERIALIZATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>If locationtion of element attribute is
+                expressed, tagg it as <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                    <uicontrol><term keyref="p-serialization">PSERIALIZATION</term></uicontrol>
+                </menucascade>. It specifies the manner in which the work was serialized through its
+                two associated values, <userinput>volumeForm</userinput> and
+                    <userinput>periodicalForm</userinput>. The first records the work's sequential
+                appearance in a set of volumes; the second in magazines or other
+            periodicals.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PSERIALIZATION FORMOFSERIALIZATION=&quot;periodicalForm&quot;&gt;Anna
+                Leonowen&apos;s work was first serialized in the Atlantic Monthly.
+                &lt;PSERIALIZATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

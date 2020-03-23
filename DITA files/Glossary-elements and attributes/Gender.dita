@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="gender">
+    <glossterm>GENDER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is designed to capture the
+                gender of the subject to whom it is applied in a single word or phrase. The <term
+                    keyref="gender-issue">GENDERISSUE</term> tag is available for more substantive
+                discussions of gender and gender identity. Gender is a historically constructed and
+                linguistically complex category that can shift over the course of a person's
+                lifetime, in which case multiple elements can be used. The GENDER tag has multiple
+                attributes: <term keyref="gender-identity">GENDERIDENTITY</term>, <term
+                    keyref="current">CURRENT</term>, <term keyref="alternative">ALTERNATIVE</term>,
+                    <term keyref="self-identified">SELFIDENTIFIED</term> [etc], with definitions for
+                the latter attributes the same as for other sub-tags within
+                CULTURALFORMATION.</p><p>The GENDERIDENTITY attribute values on the GENDER tag are
+                meant to capture the most common forms of gender identity; other terms may be
+                provided in the prose content of the element. The values are the following: <ul>
+                    <li>androgynous</li>
+                    <li>cis-gender man</li>
+                    <li>cis-gender woman</li>
+                    <li>man</li>
+                    <li>non-binary</li>
+                    <li>unknown</li>
+                    <li>transgender man</li>
+                    <li>transgender woman</li>
+                    <li>woman</li>
+                </ul></p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> 1. paste the example from the GDrive document and make sure you correct all
+                the well-formedness errors Oxygen will point out. 2. copy the corrected fragment
+                from Oxygen and escape special characters at <xref
+                    href="https://www.freeformatter.com/xml-escape.html#ad-output"
+                    >https://www.freeformatter.com/xml-escape.html#ad-output</xref> 3. Copy the
+                escaped text back into OXygen to replace the non-escaped code </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If this section contains an in-line xml example, use <codeph/>, with the same
+                instructions as above for codeblock.</p>
+        </div>
+    </glossdef>
+</glossentry>

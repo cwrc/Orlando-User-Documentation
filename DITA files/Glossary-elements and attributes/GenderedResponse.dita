@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="gendered-response">
+    <glossterm>GENDEREDRESPONSE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is attache to <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY or WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">DIRECT PARENT</term></uicontrol>
+                    <uicontrol><term keyref="r-responses">RRESPONSES</term></uicontrol>
+                </menucascade>. It indicates whether or not a response to a work was predicated on
+                or swayed by the writer's gender. Three values are available for this attribute:
+                    <userinput>adFeminam</userinput>, <userinput>genderedYes</userinput>, and
+                    <userinput>genderedNo</userinput>. The last two are clear: they specify whether
+                or not the response was directed towards a writer's gender (either explicitly, or
+                through terms like <q>delicately sensitive</q> or <q>hysterical</q>).
+                    <userinput>AdFeminam</userinput> is used to indicate responses focused on some
+                pre-existing idea of the personality or personal reputation of the writer (for good
+                or ill) - that is, an opinion of the woman not the author - rather than on the work
+                itself. In most cases it will be used when a malign stereotype of this author is in
+                circulation.</p><p>This attribute has siblings in the attributes <term
+                    keyref="response-type">RESPONSETYPE</term> and <term keyref="formality"
+                    >FORMALITY</term>; use only those that apply to your material.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RRESPONSES RESPONSETYPE=&quot;initial&quot; FORMALITY=&quot;formal&quot;
+                GENDEREDRESPONSE=&quot;genderedNo&quot;&gt;In general, Joanna Baillie was criticized
+                for her lack of stage-craft, by Elizabeth Inchbald for example. It was said that her
+                &quot;sonorously-voiced passions float unanchored; her comedies are too
+                sweet.&quot;&lt;/RRESPONSES&gt;</codeblock><codeblock>&lt;RRESPONSES RESPONSETYPE=&quot;initial&quot;
+                FORMALITY=&quot;formal&quot; GENDEREDRESPONSE=&quot;adFeminam&quot;&gt;George Croly
+                in the Dublin Review focused on FB&apos;s blindness rather than on her writing. He .
+                . . . drew attention to her frequent allusions to sound, which he called a
+                particular &quot;peculiarity&quot; of her writing that resulted from her
+                disability.&lt;/RRESPONSES&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
