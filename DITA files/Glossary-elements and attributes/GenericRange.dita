@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="generic-range">
+    <glossterm>GENERICRANGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The element GENERICRANGE is designed to
+                work only within <term keyref="author-summary">AUTHORSUMMARY</term> statements
+                (which are composed in the <term keyref="writing">WRITING</term> section of entries
+                but displayed on the <term keyref="overview">OVERVIEW</term> screen). It cannot be
+                used elsewhere. It takes in a sentence or sentences discussing a writer's whole
+                oeuvre and the kind of generic choices she made over her lifetime. It has no
+                allowable sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;AUTHORSUMMARY&gt;&lt;SHORTPROSE&gt;&lt;p&gt;&lt;GENERICRANGE&gt;Anne
+                Clifford&apos;s known writings fall into two groups: the diaries she kept as a young
+                woman, and the writings of her old age, which mix diary, autobiography, and writing
+                about her
+                family.&lt;/GENERICRANGE&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/AUTHORSUMMARY&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

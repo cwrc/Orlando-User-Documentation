@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-genre-issue">
+    <glossterm>TGENREISSUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>TGENREISSUE is an element (belonging
+                conceptually in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-feature">TEXTUALFEATURE</term></uicontrol>
+                </menucascade>. It that allows you to talk generally about the genre issues raised
+                by a specific text, or about an unusual mixture of genre forms. It therefore
+                requires full sentences. It has no mandatory or optional sub-elements or attributes,
+                but it has an ancillary element in TGENRE with attribute <term keyref="genre-name"
+                    >GENRENAME</term>, which should occur in every use of TGENREISSUE.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TGENREISSUE&gt;At this date, to write the &lt;TGENRE
+                GENRENAME=”hagiography”&gt;life of a saint&lt;/TGENRE&gt; was nothing unusual; to
+                write the &lt;TGENRE GENRENAME=”biography”&gt;biography&lt;/TGENRE&gt; of a mother
+                or another woman writer was unheard of. &lt;/TGENREISSUE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element should be reserved for larger issues in genre like whether or not
+                Margery Kempe's <q>Boke</q> is the first work of autobiography in English, and for
+                writers’ comments on the nature of a genre they wrote.</p>
+        </div>
+    </glossdef>
+</glossentry>
