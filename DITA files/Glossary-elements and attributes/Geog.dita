@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="geog">
+    <glossterm>GEOG</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>GEOG, a sub-element available within
+                    <term keyref="place">PLACE</term> element in every kind of document, captures
+                names of places which are nation states or larger conceptual geographical entities.
+                It goes around name only, excludes punctuation, and has two attributes, <term
+                    keyref="current">CURRENT</term> and <term keyref="reg">REG</term>. The following
+                is a list of the types of places that GEOG captures:</p>
+            <p><ul>
+                    <li>Nation states: Italy, China, Canada</li>
+                    <li> Groups of Nation States: Low Countries, Baltic Countries</li>
+                    <li> Colonies: French Indo-China, British North America [Note: use Current
+                        attribute wherever possible to give present-day name, with REG attribute
+                        giving name at the time referred to.]</li>
+                    <li> Conceptual Geographical Groupings: Far East</li>
+                    <li> Historical Geo-political units: Siam and Ceylon need you to use CURRENT
+                        attribute to record these as <q>Thailand</q> and <q>Sri Lanka</q>; use Siam
+                        and Ceylon in Reg attribute to ensure obsolete names are searchable.</li>
+                </ul>
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;GEOG&gt;Afganistan&lt;/GEOG&gt;</codeblock><codeblock>&lt;GEOG
+                CURRENT=&quot;Sri Lanka&quot;
+                REG=”Ceylon”&gt;Ceylon&lt;/GEOG&gt;</codeblock><codeblock>&lt;GEOG
+                REG=&quot;Switzerland&quot;&gt;Swiss&lt;/&gt;</codeblock><codeblock>&lt;GEOG&gt;Ireland&lt;/GEOG&gt;
+                &lt;GEOG CURRENT=&quot;Israel&quot;&gt;Holy Land&lt;/GEOG&gt; &lt;GEOG
+                REG=&quot;France&quot;&gt;Southern
+                France&lt;/GEOG&gt;</codeblock><codeblock>&lt;GEOG CURRENT=”Iran”
+                REG=”Persia”&gt;Persia&lt;/GEOG&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See element Place for general practice issues.</p><p> For the purposes of the Orlando
+                Project the following areas in the British Isles are considered countries and
+                therefore entered as a Geog: England, Scotland, Northern Ireland and Wales. Ireland
+                is of course also a Geog.</p><p> UK (for United Kingdom) is the preferred term when
+                the reference is to the (so far) nation. Avoid using Great Britain or Britain, or
+                use them with REG attribute UK.</p><p> For material about the six counties of
+                Northern Ireland dated after 1922 use GEOG=Northern Ireland. For dates before that,
+                use Current=Ireland Reg=UK for the present nation of Ireland, and Current=Northern
+                Ireland for the six counties. whole island, but pay attention to geopolitical change
+                in choice of CURRENT attribute value. (But use <q>Irish</q> as Nationality even
+                before 1922.)</p><p> Use English spellings for places. For example, regularize
+                    <q>Eire</q> to <q>Ireland</q>.</p><p> For reference to places larger than nation
+                states, try to identify where your event or process occurred according to today’s
+                names. For example, Far East might have China or Indonesia as Current; Low Countries
+                might have Belgium; Caribbean might mean Jamaica. If the Caribbean reference is not
+                to a single country, still use Geog while we await the Area element.</p><p>
+                Regularize the "Continent" when referring, for example, to her travels in Europe, to
+                    <q>Europe</q>.</p><p> Regularize the United States, America, U.S., and any other
+                term used for the country to <q>USA</q>. You can use whatever is your preferred
+                expression in the prose of the element, provided you fill in the Reg attribute to
+                "USA". (Note: do not use the quotation marks when filling in the reg
+                attribute.</p><p> When you have a place that refers to a historical geo-political
+                entity and that entity can not be easily transferred to a current nation state or
+                other Geog in the same way that simple changes of names can (i.e., Ceylon becoming
+                Sri Lanka but remaining the same geographical unit), then include only the known
+                historical term in your prose. If you know the current name (for example, Prussia is
+                now part of Germany), then include Germany as CURRENT and Prussia as REG. Feel free
+                to include pertinent explanation of the historical term in a research note.</p><p>She
+                travelled to <codeph>&lt;PLACE&gt;&lt;GEOG CURRENT=&quot;Iran&quot;
+                    REG=”Persia”&gt;Persia&lt;/GEOG&gt;&lt;/PLACE&gt;</codeph> (the present Iran).
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

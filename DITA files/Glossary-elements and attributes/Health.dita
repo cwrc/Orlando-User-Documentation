@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="health">
+    <glossterm>HEALTH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>HEALTH is one of the 16 major <term
+            keyref="div1">DIV1</term> content elements in the <term keyref="biography"
+                >BIOGRAPHY</term> section of entries defined as integral to mapping a woman's
+            life. Within this element, discuss all serious events and issues associated with her
+            health, both mental and physical. We are particularly interested in women's health
+            issues and this element has an associated attribute value to indicate them. We hope
+            to make connections between social, political and historical health issues (for
+            example, the gendered nature of mental health) and the personal lives of women
+            writers (the experience of a woman writer being incarcerated in a mental
+            institution). While we are not interested in listing all health problems a woman
+            writer encountered, we are interested in analyzing the effect of her health on her
+            life and writing.</p><p>The HEALTH element should be placed in the appropriate
+                chronological order within the Biography section. Use multiple HEALTH elements to
+                record her health history at the appropriate stage of her biography. You can include
+                both general summary statements about her health or just a <term
+                    keyref="chron-struct">CHRONSTRUCT</term>, for example, in the case of major
+                illnesses. A single optional attribute, <term keyref="issue">ISSUE</term>,
+                distinguishes various aspects of HEALTH through attributes <term keyref="physical"
+                    >PHYSICAL</term>, <term keyref="mental">MENTAL</term>, and <term
+                        keyref="female-body">FEMALEBODY</term>. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;HEALTH ISSUE=&quot;physical&quot;&gt;&lt;DIV2&gt;&lt;HEADING&gt;Back
+                Injury&lt;/HEADING&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;June 1930&lt;/DATE&gt;
+                &lt;CHRONPROSE&gt;FB fell heavily onto rocks and injured her
+                back.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;</codeblock><codeblock>&lt;HEALTH
+                    ISSUE=&quot;femaleBody&quot;&gt;&lt;DIV2&gt;&lt;HEADING&gt;Breast
+                    Cancer&lt;/HEADING&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;30 September
+                    1811&lt;/DATE&gt;&lt;CHRONPROSE&gt;The large lump on FB’s breast was diagnosed
+                    (whether accurately or not) as breast
+                    cancer.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;After being
+                    thought for a while inoperable, she underwent a ground-breaking but excruciating
+                    mastectomy.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/HEALTH&gt;</codeblock><codeblock>&lt;HEALTH
+                        ISSUE=&quot;mental&quot;&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATERANGE FROM=”1959”
+                        TO=”1962”&gt;At some time between 1959 and
+                        1962&lt;/DATERANGE&gt;&lt;CHRONPROSE&gt;DM had a nervous breakdown, occasioned by
+                        the deaths of her long-time lover, her father, and her
+                        mother.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/HEALTH&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Include a discussion of a fatal illness inside a HEALTH element if you have plenty of
+                material, but make sure to repeat the illness as the <term keyref="cause"
+                    >CAUSE</term> of death inside the <term keyref="death">DEATH</term>
+                element.</p><p> Many personal experiences of illness recorded in Orlando relate to
+                    the historical and material politics of health. In order to facilitate research on
+                    such issues, try to include relevant terminology: breast cancer, anorexia,
+                    tuberculosis, epidemic, surgeon. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Is suicide a health issue?</p><p>
+                <b>Answer:</b> Yes. Include attempted suicides under HEALTH with an ISSUE=Mental
+                attribute.</p>
+        </div>
+    </glossdef>
+</glossentry>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="geog-heritage">
+    <glossterm>GEOGHERITAGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>GEOGHERITAGE is a subtag within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It captures information about powerful early geographical
+                influences, or about the geographical origins of a person's family which often
+                contributes to an understanding of their racial and ethnic background. It offers a
+                way to capture women identified as <q>South-Asian</q>, for example, when no more
+                precise national heritage is indicated. It should enclose the word or words that
+                best describe(s) the relevant place. It has attributes, <term keyref="forebear"
+                    >FOREBEAR</term>, <term keyref="self-defined">SELF-DEFINED</term>, and <term
+                    keyref="reg">REG</term> (which last enables you to enter a more standardized
+                description than your prose). See <term keyref="race-and-ethnicity"
+                    >RACEANDETHNICITY</term> for a detailed description of the complexities of this
+                element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>SM's parents were&lt;GEOGHERITAGE
+                FOREBEAR=&quot;parents&quot;&gt;South-Asian&lt;/GEOGHERITAGE&gt;.
+                </codeblock><codeblock>MS was not born in Cornwall and did not live there as an
+                adult. But the sense of connection given her by her upbringing there remained strong
+                and is reflected in much of her writing.</codeblock><codeblock>ST spent her adult
+                life in London but she said she never ceased to think like a New Yorker.
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Scottish, Irish and Welsh can qualify as GEOGHERITAGE; so can city allegiances as in
+                the example above.</p>
+        </div>
+    </glossdef>
+</glossentry>

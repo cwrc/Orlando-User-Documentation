@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="given">
+    <glossterm>GIVEN</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>GIVEN is the sub-element capturing all of
+                a person's first and middle names (everything but their surname/s and/or
+                nickname/s), a part of Birthname within the big-bucket element <term
+                    keyref="person-name">PERSONNAME</term>, in the Biography section of entries. It
+                is used once or several times (occasionally not at all) depending upon how many
+                given names a person has. It has one optional attribute, <term keyref="reg"
+                    >REG</term>, which allows you to standardize the given name. There will be some
+                cases where, for instance, there is a discrepancy in spelling: Laetitia for Letitia:
+                use Reg to indicate which you think is the standard spelling, and you will also want
+                to add a scholar's note explaining the details of the discrepancy.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Henrietta&lt;/GIVEN&gt;&lt;GIVEN&gt;Eliza&lt;/GIVEN&gt;&lt;GIVEN&gt;Vaughan&lt;/GIVEN&gt;&lt;SURNAME&gt;Palmer&lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices.</p><p>
+                Open new tag for each given name.</p><p> Enter her given names with no spacing
+                between names. <term keyref="birth-name">BIRTHNAME</term> will be processed
+                electronically with spaces.</p><p> Given names go before surname in the order of
+                first name followed by middle names.</p><p> The complete <term keyref="birth-name"
+                    >BIRTHNAME</term>, including multiple Given names, goes in one <term
+                    keyref="data-item">DATAITEM</term>.</p><p> </p>
+        </div>
+    </glossdef>
+</glossentry>

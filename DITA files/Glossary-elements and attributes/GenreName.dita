@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="genre-name">
+    <glossterm>GENRENAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>GENRENAME is a compulsory attribute that
+                provides a pick-list of available genre names to modify the element found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="t-genre">TGENRE</term></uicontrol>
+                </menucascade>. It is especially useful in situations where the prose does not allow
+                the concise naming of a genre that would be easily understood by a different name.
+                This attribute enables us systematize and index references to various kinds of
+                genre.</p></div>
+        <div><u>Relationships</u><p>There are many allowable values attached to this attribute. If
+                none of them effectively defines your particular example, you may need to use more
+                than one.</p><p> The values are as follows: <userinput>abridgement</userinput>,
+                    <userinput>aCLef</userinput>, <userinput>acrostic</userinput>,
+                    <userinput>adaptation</userinput>, <userinput>adventureWriting</userinput>,
+                    <userinput>advertisingCopy</userinput>, <userinput>afterPiece</userinput>,
+                    <userinput>afterword</userinput>, <userinput>agitProp</userinput>,
+                    <userinput>allegory</userinput>, <userinput>almanac</userinput>,
+                    <userinput>anacreontic</userinput>, <userinput>anagram</userinput>,
+                    <userinput>annotation</userinput>, <userinput>answer</userinput>,
+                    <userinput>anthem</userinput>, <userinput>anthology</userinput>,
+                    <userinput>antiromance</userinput>, <userinput>aphorism</userinput>,
+                    <userinput>apology</userinput>, <userinput>artCriticism</userinput>,
+                    <userinput>autobiography</userinput>, <userinput>ballad</userinput>,
+                    <userinput>ballade</userinput>, <userinput>balladOpera</userinput>,
+                    <userinput>ballet</userinput>, <userinput>bergamasque</userinput>,
+                    <userinput>bestiary</userinput>, <userinput>biblicalParaphrase</userinput>,
+                    <userinput>bildungsroman</userinput>,
+                    <userinput>biographicalDictionary</userinput>, <userinput>biography</userinput>,
+                    <userinput>bisexualFiction</userinput>, <userinput>blackComedy</userinput>,
+                    <userinput>boutsRimes</userinput>, <userinput>broadside</userinput>,
+                    <userinput>burletta</userinput>, <userinput>cabaret</userinput>,
+                    <userinput>captivityNarrative</userinput>, <userinput>catechism</userinput>,
+                    <userinput>chapbook</userinput>, <userinput>character</userinput>,
+                    <userinput>charade</userinput>, <userinput>childrensLiterature</userinput>,
+                    <userinput>clerihew</userinput>, <userinput>closetdrama</userinput>,
+                    <userinput>colouringBook</userinput>, <userinput>comedy</userinput>,
+                    <userinput>comedyOfHumours</userinput>, <userinput>comedyOfIntrigue</userinput>,
+                    <userinput>comedyOfManners</userinput>, <userinput>comedyOfMenace</userinput>,
+                    <userinput>comicBook</userinput>, <userinput>comingOut</userinput>,
+                    <userinput>commonplaceBook</userinput>, <userinput>companion</userinput>,
+                    <userinput>computerProgram</userinput>,
+                    <userinput>conditionOfEnglandNovel</userinput>,
+                    <userinput>conductLiterature</userinput>, <userinput>cookbook</userinput>,
+                    <userinput>courtshipFiction</userinput>, <userinput>criminology</userinput>,
+                    <userinput>dedication</userinput>, <userinput>detective</userinput>,
+                    <userinput>devotional</userinput>, <userinput>dialogueOrDebate</userinput>,
+                    <userinput>diary</userinput>, <userinput>dialogueOfTheDead</userinput>,
+                    <userinput>dictionary</userinput>, <userinput>didactic</userinput>,
+                    <userinput>directory</userinput>, <userinput>dissertation</userinput>,
+                    <userinput>documentary</userinput>, <userinput>domestic</userinput>,
+                    <userinput>drama</userinput>, <userinput>dramaticMonologue</userinput>,
+                    <userinput>dreamVision</userinput>, <userinput>dystopia</userinput>,
+                    <userinput>eclogue</userinput>, <userinput>editing</userinput>,
+                    <userinput>elegy</userinput>, <userinput>encyclopaedia</userinput>,
+                    <userinput>epic</userinput>, <userinput>epicTheatre</userinput>,
+                    <userinput>epigram</userinput>, <userinput>epilogue</userinput>,
+                    <userinput>episodicLiterature</userinput>, <userinput>epistle</userinput>,
+                    <userinput>epistolary</userinput>, <userinput>epitaph</userinput>,
+                    <userinput>epithalamium</userinput>, <userinput>epyllion</userinput>,
+                    <userinput>eroticaPornography</userinput>, <userinput>essay</userinput>,
+                    <userinput>eulogy</userinput>, <userinput>exhibitionCatalogue</userinput>,
+                    <userinput>expressionistWriting</userinput>, <userinput>fable</userinput>,
+                    <userinput>fabliau</userinput>, <userinput>FairyTale</userinput>,
+                    <userinput>fantasy</userinput>, <userinput>farce</userinput>,
+                    <userinput>feminist</userinput>, <userinput>feministTheory</userinput>,
+                    <userinput>fiction</userinput>, <userinput>filmTVScript</userinput>,
+                    <userinput>folkSong</userinput>, <userinput>gardeningBook</userinput>,
+                    <userinput>genealogy</userinput>, <userinput>georgic</userinput>,
+                    <userinput>ghostStory</userinput>, <userinput>giftbook</userinput>,
+                    <userinput>gothic</userinput>, <userinput>governmentReport</userinput>,
+                    <userinput>grammar</userinput>, <userinput>graveyardPoetry</userinput>,
+                    <userinput>guerillaTheatre</userinput>, <userinput>guidebook</userinput>,
+                    <userinput>hagiography</userinput>, <userinput>haiku</userinput>,
+                    <userinput>harlequinade</userinput>, <userinput>heroic</userinput>,
+                    <userinput>historical</userinput>, <userinput>history</userinput>,
+                    <userinput>hymn</userinput>, <userinput>imitation</userinput>,
+                    <userinput>improvisation</userinput>, <userinput>industrialNovel</userinput>,
+                    <userinput>introduction</userinput>, <userinput>journalism</userinput>,
+                    <userinput>juvenilia</userinput>, <userinput>kitchenSinkDrama</userinput>,
+                    <userinput>kunstleroman</userinput>, <userinput>lais</userinput>,
+                    <userinput>lampoon</userinput>, <userinput>legalWriting</userinput>,
+                    <userinput>legendFolkTale</userinput>, <userinput>lesbian</userinput>,
+                    <userinput>letter</userinput>,
+                    <userinput>lettersFromTheDeadToTheLiving</userinput>,
+                    <userinput>libretto</userinput>, <userinput>literaryCriticism</userinput>,
+                    <userinput>liturgy</userinput>, <userinput>love</userinput>,
+                    <userinput>lyric</userinput>, <userinput>magicRealist</userinput>,
+                    <userinput>manifesto</userinput>
+                <userinput>manual</userinput>, <userinput>map</userinput>,
+                    <userinput>masque</userinput>, <userinput> medicalWriting</userinput>,
+                    <userinput>melodrama</userinput>, <userinput>mixedMedia</userinput>,
+                    <userinput>mockForms</userinput>, <userinput>monologue</userinput>,
+                    <userinput>moralityMysteryPlay</userinput>, <userinput>multimedia</userinput>,
+                    <userinput>musicology</userinput>, <userinput>mystery</userinput>,
+                    <userinput>myth</userinput>, <userinput>narrativePoetry</userinput>,
+                    <userinput>nationalistFiction</userinput>, <userinput>nationalTale</userinput>,
+                    <userinput>notebook</userinput>, <userinput>novel</userinput>,
+                    <userinput>novella</userinput>, <userinput>nurseryRhyme</userinput>,
+                    <userinput>obituary</userinput>, <userinput>occasionalPoetry</userinput>,
+                    <userinput>ode</userinput>, <userinput>oneActPlay</userinput>,
+                    <userinput>opera</userinput>, <userinput>oratorio</userinput>,
+                    <userinput>oriental</userinput>, <userinput>pageant</userinput>,
+                    <userinput>panegyric</userinput>, <userinput>pantomime</userinput>,
+                    <userinput>parable</userinput>, <userinput>paratexts</userinput>,
+                    <userinput>parliamentaryReport</userinput>, <userinput>parody</userinput>,
+                    <userinput>pastoral</userinput>, <userinput>pedagogy</userinput>,
+                    <userinput>performancePoetry</userinput>, <userinput>periodical</userinput>,
+                    <userinput>petition</userinput>, <userinput>philosophical</userinput>,
+                    <userinput>philosophy</userinput>, <userinput>picaresque</userinput>,
+                    <userinput>pindaric</userinput>, <userinput>poetry</userinput>,
+                    <userinput>polemic</userinput>, <userinput>politicalWriting</userinput>,
+                    <userinput>popular</userinput>, <userinput>prayer</userinput>,
+                    <userinput>prefatoryPiece</userinput>, <userinput>programNotes</userinput>,
+                    <userinput>proletarianWriting</userinput>, <userinput>prologue</userinput>,
+                    <userinput>propaganda</userinput>, <userinput>prophecy</userinput>,
+                    <userinput>psalm</userinput>, <userinput>psychoanalytical</userinput>,
+                    <userinput>quiz</userinput>, <userinput>radioDrama</userinput>,
+                    <userinput>realist</userinput>, <userinput>regional</userinput>,
+                    <userinput>religious</userinput>, <userinput>review</userinput>,
+                    <userinput>revue</userinput>, <userinput>riddle</userinput>,
+                    <userinput>romance</userinput>, <userinput>sageWriting</userinput>,
+                    <userinput>satire</userinput>, <userinput>scholarship</userinput>,
+                    <userinput>schoolFiction</userinput>, <userinput>scienceFiction</userinput>,
+                    <userinput>scientificWriting</userinput>, <userinput>scrapbook</userinput>,
+                    <userinput>sensationNovel</userinput>, <userinput>sensibility</userinput>,
+                    <userinput>sentimental</userinput>, <userinput>sequel</userinput>,
+                    <userinput>sermon</userinput>, <userinput>sexualAwakeningFiction</userinput>,
+                    <userinput>shortStory</userinput>, <userinput>silverForkNovel</userinput>,
+                    <userinput>sketch</userinput>, <userinput>sketchbook</userinput>,
+                    <userinput>slaveNarrative</userinput>, <userinput>socialScience</userinput>,
+                    <userinput>song</userinput>, <userinput>sonnet</userinput>,
+                    <userinput>speech</userinput>, <userinput>stageReview</userinput>,
+                    <userinput>testimony</userinput>, <userinput>textbook</userinput>,
+                    <userinput>theatreOfCruelty</userinput>,
+                    <userinput>theatreOfTheAbsurd</userinput>, <userinput>theology</userinput>,
+                    <userinput>thesaurus</userinput>, <userinput>thriller</userinput>,
+                    <userinput>topographicalPoetry</userinput>,
+                <userinput>tractPamphlet</userinput>, <userinput>tragedy</userinput>,
+                    <userinput>tragiComedy</userinput>, <userinput>translation</userinput>,
+                    <userinput>travelWriting</userinput>, <userinput>treatise</userinput>,
+                    <userinput>utopia</userinput>, <userinput>verseNovel</userinput>,
+                    <userinput>vignette</userinput>, <userinput>villanelle</userinput>,
+                    <userinput>youngAdultWriting</userinput>
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TGENRE GENRENAME=&quot;ballad&quot;&gt;
+                ballad&lt;/TGENRE&gt;</codeblock><codeblock>&lt;TGENRE
+                GENRENAME=&quot;autobiography&quot;&gt;three books of memoirs and a partially
+                completed autobiography&lt;/TGENRE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Question:</b> My prose refers to a slave narrative. Do I have to select the term
+                    <userinput>slaveNarrative</userinput> from the GENRENAME picklist
+                    too?</p><p><b>Answer:</b> Yes (if the narrative is authored by the subject of
+                the entry).</p>
+        </div>
+    </glossdef>
+</glossentry>
