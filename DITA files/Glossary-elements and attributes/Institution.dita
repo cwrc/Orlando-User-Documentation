@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="institution">
+    <glossterm>INSTITUTION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                    <uicontrol><term keyref="school">SCHOOL</term></uicontrol>
+                </menucascade>. It records the significant differences between types of
+                institutions. We are interested in the effect of institutional structures on women's
+                lives and hope to capture, for example, how institutional differences between trade
+                schools and boarding schools influenced women. Because of the complicated range of
+                (especially British) educational institutions, this attribute has ten attribute
+                values: <userinput>boarding</userinput>, <userinput>grammar</userinput>,
+                    <userinput>private</userinput>, <userinput>state</userinput>,
+                    <userinput>dameSchool</userinput>, <userinput>daySchool</userinput>,
+                    <userinput>comprehensive</userinput>, <userinput>secondaryModern</userinput>,
+                    <userinput>tradeSchool</userinput>, <userinput>prep</userinput>:
+                </p><p>Boarding: a boarding school is a school at which the students sleep. Common
+                in the fee-paying system, less common in the state or free system, though in some
+                areas like the Highlands and Islands of Scotland boarding schools are (or maybe
+                were) standard at secondary level because of the far-flung nature of terrain. Often
+                weekly boarding (home for weekends) rather than for whole term. You can call them
+                boarding schools even if they take some day pupils as well.</p><p>Grammar: Grammar
+                schools date back to the middle ages; grammar in title means education in Latin
+                (occasionally Greek as well). They were for boys only, though some took a few girls
+                almost without noticing. Grammar schools for girls began in the nineteenth century;
+                academic education was thought of as a needing single-sex environment. Entrance from
+                1944 was by an exam called the "Eleven Plus" from age at which children sat it.
+                Grammar schools creamed off the top 10% or so of the population. They gradually died
+                out after Comprehensive Schools came in during the 1950s and 1960s. Presently making
+                a come-back.</p><p>Private: The broad category private (or fee-paying) includes the
+                subcategory of “public schools” which are a particular group of high-status, now
+                private schools with a particular history.</p><p>State: Schools provided for out of
+                the taxes for free education are called state schools.</p><p>DameSchool: A totally
+                informal school run by a woman on her own initiative, usually at a primary level:
+                teaching elementary alphabet, etc.</p><p>Day school: a day school applies in
+                contexts where boarding schools are common. Attending a day school is different from
+                being a day pupil at a boarding school.</p><p>Comprehensive: Brave new idea of
+                putting whole ability range in same (therefore typically larger) school. In many
+                communities the grammar school and the “secondary modern” were each converted into a
+                comprehensive and the teachers had to spend a decade convincing the local residents
+                that both were equally good. Prep: a private school (historically single-sex male,
+                and boarding) not secondary as in US terminology but primary (typically to the age
+                of 13).</p><p>SecondaryModern: These replaced trade or vocational schools when
+                another Education Act went through, as the schools for those who failed the 11+
+                exam. A well-meant system but children felt rejected. Harrowing tales of those who
+                actually made it to university in the end despite having failed the 11+ and attended
+                a Secondary Modern.</p><p>TradeSchool: A secondary or post secondary institution
+                where students learn a trade.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Remember the attribute. Because it is difficult for people not versed in the British
+                system of education to determine the nuanced differences between educational
+                institutions, taggers often avoid this tag but lack of use will make this attribute
+                useless. Try your best to use it.</p>
+        </div>
+    </glossdef>
+</glossentry>

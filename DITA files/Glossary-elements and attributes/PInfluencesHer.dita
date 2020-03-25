@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term belongs to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. records the effects of specific people, texts, events, or places
+                that formed or developed the writer's thinking or practice as an artist. Influences
+                can pertain to her individual texts or her work as a whole. It contains at least a
+                full sentence, and usually at least one tagged <term keyref="name">NAME</term> or
+                    <term keyref="title">TITLE</term>. It is modified by an attribute, <term
+                    keyref="influence-type">INLFUENCETYPE</term>, which has three values:
+                    <userinput>literary</userinput>, <userinput>intellectual</userinput>, or
+                    <userinput>familial</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PINFLUENCESHER INFLUENCETYPE=”LITERARY”&gt;Angela Carter&apos;s
+                neo-Gothic or magic realist writing is indebted to &lt;NAME&gt;Isak
+                Dinesen&lt;/NAME&gt;, &lt;NAME&gt;Djuna Barnes&lt;/NAME&gt;, and &lt;NAME&gt;Jane
+                Bowles&lt;/NAME&gt;.&lt;/PINFLUENCESHER&gt;</codeblock><codeblock>&lt;PINFLUENCESHER
+                INFLUENCETYPE=”LITERARY”&gt;Carolina Nairne was greatly influenced by
+                &lt;name&gt;Robert
+                Burns&lt;/&gt;.&lt;/PINFLUENCESHER&gt;</codeblock><codeblock>&lt;PINFLUENCESHER
+                INFLUENCETYPE=”INTELLECTUAL”&gt;Maud Sulter&apos;s poetry was influenced by her trip
+                to the west coast of &lt;PLACE&gt;&lt;AREA&gt;Africa&lt;/AREA&gt;, in particular
+                &lt;REGION&gt;St James Island&lt;/REGION&gt;&lt;GEOG
+                CURRENT=”Gambia”&lt;/GEOG&gt;&lt;/PLACE&gt;, which was used as a shipping post for
+                thousands of slaves in the nineteenth century.&lt;/PINFLUENCESHER&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element differs from literary schools in that schools are known, named groups or
+                organizations that merit discussion in and of themselves. This element does not
+                include subscription or patronage, and direct imitation of another author is dealt
+                with through <term keyref="t-intertextuality">TINTERTEXTUALITY</term>.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> My author published her book by amassing subscribers. Are these
+                people considered influences?<b>Answer:</b>Some of them might be influences and
+                merit a mention in PINFLUENCESHER. But publishing by subscription is dealt with by
+                use of element <term keyref="p-mode-of-publication">PMODEOFPUBLICATION</term> with
+                attribute <term keyref="subscription">SUBSCRIPTION</term>.</p>
+            <p>
+                <b>Question:</b> If the author was heavily influenced by her time in Paris, should I
+                tag it here?</p><p><b>Answer:</b>Yes, and use the place tag as needed.</p>
+        </div>
+    </glossdef>
+</glossentry>

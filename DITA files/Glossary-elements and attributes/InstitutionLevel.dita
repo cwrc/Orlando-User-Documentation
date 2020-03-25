@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="institution-level">
+    <glossterm>INSTITUTIONLEVEL</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                    <uicontrol><term keyref="school">SCHOOL</term></uicontrol>
+                </menucascade>. We are interested in how many women writers went to university, how
+                many had access to primary (elementary) education but not secondary, and the
+                different institutional levels of women's education across historical
+            periods.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;SCHOOL INSTITUTION=&quot;DAYSCHOOL&quot;
+                STUDENTBODY=&quot;SINGLESEX&quot; INSTITUTIONLEVEL=&quot;SECONDARY&quot;&gt;Oxford
+                High School for Girls&lt;/SCHOOL&gt;</codeblock><codeblock>&lt;SCHOOL
+                INSTITUTIONLEVEL=&quot;POST-SECONDARY&quot; STUDENTBODY=”CO-ED”&gt;Oxford
+                University&lt;/SCHOOL&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>All universities should be assigned the attribute value of post-secondary.</p>
+        </div>
+    </glossdef>
+</glossentry>

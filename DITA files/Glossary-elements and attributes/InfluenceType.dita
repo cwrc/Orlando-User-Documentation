@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="influence-type">
+    <glossterm>INFLUENCETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>INFLUENCETYPE is an optional attribute
+                found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                    <uicontrol><term keyref="p-influences-her">PINFLUENCESHER</term></uicontrol>
+                </menucascade>. It is used to indicate how someone or something influenced a woman
+                writer. It has three values: <userinput>literary</userinput>,
+                    <userinput>intellectual</userinput> and <userinput>familial</userinput>. If a
+                text or person influenced a woman writer's literary style of techniques, use
+                    <userinput>literary</userinput>; if it influenced her ideas or opinions, use
+                    <userinput>intellectual</userinput>; if she took inspiration or advice from
+                literary practices or ideas of a parent or other relation, use
+                    <userinput>familial</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PINFLUENCESHER INFLUENCETYPE=&quot;literary&quot;&gt;Angela Carter&apos;s
+                neo-Gothic magic realism is indebted to Isak Dineson, Djuna Barnes, and Jane
+                Bowles.&lt;/PINFLUENCESHER&gt;</codeblock><codeblock>&lt;PINFLUENCESHER
+                INFLUENCETYPE=&quot;literary&quot;&gt;Carolina Nairne&apos;s writing was heavily
+                influenced by Robert
+                Burns.&lt;/PINFLUENCESHER&gt;</codeblock><codeblock>&lt;PINFLUENCESHER
+                INFLUENCETYPE=&quot;familial&quot;&gt;At the urging of her sister the prioress, WMCN
+                wrote out her story of rescuing her husband . . . . She told her sister that
+                &quot;noe body but your selfe could have obtain&apos;d [this] from
+                me.&quot;&lt;/PINFLUENCESHER&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Sometimes it’s a judgement call whether to put some information in <term
+                    keyref="family">FAMILY</term>, <term keyref="member">MEMBER</term>, or in
+                PINFLUENCESHER=familial. Sometimes it’s worth using both tag contexts (in <term
+                    keyref="biography">BIOGRAPHY</term> and <term keyref="writing">WRITING</term>)
+                without repeating words.</p>
+        </div>
+    </glossdef>
+</glossentry>

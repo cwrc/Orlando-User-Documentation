@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="indexed">
+    <glossterm>INDEXED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>INDEXED is a sub-element available within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It captures names that are standard to either the British Library
+                catalogue or the Library of Congress catalogue, but that Orlando has chosen not to
+                use as the <term keyref="standard">STANDARD</term> form. It exists to ensure that a
+                researcher does not search in library catalogues for this author under her <term
+                    keyref="standard">STANDARD</term> name in Orlando. This tag has attributes <term
+                    keyref="index-source">INDEXSOURCE</term>, <term keyref="reg">REG</term> and
+                    <term keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;INDEXED INDEXSOURCE=&quot;BL&quot;&gt;Anna Letitia Waring&lt;/&gt;
+                &lt;INDEXED INDEXSOURCE=BL WROTEORPUBLISHEDAS=WROTEPUBLISHEDASYES &gt; Sophie F. F.
+                Veitch &lt;/INDEXED&gt; &lt;/DATAITEM&gt;</codeblock>
+        </div>
+        <div>
+            <u>Example</u>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices.</p>
+        </div>
+    </glossdef>
+</glossentry>
