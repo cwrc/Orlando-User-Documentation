@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-intertextuality">
+    <glossterm>TINTERTEXTUALITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>TINTERTEXTUALITY belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It provides a place to talk about all those textual markers that
+                acknowledge the existence of or imply a relation with other texts. It encloses a
+                statement, nearly always including an author’s name and/or a title. (If you want
+                your prose to feature title, not author, tag the title and insert an empty Name tag
+                with Standard attribute filled in.) This tag has no mandatory or optional
+                sub-elements but it has two optional attributes: <term keyref="intertext-type"
+                    >INTERTEXTTYPE</term> and <term keyref="gender-of-author">GENDEROFAUTHOR</term>.
+                The attribute INTERTEXTTYPE has values of
+                    <userinput>allusionAcknowledged</userinput>,
+                    <userinput>allusionUnacknowledged</userinput>, <userinput>quotation</userinput>,
+                    <userinput>misquotation</userinput>, <userinput>parody</userinput>,
+                    <userinput>satire</userinput>, <userinput>imitation</userinput>,
+                    <userinput>adaptation-update</userinput>, <userinput>prequel</userinput>,
+                    <userinput>continuation</userinput>, <userinput>answer</userinput>. The
+                attribute GENDEROFAUTHOR has values of <userinput>male</userinput> or
+                    <userinput>female</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TINTERTEXTUALITY INTERTEXTTYPE=&quot;allusionAcknowledged&quot;
+                genderOfAuthor=male&gt;Elizabeth Cellier cites Exodus 1. 15-21, where midwives defy
+                Pharoah&apos;s orders to murder men children.
+                &lt;/TINTERTEXTUALITY&gt;</codeblock><codeblock> &lt;TINTERTEXTUALITY
+                INTERTEXTTYPE=&quot;answer&quot; genderOfAuthor=male&gt;Elizabeth Cobbold&apos;s
+                poem is an answer to The Sovereign, a poem by Charles Small
+                Pybus.&lt;/TINTERTEXTUALITY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>When encountering a film adaptation of a woman writer's work, use <term
+                    keyref="non-book-media">NONBOOKMEDIA</term>. The TINTERTEXUTALITY tag with
+                attribute adaptation/update is for adaptations of other people’s work made by the
+                subject of the entry. </p>
+        </div>
+    </glossdef>
+</glossentry>

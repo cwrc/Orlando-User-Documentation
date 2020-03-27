@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="involvement">
+    <glossterm>INVOLVEMENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is attached to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="political-affiliation"
+                        >POLITICALAFFILIATION</term></uicontrol>
+                </menucascade>.</p><p> It can also be found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                    <uicontrol><term keyref="p-literary-schools">PLITERARYSCHOOLS</term></uicontrol>
+                </menucascade>.</p><p>In conjunction with its sibling attributes, it designates the
+                degree of engagement with the political affiliation or literary school specified.
+                Involvement denotes an intermediate level of activity between <term
+                    keyref="activism">ACTIVISM</term> and <term keyref="membership"
+                    >MEMBERSHIP</term>. The political weight of INVOLVEMENT implies more than simply
+                being a member of the Labour Party but does not entail sustained activism. Examples
+                might include participating (but not in a leadership role) in a labour strike or a
+                WSPU march, holding a position within an organization's executive, writing letters
+                or canvassing for Greenpeace. They might include interest in and response to
+                literary modernism in a writer who still had some reservations about modernism. This
+                attribute has sibling attributes: <term keyref="activism">ACITIVISM</term>, <term
+                    keyref="membership">MEMBERSHIP</term>, and <term keyref="woman-gender-issue"
+                    >WOMAN-GENDERISSUE</term>. It has attribute values,
+                    <userinput>InvolvementYes</userinput> and
+                <userinput>InvolvementNo</userinput>.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Generally, no more than one of the attributes (except Woman-genderIssue) will apply
+                in each situation. INVOLVEMENT, <term keyref="activism">ACITIVISM</term>, and <term
+                    keyref="membership">MEMBERSHIP</term> are grounded in an implicit hierarchy. If
+                a woman was <q>involved</q> it thereby implies that she might have <term
+                    keyref="membership">MEMBERSHIP</term> but did not practise <term
+                    keyref="activism">ACTIVISM</term>. You do not need to use all three attributes
+                to make your point, just fill in the attribute most applicable in your
+                situation.</p>
+        </div>
+    </glossdef>
+</glossentry>

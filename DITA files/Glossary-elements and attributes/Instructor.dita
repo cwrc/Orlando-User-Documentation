@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="instructor">
+    <glossterm>INSTRUCTOR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This content sub-element is available
+                within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>. captures information regarding influential instructors in a person's
+                life. Placing tags around instructors will allow us to discover whether a number of
+                women writers had the same teacher and whether or not a specific teacher supported
+                and encouraged writing in women. We wish to honour teachers who were also writers or
+                who had significant effect on literary development, but not to record every name
+                given in writer’s memoir about her education. The-element should be placed around
+                the <term keyref="name">NAME</term> of the Instructor. If name is unknown,
+                occasionally it is acceptable to enclose a description, e.g. <q>an eminent concert
+                    pianist.</q></p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;INSTRUCTOR&gt;&lt;NAME STANDARD=&quot;Jones, Molly&quot;&gt;her
+                well-educated mother&lt;/NAME&gt;&lt;/INSTRUCTOR&gt;</codeblock><codeblock>&lt;INSTRUCTOR&gt;&lt;NAME
+                STANDARD=&quot;Poggi, Miss&quot;&gt;Miss
+                Poggi&apos;s&lt;/NAME&gt;&lt;/INSTRUCTOR&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If this section contains an in-line xml example, use <codeph/>, with the same
+                instructions as above for codeblock.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What if what I want to say was that she was taught by her brother?</p><p>
+                <b>Answer:</b> Place an INSTRUCTOR tag around the phrase <q>her brother</q> and standardize the name within a name tag.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

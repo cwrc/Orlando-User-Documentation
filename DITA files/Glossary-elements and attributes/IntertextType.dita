@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="intertext-type">
+    <glossterm>INTERTEXTTYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is used to
+                modifty the element of <term keyref="t-intertextuality">TINTERTEXTUALITY</term>,
+                found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It allows greater specificity to indicate how any earlier text has
+                been used in connection with any later text. This attribute, which works in
+                conjunction with a sibling attribute, GenderOfAuthor, has eleven values associated
+                with it.</p><p>
+                <userinput>AllusionAcknowledged</userinput> applies in situations where the author
+                explicitly acknowledges her debt to a particular text or set of texts. By contrast,
+                if the allusion is clearly evident, but unacknowledged, use
+                    <userinput>AllusionUnacknowledged</userinput>.</p><p>
+                <userinput>Quotation</userinput> applies when the author lifts words or phrases
+                directly from another work (in a prominent position, e.g. a title);
+                    <userinput>Misquotation</userinput> is used when she gets it wrong or
+                deliberately alters it.</p><p>
+                <userinput>Parody</userinput> and <userinput>Satire</userinput> are used when the
+                author performs a send-up of another text.</p><p>
+                <userinput>Imitation</userinput> or <userinput>Adaptation-update</userinput>
+                suggests a favourable reaction to a text previously written.</p><p>
+                <userinput>Prequel</userinput> is useful for something like Wide Sargasso Sea which
+                attempts to pre-date or speculate about what came before Jane Eyre.</p><p>
+                <userinput>Continuation</userinput> (equivalent to sequel, but to someone else’s
+                text) and <userinput>Answer</userinput> signify two separate ways of responding
+                imaginatively to a text they differ from <userinput>Imitation</userinput> or
+                    <userinput>Adaptation-update</userinput> because they do not directly rely on
+                the previous text. <userinput>Answer</userinput> generally means opposition.
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TINTERTEXTUALITY INTERTEXTTYPE=&quot;answer&quot;
+                GENDEROFAUTHOR=&quot;male&quot; &gt;Henrietta Battier directed her work against the
+                author of a recent publication entitled The Orange whom she calls Dr
+                Bobadil.&lt;/TINTERTEXTUALITY&gt;</codeblock><codeblock>&lt;TINTERTEXTUALITY
+                INTERTEXTTYPE=&quot;allusionAcknowledged&quot; &gt;Dorothea Primrose Campbell was
+                one of those claiming serious status for the novel by literary
+                allusion.&lt;/TINTERTEXTUALITY&gt;</codeblock><codeblock>&lt;TINTERTEXTUALITY
+                INTERTEXTTYPE=&quot;adaptationUpdate&quot; GENDEROFAUTHOR=&quot;female&quot;&gt;In
+                her father&apos;s Yorkshire castles, Anne Clifford summarised and revised three
+                massive books of family records which her mother had
+                collected.&lt;TINTERTEXTUALITY/&gt;</codeblock><codeblock>&lt;TINTERTEXTUALITY
+                INTERTEXTTYPE=&quot;parody&quot; GENDEROFAUTHOR=&quot;male&quot;&gt;Eliza
+                Fenwick&apos;s character Lord Filmar, a rake who models himself on Richardson&apos;s
+                Lovelace, is too frivolous to pose any real threat.
+                &lt;/TINTERTEXTUALITY&gt;</codeblock><codeblock>&lt;TINTERTEXTUALITY
+                INTERTEXTTYPE=&quot;imitation&quot; GENDEROFAUTHOR=&quot;female&quot; &gt;Mary
+                Wortley Montagu&apos;s romance is modelled on Aphra Behn&apos;s Voyage to the Isle
+                of Love, whose emblematic geography comes in turn from
+                Scudery.&lt;/TINTERTEXTUALITY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This attribute is not required but should be used when known.</p>
+        </div>
+    </glossdef>
+</glossentry>

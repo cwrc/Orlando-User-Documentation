@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="untitled2">
+    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>INTIMATERELATIONSHIPS is one of the 16
+                    <term keyref="div1">DIV1</term> major content elements defined as integral to
+                mapping a woman's life in the <term keyref="biography">BIOGRAPHY</term> section of
+                her entry. An intimate relationship is defined, for the purposes of this Project, as
+                a relationship that involves any type of intimacy whether that be emotional,
+                psychological, material, or sexual. This element seeks to counter the traditional
+                assumption that women's only intimate relations happen within the context of
+                marriage or heterosexual relations between sexual partners. It understands lifelong
+                female friendships, defining psychological connections, non-sexual intimacies, or
+                erotically-charged same-sex or opposite-sex relationships as important to a woman's
+                life. This element captures information concerning both brief sexual affairs and
+                lifelong non-sexual relationships (see attribute <term keyref="erotic">EROTIC</term>
+                for distinguishing between the two). This element also seeks to redress the
+                historical and ideological silence around women's same-sex relationships; it
+                recognizes that biographical information concerning these relationships is often
+                impossible to uncover; therefore this element allows us to recognize these relations
+                as significant while not assuming, in the absence of biographical proof, that they
+                were sexual.</p>
+            <p> Place this element (or several repetitions of it if necessary) in the appropriate
+                chronological order within the Biography section. Generally you will use this
+                element in a <term keyref="short-prose">SHORTPROSE</term>, but where possible and
+                where sensible use a <term keyref="chron-struct">CHRONSTRUCT</term> to signify the
+                initial meeting or a significant event in the relationship; in this way, the
+                importance of the intimate relationships will be represented in the chronology of
+                her life. Often, however, you will not be able to date the beginning of the
+                relationship. This element has sub-elements of <term keyref="lives-with"
+                    >LIVESWITH</term> and <term keyref="sexual-identity">SEXUALIDENTITY</term>, and
+                an optional attribute, <term keyref="erotic">EROTIC</term>. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;INTIMATERELATIONSHIPS
+                EROTIC=eroticPossibly&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1941&lt;/DATE&gt;&lt;/CHRONSTRUCT&gt;
+                &lt;CHRONPROSE&gt;&lt;LIVESWITH&gt;After leaving her husband, Rose Allatini went to
+                live in Sussex with &lt;NAME&gt;Melanie Mills&lt;/NAME&gt;, a writer who published,
+                like Allatini, under various pseudonyms.
+                &lt;/LIVESWITH&gt;&lt;/CHRONPROSE&gt;&lt;SHORTPROSE&gt;&lt;P&gt; It is possible that
+                theirs was a &lt;SEXUALIDENTITY
+                SELF-DEFINED=&quot;selfUnknown&quot;&gt;lesbian&lt;/SEXUALIDENTITY&gt; relationship,
+                although nothing definite is
+                known.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/INTIMATERELATIONSHIPS&gt;</codeblock><codeblock>
+                &lt;INTIMATERELATIONSHIPS&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;&lt;NAME&gt;Mr.
+                Wilson&lt;/NAME&gt;, a Canadian hunter whom Isabella Bird met in Hawaii, proposed to
+                her, but she rejected his offer. &lt;/P&gt;&lt;P&gt;She later met &lt;NAME&gt;Jim
+                Nugent&lt;/NAME&gt;, a mountain guide, when she was travelling in the Rockies, and
+                the two became attracted to each other. Fond as she was of him, she rejected him
+                when he professed his feelings for her. Jim Nugent was a desperado and had a
+                drinking problem, though he also had a compassionate and gentle side according to
+                Bird. Six months after Bird returned home, he was shot dead in a fight in the
+                mountains.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/INTAMTERELATIONSHIPS&gt;</codeblock><codeblock>
+                &lt;INTAMTERELATIONSHIPS
+                EROTIC=&quot;eroticNo&quot;&gt;&lt;DIV2&gt;&lt;LIVESWITH&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1896
+                &lt;/DATE&gt;&lt;CHRONPROSE&gt;EGB met &lt;NAME&gt;Esther Roper&lt;/NAME&gt;, a
+                graduate of Victoria University (Manchester) and suffrage campaigner, in Italy.
+                &lt;/CHRONPROSE&lt;/CHRONSTRUCT&gt;&gt;&lt;SHORTPROSE&gt;&lt;P&gt;They became
+                lifelong companions and lived together in Manchester, doing social and political
+                work for
+                women.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/LIVESWITH&gt;&lt;/DIV2&gt;&lt;/INTAMTERELATIONSHIPS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>All names tagged within an INTIMATERELATIONSHIPS element will be assumed to the names
+                of people with whom she was intimate. In example below from Radcylffe Hall's
+                biography, do not tag Ernest Troubridge because it was Una Troubridge and not Hall
+                who had the intimate relationship with
+                    Ernest.</p><p><codeph>&lt;INTIMATERELATIONSHIPS&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;&lt;NAME&gt;Una
+                    Troubridge&lt;/NAME&gt; married Ernest Troubridge, who would become an admiral
+                    by the end of World War 1, on 10 October 1908. He was forty-four when they
+                    married.
+                    &lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/INTIMATERELATIONSHIPS&gt;</codeph></p><p>Generally,
+                you will be using <term keyref="short-prose">SHORTPROSE</term> to discuss
+                INTIMATERELATIONSHIPS because the beginnings of these relationships are frequently
+                undatable in the way that legally or socially sanctioned relationships might be
+                (making them unamenable to <term keyref="chron-struct">CHRONSTRUCT</term>s). Of
+                course, use <term keyref="chron-struct">CHRONSTRUCT</term> if you can and if it
+                makes sense.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Should Vera Brittain and Winifred Holtby's relationship be under
+                    <term keyref="friends-associates">FRIENDSASSOCIATES</term> or
+                INTIMATERELATIONSHIPS?</p><p>
+                <b>Answer:</b> INTIMATERELATIONSHIPS. While biographers speculate on whether the two
+                had a sexual relationship, it is clear that they were emotionally and materially
+                intimate. Placing information about their relationship inside a <term
+                    keyref="friends-associates">FRIENDSASSOCIATES</term> tag denies the significance
+                of central relationships that do not fit into traditional categories of marriage
+                and/or lovers. However, to mention Holtby’s name in a list of Brittain’s friends as
+                well could be handy for a user beginning her acquaintance with these two from
+                scratch.</p>
+            <p>
+                <b>Question:</b> What about if she was sexually intimate with a person for a very
+                brief period, perhaps only one night, and was never emotionally, personally or
+                materially involved?</p><p>
+                <b>Answer:</b> INTIMATERELATIONSHIPS is still the place that we gather information
+                about her sexual life. If this is the case, check off the <q>eroticYes</q> attribute
+                value and describe the brief nature of the encounter in the prose. </p>
+        </div>
+    </glossdef>
+</glossentry>
