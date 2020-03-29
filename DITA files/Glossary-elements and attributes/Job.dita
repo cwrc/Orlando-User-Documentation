@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="job">
+    <glossterm>JOB</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>JOB, a sub-element available within <term
+                    keyref="occupation">OCCUPATION</term> and also under <term keyref="member"
+                    >MEMBER</term>, within <term keyref="family">FAMILY</term>, is meant to capture
+                the types of non-literary employment done by women writers and their families. It
+                encloses just a word or phrase describing the job. We are interested in comparing
+                the kinds of jobs women did in different historical periods and the kinds of jobs
+                family members did. We want to facilitate research, for example, on the influence of
+                living in a parsonage on women writers and would therefore like to track women who
+                had fathers and mothers who were ministers. The tag has one optional attribute,
+                    <term keyref="reg">REG</term>, which allows you to standardize the name of a job
+                if you have been unable to do so in your prose. By regularizing, the attribute <term
+                    keyref="reg">REG</term> serves to group jobs: professor, reader (Britspeak),
+                lecturer are all <codeph>REG=academic</codeph>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>She was a &lt;JOB&gt;teacher&lt;/JOB&gt;. She worked as a
+                &lt;JOB&gt;nurse&lt;/JOB&gt; during WWI.</codeblock><codeblock> She&lt;JOB
+                REG=&quot;nurse&quot;&gt;attended to the sick&lt;/JOB&gt; during her years in Vichy.
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Tag JOB within <term keyref="occupation">OCCUPATION</term> only if the job belonged
+                to the subject of the entry. Tag JOB within <term keyref="member">MEMBER</term> if
+                the job belonged to the subject of the MEMBER tag. We will want to generate separate
+                lists of jobs done by British Women Writers and jobs done by, for example, their
+                mothers or husbands. Be careful with those who hold jobs at British universities,
+                especially Cambridge and Oxford. IMG notes that the title of professor used to be
+                rare there and is still not general. It cannot be the standard form for anyone who
+                teaches at British institutions. Use <q>academic</q> as the <term keyref="reg"
+                    >REG</term> job attribute; the prose may read things like <q>lecturer</q> or
+                    <q>reader</q> or (at Cambridge or Oxford) <q>fellow and tutor</q> or <q>fellow
+                    and lecturer</q>. You may place the JOB element around a one-word noun or round
+                a verb or phrase. For example, use <codeph>
+                    <q>She was a &lt;JOB&gt;teacher&lt;/JOB&gt;</q> but <q>She &lt;JOB
+                        REG=”teacher”&gt;taught&lt;/JOB&gt;.</q></codeph> If available phrasing
+                sounds remote from the actual job title, use the <term
+                    keyref="current-alternative-term">CURRENTALTERNATIVETERM</term> attribute
+                attached to JOB, to enter a correct title for the job. AA worked in <codeph>&lt;JOB
+                    CURRENTALTERNATIVETERM=&quot;ceramicist&quot;&gt;ceramics&lt;/JOB&gt; and
+                    &lt;JOB CURRENTALTERNATIVETERM=&quot;designer&quot;&gt;design&lt;/JOB&gt; at the
+                    &lt;EMPLOYER&gt;&lt;ORGNAME&gt;Chelsea
+                    Pottery&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;</codeph>. (It would be worth tagging
+                Chelsea as a <term keyref="place">PLACE</term>, too.) Writing activities are not
+                jobs. See more under <term keyref="occupation">OCCUPATION</term>.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What if all I know is where she worked but not what her job was?</p><p>
+                <b>Answer:</b> Include whatever information is available, tag the employer if known
+                and try to phrase the sentence in general terms to capture something of the job. PMS
+                began a <codeph>&lt;JOB&gt;career in fashion&lt;/JOB&gt; and worked at
+                &lt;EMPLOYER&gt;&lt;ORGNAME&gt;Christian Dior&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;.</codeph></p>
+        </div>
+    </glossdef>
+</glossentry>

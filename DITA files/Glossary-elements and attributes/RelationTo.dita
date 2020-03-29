@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="relation-to">
+    <glossterm>RELATIONTO</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This mandatory attribute attached to the
+                    <term keyref="div1">DIV1</term> content tag is found in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">LOCATION</term></uicontrol>
+                </menucascade>. These tags describes a person's geographical movements, and
+                therefore RELATIONTO will allow us to distinguish between different kinds of
+                relations to place: <userinput>Migrated</userinput>,
+                <userinput>Traveled</userinput>, <userinput>Lived</userinput>,
+                    <userinput>Visited</userinput>, and <userinput>Moved</userinput> (see
+                Relationships below for definitions.</p>
+            <p>
+                <userinput>Migrated</userinput> includes emigration and immigration. A move from
+                England to Scotland is considered a migration.</p>
+            <p>
+                <userinput>Travelled</userinput>: applies to journeys and emphasizes the act of
+                travelling rather than a long stay in one place. See
+                <userinput>visited</userinput>.</p><p>
+                <userinput>lived</userinput>: applies to a discussion of the place where she lived.
+                Related to <userinput>Moved</userinput> but covers the date range of the time she
+                lived in a place as opposed to solely the date of her move.</p><p>
+                <userinput>visited</userinput>: applies to a journey of longer duration than a
+                travel; its main purpose is usually to spend a protracted period visiting a family
+                member or friend. For example, use <userinput>visited</userinput> if your woman
+                writer spent a winter in Bath with her aunt. Visited may be particularly applicable
+                to the early periods because women writers often spent long periods of time living
+                elsewhere.</p><p>
+                <userinput>moved</userinput>: applies to the event of her moving. Try to include as
+                chronological events all the major moves in her life, unless she moved too often for
+                this to be feasible. Try to include and tag the place moved from as well as the
+                place moved to.</p><p>
+                <userinput>unknown</userinput>: applies to information about her geographical
+                movements that is unspecified. Since kind is a required attribute, if none of the
+                other attribute values fit use <userinput>unknown</userinput>. </p></div>
+        <div>
+            <u>Example</u>
+            <p>In the examples below, all the places should be tagged according to our place
+                directives.</p>
+            <codeblock>&lt;LOCATION
+                RELATIONTO=&quot;moved&quot;&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1829&lt;/DATE&gt;&lt;CHRONPROSE&gt;AE&apos;s
+                family moved to Bosworth in Leicestershire
+                &lt;/CHRONPROSE&gt;.&lt;/CHRONSTRUCT&gt;&lt;/LOCATION&gt; &lt;LOCATION
+                RELATIONTO=Lived&gt;&lt;Div2&gt;&lt;shortProse&gt;&lt;p&gt; During VA&apos;s
+                childhood, she lived alternately in the fashionable heart of London and at the
+                family&apos;s holiday home at Winterton in Norfolk.
+                &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/LOCATION&gt;</codeblock><codeblock>&lt;LOCATION
+                RELATIONTO=travelled&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;8 July
+                1918&lt;/DATE&gt;&lt;CHRONPROSE&gt;SB sailed for New
+                York.&lt;/CHRONPROSE&gt;&lt;SHORTPROSE&gt;&lt;P&gt;She then travelled across the USA
+                to Berkeley, supporting herself with various jobs, and spending time in Radnor,
+                Pennsylvania, in Chicago, and in
+                Colorado.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/LOCATION&gt;</codeblock><codeblock>
+                &lt;LOCATION RELATIONTO=&quot;migrated&quot;&gt;&lt;CHRONSTRUCT&gt;
+                &lt;DATE&gt;1924&lt;/DATE&gt;&lt;CHRONPROSE&gt;DB migrated with D. H. Lawrence and
+                &lt;NAME STANDARD=Lawrence, Frieda&gt;Frieda&lt;/NAME&gt;to found a Utopian
+                community at Taos, New
+                Mexico.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/LOCATION&gt;</codeblock><codeblock>&lt;LOCATION
+                RELATIONTO=&quot;visited&quot;&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;September
+                1825&lt;/DATE&gt;&lt;CHRONPROSE&gt;JWC visited Carlyle&apos;s family at
+                Hoddam.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;DIV2&gt;&lt;/LOCATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Because this required attribute is attached to the <term keyref="div1">DIV1</term>
+                content element of location, you will often have to insert multiple location
+                elements to select the appropriate attribute.</p><p> Do not use
+                    <userinput>visited</userinput> for long travels in which visiting anyone was
+                incidental.</p><p> You may include multiple geographical movements of the same kind
+                in one location element (for example, various travels at different times and to
+                different places). Use the attribute <term keyref="unknown">UNKNOWN</term> if the
+                    <term keyref="location">LOCATION</term> kind is unclear.</p><p> If Location is
+                used with <userinput>lived</userinput>, it should where possible be given some kind
+                of date range (e.g. if she lived in Italy, you should provide the beginning and end
+                dates if possible). If dates are uncertain, don’t tag them. If you want to enter a
+                    <term keyref="chron-struct">CHRONSTRUCT</term> for the beginning of her
+                residence somewhere but say that she lived there for the rest of her life, you might
+                choose either a <userinput>moved</userinput> or <userinput>lived</userinput>
+                attribute value. Sometimes the choice of either <userinput>Lived</userinput> or
+                    <userinput>Moved</userinput> may be equally valid.</p><p> To the best of your
+                ability, try to include major and significant moves in a person's life as <term
+                    keyref="chron-struct">CHRONSTRUCT</term>s. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> What's the difference between travelled and visited?</p><p>
+                <b>Answer:</b> The difference is one of degree and purpose. If she travels across
+                the continent or journeys through Africa, use <userinput>travel</userinput>. But if
+                she travels to London to spend the season with her cousins, then use visited.</p>
+        </div>
+    </glossdef>
+</glossentry>

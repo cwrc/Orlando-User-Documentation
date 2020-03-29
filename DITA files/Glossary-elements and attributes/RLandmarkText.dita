@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-landmark-text">
+    <glossterm>RLANDMARKTEXT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term belongs within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                </menucascade>. However, it is to be used in a <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> if possible, and a <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> marking publication is generally within a <term
+                    keyref="production">PRODUCTION</term> tag. It refers to a work that, in our
+                opinion, broke new ground, was in some shocking or notorious or illuminating, or had
+                major social or literary repercussions. It should contain a full sentence and the
+                one title that specifies the landmark text. If used in CHRONSTRUCT, this element
+                contributes to the <term keyref="milestones">MILESTONES</term> column of the
+                Overview Screen. It has no mandatory or optional sub-elements or
+            attributes.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="r-best-known-work">RBESTKNOWNWORK</term> for comparison purposes.
+                Note that landmark refers to the world view and not only to the writer's own oeuvre.
+                It is used at all in a minority of entries, but it is possible in rare cases for a
+                woman writer to have two landmark texts, especially if they occur in different
+                genres.</p>
+        </div>
+    </glossdef>
+</glossentry>

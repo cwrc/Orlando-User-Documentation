@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="lang">
+    <glossterm>LANG</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute of the <term
+                    keyref="foreign">FOREIGN</term> element, available throughout the textbase,
+                contains the name of the language that foreign word or phrase has been written in.
+                Having such information will allow us to isolate different languages for checking
+                and searching purposes. It has no pre-determined values; you should type in the name
+                of the language that applies to your use of the FOREIGN tag.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;FOREIGN LANG=&quot;French&quot; &gt;brevet de pilote
+                d&apos;aeroplane&lt;/FOREIGN&gt;</codeblock><codeblock>&lt;FOREIGN LANG=&quot;Gaelic&quot;&gt;Broin
+                Bearg&lt;/FOREIGN&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If you are not sure of the exact name of the language you are using but have a sense of its general grouping or origin, put that information in the tag.</p><p>
+                LANG=<q>Gaelic dialect</q> LANG=<q>African language</q></p>
+            <p>
+                
+                If you can’t find a name for the language at all, leave the attribute blank.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

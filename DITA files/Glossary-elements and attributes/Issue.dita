@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="issue">
+    <glossterm>ISSUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The optional attribute ISSUE denotes the
+                specific type of issue described in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="health">HEALTH</term></uicontrol>
+                </menucascade>. Its attribute values will allow us to separate health issues
+                pertaining to <term keyref="physical">PHYSICAL</term> and <term keyref="mental"
+                    >MENTAL</term> health and to specifically <term keyref="female-body"
+                    >FEMALEBODY</term> health concerns. We are interested in facilitating research
+                into the gendered nature of women's relation to the medical institution, female
+                illnesses such as breast cancer, and women's oppression by mental health
+                institutions, to name only a few. If you judge that two different issues are
+                involved, open two successive HEALTH tags with different attributions.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;HEALTH ISSUE=mental&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Shortly
+                after 1953, SP had a breakdown and attempted
+                suicide.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/HEALTH&gt;</codeblock><codeblock>&lt;HEALTH
+                ISSUE=&quot;femalebody&quot;&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1850&lt;/DATE&gt;
+                &lt;CHRONPROSE&gt;AAB discovered that she had cancer of the
+                uterus.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/HEALTH&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>To the best of your ability, try to include separate <term keyref="div1">DIV1</term>
+                elements when you have separate health issues. This will allow you to assign the
+                appropriate issue attribute value to the information. But if the health issues
+                discussed overlap, then leave the attribute blank.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> The woman writer I am researching suffered from health problems for
+                the last years of her life but there is no information about what kind of health
+                problems. What attribute do I give this?</p><p>
+                <b>Answer:</b> If unknown, leave attribute blank.</p>
+            <p>
+                <b>Question:</b> The woman writer I am researching suffered a fall that led to her
+                lifelong depression. Is this mental or physical?</p><p>
+                <b>Answer:</b> Either leave the attribute blank, or open two successive <term keyref="health">HEALTH</term>
+                    elements and apply and <term keyref="physical">PHYSICAL</term> to the first and <term keyref="mental"
+                        >MENTAL</term> to the second. This will mean
+                two scrappy sentences, but lifelong depression sounds worth an attribute and a few
+                details. </p>
+        </div>
+    </glossdef>
+</glossentry>
