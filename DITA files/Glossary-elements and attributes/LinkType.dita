@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="link-type">
+    <glossterm>LINKTYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>LINKTYPE is a field in the Bibliography
+                Database which indicates where an author’s <term keyref="standard-name"
+                    >STANDARDNAME</term> should appear in the final bibliogitem. There are four
+                options:</p>
+            <p><ul>
+                    <li><b>Analytic</b> -- indicates the author of a section of the work being cited
+                        (e.g. a short story, poem, journal article, or chapter, introduction or
+                        preface of a book).</li>
+                    <li>
+                        <b>Monographic</b> -- indicates the author of the complete work being
+                        cited</li>
+                    <li>
+                        <b>Series</b> -- indicates the author or editor of the series being
+                        cited</li>
+                    <li>
+                        <b>Subsidiary</b> -- indicates that the Standard Name plays a secondary role
+                        within the context of the work being cited (e.g. editor of a collection of
+                        essays by a single author: this name will appear after the title of the
+                        work). In a volume of essays by Virginia Woolf edited by Germaine Greer, she
+                        is the Subsidiary author; in a volume of essays by various others which she
+                        collected and edited, she is Monographic.</li>
+                </ul></p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Certain bibliogitems can be entered in a number of different ways depending upon the
+                section of the work you are citing. Thus, LINKTYPE will be determined by MLA
+                practice.</p>
+            <p> Spencer, Jane, ed and J. M. S. Tompkins, ed. Introduction. A Simple Story. By
+                Elizabeth Inchbald. Oxford: Oxford University Press, 1988. In this instance, the
+                bibliogitem is the <i>Introduction</i>, so Spencer and Tompkins come first and
+                second with Link Type=<q>Analytic</q>; Inchbald comes third with Link
+                    Type=<q>Monographic.</q></p>
+            <p> Inchbald, Elizabeth. A Simple Story. Ed. Jane Spencer and J. M. S. Tompkins. Oxford:
+                Oxford Univesrity Press, 1988. In this instance, the bibliogitem is the 1988 OUP
+                edition of Elizabeth Inchbald's <i>A Simple Story</i>, so Inchbald comes first with
+                Link Type=<q>Monographic</q> and Spencer and Tompkins follow with Link
+                    Type=<q>Subsidiary.</q></p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Can I have more than one Link Type per Standard
+                    Name?</p><p><b>Answer:</b> No, you can modify the <term keyref="standard-name"
+                    >STANDARDNAME</term> by one LINKTYPE only in each biblio entry.</p>
+            <p>
+                <b>Question:</b> Can I have more than one Link Type per
+                    bibliogitem?</p><p><b>Answer:</b> Yes. Depending on the type of work you are
+                citing, you will sometimes have to enter a number of different standard names per
+                bibliogitem, each with a different LINKTYPE.</p>
+        </div>
+    </glossdef>
+</glossentry>

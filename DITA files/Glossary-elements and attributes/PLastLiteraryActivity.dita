@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-last-literary-activity">
+    <glossterm>PLASTLITERARYACTIVTY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This tag belongs conceptually within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It records the final significant writing activity, published or
+                otherwise, and should be used with all authors where evidence exists. It should
+                contain a full sentence, and the only title tagged within it should be the title of
+                the last work. If this tag is used in a <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> it will display in the <term keyref="milestones"
+                    >MILESTONES</term> column of the Overview. It has no mandatory or optional
+                sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PLASTLITERARYACTIVITY&gt;On her eighty-third birthday, Anne Grant wrote
+                her last
+                poem.&lt;/PLASTLITERARYACTIVITY&gt;</codeblock><codeblock>&lt;PLASTLITERARYACTIVITY&gt;Joanna
+                Baillie&apos;s last known work, Ahalya Baee, deals with an actual Indian female
+                ruler.&lt;/PLASTLITERARYACTIVITY&gt;</codeblock><codeblock>&lt;PLASTLITERARYACTIVITY&gt;Just
+                before she died, Eleanor Anne Porden wrote a letter to her
+                husband.&lt;/PLASTLITERARYACTIVITY&gt; A volume of her letters was later collected
+                and published as John Franklin&apos;s Bride in 1930. (n.b. Put PLASTLITERARYACTIVITY
+                element around the first sentence only here, so that the whole collected volume does
+                not appear to be her final work.) </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>As you can see from the examples, the last work is not always a published work. You
+                might only wish to record that she wrote in her diary on the day she died.</p>
+        </div>
+    </glossdef>
+</glossentry>

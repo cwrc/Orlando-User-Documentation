@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-literary-schools">
+    <glossterm>PLITERARYSCHOOLS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. Though, it can equally be used within <term
+                    keyref="textual-features">TEXTUALFEATURES</term> or <term keyref="reception"
+                    >RECEPTION</term>. It is meant to identify named literary or artistic schools
+                that influenced an author’s writing or in which she was a participant or at least
+                with which she had significant contact. Make sure to capture the name of the school
+                within the tag. Writers/taggers exercise own judgement about whether some aesthetic
+                idea or belief constitutes a literary school or not.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Christina Rossetti experienced a tangential relationship with the
+                &lt;PLITERARYSCHOOLS&gt;Pre-Raphaelite
+                brotherhood.&lt;/PLITERARYSCHOOLS&gt;</codeblock><codeblock> Djuna Barnes&apos;s
+                work is considered by many to be a classic example of
+                &lt;PLITERARYSCHOOLS&gt;modernism&lt;/PLITERARYSCHOOLS&gt;. </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If the woman writer was affiliated with a political school of thought, that
+                information belongs within <term keyref="politics">POLITICS</term> in <term
+                    keyref="bibliography">BIBLIOGRAPHY</term>.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> She was considered a socialist writer. Do I tag that as a literary
+                school?</p><p><b>Answer:</b> No, that belongs in a discussion of her political
+                affiliation.</p>
+        </div>
+    </glossdef>
+</glossentry>

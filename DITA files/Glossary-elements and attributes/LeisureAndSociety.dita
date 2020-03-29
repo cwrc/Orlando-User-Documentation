@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="leisure-and-society">
+    <glossterm>LEISUREANDSOCIETY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>LEISUREANDSOCIETY is one of the 16 major
+                    <term keyref="div1">DIV1</term> content elements within <term keyref="biography"
+                    >BIOGRAPHY</term> sections of entries defined as integral to mapping a woman's
+                life. It captures information concerning the cultural and social activities of a
+                person, including hobbies, sporting life and non-literary cultural or social life.
+                Individual friendships should be captured under <term keyref="friends-associates"
+                    >FRIENDSASSOCIATES</term> and volunteer philanthropic activities should be
+                captured under <term keyref="occupation">OCCUPATION</term> but her hosting a
+                literary salon, or notable bakery, can be entered here. For the purposes of this
+                Project, we are not defining <q>leisure</q> as what she does with her <q>free
+                    time</q> because this assumes a gendered and classed notion of labour.
+                    <q>Society</q> in this context refers to the larger community and her social
+                life within it, not primarily to an elite, fashionable social circle - but things
+                like being presented at court or having her portrait painted do figure here. This
+                tag has no content sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;LEISUREANDSOCIETY&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt; &lt;P&gt;MB made her
+                debut at a ball in
+                Brighton.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/LEISUREANDSOCIETY&gt;</codeblock><codeblock>
+                &lt;LEISUREANDSOCIETY&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt; &lt;P&gt;BC&apos;s diverse
+                projects have included designing wallpaper and home
+                furnishings.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/LEISUREANDSOCIETY&gt;</codeblock><codeblock>
+                &lt;LEISUREANDSOCIETY&gt;&lt;DIV2&gt;&lt;HEADING&gt;Olympic
+                Sailor&lt;/HEADING&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1924&lt;/DATE&gt;&lt;CHRONPROSE&gt;EKM
+                sailed in the Paris Olympics. She was the only woman representing Switzerland.
+                &lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Later, she was one
+                of an all-woman crew on a voyage from France to
+                Greece.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/LEISUREANDSOCIETY&gt;</codeblock><codeblock>
+                &lt;LEISUREANDSOCIETY&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt; &lt;P&gt;For fifteen years,
+                SM held Ireland&apos;s only literary salons at her home in Kildare Street. She
+                concentrated on entertaining -- singing, playing the harp, and reciting -- and
+                social events, rather than
+                writing.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/LEISUREANDSOCIETY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Because of the broad-ranging information captured within LEISUREANDSOCIETY, try to
+                include in your prose words that may help in searching. For instance, the word
+                    <q>sport</q> would be useful in the EKM example above. Consider including
+                here:</p><p>
+                <ul>
+                    <li>charitable activities (including charitable visiting)</li>
+                    <li>dress (includes: fashion, for example, Amelia Bloomer or Nancy Cunard’s
+                        bracelets; does not include needlepoint or dress design which would be
+                        creative activity under <term keyref="occupation">OCCUPATION</term>.)</li>
+                    <li>clubs/societies</li>
+                    <li>collecting</li>
+                    <li>cooking/food/drink, painting, sculpting, amateur acting, photography,
+                        gardening, playing instruments, needlework, crafts. Note: First consider
+                        whether such activities fall under <term keyref="occupation"
+                            >OCCUPATION</term>: <term keyref="significant-activity"
+                            >SIGNIFICANTACTIVITY</term> before including here.)</li>
+                    <li>debutante experience</li>
+                    <li>groups (includes: activities involving loosely-organized or loosely-defined
+                        groups, e.g. ran a salon, ran the local Women’s Institute)</li>
+                    <li>hobbies</li>
+                    <li>social influences</li>
+                    <li>patronage activities (giving not receiving as an author)</li>
+                    <li>personal transport (walking, biking, driving horses, cars, planes.)</li>
+                    <li>animals</li>
+                    <li>sports</li>
+                    <li>subcultures</li>
+                    <li>visiting (social)</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If she exhibited her artwork at a gallery and it is unclear whether
+                or not she made money as an artist, is this LeisureAndSociety (using potential
+                search terms like creative activity, painting, etc., ) or a SIGNIFICANTACTIVITY
+                within OCCUPATION?</p><p>
+                <b>Answer:</b>
+                <term keyref="occupation">OCCUPATION</term> with a <term
+                    keyref="significant-activity">SIGNIFICANTACTIVITY</term> tag, since exhibiting
+                suggests notable investment of energy. </p>
+        </div>
+    </glossdef>
+</glossentry>

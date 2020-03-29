@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="language">
+    <glossterm>LANGUAGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>LANGUAGE is a content sub-element
+                available within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It captures the names of languages the person knew at an early
+                age. This tag is for specific names such as <q>German</q>, <q>Gaelic</q>. We are interested in
+                the various languages women writers used or knew, and how different mother tongues
+                affect writing. We are interested in capturing information about British women
+                writers whose first language was not English (including how Gaelic, Welsh, and Irish
+                relate to women writing in English). This tag has optional attributes of <term keyref="competence">COMPETENCE</term>
+                (values <userinput>Mother</userinput> and <userinput>Other</userinput>) and <term keyref="reg">REG</term>. Use REG when you have been unable to express the
+                language name in a standard fashion in your prose.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Her mother tongue was &lt;LANGUAGE COMPETENCE=&quot;mother&quot;&gt;Gaelic&lt;/LANGUAGE&gt;.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
