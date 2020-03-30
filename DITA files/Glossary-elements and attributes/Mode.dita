@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="mode">
+    <glossterm>MODE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is attached to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="education">EDUCATION</term></uicontrol>
+                </menucascade>. records the Mode of learning and allows us to distinguish between a
+                domestic or an institutional or an autodidactic education through its values:
+                    <userinput>Domestic</userinput>, <userinput>Institutional</userinput>, or
+                    <userinput>Self-taught</userinput>. The <userinput>Domestic</userinput> mode
+                includes all home schooling, whether by a mother, brother, or goveness.
+                    <userinput>Self-taught</userinput> covers all forms of independent study.
+                Education in any kind of school ranks as <userinput>Institutional</userinput>. This
+                attribute allows us to trace the historical developments in women's access to
+                education, for example, the informal domestic education of women writers in the
+                early periods versus the founding of girls’ schools and eventually women's entrance
+                to post-secondary education. The <userinput>Self-taught</userinput> value
+                illuminates the place of self-help in women’s intellectual aspirations. A single
+                educational career may make use of all three values in turn;
+                    <userinput>Self-Taught</userinput> and Institution apply to a good deal of
+                learning in adulthood as well as childhood. Open a new EDUCATION tag for each
+                attribute value you need.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;EDUCATION
+                MODE=&quot;institutional&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;AA was
+                educated at Harrow School of Art and (after doing some teaching) Hornsey Art
+                College,
+                London.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/EDUCATION&gt;</codeblock><codeblock>
+                &lt;EDUCATION MODE=&quot;domestic&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;GA
+                was educated chiefly by her
+                mother.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/EDUCATION&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Separate <term keyref="education">EDUCATION</term> elements should be used to record
+                the different modes. If she taught herself Greek during the course of an otherwise
+                institutional education, open up a new <term keyref="div1">DIV1</term> EDUCATION
+                element to include a <userinput>Self-taught</userinput> attribute value.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If she had a governess, what mode of education is this?</p><p>
+                <b>Answer:</b> <userinput>Domestic</userinput>.</p>
+        </div>
+    </glossdef>
+</glossentry>

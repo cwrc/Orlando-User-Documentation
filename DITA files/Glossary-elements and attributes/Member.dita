@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="member">
+    <glossterm>MEMBER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>MEMBER is a significant sub-element
+                within <term keyref="family">FAMILY</term> (in the <term keyref="biography"
+                    >BIOGRAPHY</term> section of entries), enclosing its own <term keyref="div2"
+                    >DIV2</term> and other structural tags. It has a required attribute, <term
+                    keyref="relation">RELATION</term>, and sub-elements <term keyref="marriage"
+                    >MARRIAGE</term>, <term keyref="job">JOB</term>, and <term
+                    keyref="significant-activity">SIGNIFICANTACTIVITY</term>. It captures a
+                discussion of a specific family member (who was important/significant to the
+                writer). For general discussions of family life, do not open a MEMBER sub-element
+                but remain within FAMILY. MEMBER allows us to structure information concerning
+                particular family relations. For example, by including a MEMBER element for the
+                mother of a British woman writer, we will be able to generate a list for our end
+                users of all the jobs of or all the comments on these mothers. We hope to make
+                interesting connections between women writers’ relationships to particular family
+                members (for example, group information concerning the relationship of
+                eighteenth-century women writers to their aunts) but in order to do so we must
+                systematize the discussions of these specific members. One member tag will do for
+                several brothers or several sisters or children if not much very is said; more
+                detail requires an individual tag. Remember availability of JOB tag here, and
+                SIGNIFICANTACTIVITY with emphasis on <q>significant</q>. In order to maintain the
+                chronological order of your document, it may sometimes contain multiple MEMBER
+                elements for the same person, such as husband or mother.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;FAMILY&gt;&lt;MEMBER
+                RELATION=&quot;daughter&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;One of
+                Frances Trollope&apos;s daughters, &lt;NAME&gt;Cecilia Trollope&lt;/NAME&gt;, also
+                &lt;SIGNIFICANTACTIVITY REG=”writer”&gt;wrote&lt;/SIGNIFICANTACTIVITY&gt;, and was
+                one of the three children who died of
+                tuberculosis.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/MEMBER&gt;&lt;/FAMILY&gt;</codeblock><codeblock>
+                &lt;MEMBER RELATION=&quot;mother&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;
+                AU&apos;s mother, &lt;NAME&gt;Hannah (Dickens) Taylor&lt;/NAME&gt;, was an &lt;JOB
+                REG=”servant”&gt;ex-lady&apos;s-maid&lt;/JOB&gt;&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/MEMBER&gt;
+                </codeblock><p>In the above examples, it is assumed that the names. <term
+                    keyref="job">JOB</term>, and significant activity tagged apply to the member of
+                the subject’s family.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>A name captured within a MEMBER element will be assumed to be the name of the
+                relation specified in the attribute. Therefore, only tag the names of the member and
+                leave other names mentioned (for instance, that of a woman writer who was close to
+                the subject’s mother) untagged.</p><p>Do not necessarily include everything you
+                know about one particular member, for example, her father, inside one MEMBER
+                element. Consider the order of your document, and include the MEMBER=Father element
+                more than once, for example, if you discuss her shifting relationship with her
+                father at various times over the course of her life. On the other hand if little is
+                known, entries sometimes include a parent’s death-date in their single MEMBER tag
+                early in the document. When the relation specified is Husband or Wife, use the <term
+                    keyref="marriage">MARRIAGE</term> element to capture information about the
+                wedding ceremony. </p>
+        </div>
+    </glossdef>
+</glossentry>

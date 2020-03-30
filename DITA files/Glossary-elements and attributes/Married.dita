@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="married">
+    <glossterm>MARRIED</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The <term keyref="married">MARRIED</term>
+                element within <term keyref="person-name">PERSONNAME</term> (in the <term
+                    keyref="biography">BIOGRAPHY</term> section of entries) captures the surname
+                that a woman adopted in marriage. It occupies a <term keyref="data-item"
+                    >DATAITEM</term> tag and encloses the name only. It has attributes of <term
+                    keyref="reg">REG</term> (to use in the case of variant spellings) and <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>. We are interested in
+                tracking to what extent women adopted their married names for publishing; therefore,
+                remember to apply the attribute if they did publish under their married name. Unless
+                research proves to the contrary, do not assume that twentieth-century women adopted
+                their husband's surname on marriage. Be aware that Scotswomen or heiresses (last
+                bearers of their family name) usually or often did not take their husbands' names
+                legally, though they might socially. In other words, do not make assumptions about
+                married names. However, Orlando has sometimes tagged her husband’s name as the
+                MARRIED name of a writer without positive evidence that she did in fact use his
+                name.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATAITEM&gt; &lt;MARRIED
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Woolf&lt;/MARRIED&gt;&lt;/DATAITEM&gt;</codeblock><codeblock>
+                &lt;DATAITEM&gt;&lt;MARRIED&gt;Fraser&lt;/MARRIED&gt;&lt;/DATAITEM&gt;</codeblock><codeblock>
+                &lt;DATAITEM&gt;&lt;MARRIED
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Houstoun&lt;/MARRIED&gt;&lt;/DATAITEM&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See PERSONNAME for general name practices. Only the surname appears within the
+                element. If the woman writer did not publish under her married name, then you may
+                leave that attribute unfilled. If she did publish under a married name under a form
+                like <q>Mrs Humphry Ward</q>, then you will need to put her full name in the <term
+                    keyref="reg">REG</term> attribute. See the examples below in troubleshooting for
+                further clarification.</p><p> Do not include the last name of a husband as a married
+                name for contemporary women writers unless it is known that she used the married
+                name.</p><p> Place multiple married names in separate <term keyref="data-item"
+                    >DATAITEM</term>s. Enter the names in the order in which she was married.</p><p>
+                If she used <q>Mrs</q> when she published under her married name, include <q>Mrs</q>
+                in this element: <codeph>&lt;MARRIED
+                    WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot; REG= &quot;Abdy,
+                    Mrs&quot;&gt;Abdy&lt;/MARRIED&gt;</codeph></p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If Mary Augusta Humphry Ward published as <q>Mrs Humphry Ward</q>,
+                how do I enter her married name to convey the proper published name?</p><p>
+                <b>Answer:</b> Mrs Humphry Ward would appear as Ward, Mrs Humphry in the <term
+                    keyref="reg">REG</term> attribute on married name. Ward would be the name which
+                appears in the married element itself.</p>
+            <p>
+                <b>Question:</b> Annie Louisa Walker published as both <q>Mrs Harry Coghill</q> and
+                    <q>Mrs Henry Coghill</q>. How would I enter this?</p><p>
+                <b>Answer:</b> Include two separate married name elements and check off
+                    <q>WROTEORPUBLISHEDAS=Yes</q> for both. Make sure you have the proper form of
+                those names recorded in the <term keyref="reg">REG</term> attributes.</p>
+        </div>
+    </glossdef>
+</glossentry>

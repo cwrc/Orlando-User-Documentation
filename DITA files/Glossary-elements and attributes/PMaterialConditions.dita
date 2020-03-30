@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-material-conditions">
+    <glossterm>PMATERIALCONDITIONS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This tag is found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. This tag describes the physical and economic circumstances that
+                governed a woman's writing or a particular text. This category is meant to answer
+                questions like: did she have a room of her own? Was it the laundry room or a posh
+                cabin on the French Riviera? Was she losing her eyesight while writing a particular
+                work? Did she hide the manuscript while writing? This element encloses a full
+                sentence or clause. It has no mandatory or optional sub-elements, but one optional
+                attribute, <term keyref="displacement">DISPLACEMENT</term>, with a value of
+                    <userinput>DisplacementYes</userinput>. This might signify migration, or moving
+                out of her home because of marital troubles or failure to pay the rent.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMATERIALCONDITIONS&gt;The preface to Ann Grant&apos;s memoirs explains
+                that they were written under &quot;painful
+                circumstances.&quot;&lt;/PMATERIALCONDITIONS&gt;</codeblock><codeblock>It is still
+                not known if Eliza Fenwick&apos;s second novel ever appeared
+                &lt;PMATERIALCONDITIONS&gt;or if it was a casualty of stress and
+                poverty.&lt;/PMATERIALCONDITIONS&gt;</codeblock><codeblock>
+                &lt;PMATERIALCONDITIONS&gt;Djuna Barnes wrote her novel while living at Hayford Hall
+                under the auspices of Peggy Guggenhiem, who had rented the place. Several other
+                writers were living there at the same time. &lt;/PMATERIALCONDITIONS&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element differs from the <term keyref="class">CLASS</term> and <term
+                    keyref="wealth">WEALTH</term> categories in the <term keyref="biography"
+                    >BIOGRAPHY</term> section of the entry in that it is specific to the conditions
+                under which she wrote.</p><p> The element can be used to discuss emotional or health
+                issues that affected the writing, or deadline pressures brought to bear by
+                publishers, but these may sometimes be more accurately described using the <term
+                    keyref="pmotives">PMOTIVES</term> element. See <term keyref="pmotives"
+                    >PMOTIVES</term>. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Does the following example belong in PMATERIALCONDITIONS or in <term
+                    keyref="p-motives">PMOTIVES</term>? During the Irish famine, Elizabeth Grant
+                    <q>wrote for bread</q> mainly for others.</p><p>
+                <b>Answer:</b> You might consider enclosing the whole sentence in PMOTIVES, while
+                also putting a PMATERIALCONDITIONS element round the first four words. </p>
+        </div>
+    </glossdef>
+</glossentry>

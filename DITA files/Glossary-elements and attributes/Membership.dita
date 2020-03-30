@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="membership">
+    <glossterm>MEMBERSHIP</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute is attached to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="political-affiliation"
+                        >POLITICALAFFILIATION</term></uicontrol>
+                </menucascade>. In conjunction with its sibling attributes, designates the lowest
+                degree of political engagement with the political affiliation specified. Use this
+                attribute where there is clear evidence of a link with an organization but no
+                indication of more active participation: she may have been a member of the WSPU, or
+                donated money for a women's shelter, or written a poem for the Anti-Corn Law League.
+                MEMBERSHIP has sibling attributes of <term keyref="activism">ACTIVISM</term> and
+                    <term keyref="involvement">INVOLVEMENT</term> (choose just one among these three
+                alternatives), and <term keyref="woman-gender-issue">WOMAN-GENDERISSUE</term>, and
+                it has attribute values of <userinput>membershipYes</userinput> and
+                    <userinput>membershipNo</userinput>.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Where you do not know for sure, leave the attribute blank. Generally, only one of the
+                attributes MEMBERSHIP <term keyref="activism">ACTIVISM</term>, and <term
+                    keyref="involvement">INVOLVEMENT</term> will apply in each situation, since
+                these three bare grounded in an implicit hierarchy. If your subject was just a
+                member, it implies that you do not have evidence of her <term keyref="involvement"
+                    >INVOLVEMENT</term> or <term keyref="activism">ACTIVISM</term>. You will not
+                need to employ all three attributes to make your point; just use the one most
+                applicable.</p>
+        </div>
+    </glossdef>
+</glossentry>
