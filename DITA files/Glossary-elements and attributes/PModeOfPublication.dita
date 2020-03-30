@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-mode-of-publication">
+    <glossterm>PMODEOFPUBLICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PMODEOFPUBLICATION is connected to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It deals with specific ways in which a book is brought to print; it
+                does not address issues of circulation. It captures specific issues around the
+                publisher (or details about the printer where pertinent and different from the
+                publisher) through capturing particulars of specified types of publishing. It
+                encloses full sentences, with enough information to convey the issues at stake. The
+                attribute values on this tag cover limited, pirated, or private editions, publishing
+                by subscription, and self-publishing. Other publishing issues call for other tags:
+                    <term keyref="p-type-of-press">PTYPEOFPRESS</term>, <term
+                    keyref="p-relationship-with-publisher">PRELATIONSHIPWITHPUBLISHER</term>, <term
+                    keyref="p-earnings">PEARNINGS</term>, etc. This element has no mandatory or
+                optional sub-elements.</p><p>A note on <q>self-publication</q>: this attribute
+                doesn't refer only to those works published by vanity presses (or, today,
+                independently on the web). In some cases, where the title page bears the words
+                    <q>Printed [sometimes published] for the author,</q> it means that the publisher
+                wouldn't take the risk, so charged the author for publication and any profits then
+                went to her. It was a sign of the author's confidence in her own work and could work
+                out very well financially, or not. See the second example below regarding Eliza
+                Fenwick.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMODEOFPUBLICATION&gt; It was unusual for Eliza Fenwick&apos;s novel to
+                be published by a conger, that is a whole group of
+                publishers.&lt;/PMODEOFPUBLICATION&gt;</codeblock><codeblock>&lt;PMODEOFPUBLICATION
+                PUBLICATIONMODE=&quot;self-publication&quot; &gt;&quot;Printed for the author&quot;
+                meant that Eliza Fenwick paid her publishers to produce her book and kept whatever
+                profit it brought in her own
+                hands.&lt;/PMODEOFPUBLICATION&gt;</codeblock><codeblock>&lt;PMODEOFPUBLICATION
+                PUBLICATIONMODE=&quot;subscription&quot;&gt; Joanna Baillie enlisted subscribers,
+                including Sir Walter Scott, to help her publish her first slim volume of
+                poetry.&lt;/PMODEOFPUBLICATION&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>One complication in this element is that the nature of <q>publisher</q> has changed over
+                time. Try to remain sensitive to the historical nuances of your discussion.</p>
+        </div>
+    </glossdef>
+</glossentry>

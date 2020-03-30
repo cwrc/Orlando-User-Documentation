@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-motives">
+    <glossterm>PMOTIVES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term is available within <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY or WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">DIRECT PARENT</term></uicontrol>
+                </menucascade>. It describes a woman writer's purposes and reasons for writing (or
+                choosing a particular genre or theme) which may be ascribed or self-identified, and
+                may refer to textual motives or personal motives. See <term keyref="p-attitudes"
+                    >PATTITUDES</term> for comparison. Material for this tag relies on sentiments
+                expressed by the writer or the opinions of others (see Attribute values), or else on
+                reasonable deduction. It has one optional attribute, <term keyref="motive-type"
+                    >MOTIVETYPE</term>, with values of <userinput>ascribed</userinput> and
+                    <userinput>self-identified</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMOTIVES MOTIVETYPE=&quot;self-identified&quot;&gt; One afternoon while
+                sitting by her mother&apos;s side &quot;imprisoned by the heat of a summer
+                afternoon,&quot; Joanna Baillie suddenly thought of writing
+                drama.&lt;/PMOTIVES&gt;</codeblock><codeblock>&lt;PMOTIVES
+                MOTIVETYPE=&quot;ascribed&quot;&gt;Anne Barnard called the ballad &quot;a little
+                history of virtuous distress in a humble life&quot; written in loneliness after her
+                sister Margaret&apos;s reluctant marriage and perhaps owing something to that
+                event.&lt;/PMOTIVES&gt;</codeblock><codeblock>&lt;PMOTIVES
+                MOTIVETYPE=&quot;self-identified&quot;&gt;Isabella Kelly wrote to support her
+                family: &quot;I had no resource but my pen.&quot;&lt;/PMOTIVES&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

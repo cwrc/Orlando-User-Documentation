@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="motif-name">
+    <glossterm>MOTIFNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>This is an attibute on <term keyref="t-motif"
+                    >TMOTIF</term>, found in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It is used to regularize discussions of motifs to one of the
+                descriptors listed under TMOTIF.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TMOTIF MOTIFNAME=unhappy marriage&gt;The protagonist finds that her
+                marriage fulfils none of the hopes she had in entering
+                it.&lt;/TMOTIF&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

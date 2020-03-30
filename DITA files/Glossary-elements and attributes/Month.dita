@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="month">
+    <glossterm>MONTH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Month is a sub-tag of <term keyref="date-struct">DATESTRUCT</term>,
+                available throughout the textbase, and is meant to record only the month portion of
+                a date. It can be used for instances in which there is a contested or varying degree
+                of certainty among date components, but depending on <term keyref="certainty">CERTAINTY</term> attribute, it may
+                also be as certain as anything can be. It is modified by <term keyref="value">VALUE</term> and CERTAINTY
+                attributes.</p></div>
+    </glossdef>
+</glossentry>

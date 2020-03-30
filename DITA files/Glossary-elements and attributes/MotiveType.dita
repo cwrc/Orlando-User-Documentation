@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="motive-type">
+    <glossterm>MOTIVETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>MOTIVETYPE is an attribute affiliated
+                with the element <term keyref="p-motives">PMOTIVES</term>, in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It has two values, <userinput>ascribed</userinput> and
+                    <userinput>self-identified</userinput>. If the author herself named her motives
+                for writing, they are self-identified. If her contemporaries or later scholars
+                attributed motives to her, those are <userinput>ascribed</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMOTIVES MOTIVETYPE=&quot;ascribed&quot;&gt;AB wrote a sequel to her
+                ballad some years later, apparently at the request of her mother.&lt;/PMOTIVES&gt;
+                &lt;PMOTIVES MOTIVETYPE=&quot;self-identified&quot;&gt;Dorothea Primrose Campbell
+                published by subscription, giving her full name, hoping to help the family&apos;s
+                dire financial circumstances.&lt;/PMOTIVES&gt;</codeblock><codeblock>&lt;PMOTIVES
+                MOTIVETYPE=&quot;self-identified&quot;&gt;Isabella Kelly wrote a small, selective
+                encyclopedia for the benefit of her daughters.&lt;/PMOTIVES&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
