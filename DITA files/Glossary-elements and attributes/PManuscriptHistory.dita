@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-manuscript-history">
+    <glossterm>PMANUSCRIPTHISTORY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It details the pre-publication or unpublished history of a text:
+                where it was kept, how and if it circulated before and after its printing. This
+                element incorporates a statement or discussion; note that it refers to the
+                circulation of the manuscript and not the published text, and covers matters like
+                ownership, damage, loss and recovery. It has no mandatory or optional sub-elements
+                or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMANUSCRIPTHISTORY&gt;&lt;PARCHIVALLOCATION&gt;Lucy Cary&apos;s
+                manuscript remained in the convent archives and is now Lille MS
+                20H9.&lt;/PARCHIVALLOCATION&gt;&lt;/PMANUSCRIPTHISTORY&gt;</codeblock><codeblock>
+                &lt;PMANUSCRIPTHISTORY&gt;The manuscripts of Ann Grant&apos;s memoirs are in two
+                large vellum-bound volumes. Family history states that these were originally passed
+                down to Annie, AG&apos;s second
+                daughter.&lt;/PMANUSCRIPTHISTORY&gt;</codeblock><codeblock>
+                &lt;PMANUSCRIPTHISTORY&gt;Elizabeth Cellier&apos;s account of her arrest was
+                allegedly written at first in a &quot;scrambling ugly hand.&quot; She had a fair
+                copy made, got it printed, and sold it from her
+                house.&lt;/PMANUSCRIPTHISTORY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If the manuscript has come to rest at an archival location, and that is all we know,
+                record the information in <term keyref="archival-location">ARCHIVALLOCATION</term>.
+                However, you may overlap tags where necessary: see example above.</p><p>Information about
+                the circulation of published texts should use the <term keyref="p-circulation"
+                    >PCIRCULATION</term> element, use <term keyref="p-manuscript-history"
+                    >PMANUSCRIPTHISTORY</term> if an unprinted work had readers remarkable for their
+                numbers or identity. </p>
+        </div>
+    </glossdef>
+</glossentry>

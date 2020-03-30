@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="lives-with">
+    <glossterm>LIVESWITH</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Content sub-tag available within <term
+                    keyref="intimaterelationships">INTIMATERELATIONSHIPS</term>, <term
+                    keyref="friendsassociates">FRIENDSASSOCIATES</term>, and <term keyref="member"
+                    >MEMBER</term> (within <term keyref="family">FAMILY</term>), all in the <term
+                    keyref="biography">BIOGRAPHY</term> section of entries. It generally encloses at
+                least a phrase or statement and a tagged name. Using LIVESWITH denotes the material
+                living arrangements of the subject of the biography. It does not assume that the
+                person with whom she is living is her sexual partner nor does it assume that sexual
+                partners are excluded. Using this sub-element will help to capture the material
+                conditions of a woman's writing (e.g. did she have support? Did she have a room of
+                her own?) and women's non-traditional living arrangements.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;LIVESWITH&gt;Hope Mirrlees lived with &lt;NAME&gt;Jane
+                Harrison&lt;/NAME&gt;.&lt;/LIVESWITH&gt;</codeblock><codeblock>&lt;LIVESWITH&gt;When
+                Sarah Scott married, &lt;NAME STANDARD=&quot;Montagu, Barbara,, Lady&quot;&gt;Lady
+                Barbara&lt;/NAME&gt; moved in with the newlywed couple. The two women lived
+                together, sharing Christian beliefs and social concerns, until Lady Barbara
+                died.&lt;/LIVESWITH&gt;</codeblock><p>Note that in the above example Lady Barbara's
+                name is tagged. Even though it has already been tagged in the rest of the document,
+                it is necessary to also tag it here in order to systematically capture who Scott was
+                living with.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>To the best of your ability, include the name of the person concerned within the
+                livesWith tag. All names tagged within livesWith will be assumed to be the people
+                the entry subject lived with.</p><p>Query: ER lived for many years with Olivia
+                Wilberforce, who was Virginia Woolf's physician. -- should VW be tagged or not?
+                Answer: Place livesWith tag round <q>ER lived . . . Wilberforce,</q> but the rest of
+                the sentence outside the tag. That way, both names can be safely tagged.</p>
+            <p> Using this sub-element does not denote that the relationship was sexual but
+                signifies material living arrangements. A writer could have lived with a person as a
+                room-mate or the person could be her-life long companion. Using LIVESWITH within
+                    <term keyref="intimate-relationships">INTIMATERELATIONSHIPS</term> also does not
+                denote that the relationship was sexual but suggests that the living arrangements
+                were more significant than simple room-mates.</p><p> Do not put the tag only around
+                phrases such as <q>with whom she lived</q> but include enough prose to describe the
+                living arrangement. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If a woman writer lived with another woman writer, regardless of
+                whether they were acquaintances, lovers, or intimate relations, can I use the LIVESWITH tag or is it reserved only for intimate relationships?</p><p>
+                <b>Answer:</b> Yes. Regardless of whether they were enemies or lovers, if they lived
+                together, they get a LIVESWITH element. This element is available within both <term
+                    keyref="intimate-relationships">INTIMATERELATIONSHIPS</term> and <term
+                    keyref="friendsassociates">FRIENDSASSOCIATES</term> and (<term keyref="family"
+                    >FAMILY</term>) <term keyref="member">MEMBER</term> to allow for a variety of
+                living arrangements. </p>
+        </div>
+    </glossdef>
+</glossentry>

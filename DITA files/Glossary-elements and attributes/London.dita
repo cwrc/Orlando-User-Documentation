@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="london">
+    <glossterm>LONDON</glossterm>
+    <glossdef>
+        <div><u>Definition</u><p>See Practice Issue section of <term keyref="settlement"
+                    >SETTLEMENT</term> for a description of how to capture place information for
+                boroughs of London.</p><p>See Practice Issue section of <term keyref="place-name"
+                    >PLACENAME</term> for a discussion of identifiable London places.</p></div>
+    </glossdef>
+</glossentry>

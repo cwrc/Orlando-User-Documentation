@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="location">
+    <glossterm>LOCATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Big-bucket tag. Location is one of the 16
+                major contents elements used in the <term keyref="biography">BIOGRAPHY</term>
+                section of entries, which are defined as integral to mapping a woman's life. May be
+                used several times in the course of an entry to capture places associated with
+                different life-stages of the subject, and different relations to place (living,
+                travelling, etc.). Only occasionally do you find you must use a paragraph to sum up
+                both early and late local associations. One of the strengths of our electronic
+                literary history will be its ability to make connections between people and places
+                hitherto unknown. Researchers will be able to use our resource to discover who was
+                living in a particular place at the same time or to make connections between
+                historical events and women writers who were living or travelling in that place at
+                the time of the event. For these reasons, this Project emphasizes location and place
+                as one of the major focusses of our research. In addition, we emphasize structuring
+                information concerning location because this makes it possible to generate maps for
+                each writer, tracking her geographical movements over the course of her life. Use
+                    <term keyref="chron-struct">CHRONSTRUCT</term>s when appropriate for structuring
+                entry, but selectively. With no content sub-elements,the tag has a required
+                attribute, <term keyref="relation-to">RELATIONTO</term>, which specifies the kind of
+                location discussed within the element. Like <term keyref="education"
+                    >EDUCATION</term>, this tag must be opened afresh for each attribute value. In
+                the case of <term keyref="moved">MOVED</term> and <term keyref="migrated"
+                    >MIGRATED</term>, try to tag both the start and finish places. Sometimes it’s
+                hard to decide between these two and <term keyref="travelled">TRAVELLED</term> (or
+                between <term keyref="lived">LIVED</term> and <term keyref="moved">MOVED</term> or
+                between <term keyref="lived">LIVED</term> and <term keyref="visited">VISITED</term>
+                - what do you do with a summer place?). We don’t have to record every holiday
+                destination in modern entries.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;LOCATION
+                RELATIONTO=&quot;moved&quot;&gt;DIV2&lt;&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;June
+                1828&lt;/DATE&gt; &lt;CHRONPROSE&gt;Frances Wright left Nashoba for Robert
+                Owen&apos;s colony New Harmony, located in
+                &lt;PLACE&gt;&lt;REGION&gt;Indiana&lt;/REGION&gt;&lt;GEOG
+                REG=&quot;USA&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/LOCATION&gt;
+                &lt;LOCATION RELATIONTO=Travelled&gt;&lt;DIV2&gt;
+                &lt;HEADING&gt;Italy&lt;/HEADING&gt;&lt;SHORTPROSE&gt;&lt;P&gt;RM&apos;s extensive
+                travels began with her family&apos;s sojourn
+                in&lt;PLACE&gt;&lt;GEOG&gt;Italy&lt;/GEOG&gt;&lt;/PLACE&gt;; after they returned to
+                England, she travelled to revisit
+                &lt;PLACE&gt;&lt;SETTLEMENT&gt;Varazze&lt;/SETTLEMENT&gt;&lt;GEOG
+                REG=”Italy”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; on several occasions with her mother. In
+                1905, RM&apos;s bachelor uncles took Rose and her sister to visit
+                place&lt;PLACE&gt;&lt;SETTLEMENT&gt;Naples&lt;/SETTLEMENT&gt;&lt;GEOG
+                REG=”Italy”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; and
+                &lt;PLACE&gt;&lt;SETTLEMENT&gt;Rome&lt;/SETTLEMENT&gt;&lt;GEOG
+                REG=”Italy”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;. RM was also taken by one of her uncles
+                to &lt;PLACE&gt; &lt;SETTLEMENT&gt;Venice&lt;/SETTLEMENT&gt;&lt;GEOG
+                REG=”Italy”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; in 1907.</codeblock><p>Note how the many
+                times RM travelled to Italy are included within the same element and provided with a
+                general section heading of <q>Italy</q>, but how each must have an empty Geog tag
+                attached. (There’s a Venice, California, and a Venice, Florida.)</p>
+            <p>In the following example, the word “Italy” need not be tagged where it stands alone.
+                Users looking for Italy will find this because of the empty GEOG tags.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>All places tagged within Location elements will be assumed to correspond to places
+                where she lived, moved, travelled, etc. These places will be combined with all
+                places tagged within <term keyref="chron-struct">CHRONSTRUCT</term>s inside a <term
+                    keyref="biography">BIOGRAPHY</term> section to map the geographical movements of
+                a writer during his/her lifetime. If her sister travelled to somewhere different,
+                don’t tag the name of that place within Location: it can be tagged, if significant
+                enough, in a paragraph on her sister.</p><p> Don’t use <q>Location</q> as a
+                paragraph heading, but provide a heading that best describes the discussion, or no
+                heading if only a small amount of information is included in the element. For
+                example, for the lengthy discussion of RM’s travels in Italy in the example above,
+                    <q>Italy</q> is given as the heading.</p><p> You can include multiple travels
+                within one element if this makes chronological sense, but in a fairly detailed entry
+                don’t include all information concerning her locations inside one Location element,
+                but use multiple separate <term keyref="div1">DIV1</term> Location elements for
+                appropriate stages in her life and to distinguish between kinds of locations. Try to
+                prevent your prose from becoming formulaic or repetitious. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If I have the information about the dates and places of all of Vera
+                Brittain's various moves and travels, should every event be included in a LOCATION
+                element for the purposes of mapping her life?</p><p>
+                <b>Answer:</b> No. Use your judgement in determining what were the significant moves
+                and travels. You may wish to include those as <term keyref="chron-struct"
+                    >CHRONSTRUCT</term>s, but add prose providing a summary statement concerning her
+                other moves.</p>
+            <p>
+                <b>Question:</b> Where do I put the chronological event of Vera Brittain moving in
+                with Winifred Holtby? <term keyref="intimate-relationships"
+                    >INTIMATERELATIONSHIPS</term>? LOCATION?</p><p>
+                <b>Answer:</b> Decisions about which element would best capture the information will
+                always involve a judgement call. In this instance, you may want to record the move
+                in a LOCATION element. The document will discuss her relationship with Holtby more
+                fully elsewhere, and you could divide the information between both places. </p>
+        </div>
+    </glossdef>
+</glossentry>

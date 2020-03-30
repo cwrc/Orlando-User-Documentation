@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="marriage">
+    <glossterm>MARRIAGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The MARRIAGE sub-element (within <term
+                    keyref="member">MEMBER</term> within <term keyref="family">FAMILY</term> in the
+                    <term keyref="biography">BIOGRAPHY</term> section of entries) is used to capture
+                the event of a person's wedding ceremony or basic facts about her marriage. It has
+                its own <term keyref="div2">DIV2</term> and <term keyref="chron-struct"
+                    >CHRONSTRUCT</term> if needed. Tag the spouse’s name and no other within the
+                tag. Marriage is often a central and defining moment in a woman writer's life and we
+                want to systematize this event. Because of the institutional definition of marriage,
+                we want to separate out the legal act of marriage from the details of married life.
+                For this reason, do not use this element for a detailed discussion of her married
+                life but place such discussions within the general FAMILY/MEMBER=Husband element.
+                Within Marriage tag, specify place and date (with CHRONSTRUCT) of ceremony if
+                possible. We try (but don’t always succeed) to use this tag for the event of
+                marriage with subsequent changes, rather than for decades of married life.
+                Successive marriages and spouses may occupy separate DIV2s, or occasionally the same
+                one if little detail is available.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;FAMILY&gt;&lt;MEMBER
+                RELATION=&quot;husband&quot;&gt;&lt;MARRIAGE&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1917&lt;/DATE&gt;&lt;CHRONPROSE&gt;&lt;NAME
+                STANDARD=”Whipple, Dorothy”&gt;Dorothy Stirrup&lt;/NAME&gt; married
+                &lt;NAME&gt;Alfred Henry Whipple&lt;/NAME&gt;.
+                &lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/MARRIAGE&gt;&lt;/MEMBER&gt;&lt;/FAMILY&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>In almost all cases, enter a marriage ceremony as a chronology event in the subject’s
+                life.</p><p> Use the marriage sub-element only when you are inside a member element
+                and have specified the relation as husband, spouse or wife.</p><p> If you do not
+                know the date of marriage but know your subject was married, include a marriage
+                element with a general prose sentence such as <q>Dorothy Stirrup was married to
+                    Alfred Henry Whipple.</q> (N.b. watch for the fact that historically, women’s
+                names have changed on marriage. <q>Virginia Woolf married Leonard Woolf</q> does not
+                sound right.)</p><p> Do not discuss a separation or divorce inside the MARRIAGE tag
+                unless the flow of your document makes it necessary to include both the marriage and
+                divorce in one sentence. In most instances, the marriage sub-element will be closed
+                and the divorce or separation will be included within a general member
+                relation=husband, spouse or wife. </p>
+        </div>
+    </glossdef>
+</glossentry>
