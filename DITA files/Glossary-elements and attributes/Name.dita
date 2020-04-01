@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="name">
+    <glossterm>NAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>NAME is a global element, available
+                wherever typing is valid, i.e. in <term keyref="chron-prose">CHRONPROSE</term> and
+                    <codeph>&lt;P&gt;</codeph>. It is used to track people across our history of
+                women's writing. If the prose in the tag equals the <term keyref="standard"
+                    >STANDARD</term> name reversed (Jane Austen) don’t fill in the Standard
+                attribute. Any other form (Miss Austen) needs this attribute. We have tried to use
+                as Standard form the one preferred by the subject of the entry or by her
+                contemporaries. Nevertheless Standard has sometimes to be a cumbersome peerage title
+                (Byron, George Gordon,,, sixth Baron). N.b. triple comma there. Standard attribute
+                must always be filled in for names within <term keyref="chron-prose"
+                    >CHRONPROSE</term>s (for timeline search results) but can elsewhere be used
+                selectively, one to a <term keyref="short-prose">SHORTPROSE</term> or
+                    <codeph>&lt;P&gt;</codeph>. The tag should contain only the name of a person and
+                should exclude any extraneous information or punctuation (Dr, Mrs, etc.). Don’t
+                repeatedly tag the name of the subject of an entry: once per <term keyref="div2"
+                    >DIV2</term> is generally the maximum needed; repeat the tag only if the tag
+                context changes. The contents of the NAME element will not only be used to link and
+                to index people but to draw attention to the relationships among people, based on
+                the appearance of names in bio-critical documents, in chronology events, and
+                according to proximity searches across the project.</p></div>
+        <div>
+            <u>Examples</u>
+            <codeblock>&lt;NAME&gt;Virginia
+                Woolf&lt;/NAME&gt;</codeblock><codeblock>&lt;NAME&gt;Sarah
+                Ferguson&lt;/NAME&gt;</codeblock><codeblock>&lt;NAME&gt;Sarah Flower
+                Adams&lt;/NAME&gt;</codeblock><codeblock>&lt;NAME STANDARD=&quot;Louis XVI,, King of
+                France&quot;&gt;Louis XVI&lt;/NAME&gt;</codeblock><codeblock>&lt;NAME
+                STANDARD=&quot;Brougham, Henry Peter,,, Baron&quot;&gt;Lord
+                Brougham&lt;/NAME&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>In order to systematize names across the project, it is important that a person's
+                name always be expressed in a standard fashion. To find a person's standard name
+                please consult the following sources (listed in order of authority). If you cannot
+                find the name in one of these sources or if there is some conflict surrounding the
+                standard name, please consult senior team members.</p><p>i. <ul>
+                    <li>CWRC catalogue/Orlando name authority list ii. FC: for women writers:
+                        (Standard names are written in bold in the FC)</li>
+                    <li> iii. Drabble or ODNB: for male writers</li>
+                    <li> iv. ODNB: for Brit non-writers (except for those with peerage title)</li>
+                    <li> v. BLC online</li>
+                    <li> vi. LC authority files (author name in the Gate)</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <u>When and how to standardize a name</u>
+            <p>Most names that you enter (those given in the entry in normal reading order of
+                Firstname, Lastname) will not require any use of the <term keyref="standard"
+                    >STANDARD</term> attribute: writing “Virginia Woolf” automatically indexes
+                “Woolf, Virginia”. All other names should be regularized using the tag's <term
+                    keyref="standard">STANDARD</term> attribute. The use of commas in standard
+                attributes must be precise in order to accommodate complex names. Please use commas
+                carefully and accordingly:</p><p><ul>
+                    <li>a single comma would place everything that follows it before everything that
+                        precedes it in order to establish natural reading order: Caird, Mona = Mona
+                        Caird. Grove, Sir George = Sir George Grove</li>
+                    <li>a double comma would place everything that follows it at the end of the name
+                        in natural reading order and would add a comma to the display:
+                        Marie-Antoinette,, Queen of France = Marie-Antoinette, Queen of France</li>
+                    <li>a triple comma should appear in combination with a single comma and would
+                        defer to the ordering principle of the single comma but would add a comma as
+                        punctuation: Carlisle, George William Frederick Howard,,, Seventh Earl of =
+                        George William Frederick Howard, Seventh Earl of Carlisle.</li>
+                </ul>
+            </p>
+        </div>
+        <div>
+            <u>Difficult names and how to handle them</u>
+            <p>If the name begins with <b>d', de, von, van</b> and other standard prefixes, and if
+                the person is not indexed in any of the approved list of sources named above, index
+                according to the first capital letter of the surname whether or not it is part of a
+                prefix:</p><p><ul>
+                    <li>Aelders, Etta Palm d'</li>
+                    <li> D'Israeli, Isaac</li>
+                    <li> Kotezebue, August von</li>
+                    <li> La Tourette, Aileen</li>
+                </ul>
+            </p>
+            <p><b>Titles of French people</b> such as comte and marquis should be in lower case:</p><p>
+                <ul>
+                    <li>Artois, comte d'</li>
+                    <li> Condé, prince de</li>
+                </ul>
+            </p><p>Hyphenate all double-barrelled French names:</p><p><ul>
+                    <li>Marie-Antoinette,, Queen of France</li>
+                    <li> Riccoboni, Marie-Jeanne</li>
+                </ul>
+            </p>
+            <p><b>Maiden names, previous names, or future names</b> are very occasionally used as
+                part of the standard name; in most cases their appearance in the prose means it’s
+                necessary to fill in the <term keyref="standard">STANDARD</term> attribute.</p><p><ul>
+                    <li>Susannah Maria (Arne) Cibber (STANDARD=Cibber, Susannah Maria)</li>
+                    <li> Rebecca Harding Davis (STANDARD=Davis, Rebecca Harding)</li>
+                    <li> Virginia Stephen (STANDARD=Woolf, Virginia)</li>
+                </ul>
+            </p><p>Names that have <b>initials</b> in place of first names should be represented
+                with periods and spaces as follows: in text: T. S. Eliot; in Standard attribute:
+                Eliot, T. S.</p><p> Non-peerage titles ought not to be part of standard name, though
+                sources may use them as such. Use abbreviations if appropriate (Mr, Mrs, Mme, M.,
+                Dr, the Rev.) but fill in STANDARD without them. Note that a period follows the
+                abbreviation only when the abbreviation ends in a letter different from the letter
+                that the word itself ends in.</p>
+            <p>
+                <b>Monarchs</b> in standard attribute: please note roman numerals and spelling of
+                Tsar.</p><p> Note different form for monarchs of England or Britain: </p><p><ul>
+                    <li>Henry I, King</li>
+                    <li> Henry IV, King</li>
+                    <li> Richard II, King</li>
+                    <li> Victoria, Queen</li>
+                    <li> Elizabeth II, Queen</li>
+                </ul>
+            </p>
+            <p>Of other countries:</p><p>
+                <ul>
+                    <li>Alexander II,, Tsar of Russia</li>
+                    <li> Catherine the Great,, Queen of Russia</li>
+                    <li> Louis IX,, King of France</li>
+                    <li> Napoleon II,, Emperor of France</li>
+                </ul>
+            </p>
+            <p>The standard name of anyone who becomes or has been a monarch should be their
+                monarchic (normally their final) name. Therefore, fill in the Standard attribute for
+                a Prince of Wales (e.g. the future George III and Edward VIII, despite the latter’s
+                abdication) to the monarchic name.</p>
+            <p><b>Popes and other religious titles</b> in standard attribute: please note roman
+                numerals:</p><p><ul>
+                    <li>John XIII, Pope</li>
+                    <li> Pius IV, Pope</li>
+                    <li> Mary Agnes, Sister</li>
+                    <li> Hanley, Sister</li>
+                </ul>
+            </p>
+            <p><b>Peerage:</b> all people with peerage titles should be indexed by title (not
+                surname) in the <term keyref="standard">STANDARD</term> attribute (the ODNB does
+                this the opposite way, so beware). Use the final title the person held (normally the
+                highest rank they reached) though sources may be using a title they held earlier. If
+                you have both name and title, use both but remember to index according to title; the
+                surname comes later in the STANDARD form. Occasionally you will find a person so
+                well-known by the name they held before they had a peerage title that we have chosen
+                that as Standard name (e.g. Horace Walpole). Defer to the list of sources above in
+                these matters to determine standard name. Spell out all numbers that have to do with
+                peerage titles. Please refer to comma ordering principles listed above.</p><p><ul>
+                    <li>Montagu, Lady Mary Wortley</li>
+                    <li> Stanley, Henrietta Maria,,, Lady</li>
+                    <li> Grove, Sir George</li>
+                    <li> Northbrook, Thomas George Baring,,, first Earl of</li>
+                    <li> Cranworth, Robert Monsey Rolfe,,, first Baron</li>
+                    <li> Condorcet, Marie-Jean-Antoine-Nicolas Caritat,,, marquis de</li>
+                </ul>
+            </p>
+            <p>Notes: <q>Lady</q> with given name means that what was called her courtesy title came
+                from her father’s rank; <q>Lady</q> with surname generally means she got her title
+                by marriage (occasionally in recognition of herself). <q>Marquess</q> is the British
+                spelling for <q>Marquis</q>; use for all British people with this title.
+                    <q>Viscount</q>, <q>Earl</q>, <q>Baron</q>, and <q>Marquess</q> are more precise
+                titles than the more general <q>Lord</q> which covers the bunch; if you have the
+                more precise title, use it.</p>
+            <p><b>When to tag names and when not to:</b> once per tagging environment or per
+                chronEvent (look at the editorial guidelines). (For instance, under <term
+                    keyref="friends-associates">FRIENDSASSOCIATES</term> and under <term
+                    keyref="location">LOCATION</term> as a travelling companion and under <term
+                    keyref="health">HEALTH</term> as a physician.) Use the name tag to identify
+                critics, biographers, or historians on whose work you draw significantly. For names
+                of ships, trains, and the like, use the RS (referring string) element. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Do I need to standardize names that I type in a possessive
+                    form?</p><p><b>Answer:</b> You only need to regularize names that appear in a
+                non-standard form inside a name element. When you use a possessive name, simply
+                leave the 's outside the tag to avoid the need to standardize:
+                    “<codeph>&lt;NAME&gt;Virginia Woolf&lt;/NAME></codeph>'s first draft”. Make sure
+                that no extraneous punctuation is included in the name tag because this will
+                interfere with indexing.</p>
+            <p><b>Question:</b> How do I deal with the names of monarchs to ensure they get
+                alphabetized properly?</p><p><b>Answer:</b>See examples above.</p>
+            <p>
+                <b>Question:</b> Should I tag the Dalai Lama or the Archbishop of Canterbury as
+                names?</p><p><b>Answer:</b>No. Find out, if you can, the current holder of each
+                position, and use this as Standard.</p>
+            <p><b>Question:</b> Can I put more than one name in a name tag?</p><p><b>Answer:</b> No.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>
