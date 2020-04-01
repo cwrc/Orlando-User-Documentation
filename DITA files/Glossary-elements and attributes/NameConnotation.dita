@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="name-connotation">
+    <glossterm>NAMECONNOTATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term is an optional attribute found
+                in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                    <uicontrol><term keyref="nick-name">NICKNAME</term></uicontrol>
+                </menucascade>. Its values, <userinput>abusive</userinput> and
+                    <userinput>honorific</userinput>, distinguish between nicknames for women
+                writers that were either meant to satirize and insult or were intended to honour.
+                For example, Constance Gore-Booth was known in the press by the nickname of <q>Red
+                    Countess</q> and this nickname had negative connotations. We hope to help
+                researchers trace the way gender operates to both abuse and honour women writers
+                through the application of nicknames.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;NICKNAME NAMECONNOTATION=&quot;honorific&quot;
+                NAMETYPE=&quot;literary&quot;&gt;The Queen of the Blues&lt;/NICKNAME&gt; Public Name
+                given to Elizabeth Montagu to recognize her importance in the Bluestocking
+                Circle.</codeblock><codeblock> &lt;NICKNAME NAMECONNOTATION=&quot;honorific&quot;
+                NAMETYPE=&quot;other&quot;&gt;The Lady-in-Chief &lt;/NICKNAME&gt; Above refers to
+                Florence Nightingale.</codeblock><codeblock>&lt;NICKNAME
+                NAMECONNOTATION=&quot;abusive&quot; NAMETYPE=&quot;literary&quot;&gt;Red
+                Countess&lt;/NICKNAME&gt; Negative reference to Constance
+                Gore-Booth.</codeblock><codeblock>&lt;NICKNAME NAMECONNOTATION=&quot;abusive&quot;
+                NAMETYPE=&quot;familiar&quot;&gt;Mrs Perfection&lt;/NICKNAME&gt; Above is the
+                critical nickname by which Mary Wollstonecraft referred to Elizabeth Inchbald.
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Try to use NAMECONNOTATION for all nicknames, but particularly be aware of this
+                attribute when you have a literary nickname. Since we are interested in the public
+                reputation of women writers, whether or not they were nicknamed negatively or
+                positively is important.</p>
+        </div>
+    </glossdef>
+</glossentry>

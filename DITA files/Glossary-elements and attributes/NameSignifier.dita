@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="name-signifier">
+    <glossterm>NAMESIGNIFIER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>NAMESIGNIFIER, an attribute attached to
+                the elements <term keyref="nick-name">NICKNAME</term>, <term keyref="pseudonym"
+                    >PSEUDONYM</term>, and <term keyref="self-constructed">SELFCONSTRUCTED</term>
+                (sub-tags of <term keyref="person-name">PERSONNAME</term> in the Biography section
+                of entries), is used to distinguish the way such names derive their significance,
+                with values of <q>cryptic</q>, <q>local</q>, and <q>romance</q>, according to
+                whether the name signifies a hidden meaning (for instance, a variant or anagram of
+                the writer’s own name), a geographical location or association, or reference to the
+                romance tradition.</p>
+            <p>Use <q>cryptic</q> to designate names that are deliberately obscure. Cryptic names
+                mostly have lexical meaning such as <q>A Housewife</q>, <q>A Lover of her Sex</q>,
+                or <q>A Placid Reader.</q> It follows that personal names are not usually cryptic,
+                with the exception of those borrowed from a fictional character (like <q>Portia</q>,
+                or like Henrietta Battier’s calling herself <q>Patt. Pindar</q>, <q>Pat.
+                    T.Pindar</q> and similar, with a complex allusion - to the satirist John Wolcot,
+                who wrote as <q>Peter Pindar</q>, and to the ancient poet Pindar, whom Wolcot
+                referenced). <q>The Author of . . . </q> is not a nickname, has occasionally been
+                listed as a pseudonym. (Remember to record this title-page identifier in the <term
+                    keyref="writing">WRITING</term> section of the entry under <term
+                    keyref="p-authorship">PAUTHORSHIP</term>, using the
+                    <userinput>allusive</userinput> value.)</p><p> Use <q>local when the person is
+                    known by a geographic connotation, for example "Julian of Norwich</q>, <q>Ann of
+                    Swansea</q>. Use <q>romance</q> in cases where a name is associated with writing
+                romances, or with romantic writing, for example Stella, Fidelia, Rosa
+            Matilda.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Janet Little wrote as&lt;PSEUDONYM
+                WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;
+                NAMESIGNIFIER=&quot;cryptic&quot;&gt;&lt;SOCALLED&gt;The Scotch
+                Milkmaid.&lt;/SOCALLED&gt;&lt;/PSEUDONYM&gt;</codeblock><codeblock>Anne
+                Grant&lt;NICKNAME WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;
+                NAMESIGNIFIER=&quot;Local&quot; &gt;of Laggan&lt;/NICKNAME&gt; Above is a nickname
+                of Anne Grant of Laggan.</codeblock><codeblock>&lt;PSEUDONYM
+                WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot; NAMESIGNIFIER=&quot;romance&quot;
+                REG=&quot;Astrea&quot;&gt;Astrea or Astraea&lt;/PSEUDONYM&gt;; this is a pseudonym
+                of Aphra Behn.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Remember to use this attribute if any of its three values apply to your name. If not,
+                leave blank. Familial nicknames may be cryptic. For example, Sarah Scott was
+                referred to within her family as <q>Pea</q> (from the idea that she and her sister
+                were like two peas in a pod). There are cases where a personal name can take the
+                cryptic attribute. For example, when Henrietta Battier called herself <q>Patt.
+                    Pindar</q>, <q>Pat. T.Pindar</q> and similar, it was not that she was pretending
+                to be called Pat, but with a double allusion - she was implying she was a spiritual
+                sister of the famous satirist John Wolcot, who wrote as <q>Peter Pindar</q> (which
+                is in itself an allusion to the ancient poet Pindar). In cases like this, use the
+                cryptic attribute but please explain in a scholar's note the nature and meaning of
+                the name for future readers. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Rebecca West's husband referred to her romantically and affectionately as <q>Rac.</q> Is this a romance nickname?</p><p>
+                <b>Answer:</b> No. Romance applies to a specific type of name used in romance writing.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

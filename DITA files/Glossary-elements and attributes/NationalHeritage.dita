@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="national-heritage">
+    <glossterm>NATIONALHERITAGE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-tag is available only within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It could also be within might or might not also be within <term
+                    keyref="nationality-issue">NATIONALITYISSUE</term> or <term
+                    keyref="race-and-ethnicity">RACEANDETHNICITY</term>) to signify a legal
+                nationality not held by the subject of the entry but by one or more of her
+                ancestors, either immediate or distant (if the family is still aware of this
+                heritage). Normally encloses just one word. NationalityHeritage captures information
+                about the nationality of a person's family which contributes to an understanding of
+                their racial and ethnic background. With value <userinput>Welsh</userinput> it might
+                record a writer’s emotional connection with Wales despite birth and lifelong
+                residence in England. It gestures towards hyphenated identities such as
+                    <q>Japanese-Canadian</q>. While Joy Kogawa's nationality is Canadian, her
+                national heritage is Japanese. See RACEANDETHNICITY for a detailed description of
+                the complexities of this element. It has optional attributes of <term
+                    keyref="current-alternative-term">CURRENTALTERNATIVETERM,</term>
+                <term keyref="forebear">FOREBEAR</term>, <term keyref="self-defined"
+                    >SELF-DEFINED</term>, and <term keyref="reg">REG</term>. REG allows you to
+                represent the national heritage in a more precise or standardised way, whether or
+                not you have been able to do so in your prose. FOREBEAR provides a means of
+                attributing this heritage to an individual, recognizing an Irish grandmother for
+                instance.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Both of Aguilar&apos;s parents were presumably white and of
+                &lt;NATIONALHERRITAGE
+                FOREBEAR=&quot;parents&quot;&gt;Spanish&lt;/NATIONALHERRITAGE&gt;- Jewish
+                descent.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>In answer to the question of whether or not Irish, Scottish, English, Welsh would
+                call for <term keyref="geog-herritage">GEOGHERRITAGE</term> or <term
+                    keyref="national-herritage">NATIONALHERRITAGE</term> elements, please feel free
+                to use either, according to your material.</p>
+        </div>
+    </glossdef>
+</glossentry>

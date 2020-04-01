@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="nametype">
+    <glossterm>NAMETYPE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>NAMETYPE is a field in the Bibliography
+                Database which functions in a very similar way to <term keyref="author-name-type"
+                    >AUTHORNAMETYPE</term> in <term keyref="writing">WRITING</term> sections of
+                entries: it distinguishes between different kinds of authorship, such as anonymous
+                and pseudonymous texts; texts claimed by allusion to other texts; and those authored
+                by more than a single hand. The NAMETYPE field in the Bibliography Database differs
+                in offering two further options: <userinput>Used</userinput> and
+                    <userinput>Doubtful</userinput> (issues which the schema deals with in different
+                ways).</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The NAMETYPE field is used only when a writer publishes under a name other than her
+                Standard Name. Select the NAMETYPE which best describes the Name entered in the
+                    <q>Published As</q> field.</p><p><ul>
+                    <li><b>Anonymous</b> -- indicates texts which appeared with no name on the title
+                        page or no name attached to them, or with the generic <q>By A Lady</q></li>
+                    <li>Pseudonymous -- indicates texts published or circulated under a fictional or
+                        assumed name</li>
+                    <li><b>Allusive Authorship</b> -- indicates texts published under a phrase which
+                        alludes to other works by that writer -- for example, <q>By the Author of
+                            David Simple</q></li>
+                    <li><b>Collaborative Authorship</b> -- indicates texts where the title-page
+                        lists or other sources supply more than one author name</li>
+                    <li><b>Used Name</b> -- indicates texts which appeared under some variation of a
+                        writer's name which is different from the Standard Name. Used Names are not
+                        pseudonyms because they are not fictional or assumed names; Used Names are
+                        required when a writer did not publish under her Standard Name. For example,
+                        Mary Augusta Ward (Standard Name) published as Mrs Humphry Ward (Used
+                        Name).</li>
+                    <li><b>Doubtful</b> -- indicates issues of acription: misattributions, possible
+                        misattributions, and texts which were published under a writer's name but
+                        may not have been written by her. The Bibliography Database requires that
+                        all bibliogitems be entered under a writer's Standard Name in order to group
+                        these texts together. Doubtful indicates that a particular text may well
+                        have been misattributed to her; however, this text still needs to be entered
+                        in the Bibliography Database linked to her Standard Name in order to group
+                        it together with other texts by her.</li>
+                </ul></p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> My BWW published all of her works under her Standard Name. Do I need
+                to fill out the NAMETYPE field?</p><p><b>Answer:</b> No. Leave the NAMETYPE field
+                at its default, or blank, setting.</p>
+        </div>
+    </glossdef>
+</glossentry>

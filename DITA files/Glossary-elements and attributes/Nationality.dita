@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="nationality">
+    <glossterm>NATIONALITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-tag is used to signify the entry
+                subject’s legal nationality and is is available only with <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. Within those tags, it also may or may not be within <term
+                    keyref="nationality-issue">NATIONALITYISSUE</term>. It normally encloses a
+                single word. May be used several times in cases of dual or serial nationality. N.b.
+                For the purpose of this tag English, Scottish, Welsh, and Northern Irish can be used
+                as alternatives to British as if they were (already!!) actual nationalities. This
+                element has optional attributes, <term keyref="current-alternative-term"
+                    >CURRENTALTERNATIVETERM</term>, <term keyref="self-defined">SELFDEFINED</term>,
+                and <term keyref="reg">REG</term>, which allows you to express the nationality in a
+                standard form if it is not easy to do so in prose, or when an obsolete or local term
+                (like Hibernian for Irish) has been used in a source.. NATIONALITY might be placed
+                not only in NATIONALITY ISSUE but also, if it fits the prose account, within any of
+                the other sub-elements available in CULTURALFORMATION: <term keyref="class-issue"
+                    >CLASSISSUE</term>, <term keyref="race-and-ethnicity">RACEANDETHNICITY</term>,
+                    <term keyref="race-issue">RACEISSUE</term>, <term keyref="geog-herritage"
+                    >GEOGHERRITAGE</term>, <term keyref="national-herritage"
+                    >NATIONALHERRITAGE</term>, <term keyref="political-affiliation"
+                    >POLITICALAFFILIATION</term>, <term keyref="ethnicity">ETHNICITY</term>, <term
+                    keyref="religion">RELIGION</term>, <term keyref="gender-issue"
+                    >GENDERISSUE</term>, and <term keyref="sexuality">SEXUALITY</term>. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>She was born in&lt;NATIONALITY REG=Welsh&gt;Cardiff&lt;/NATIONALITY&gt;, but
+                later moved to Ireland. &lt;NATIONALITY&gt;Irish&lt;/NATIONALITY&gt; by birth, KL
+                moved to London in her later life. PJB was a
+                &lt;NATIONALITY&gt;Scottish&lt;/NATIONALITY&gt;writer, and her later work reveals a
+                Unitarian bent.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Use Irish, NorthernIrish, Scottish, Welsh, English wherever possible in preference to
+                British. To the best of your ability, include a British woman writer's specific
+                nationality in order to allow us to sub-divide writers into these categories.</p><p>
+                Do not use the term <q>British</q> for anyone prior to 1707, which is the date of
+                the Union of England and Scotland.</p><p> Use of this element assumes that the
+                nationality tagged applies to the subject of the biography. Do NOT use for the
+                nationality of her parents or spouse unless it was also her nationality. If it was
+                not, then tag her parents’ nationality as <term keyref="national-herritage"
+                    >NATIONALHERRITAGE</term>.</p><p> Including a brief CulturalFormation element
+                following the Chronstruct giving the date and place of her birth. allows the
+                researcher if necessary to rephrase information already given in birth. For example,
+                after including <q>Dublin</q> as the place of her birth, the researcher should
+                consider including a statement such as <q>Irish by birth, she came from a
+                    working-class family.</q>
+            </p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p><b>Question:</b> If she was born in Scotland and then moved to London at the age of
+                20, do I put in another nationality element?</p><p>
+                <b>Answer:</b> It depends on the context of the writer's life. Certainly note the
+                Scottish origins if there is any indication of the author's interest in her Scottish
+                identity. If she clearly thought of herself as English even though she was Scottish,
+                you might want to tag her Scottish nationality with the attribute
+                <term keyref="self-defined">SELFDEFINED</term>=<q>selfNo</q> and her English nationality as SELFDEFINED=<q>selfYes.</q></p>
+        </div>
+    </glossdef>
+</glossentry>
