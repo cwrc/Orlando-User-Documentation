@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="other-life-event">
+    <glossterm>OTHERLIFEEVENT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>OTHERLIFEEVENT is one of the 16
+                big-bucket tags found in the <term keyref="biography">BIOGRAPHY</term> section of
+                entries. It is used for what doesn’t fit elsewhere: often accidents, crime, legal
+                issues, imprisonment. A <term keyref="div1">DIV1</term> content element that allows
+                you to relate unclassifiable biographical events not covered by any of the other
+                DIV1 elements, it has no content sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;OTHERLIFEEVENT&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1797&lt;/DATE&gt;&lt;CHRONPROSE&gt;MC
+                allegedly helped to steal a horse from John Cobbold; after riding the horse to
+                London disguised in men’s clothes, she was arrested for theft, and sent for legal
+                trial.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/OTHERLIFEEVENT&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Since the category of this element is so weak, try to use vocabulary that will link
+                the event to similar ones. (Several words in the example would otherwise be
+                redundant.)</p>
+            <p> Avoid using this element; if you find yourself using it often, you are probably
+                missing other important elements. It has occasionally been used (incorrectly) to
+                cover such issues as finances or illnesses (which have other elements, <term
+                    keyref="wealth">WEALTH</term> and <term keyref="health">HEALTH</term>,
+                specifically addressing those topics). Don’t use it for life events other than those
+                related to the entry subject.</p><p> Do not use for non-literary cultural
+                activities, such as art exhibits. Include such activities in LeisureAndSociety. </p>
+        </div>
+    </glossdef>
+</glossentry>

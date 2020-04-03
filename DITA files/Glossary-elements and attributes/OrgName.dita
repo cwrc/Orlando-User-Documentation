@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="org-name">
+    <glossterm>ORGNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The ORGNAME element, a core tag available
+                throughout the textbase wherever typing is allowed, is used to identify schools,
+                companies, and any other type of recognized organization. It includes the name of
+                the organization only, with no comment or punctuation. We aim to avoid duplication
+                in naming but have not always succeeded, since organizations can last for
+                generations and repeatedly change their names; nor have we been consistent in
+                dealing with multiplicity, e.g. organizations that have many local branches. Check
+                existing textbase to see if <q>Little Wittering Women’s Institute</q> is given a
+                different ORGNAME from <q>Women’s Institute</q> and try to avoid adding to this
+                problem. This tag is modified by the attributes <term keyref="reg">REG</term>, <term
+                    keyref="standard">STANDARD</term>, and <term keyref="org-type">ORGTYPE</term>.
+                    <term keyref="reg">REG</term> is used to indicate the regularized form of the
+                organization name at the time contemporary to the reference (for clarification or
+                correction); <term keyref="standard">STANDARD</term> is used to indicate the
+                standard non-historically specific organization name.</p>
+            <p>Attribute <term keyref="reg">REG</term> on ORGNAME: don’t use.</p>
+            <p>Attribute <term keyref="standard">STANDARD</term> on ORGNAME. Until now instructions
+                say: insert the name in the ORGNAME Authority List; add additional forms of name as
+                Form. Example of use of these two: <codeph>&lt;ORGNAME REG=Society for the
+                    Encouragement of Arts,, Manufactures and Commerce STANDARD=Royal Society for the
+                    Encouragement of Arts,, Manufactures and Commerce&gt; Royal Society of Arts,
+                    Manufactures and Commerce&lt;/ORGNAME&gt;.</codeph></p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>If the leading article is part of the ORGNAME (the, a, an) include it in the tag. If
+                it is not part of the ORGNAME, place it outside the tag.</p><p>It is project
+                practice to place a comma before the <q>and</q> when listing items in a series.
+                However, when writing an ORGNAME, use the format as it appears in the original
+                source: don't change the comma to conform to project practice. If the same
+                organization is referred to multiple ways in our documents (with respect to commas)
+                opt for the majority or defer to the project practice. ORGNAMEs that have initials
+                should be represented with periods and spaces as follows: A. K. Newman. Do not
+                reverse order of such ORGNAMEs in standard attribute as you do for personal
+                names.</p><p>If you need to tag a personal name that is part of the ORGNAME, you can
+                use an empty tag regularised to the proper name; insert the empty element directly
+                after the ORGNAME to which it refers. In general, the <term keyref="reg">REG</term>
+                attribute allows you to insert the correct name of an organization when it has not
+                otherwise been possible. For example, all adjectival forms of organizations should
+                be standardised as proper nouns. This means that all instances of <q>Anglican</q>
+                would be standardised as Anglican Church. Catholic or Roman Catholicism would be
+                standardised as Roman Catholic Church.</p><p>The REG attribute on ORGNAME is used to
+                indicate the regularized form of the organization name at the time contemporary with
+                the reference to it; STANDARD is used to indicate the standard or non-historically
+                specific organization name. If a value for one or both of these attributes is not
+                specified, then the system takes what is given in the text of the tag as the default
+                value(s). ORGNAMEs vary over time. Use the REG attribute the indicate the name of
+                the organization contemporary to the reference of it in the Orlando document. The
+                Standard attribute allows you to standardize an organization's name. In many cases
+                the two names will be the same. If they are the same and the text of the tag
+                contains this standard ORGNAME, then you will not need to fill in any
+                attributes.</p><p>If an ORGNAME is standardly and commonly known as an abbreviation,
+                use the abbreviation as the standard and use the full form of the name as in the reg
+                attribute: <codeph>&lt;ORGNAME STANDARD=”BBC” REG=”British Broadcasting
+                    Corporation”&gt;BBC&lt;/ORGNAME&gt;</codeph>or <codeph>&lt;ORGNAME STANDARD=”PEN
+                    International” REG=”Society of Poets, Essayists, and Novelists”&gt;PEN
+                    &lt;/ORGNAME&gt;</codeph>.</p><p>In complex ORGNAMEs the use of commas in the
+                standard attribute must be precise. A single comma would place everything that
+                follows it before everything that precedes it, establish a natural reading order as
+                in a simple personal name: Austen, Jane = Jane Austen; Friends, Society of = Society
+                of Friends. A double comma will place everything that follows it at the end of the
+                orgName in natural reading order and will add a comma in displaying the Orgname:.
+                Burns,, Lambert and Oates = Burns, Lambert and Oates. Use this form as appropriate.
+                If you encounter ORGNAMEs more complex than can be accommodated by single and double
+                commas, please consult the triple comma rule under <term keyref="name"
+                >NAME</term>.</p><p>Please note: these rules for using commas apply only in the
+                    <term keyref="standard">STANDARD</term> and <term keyref="reg">REG</term>
+                attributes. To check the STANDARD form of an ORGNAME, check first the Orlando
+                Orgname Authority List. If it’s not there, find your new ORGNAME in Whitaker's
+                Almanack or The London Encyclopedia. Sally Mitchell's Victorian Britain and the New
+                Cambridge Companion to Victorian Literature and Culture are good sources for the
+                nineteenth-century period.</p><p>When a geographical place is not part of the
+                STANDARD name of an organization, do not include it in the standard attribute as a
+                referent but do use a place tag (silent or not) following the ORGNAME tag. You do
+                not need to add a place tag if the place has been tagged elsewhere in a CHRONSTRUCT
+                or a SHORTPROSE. An exception to this rule: include place in the standard attribute
+                of an ORGNAME only when two or more places of identical name but different
+                jurisdiction exist in the system: University College,, Sheffield; University
+                College,, Dundee; University College,,Cardiff. Research notes should not appear
+                inside an ORGNAME tag. </p>
+        </div>
+        <div>
+            <u>Colleges and Universities</u>
+            <p>Do not reverse the order of <q>University of xxx</q> in the standard attribute.
+                Correct: University of Leeds. Use Oxford University and Cambridge University as the
+                standard name for those institutions. For others consult first the Orlando list, or
+                failing that <i>Whitaker's Almanack</i>. The University of Manchester, Victoria
+                University of Manchester, and Owens College are different/historically specific ways
+                of referring to what is now the University of Manchester. Please standardise all
+                instances to the latter, so that the proper rendering is as
+                    follows:</p><p><codeph>&lt;ORGNAME STANDARD = University of Manchester&gt;Owens
+                    College&lt;/ORGNAME&gt;</codeph></p><p>For all colleges of Oxford University,
+                Cambridge University and the University of London, please make sure standard
+                attribute is filled in to refer to both college and larger university. You can find
+                a list of all the colleges of these institutions in <i>Whitaker's
+                    Almanack</i>.</p><p><codeph>&lt;ORGNAME STANDARD “St Hilda&apos;s College,,
+                    Oxford University”&gt;St Hilda&apos;s College&lt;/ORGNAME&gt;</codeph></p>
+        </div>
+        <div>
+            <u>Theatres</u>
+            <p>London theatres have changed their names a lot. The name Theatre Royal has been
+                conferred on at least three theatres in London and plenty elsewhere. Standardised as
+                follows:</p><p><codeph>&lt;ORGNAME STANDARD = Theatre Royal,, Covent
+                    Garden&gt;Covent Garden&lt;/ORGNAME&gt;.&lt;ORGNAME STANDARD= Theatre Royal,,
+                    Drury Lane&gt;Drury Lane&lt;/ORGNAME&gt;.&lt;ORGNAME STANDARD= Theatre Royal,,
+                    Haymarket&gt; Haymarket&lt;/ORGNAME&gt;, &lt;ORGNAME STANDARD= Theatre Royal,,
+                    Bath&gt; Theatre Royal&lt;/ORGNAME&gt;.</codeph></p>
+        </div>
+        <div>
+            <u>Churches</u>
+            <p>Standardise all instances of Anglican (including Church of England, Church of
+                Ireland, Church of India, Church of South India, and Episcopalian), to Anglican
+                Church.</p>
+        </div>
+        <div>
+            <u>Governments and Parliaments</u>
+            <p>For British Parliament, use only <q>parliament</q> with capital <q>P</q>;
+                standardised as such only if prose demands lowercase <q>p</q>. Standardise all
+                instances of British government to <q>parliament</q> as well but use the more
+                specific House of Commons and House of Lords where applicable. For other governments
+                and parliaments, use adjectival form for jurisdiction before the word Parliament (or
+                equivalent): Irish Parliament, United States Congress. Do not standardise as
+                    <q>Parliament, Irish</q>.</p><p>For the Tory Party vs Conservative Party and
+                Whig Party vs Liberal Party, do the following: Pre 1830: <codeph>&lt;ORGNAME
+                    STANDARD <q>Conservative Party REG</q>
+                    <q>Tory Party</q>&gt;</codeph>. This means that today's standard is Conservative
+                Party but it was then regularly known as the Tory Party. After 1830, the Standard
+                attribute should read <q>Conservative Party</q> and the Reg attribute should read
+                    <q>Conservative.</q> Before June 1859, Standard = Liberal Party and Reg = Whig
+                Party. The party but it was then standardly known as the Whig Party; after June 1859
+                the Standard became Liberal Party, with the REG also = Liberal Party. From 1981 to
+                1987 the party’s name was Social Democratic Party; after 1987 it was Liberal
+                Democratic Party. Each takes the attribute Standard value of <q>Liberal
+                Party</q>.</p>
+        </div>
+        <div>
+            <u>Publishers</u>
+            <p>For publishers whose name is also a person's name, standardise and reg as the name in
+                the natural reading order.<codeph> &lt;ORGNAME&gt;Jonathan Cape&lt;/ORGNAME&gt; or
+                    &lt;ORGNAME STANDARD= Jonathan Cape reg = Jonathan Cape&gt;Cape
+                    &lt;/ORGNAME&gt;</codeph>(It may be a judgement call whether a person or
+                individual is meant.) To check the proper name of a publisher, first check to see if
+                there is an event on the founding of the company and standardise according to how
+                the ORGNAME appears in that event.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Should I tag journal titles as ORGNAMEs?</p><p><b>Answer:</b>
+                No.</p>
+            <p>
+                <b>Question:</b> Can I use an ORGNAME tag to cover more than one
+                    ORGNAME?</p><p><b>Answer:</b> No, they must be tagged separately. </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="occupation">
+    <glossterm>OCCUPATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>One of the 16 big-bucket, <term
+                    keyref="div1">DIV1</term>, content tags in the <term keyref="biography"
+                    >BIOGRAPHY</term> section of entries defined as integral to mapping a woman's
+                life, OCCUPATION is the element for capturing work both paid and unpaid (with
+                sub-tags <term keyref="job">JOB</term> and <term keyref="significant-activity"
+                    >SIGNIFICANTACTIVITY</term>, plus <term keyref="employer">EMPLOYER</term> and
+                    <term keyref="remuneration">REMUNERATION</term>). We are particularly interested
+                in the gendered nature of employment and emphasize the need to include unpaid,
+                underpaid, and domestic jobs under occupation. We are also interested in the sexual
+                division of labour and hope to track the types of jobs women held and how these jobs
+                changed and developed across historical periods.</p>
+            <p> Remember the 20 most frequently-used job definitions provide material for the People
+                entry point on Orlando’s Homepage for listing entries by OCCUPATION. (Take a look at
+                this list in the published text to refresh your memory.)</p>
+            <p> This element can be used several times in one <term keyref="biography"
+                    >BIOGRAPHY</term> section. Where possible it should be placed in chronological
+                order according to when she did this work; often OCCUPATION elements will follow
+                    <term keyref="education">EDUCATION</term> and <term keyref="family"
+                    >FAMILY</term> elements but placement will depend upon the particular life.
+                Significant new jobs should be entered as <term keyref="chron-struct"
+                    >CHRONSTRUCT</term>s so that her working life will be represented in her
+                chronology. </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;OCCUPATION&gt;&lt;DIV2&gt;&lt;HEADING&gt;World War
+                I&lt;/HEADING&gt;&lt;CHRONSTRUCT&gt;&lt;DATERANGE&gt;1916-1919&lt;/DATRANGE&gt;&lt;CHRONPROSE&gt;
+                During WWI, CO was a &lt;JOB&gt;nurse&lt;/JOB&gt; for the
+                &lt;EMPLOYER&gt;&lt;ORGNAME&gt;British Red Cross
+                Society.&lt;/ORGNAME&gt;&lt;/EMPLOYER&gt;&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/OCCUPATION&gt;</codeblock><p>In
+                the above example, the first entry of the Occupation element is given a sub-heading
+                of WWI (this Occupation tag contains other <term keyref="div2">DIV2</term>
+                sub-heading for her various other careers). Often OCCUPATION headings will refer to
+                the specific kinds of work she was involved in rather than a general OCCUPATION
+                heading.</p><codeblock> &lt;OCCUPATION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;P.
+                D. A. Thomas invited his daughter MHR to work as his &lt;JOB
+                FAMILYBUSINESS=&quot;FamilyBusinessYes&quot;&gt; personal assistant&lt;/JOB&gt; in
+                &lt;DATE&gt;1914&lt;/DATE&gt; at &lt;REMUNERATION&gt;¥1000 per
+                year&lt;/REMUNERATION&gt;. She was so successful that by mid-1914 he turned over the
+                &lt;ORGNAME&gt;Thomas newspaper&lt;/ORGNAME&gt; interests to her.&lt;/P&gt;
+                &lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/OCCUPATION&gt;</codeblock><codeblock>&lt;OCCUPATION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;Along
+                with her husband, AA became a&lt;JOB&gt; preacher&lt;/JOB&gt; after converting to
+                Quakerism In the above example, her preaching is entered under Occupation in order
+                to capture preaching as an occupation of women, particularly early women writers.
+                However, her conversion and her status as a Quaker are also crucial information to
+                our critical history and must be included inside a Religion element inside a
+                CulturalFormation element.&lt;/P&gt;
+                &lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/OCCUPATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Work associated with writing (for example, editing, review writing, playwriting,
+                journalism, etc.) does not go under OCCUPATION. Do not include here. We assume that
+                for our purposes all British Women Writers were writers first and foremost and all
+                information about her career as a writer belongs in her Writing document. Only
+                include editing or journalism work, for example, if it clearly was her day job and
+                had nothing to do with her own writing. Do Not Include: GA was poetry editor of
+                    <i>City Limits</i>.</p><p> All jobs and significant activities tagged inside
+                Occupation are assumed to be the activities of the subject of the biography. Do not
+                insert an Occupation-Job tag around, for example, her brother's job in the following
+                    <q> While her brother was a doctor, her family did not support female doctors,
+                    so instead she became a
+                <codeph>&lt;JOB&gt;nurse&lt;/JOB&gt;.</codeph></q></p><p> If a person was employed
+                by a university, the university is tagged as an <term keyref="employer"
+                    >EMPLOYER</term> enclosing an <term keyref="org-name">ORGNAME</term>, all inside
+                OCCUPATION. If she went to the university as a student, then the university is
+                tagged as a <term keyref="school">SCHOOL</term> enclosing an <term keyref="org-name"
+                    >ORGNAME</term>, all inside <term keyref="education">EDUCATION</term>.</p><p> MS
+                was a teacher at &lt;EMPLOYER&gt;&lt;ORGNAME&gt;Manchester
+                University&lt;/ORGNAME&gt;&lt;/EMPLOYER>. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If a woman writer worked for a pro-choice organization and was paid
+                for her work, should this be included under OCCUPATION or POLITICS?</p><p>
+                <b>Answer:</b> You will often find yourself making such judgement calls and the
+                answer will depend on the context. But if she, herself, was pro-choice then the
+                activity should be included under <term keyref="politics">POLITICS</term>. If your
+                document flow allows, you may wish to include this information in different ways in
+                two elements.</p>
+            <p>
+                <b>Question:</b> If a woman writer wrote reviews for magazines, do I include this
+                under occupation?</p><p>
+                <b>Answer:</b> No. All work associated with her writing career is included in her
+                Writing document.</p>
+            <p>
+                <b>Question:</b> How would I tag information that Selina Bunbury kept house for her
+                brother? Under a family or occupation element?</p><p>
+                <b>Answer:</b> OCCUPATION. Since we are interested in tracking women's unpaid
+                domestic work, being able to capture this information (housekeeping as a <term
+                    keyref="significantactivity">SIGNIFICANTACTIVITY</term>) is worth going out of a
+                Family element to insert an OCCUPATION element.</p>
+            <p>
+                <b>Question:</b> If a woman writer taught at a school, do I include it under <term
+                    keyref="EDUCATION">EDUCATION</term> to put a school tag around the name of the
+                school?</p><p>
+                <b>Answer:</b> No. If a school was her employer, include under OCCUPATION and tag
+                the school as an <term keyref="employer">EMPLOYER</term> and an <term
+                    keyref="org-name">ORGNAME</term>. </p>
+        </div>
+    </glossdef>
+</glossentry>

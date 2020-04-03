@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-penalties">
+    <glossterm>RPENALTIES</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                </menucascade>. It encloses at least a sentence, or a statement long enough for
+                clarity, about negative or harmful consequences of writing—family disapproval, legal
+                action, imprisonment, banning of text (see attribute <term keyref="censorship"
+                    >CENSORSHIP</term>), etc. It has one optional attribute, CENSORSHIP, with a
+                value of <q>CensorshipYes</q>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RPENALTIES CENSORSHIP=&quot;CensorshipYes&quot;&gt;Elizabeth Cellier and
+                her publisher were both arrested and made to give security for their future good
+                behaviour. Copies of her book were burned, and she was sentenced to stand in the
+                pillory three times.&lt;/RPENALTIES&gt; &lt;RPENALTIES&gt;Maggie Lisp was thrown out
+                of her home when her parents discovered she had been writing
+                poetry.&lt;/RPENALTIES&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>These penalties should be event-centred and not deal with individual reviews or
+                overall movements.</p>
+        </div>
+    </glossdef>
+</glossentry>

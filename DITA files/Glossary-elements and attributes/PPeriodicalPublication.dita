@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-periodical-publication">
+    <glossterm>PPERIODICALPUBLICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It provides a home for commentary about a writer's (or text's)
+                publication history in periodicals. It captures a statement, often a <term
+                    keyref="chron-struct">CHRONSTRUCT</term>. For serialized novels an entry-writer
+                must choose whether to supply a CHRONSTRUCT for volume publication or for the first
+                part of a serialization (or very occasionally both). Can also enclose minimal
+                statement (she wrote for at least a dozen newspapers over the course of her career.)
+                It has no mandatory attributes or sub-elements.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PPERIODICALPUBLICATION&gt;From 1914 to 1917, Mina Loy published over
+                fifty poems in little magazines including the Blind
+                Man.&lt;/PPERIODICALPUBLICATION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This is not the same as serialization.</p><p> PPERIODICALPUBLICATION should not be
+                used if someone published their own periodical, unless they also contributed to it.
+            </p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="number">
+    <glossterm>NUMBER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Number is an optional attribute attached
+                to <term keyref="children">CHILDREN</term> (within <term keyref="family"
+                    >FAMILY</term>, in the <term keyref="biography">BIOGRAPHY</term> section of
+                entries) which allows you to enter the figure (only) for the number of children that
+                a writer had. Use figures not words. N.b. this is from the mother’s point of view,
+                so include stillborn or short-lived babies.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CHILDREN NUMBER=&quot;2&quot;&gt;two
+                children&lt;/CHILDREN&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Do not include empty children elements with attribute values. If she had two
+                children, say so in the prose. If sources say <q>seven or eight</q> use your
+                judgement!</p>
+        </div>
+    </glossdef>
+</glossentry>

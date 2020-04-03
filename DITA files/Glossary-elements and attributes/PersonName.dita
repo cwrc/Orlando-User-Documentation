@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="person-name">
+    <glossterm>PERSONNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The only big-bucket tag using Datastructs
+                instead of prose (which it does not allow), and a reminder that most writers had, or
+                have, more than one name in use. PERSONNAME is the first <term keyref="div1"
+                    >DIV1</term> content element placed within a <term keyref="biography"
+                    >BIOGRAPHY</term> section, one of the 16 major elements defined as integral to
+                mapping a woman's life. While the <term keyref="name">NAME</term> element indexes
+                all standard names, PersonName allows the researcher to provide the details and all
+                the variants of one person's name(s). It has the following sub-elements to capture
+                specific names: <term keyref="birth-name">BIRTHNAME</term>, <term keyref="given"
+                    >GIVEN</term>, <term keyref="surname">SURNAME</term>, <term keyref="indexed"
+                    >INDEXED</term>, <term keyref="married">MARRIED</term>, <term keyref="nick-name"
+                    >NICKNAME</term>, <term keyref="pseudonym">PSEUDONYM</term>, <term
+                    keyref="religious-name">RELIGIOUSNAME</term>, <term keyref="royal">ROYAL</term>,
+                    <term keyref="self-titled">SELFTITLED</term>, <term keyref="styled"
+                    >STYLED</term>, <term keyref="titled">TITLED</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PERSONNAME&gt;&lt;DIV2&gt;&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Mary&lt;/GIVEN&gt;&lt;SURNAME&gt;Walker
+                &lt;/SURNAME&gt;&lt;/BIRTHNAME&gt;&lt;/DATAITEM&gt; &lt;DATAITEM&gt; &lt;MARRIED
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Bailey&lt;/MARRIED&lt;/DATASTRUCT&gt;&lt;/DIV2&gt;&lt;/PERSONNAME&gt;
+                &lt;PERSONNAME&gt;&lt;DIV2&gt;&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;BIRTHNAME&gt;&lt;GIVEN&gt;Cecil&lt;/GIVEN&gt;&lt;/DATAITEM&gt;&lt;SCHOLARNOTE&gt;&lt;P&gt;Brown
+                gives &apos;Cecilia&apos; as her given
+                name.&lt;/P&gt;&lt;/SCHOLARNOTE&gt;&lt;/DATASTRUCT&gt;&lt;/DIV2&gt;&lt;/PERSONNAME&gt;</codeblock><codeblock>
+                &lt;PERSONNAME&gt;&lt;DIV2&gt;&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;NICKNAME
+                NAMETYPE=familiar&gt;Kitty&lt;/NAMETYPE&gt;&lt;/DATAITEM&gt;&lt;SHORTPROSE&gt;&lt;P&gt;KJ
+                received her nickname Kitty from her sister,
+                Nancy.&lt;/P&gt;&lt;/SCHOLARNOTE&gt;&lt;/DATASTRUCT&gt;&lt;/DIV2&gt;&lt;/PERSONNAME&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>All names with the exception of <term keyref="given">GIVEN</term> and <term
+                    keyref="surname">SURNAME</term> (both within <term keyref="birth-name"
+                    >BIRTHNAME</term>) require separate <term keyref="data-item">DATAITEM</term>s.
+                For example, use separate DATAITEMs for her <term keyref="birth-name"
+                    >BIRTHNAME</term> and her <term keyref="married">MARRIED</term> name or for any
+                names that would not normally go together. There will, however, be instances when
+                you want to include more than one element within one DATAITEM. For instance, it is
+                logical to use the <term keyref="titled">TITLED</term> tag inside the same DATAITEM
+                as <term keyref="married">MARRIED</term> if, in fact, the name and title go together
+                as parts of a single
+                    identity.</p><p><codeph>&lt;PERSONNAME&gt;&lt;DIV2&gt;&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;TITLED
+                    WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot; REG=Gregory,
+                    Lady&gt;Lady&lt;/TITLED&gt;&lt;MARRIED
+                    WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot; REG=Gregory,
+                    Lady&gt;Gregory&lt;/MARRIED&gt;
+                    &lt;/DATAITEM&gt;&lt;/DATASTRUCT&gt;&lt;/DIV2&gt;&lt;/PERSONNAME&gt;</codeph></p><p>This
+                has the advantage of appearing in the doc as <q>Lady Gregory</q>, which is what she
+                was called.</p>
+            <p> In most instances and where no discussion is required concerning names, one
+                <term keyref="data-struct">DATASTRUCT</term> can be used for all PERSONNAME sub-elements.</p><p> Enter all names in
+                first name-last name order (Given before Surname). Do not invert the order. (i.e.,
+                    <q>Mary Wollstonecraft</q> and not <q>Wollstonecraft, Mary</q>). This applies to
+                all names entered in sub-elements inside PERSONNAME.</p><p> List names in the
+                chronological order in which she received them. Logic and standard practice dictates
+                that <term keyref="birth-name">BIRTHNAME</term> will be entered first.</p><p>For
+                discussions about variant spellings, contested information or other discussions of
+                scholarly disagreements concerning names, include a scholar's note inside the
+                sub-element at issue. For explanation about the origin of a name or other content
+                discussions, include material in a <term keyref="short-prose">SHORTPROSE</term>
+                element (each of which also requires &lt;P&gt;).</p><p> All names must be entered
+                within <term keyref="data-item">DATAITEM</term>s. Even if a discussion of the name
+                is provided in a Shortprose, include a DATAITEM around the name.</p><p>
+                &lt;PERSONNAME&gt;&lt;DIV2&gt;&lt;DATASTRUCT&gt;&lt;DATAITEM&gt;&lt;NICKNAME
+                NAMETYPE=familiar&gt;Kitty&lt;/NICKNAME&gt;&lt;/DATAITEM&gt;&lt;SHORTPROSE&gt;&lt;P&gt;KJ
+                received her nickname Kitty from her sister,
+                Nancy.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DATASTRUCT&gt;&lt;/DIV2&gt;&lt;/PERSONNAME&gt;</p><p>
+                Do not put PERSONNAME sub-elements inside a universal Name element.</p><p>Use <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term> attribute. All
+                personName content sub-elements have an attribute for WROTEORPUBLISHEDAS to be used
+                when the writer published under the name within the element. </p>
+        </div>
+    </glossdef>
+</glossentry>

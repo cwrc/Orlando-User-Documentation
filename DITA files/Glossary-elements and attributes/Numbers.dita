@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="numbers">
+    <glossterm>NUMBERS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This attribute is found throughout the
+                text-base. It numbers up to twenty, and larger round numbers, are to be written
+                out in prose: for example, <q>She had two children</q> and not <q>She had 2 children</q>, and
+                <q>She received an advance of a thousand pounds</q>, <q>She had more than fifty rejection
+                slips.</q> Large, non-round numbers are better in figures: <q>It contains 365 poems, one
+                for each day in the year.</q> Numbers over 1,000 should include a comma: 1,000 or
+                10,000 or 100,000 or 1,000,000. For amounts of money, you may use prose for e.g.
+                <q>five pounds</q>, <q>a thousand US dollars</q>, but insert the entity reference for the
+                pound symbol if using figures, in, for example, <q>¥1,250</q>.</p><p>When using Roman numerals,
+                use the entire number. For example, if you want to indicate a run of Roman-numbered
+                pages from xvi to xviii, you will write it as xvi-xviii, not xvi-iii. Generally, we
+                follow the MLA on this issue, and they make the rather obvious point that these
+                rules are not always observed when it comes to numbers that specify the year or page
+                numbers. When expressing numbers over one hundred, please use the word <q>and</q> to
+                conform to British usage. For example, 103 would be expressed as <q>one hundred and
+                three.</q></p></div>
+    </glossdef>
+</glossentry>

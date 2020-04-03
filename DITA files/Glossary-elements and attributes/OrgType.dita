@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="org-type">
+    <glossterm>ORGTYPE</glossterm>
+    <glossdef>
+        <div><u>Definition</u><p>A carry-over from the Microsoft Access database for chronology,
+                    <term keyref="org-type">ORGTYPE</term> contains a keyword descriptor of an
+                organization. Do not use this attribute.</p></div>
+        <div>
+            <u>Placement, Relationships</u>
+            <p>ORGTYPE is an attribute of <term keyref="org-name">ORGNAME</term> and permits the
+                input of free text. Attribute ORGTYPE on ORGNAME: Don’t use.</p>
+        </div>
+    </glossdef>
+</glossentry>

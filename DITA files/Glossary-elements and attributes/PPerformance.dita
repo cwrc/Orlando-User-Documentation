@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-performance">
+    <glossterm>PPERFORMANCE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is used in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It is often in a <term keyref="chron-prose">CHRONPROSE</term>. This
+                element should contain all the available specifics of the performance of a woman
+                writer's work, whether of a stage play, monologue, a radio drama, or a television
+                film script. Also covers significant public readings etc. Often used for the opening
+                of such a work in preference to a publication event. If you tag an <term
+                    keyref="org-name">ORGNAME</term> here, it will probably be a theatre or theatre
+                company. Name the performed text if you can, but a significant work will also be
+                named in a corresponding <term keyref="text-scope">TEXTSCOPE</term> if this is its
+                debut. This tag has no mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PPERFORMANCE&gt;Henriquez by Joanna Baillie was first staged at
+                &lt;ORGNAME&gt;Drury Lane.&lt;/ORGNAME&gt; The production included an epilogue by
+                Georgiana, Duchess of Devonshire.&lt;/PPERFORMANCE&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
