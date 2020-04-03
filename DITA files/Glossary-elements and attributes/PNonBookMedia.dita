@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-non-book-media">
+    <glossterm>PNONBOOKMEDIA</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually with <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It refers to a non-textual packaging/format of a written work. If
+                someone adapts a woman's book into an opera, a film, a sound recording or a dance,
+                record it here. PNONBOOKMEDIA captures either a word or more frequently a full
+                statement. There are no mandatory sub-elements or attributes for this
+            element.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PNONBOOKMEDIA&gt; Mary Poppins became a Disney film
+                classic.&lt;/PNONBOOKMEDIA&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>When encountering a film adaptation of a woman writer's work, we use PNONBOOKMEDIA.
+                When she writes the script herself, use <term keyref="t-genre">TGENRE</term> tag with attribute value
+                <userinput>FilmTvScript</userinput>. If she writes a script for filming someone’s else’s book, also use the
+                intertextuality tag with the attribute for adaptation/update.</p>
+        </div>
+    </glossdef>
+</glossentry>

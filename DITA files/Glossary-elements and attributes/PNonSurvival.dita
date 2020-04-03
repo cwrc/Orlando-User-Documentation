@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-non-survival">
+    <glossterm>PNONSURVIVAL</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It addresses texts that we do not have today for some reason or
+                another. Describes any mishaps or disasters that happen on the road to publication.
+                If the manuscript burned, or flew out the stage coach window; if the work was
+                unfinished; if the publishers went bankrupt and lost her manuscript; if nobody knows
+                what became of it: all of these incidents can be recorded here. Encloses statement;
+                for use with or without also using rDestructionofWork. PNONSURVIVAL can be used of
+                actual destruction (a manuscript casualty of fire or flood, a single surviving copy
+                seen but since lost) or absence of knowledge (she claimed to have written plays, but
+                none appears to have survived). One attribute modifies this element: <term
+                    keyref="type-of-non-survival">TYPEOFNONSURVIVAL</term>, with values for
+                    <userinput>accident,</userinput> and <userinput>unknown</userinput>.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element can apply to texts that are currently lost, or to evidence that the
+                author deliberately lost them because she did not want her writing to survive (see
+                    <term keyref="r-destruction-of-work">RDESTRUCTIONOFWORK</term>). It also can
+                apply to post-publication or post-circulation destruction, such as Sappho's poems
+                being burned/suppressed by monks (see <term keyref="r-penalties">RPENALTIES</term>)
+                or the burning of her works with the Library at Alexandria (see <term
+                    keyref="r-destruction-of-work">RDESTRUCTIONOFWORK</term>).</p><p>If a text
+                encountered a mishap but was still brought to publication, or if a particular copy
+                was destroyed but the text survived in other versions then use <term
+                    keyref="p-manuscript-history">PMANUSCRIPTHISTORY</term> and/or <term
+                    keyref="r-destruction-of-work">RDESTRUCTIONOFWORK</term>, not PNONSURVIVAL. For
+                example: a fire at the publishers destroys her manuscript, but there are other
+                copies, and the book is eventually published.</p>
+        </div>
+    </glossdef>
+</glossentry>

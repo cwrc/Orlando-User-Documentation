@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="nationality-issue">
+    <glossterm>NATIONALITYISSUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Parallel to <term keyref="class-issue"
+                    >CLASSISSUE</term>: for contested or changing legal nationality. A significant
+                sub-element within <term keyref="cultural-formation">CULTURALFORMATION</term> (in
+                the <term keyref="biography">BIOGRAPHY</term> section of entries), it works in
+                conjunction with the <term keyref="nationality">NATIONALITY</term> element to
+                structure the national subject positions of women writers. Use, containing a full
+                sentence or clause, to discuss issues of importance around a woman's nationality as
+                it impinges upon identity. For the most part, writers will have geographical or
+                ethnic heritage to discuss along with the element NATIONALITYISSUE; as well as the
+                related sub-element of <term keyref="nationality">NATIONALITY</term>, you can access
+                here any of the other sub-elements designed for discussion of cultural formation:
+                    <term keyref="class">CLASS</term>, <term keyref="DENOMINATION"
+                    >DENOMINATION</term>, <term keyref="ethnicity">ETHNICITY</term>, <term
+                    keyref="geog-heritage">GEOGHERITAGE</term>, <term keyref="language"
+                    >LANGUAGE</term>, <term keyref="national-heritage">NATIONALHERITAGE</term>,
+                    <term keyref="poltical-affiliation">POLITICALAFFILIATION</term>, <term
+                    keyref="race-colour">RACECOLOUR</term>, <term keyref="gender">GENDER</term>, and
+                    <term keyref="sexual-identity">SEXUALIDENTITY</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;NATIONALITYISSUE&gt;KS moved to London in 2007 on a Writers, Artists, and
+                Composers visa with the intent of pursuing
+                &lt;NATIONALITY&gt;British&lt;/NATIONALITY&gt;-&lt;NATIONALITYPakistani&lt;/NATIONALITY&gt;
+                dual citizenship. Two years later, her visa category was abolished, forcing her to
+                seek eligibility on other grounds. . . . Despite retaining her visa, she found the
+                next couple of years to be a source of constant unease: &quot;I never really felt
+                safe after that. Every announcement of proposed changes to migration laws made my
+                heart stutter, every politician&apos;s announcement about slashing migration numbers
+                felt like a threat.&quot;. . . She has likened the process [of application] to
+                climbing Mount Everest in terms of accomplishment: &quot;I might not have wept, but
+                I did turn wobbly-kneed and lean against my kitchen counter for support the day my
+                letter arrived.&quot;&lt;/NATIONALITYISSUE&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

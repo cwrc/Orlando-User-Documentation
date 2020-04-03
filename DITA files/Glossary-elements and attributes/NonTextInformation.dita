@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="non-text-information">
+    <glossterm>NONTEXTINFORMATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element does not refer to women
+                writing in non-textual media but refers to any non-textual component of the Orlando
+                project such as images with captions. It could refer to an author portrait, a
+                facsimile page; it could contain links to sound recordings or video files.
+                Eventually this element will be available in every kind of document we create for
+                the project, and could be useful when including images. There are no mandatory or
+                optional attributes or sub-elements for this element.</p></div>
+    </glossdef>
+</glossentry>

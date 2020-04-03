@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="nickname">
+    <glossterm>NICKNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is available within<menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It records in a DataStruct any nickname applied to a person by
+                others. Nicknames include both casual, familiar family names and professional
+                nicknames. The attributes attached to this element allow us to distinguish the
+                different types of nicknames. We are particularly interested in honorific or abusive
+                nicknames that are gendered, for example <q>Queen of Romance</q> for Barbara
+                Cartland.</p>
+            <p>We don’t need to record every Elizabeth whose family called her Lizzy or Betty or
+                Bess unless the nickname had wide circulation. But Elizabeth Montagu’s family
+                calling her Fidget is interesting, and her public nickname (Queen of the Blues) is,
+                like Swan of Lichfield, White Rose of Gask, etc., a significant phenomenon in the
+                reception of women writers.</p>
+            <p>It has attributes: <term keyref="name-connotation">NAMECONNOTATION</term>, <term
+                    keyref="name-signifier">NAMESIGNIFIER</term>, <term keyref="name-type"
+                    >NAMETYPE</term> (three which variously signify the type of nickname), and <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p>
+            <p>Attribute <term keyref="name-connotation">NAMECONNOTATION</term> on NICKNAME: Carries
+                more of <term keyref="response">RESPONSE</term> in it than <term
+                    keyref="name-signifier">NAMESIGNIFIER</term>.</p>
+            <p>Attribute <term keyref="name-signifier">NAMESIGNIFIER</term> on NICKNAME: Comparable
+                to use elsewhere.</p>
+            <p>Attribute <term keyref="name-type">NAMETYPE</term> on NICKNAME: <q>Other</q> would
+                fit <q>Red Countess</q> nickname cited above, since it stems from politics, not
+                family or writing.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;SHORTPROSE&gt;&lt;P&gt;VA was called &lt;NICKNAME
+                NAMETYPE=&quot;FAMILIAR&quot;&gt;Molly&lt;/NICKNAME&gt; by her family until her
+                mid-twenties.&lt;/P&gt;&lt;/SHORTPROSE&gt;</codeblock><codeblock>&lt;NICKNAME
+                NAMETYPE=&quot;literary&quot;&gt;Queen of
+                Romance&lt;/NICKNAME&gt;</codeblock><codeblock>CGB was known in England as
+                &lt;NICKNAME NAMETYPE=&quot;other&quot;
+                NAMECONNOTATION=&quot;abusive&quot;&gt;&quot;the Red Countess.
+                &lt;/NICKNAME&gt;</codeblock><codeblock> &lt;NICKNAME
+                WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;
+                NAMESIGNIFIER=&quot;Local&quot;&gt; of
+                Laggan&lt;/NICKNAME&gt;</codeblock><codeblock>&lt;NICKNAME
+                NAMECONNOTATION=&quot;abusive&quot; NAMETYPE=&quot;familiar&quot;&gt; Mrs
+                Perfection&lt;/NICKNAME&gt;&lt;SCHOLARNOTE&gt;&lt;&gt;In a letter dated 2 August
+                1796 to William Godwin, Mary Wollstonecraft referred to EI by this
+                name.&lt;/P&gt;&lt;/SCHOALRNOTE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices. A
+                nickname is not a name she chose for herself. To the best of your ability, use the
+                attributes to specify the type of nickname. Recording a nickname will often involve
+                a description of how s/he acquired it. If you can, include such a description in a
+                    <term keyref="short-prose">SHORTPROSE</term> or a <term keyref="scholar-note"
+                    >SCHOLARNOTE</term> following the <term keyref="data-struct"
+                >DATASTRUCT</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>
