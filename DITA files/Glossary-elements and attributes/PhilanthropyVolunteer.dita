@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="philanthropy-volunteer">
+    <glossterm>PHILANTHROPYVOLUNTEER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Use this optional attribute on <term
+                    keyref="significant-activity">SIGNIFICANTACTIVITY</term> (within <term
+                    keyref="occupation">OCCUPATION</term> or <term keyref="family"
+                    >FAMILY</term>=<term keyref="member">MEMBER</term>, in the Biography section of
+                entries) to indicate whether or not this involved philanthropic or volunteer work, a
+                crucial role for women formerly and now. It has an attribute value of
+                    <userinput>philanthropyVolunteerYes</userinput>, which indicates work motivated
+                by a wish to do good rather than by mere interest.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>FA was a &lt;SIGNIFICANTACTIVITY
+                PHILANTHROPYVOLUNTEER=&quot;PhilanthropyVolunteerYes&quot;&gt;Sunday School
+                teacher&lt;/SIGNIFICANTACTIVITY&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

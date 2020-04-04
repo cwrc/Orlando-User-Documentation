@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="place">
+    <glossterm>PLACE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PLACE is a core tag globally available,
+                the largest bucket holding together the sub-elements defining location, it must
+                enclose every set or nest of more specific tags signifying place: <term
+                    keyref="geog">GEOG</term>, <term keyref="region">REGION</term>, <term
+                    keyref="settlement">SETTLEMENT</term>, etc., where it structures information
+                about geographical location. All content information --- i.e. the names of places --
+                should be placed inside its sub-elements. Place does allow free prose which can be
+                used for untagged descriptors like <q>near</q> or <q>the tiny village of</q> and to
+                enter punctuation.</p><p>Locating events and people is a priority of our Project. By
+                indicating where events occurred, we will be able to bring together people and
+                places,and to uncover geographical connections between writers as yet
+                undiscovered.</p><p>There are two main goals for tagging place: mapping and
+                indexing. We hope automatically to provide our users with maps of literary history.
+                For example, by using the places tagged with biography documents, we might generate
+                a map for each woman writer's life which places her in specific places at specific
+                dates. We also hope to allow users to see a map of events for a particular year
+                which would bring together geographical information from all Project schemas. In
+                order to automate mapping, it is crucial that we provide place information in a
+                structured and recognizable way. In addition to mapping, we want to provide a user
+                with an index of places, for instance of all women writers who lived in Bloomsbury
+                or all events which took place in Bath.</p><p>While we prioritize the tagging of
+                place, not all places require tagging. We hope to enhance our geographical
+                information by context-specific tagging. For example, by tagging only places where
+                events occurred i the material of a <term keyref="chron-struct">CHRONSTRUCT</term>
+                rather than all places mentioned in the prose, we will be able to map that event to
+                the place tagged. See Practice Issues below for a discussion of context-specific
+                practices.</p>
+            <p>PLACE is available within most elements which contain prose. It has the following
+                content sub-elements which divide PLACE into smaller units: <term
+                    keyref="place-name">PLACENAME</term>, <term keyref="address">ADDRESS</term>,
+                SETTLEMENT, <term keyref="region">REGION</term>, and <term keyref="geog"
+                >GEOG</term>, with <term keyref="area">AREA</term> hopefully to follow.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PLACE&gt;&lt;SETTLEMENT&gt;Tokyo&lt;/SETTLEMENT&gt;,
+                &lt;GEOG&gt;Japan&lt;/GEOG&gt;&lt;/PLACE&gt;</codeblock><codeblock>
+                &lt;PLACE&gt;&lt;SETTLEMENT&gt;Hanworth&lt;/SETTLEMENT&gt;, in
+                &lt;REGION&gt;Middlesex&lt;/REGION&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/REGION&gt;&lt;/PLACE&gt; She died in
+                &lt;PLACE&gt;&lt;ADDRESS&gt;&lt;ADDRLINE&gt;George Street&lt;/ADDRLINE&gt;,
+                &lt;ADDRLINE&gt;Hanover Square&lt;/ADDRLINE&gt;&lt;/ADDRESS&gt;,
+                &lt;SETTLEMENT&gt;London&lt;/SETTLEMENT&gt;&lt;REGION REG=”Middlesex”&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/GEOG&gt;&lt;/REGION&gt;&lt;PLACE&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Sources: For problem places check Atlases. <i>Webster's Dictionary</i> provides a
+                lengthy appendix on Geographical Places which gives useful information and proper
+                spelling. For help with determining which region within the British Isles your
+                settlement is in, or used historically to be in, googling the settlement generally
+                works. Place all punctuation and spaces outside <term keyref="place">PLACE</term>
+                sub-elements.</p><p><codeph>&lt;PLACE&gt;&lt;SETTLEMENT&gt;Casablanca&lt;/SETTLEMENT&gt;,
+                    &lt;GEOG&gt;Morocco&lt;/GEOG&gt;.&lt;/PLACE&gt;</codeph></p>
+            <p>Put the apostrophe and <q>s</q> in possessive words outside the sub-element. For
+                example, do not include <q>Italy's</q> within a geog tag but place tag only around
+                    <q>Italy</q>.</p><p>
+                <codeph>&lt;PLACE&gt;&lt;GEOG&gt;Italy&lt;/GEOG&gt;&apos;s&lt;/PLACE&gt;. During
+                    &lt;PLACE&gt;&lt;GEOG&gt;Canada&lt;/GEOG&gt;&apos;s&lt;/PLACE&gt; separation
+                    debates, she travelled through the country.</codeph></p>
+            <p>Do not include articles (the, a) within the PLACE
+                    sub-element.</p><p><codeph>&lt;PLACE&gt;The &lt;REGION&gt;Lake
+                    District&lt;/REGION&gt;&lt;GEOG
+                    REG=”England”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeph></p><p>Do not tag all
+                places. Use your best judgement on determining relevant places but as a general
+                rule, only tag places that are significant to a person's life and writing or an
+                historical event. For example, if a woman writer lived in the village of Little
+                Wittering, while the place is obscure, tag it as this may allow us to discover that
+                another woman writer lived or wrote there or nearby in a different century. But if
+                the writer split up with a lover who then went off to live in Little Wittering, or
+                if she applied for a job there but didn't get it, do not tag it.</p><p>Do not tag
+                places within biography or writing sections that refer to general world events
+                rather than the entry subject when these events will be entered elsewhere. In the
+                example below, tag Florence because Radclyffe Hall was in Florence during that time
+                but do not tag the reference to Italy in the <term keyref="short-prose"
+                    >SHORTPROSE</term>, both because the upheavals in Italy before and during WWII
+                will be covered in free-standing events AND because the empty tag in the <term
+                    keyref="chron-prose">CHRONPROSE</term> will pull this into search results on
+                Italy anyhow.</p><p><codeph>&lt;CHRONSTRUCT&gt;&lt;DATRANGE&gt;6 November 1921-7
+                    January 1922&lt;/DATERANGE&gt;&lt;CHRONPROSE&gt;RH and Una visited
+                    &lt;PLACE&gt;&lt;SETTLEMENT&gt;Florence&lt;/SETTLEMENT&gt;&lt;GEOG
+                    REG=&quot;Italy&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;, staying at the Hotel
+                    Albion .&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;SHORTPROSE&gt;&lt;P&gt; They
+                    sided with the Fascists in the midst of Italy&apos;s political
+                    upheaval.&lt;/P&gt;&lt;/SHORTPROSE&gt;</codeph></p><p>Do not tag the same place
+                twice within one big-bucket tag unless it makes part of two separate PLACE nests. If
+                she lived in London and you have tagged her move to London, subsequent life events
+                which take place in London do not require place tags unless they feature an ADDRESS
+                or <term keyref="place-name">PLACENAME</term>. However, if she then moved to Bath
+                and returned to London, tag London within the <term keyref="moved">MOVED</term>
+                attribute.</p><p>All places must have a recognizable location tagged. In order to
+                automate mapping, the computer will search from smallest to largest conceptual
+                location (ADDRESS or PLACENAME to SETTLEMENT to REGION to GEOG) and map the place
+                according to the smallest recognizable place. The smaller conceptual name is not
+                recognizable alone (think London, ON, London, Mississippi); you must add a larger
+                sub-element, even an empty one with only the Reg attribute filled in (see below).In
+                the example below, do NOT simply tag British Museum. You must include empty tags for
+                mapping purposes.</p><p>She had the idea for her novel standing on the steps of the
+                &lt;PLACE&gt;&lt;PLACENAME&gt;British Museum&lt;/PLACENAME&gt;&lt;SETTLEMENT
+                REG=&quot;London&quot;&gt;&lt;/SETTLEMENT&gt;&lt;REGION REG=”Middlesex”&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/GEOG&gt;&lt;/REGION&gt;&lt;/PLACE&gt;.</p>
+            <p>You must include a REGION sub-element for all places in the British Isles. See region
+                glossary entry for a list of regions to use and a list of exceptions to this rule.
+                Also for Canada, the US, and Australia.</p><p>You must include a GEOG sub-element
+                for all places outside the British Isles. See GEOG glossary entry for a list of
+                exceptions to this rule. (The Alps, the Rocky Mountains - if not specified which -
+                the Pacific Ocean, etc., do not take a GEOG.)</p><p><codeph>If you do not want to
+                    enter necessary place information in the prose of your sentence, use the
+                    appropriate PLACE sub-element and provide the information only in the Reg
+                    attribute. While in
+                    &lt;PLACE&gt;&lt;SETTLEMENT&gt;Casablanca&lt;/SETTLEMENT&gt;&lt;GEOG
+                    REG=&quot;Morocco&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;, she met her future
+                    husband.</codeph></p>
+            <p>You can refer to a PLACE in the prose using whatever word you want, but you must
+                regularize a place referred to in a non-standard way. A common example of this
+                occurs when adjectives are used instead of proper names and the proper name is given
+                inside a REG attribute. <codeph>She met Eleanor Roosevelt during her
+                    &lt;PLACE&gt;&lt;GEOG REG=&quot;USA&quot;&gt;American&lt;/GEOG&gt;&lt;/PLACE&gt;
+                    lecture tour.</codeph></p><p>A PLACE nest can take only one of each sub-element.
+                If you wish to capture that she lived in the Rocky Mountains in Alberta, since both
+                Rocky Mountains and Alberta are Regions, open two <term keyref="region"
+                    >REGION</term> elements, each with the empty <term keyref="geog"
+                >GEOG</term>=Canada.</p><p>If a place has a specific directional marker (i.e.,
+                eastern, western, northern, southern), include that marker in the prose but
+                regularize without. The South of France is <term keyref="reg">REG</term>=France,
+                although South Dakota is REG=South Dakota.</p><p><codeph>&lt;PLACE&gt;&lt;SETTLEMENT
+                    REG=&quot;London&quot;&gt;East London&lt;/SETTLEMENT&gt;&lt;region
+                    REG=”Middlesex”&gt;&lt;GEOG
+                    REG=”England”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeph></p><p>When a place
+                sub-element is a given a REG or CURRENT attribute, the content of these attributes
+                will take priority over the content of the element's prose for mapping and indexing.
+                Therefore for e.g. Chelsea you must use REG=Chelsea as well as CURRENT=London, or
+                else a search on Chelsea will miss this. Same with St Peterburg/Leningrad and many
+                more.</p><p>All places tagged within a <term keyref="div1">DIV1</term> Location
+                element within Biography will be assumed to refer to a place with which the subject
+                entry was closely connected and will be mapped accordingly. Only tag PLACE in a
+                    <term keyref="chron-struct">CHRONSTRUCT</term> inside a free-standing <term
+                    keyref="event">EVENT</term> if it is the place where the chronology event
+                occurred, or somewhere crucially affected by it. </p><p>Only tag PLACE in a
+                CHRONSTRUCT inside a <term keyref="biography">BIOGRAPHY</term> or <term
+                    keyref="writing">WRITING</term> section if it can be used to map where the
+                subject of the entry was on the date specified. Do not tag if the PLACE in the
+                chronology event refers to where someone else was (for example, <q>Her brother died
+                    in London</q>). If an end user wants to see a map of George Eliot's life, all
+                places tagged within CHRONSTRUCTs will be assumed to place where Eliot was on a
+                certain date and be mapped accordingly. In the below example, the map will locate
+                Eliot in Florence in
+                    1860.</p><p><codeph>&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1860&lt;/DATE&gt;&lt;/CHRONSTRUCT&gt;&lt;CHRONPROSE&gt;George
+                    Eliot visited &lt;PLACE&gt;&lt;SETTLEMENT&gt;Florence&lt;/&gt;&lt;GEOG
+                    REG=&quot;Italy&quot;&gt;&lt;/GEOG&gt;&lt;/SETTLEMENT&gt;&lt;/PLACE&gt;&lt;/CHRONPROSE&gt;</codeph></p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p>In order to determine whether or not a place should be captured inside a PLACE
+                element, ask yourself the following questions:</p><p><ul>
+                    <li>If I am inside a <term keyref="chron-struct">CHRONSTRUCT</term> in a
+                        free-standing <term keyref="event">EVENT</term>, is the PLACE I want to tag
+                        the place where the chronology event occurred?</li>
+                    <li>If I am inside a <term keyref="chron-struct">CHRONSTRUCT</term> in an entry,
+                        either <term keyref="biography">BIOGRAPHY</term> or <term keyref="writing"
+                            >WRITING</term> section, is the PLACE I want to tag the place where the
+                        subject was on that date? Or where she published or had a play produced,
+                        etc?</li>
+                    <li>Is this PLACE likely to come up again Orlando's literary history?
+                        Occasionally <q>a tiny village near Sheffield</q> (with PLACE tags on
+                        Sheffield) might make more sense than giving the name of the village.</li>
+                </ul></p>
+            <p><b>Question:</b>Can I use two of the same sub-element within one PLACE tag?</p><p>Answer: No, except <term keyref="addr-line">ADDRLINE</term>.</p>
+        </div>
+    </glossdef>
+</glossentry>
