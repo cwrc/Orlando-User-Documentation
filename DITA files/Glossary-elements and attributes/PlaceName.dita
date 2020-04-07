@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="place-name">
+    <glossterm>PLACENAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>PLACENAME, a sub-element within <term
+                    keyref="place">PLACE</term> (available throughout the textbase) should contain a
+                name only, no punctuation or description. It has optional attributes <term
+                    keyref="current">CURRENT</term> and <term keyref="reg">REG</term>. It may be
+                accompanied by a <term keyref="settlement">SETTLEMENT</term> tag and must have <term
+                    keyref="region">REGION</term> and <term keyref="geog">GEOG</term>. It captures
+                specific places that are known by their name but are not places in the same way
+                geographical or political entities are places. For example, <q>Trafalgar Square</q>
+                is generally a PLACENAME. It could also be an <term keyref="address">ADDRESS</term>,
+                but you will almost certainly be writing of speeches given there, demonstrations
+                held, marches begun. We are chiefly interested in capturing PLACENAMEs for those
+                places that are important to women's literary history (i.e., those that are likely
+                to come up more than once in Orlando). For example, Sissinghurst, the home of Vita
+                Sackville-West, is highly significant and needs a PLACENAME. Homes of other writers,
+                even yet another Rose Cottage or the Old Rectory, are also worth tagging.</p><p>The
+                following are common types of placenames:</p><p><ul>
+                    <li>Buildings and Estates: British Museum, Knole, the Louvre</li>
+                    <li> Farms and Gardens: Kew Gardens</li>
+                    <li> Railway stations, airports: Paddington Station, Heathrow</li>
+                    <li> Cemeteries: Paddington Cemetery</li>
+                </ul>
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>While in Greece, she visited the
+                &lt;PLACE&gt;&lt;PLACENAME&gt;Acropolis&lt;/PLACENAME&gt;&lt;SETTLEMENT
+                REG=”Athens”&gt;&lt;/SETTLEMENT&gt;&lt;GEOG
+                REG=&quot;Greece&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;.</codeblock><codeblock>She was
+                beheaded on &lt;PLACE&gt;&lt;PLACENAME&gt;Tower Hill&lt;/PLACENAME&gt;,
+                &lt;SETTLEMENT&gt;London&lt;/SETTLEMENT&gt;&lt;REGION REG=”Middlesex”&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/GEOG&gt;&lt;/REGION&gt;&lt;/PLACE&gt;.</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See PLACE for general practice issues.</p><p> Do NOT use a PLACENAME without also
+                including another conceptually larger <term keyref="place">PLACE</term> sub-element.
+                This will often entail including a sub-element with only the <term keyref="reg"
+                    >REG</term> attribute filled
+                    in.</p><p><codeph>&lt;PLACE&gt;&lt;PLACENAME&gt;British
+                    Museum&lt;/PLACENAME&gt;&lt;SETTLEMENT
+                    REG=&quot;London&quot;&gt;&lt;/SETTLEMENT&gt;&lt;REGION
+                    REG=”Middlesex”&gt;&lt;geog
+                    REG=”England”&gt;&lt;/GEOG&gt;&lt;/REGION&gt;&lt;/PLACE&gt;</codeph></p>
+            <p>Before using PLACENAME, consider whether or not it is useful to tag the name.</p><p>
+                The distinction between an <term keyref="org-name">ORGNAME</term> and a PLACENAME is
+                context-specific. If she was involved with a place as an organization, then tag it
+                as such. For example, if she visited a friend, or went sightseeing, at Bedlam or if
+                she had a play open at Drury Lane Theatre, tag both as organizations; if in a <term
+                    keyref="chron-struct">CHRONSTRUCT</term>, include empty PLACE element for
+                London. In both examples, what took her to the place was its institutional activity,
+                not its geographical location. However, if she came up with the idea for her novel
+                while sitting on the steps of the British Museum, tag it as a PLACENAME.</p><p>There
+                is often an overlap between addresses and PLACENAMEs, particularly with names of
+                streets and squares. The distinction between an <term keyref="address"
+                    >ADDRESS</term> and a PLACENAME can be defined as the difference between a place
+                where someone lived and a place with its own significant history. Orlando has
+                free-standing events about the building of architectural landmarks Regent Street,
+                London, and Royal Crescent, Bath; both ought to be tagged as Placenames here, but as
+                the address of a writer they take an ADDRESS tag. Many entries have the Strand in an
+                ADDRESS tag, but when Elizabeth Cellier stands in the pillory there it is a
+                Placename.</p><p>Include type designation of PLACENAME in prose if it is normally
+                referred to in this way. For example, include Cemetery in the prose for Paddington
+                Cemetery; Square in that for Trafalgar Square. Capitalize these designations and all
+                others inside PLACENAME.</p><p>Do not tag non-specific PLACENAMEs like "her mother's
+                estate" (unless it has a known name, which could go in Reg attribute). Tag only
+                PLACENAMEs that might in principle appear on a map. If a PLACENAME begins with an
+                article (for example, the Strand), the <term keyref="reg">REG</term> form is
+                    <q>Strand</q>. Fill this in if you choose to place the <q>the</q> inside rather
+                than outside your tag.</p><p>Do not use PLACENAME to tag lakes, mountains, or
+                forests. They are <term keyref="region">REGION</term>s.</p><p>London: To identify
+                common PLACENAMEs in London, check <i>The London Encyclopedia</i> if search of the
+                published textbase draws a blank.</p><p>The PLACENAME and other PLACE tags work just
+                the same in <term keyref="t-setting-place">TSETTINGPLACE</term> (in works of
+                fiction), as elsewhere, so long as they are actual places, not imaginary like
+                Earthsea or Gilead.</p>
+        </div>
+    </glossdef>
+</glossentry>

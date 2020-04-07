@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="P-place-of-publication">
+    <glossterm>PPLACEOFPUBLICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It enables searches on place of publication. The tag encloses a full
+                sentence, not just the place, which however you will need to tag with appropriate
+                PLACE tags.</p>
+            <p>Orlando convention is that London, UK, is too much the centre of
+                British publishing to need tagging unless for a particular reason; so are New York
+                or Toronto for contemporary non-British texts. But we tag other places if mentioned
+                in prose of entry: this enables users to see other or shifting centres, esp. any
+                centres for publishing women, or places used for false imprints to avoid
+                censorship.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PPLACEOFPUBLICATION&gt;Most of her poems were published in
+                &lt;PLACE&gt;&lt;SETTLEMENT&gt;Leicester&lt;/SETTLEMENT&gt;&lt;REGION
+                REG=”Leicestershire”&gt;&lt;/REGION&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; before they appeared in
+                &lt;PLACE&gt;&lt;SETTLEMENTLondon&lt;/SETTLEMENT&gt;&lt;REGION
+                REG=”Middlesex”&gt;&lt;GEOG
+                REG=”England”&gt;&lt;/GEOG&gt;&lt;/REGION&gt;&lt;/PLACE&gt;&lt;/PPLACEOFPUBLICATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

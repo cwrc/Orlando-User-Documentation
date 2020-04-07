@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="politics">
+    <glossterm>POLITICS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>POLITICS is one of the 16 major content
+                    <term keyref="div1">DIV1</term> elements in <term keyref="biography"
+                    >BIOGRAPHY</term> sections of entries defined as integral to mapping a woman's
+                life.It should be placed in the appropriate chronological order within the biography
+                document. It has one content sub-element, <term keyref="political-affiliation"
+                    >POLITICALAFFILIATION</term>, that captures specific political positions taken
+                up. Use several Politics elements if the document is longish and you need to cover
+                different stages of political thinking and action. We have interpreted this
+                big-bucket tag broadly—holding that it covers not only established political
+                parties, but splinter groups, pressure groups, campaigners, resisters, ideology, and
+                public goals. Women's involvement in political activities and organizations is a
+                central critical concern in our literary history; we are interested in both how
+                political awareness influenced women's writing and how writing influenced feminist
+                political activity. Given the high priority we attach to political involvement,
+                wherever possible include information concerning your subject’s political life, even
+                if minimal.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;POLITICS&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;BJA was active in
+                promoting and trying to improve education for women and the working
+                classes.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;POLITICS&gt;</codeblock><codeblock>&lt;POLITICS&gt;&lt;DIV2&gt;&lt;CHRONSTRUCT&gt;&lt;DATE&gt;1910&lt;/DATE&gt;&lt;CHRONPROSE&gt;RS
+                became a &lt;POLITICALAFFILIATION
+                REG=”suffragist”&gt;suffrage&lt;/POLITICALAFFILIATION&gt;
+                supporter.&lt;/CHRONPROSE&gt;&lt;/CHRONSTRUCT&gt;&lt;/DIV2&gt;&lt;/POLITICS&gt;</codeblock><p>Suffrage
+                is a common political activity and with <term keyref="reg">REG</term>=”suffragist”
+                can be tagged as a <term keyref="political-affiliation">POLITICALAFFILIATION</term>.
+                If it is not spelled out in the prose, consider using an empty PoliticalAffiliation
+                element with a REG attribute. Try to do this whenever possible (particularly when
+                POLITICALAFFILIATION is not identified in the prose) to ensure a writer's political
+                involvement will be linked to the larger historical context.</p>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Since political activities are prioritized, if an activity could equally be included
+                in POLITICS or <term keyref="occupation">OCCUPATION</term>, include it under
+                POLITICS or consider two, non-repetitious, statements.</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If a woman writer worked for a pro-choice organization and was paid
+                for her work, should this be included under <term keyref="occupation">OCCUPATION</term> or POLITICS?</p><p>
+                <b>Answer:</b> You will often find yourself making such judgement calls and the
+                answer will depend on the context. But if she, herself, was pro-choice then the
+                activity should be included under POLITICS. If your document flow allows, you may
+                wish to include this information in different ways in two elements.</p>
+        </div>
+    </glossdef>
+</glossentry>

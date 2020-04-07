@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="place-of-publication">
+    <glossterm>PLACEOFPUBLICATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>This field in the Bibliography Database records the
+                place of publication of a text. Encloses a settlement and sometimes region
+            name.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Follow MLA practice when recording place of publication: provide the name of the city
+                or cities from the title page or other bibliographic source; if more than two cities
+                are listed, supply the first city only; provide an abbreviation for the province,
+                state, or country only if the name of the city is ambiguous or unfamiliar.</p>
+        </div>
+    </glossdef>
+</glossentry>

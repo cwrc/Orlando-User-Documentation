@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="t-plot">
+    <glossterm>TPLOT</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>The TPLOT element belongs conceptually in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It addresses overview summaries of narrative actions. Encloses a
+                statement, either brief (<q>the complicated plot involves several switched partners
+                    before the multiple marriage ending</q>) or a whole paragraph (or more: renew
+                tag in new <codeph>&lt;P&gt;</codeph>) tracing the way the story unfolds. It must
+                contain at least one full sentence. It has no mandatory or optional sub-elements or
+                attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;TPLOT&gt;In this Eliza Fenwick novel for children, Carlo, who would
+                become famous as the dog of Drury Lane, is rescued as a puppy by several children.
+                The story ends with his opening as a member of the cast at Drury
+                Lane.&lt;/TPLOT&gt;</codeblock><codeblock>&lt;TPLOT&gt;Christian Isobel
+                Johnstone&apos;s novel revolves around the birth of a child to a poor mother who
+                dies in childbirth.&lt;/TPLOT&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Try to avoid tagging lengthy (paragraph-long) descriptions of obscure novels.</p>
+        </div>
+    </glossdef>
+</glossentry>
