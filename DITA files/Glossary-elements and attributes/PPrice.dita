@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-price">
+    <glossterm>PPRICE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It defines the selling price of a book, pamphlet, or other piece of
+                writing. Encloses a number or sometimes a statement establishing meaning and
+                context. May be used of original editions, reprints, or auction prices of unique
+                copies or rare historical items. It has no mandatory sub-elements or
+            attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PPRICE&gt;A coloured copy cost three shillings, an unpainted one a
+                shilling.&lt;/PPRICE&gt;</codeblock><codeblock>&lt;PPRICE&gt;sixpence&lt;/PPRICE&gt;</codeblock><codeblock>&lt;PPRICE&gt;1
+                1/2d.&lt;/PPRICE&gt;</codeblock><codeblock>&lt;PPRICE&gt;In 2003 a copy of the first
+                edition, not in its original binding, sold for £19,975.&lt;/PPRICE&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element should where possible be used in conjunction with a <text-scope>TEXTSCOPE</text-scope>, so that
+                we can attach the price to a particular text or set of texts.</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="publisher">
+    <glossterm>PUBLISHER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>The Publisher field is available in the Bibliography
+                Database to record the publisher's name as per MLA practice.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>The Orlando Project follows MLA practice with a few exceptions. For example, do not
+                use the abbreviation UP; instead, write out the words University Press. Other MLA
+                rules apply: omit business abbreviations (Co., Corp., Inc.) and descriptive words
+                (Books, House, Press, Publishers).</p><p> We normally give the shortest version of
+                the publisher's name that still maintains clarity. For example, Gollancz rather than
+                Victor Gollancz; J. Johnson rather than Joseph Johnson or Johnson; Macmillan rather
+                than Macmillan and Co. BUT check authority list or whatever list of standard
+                OrgNames Orlando uses in the future.</p><p> Do not replicate ampersands in
+                publishers' names and do not use ampersands in the Bibliography Database. Ampersands
+                have their own meaning in SGML; as a result they will wreak havoc within text marked
+                up in SGML. Expand to <q>and</q>.</p><p> Use the abbreviation n.p. if the publisher's
+                name is not available. </p>
+        </div>
+    </glossdef>
+</glossentry>

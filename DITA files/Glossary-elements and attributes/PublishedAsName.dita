@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="published-as-name">
+    <glossterm>PUBLISHEDASNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement</u><p>Published As Name is a field in the Bibliography
+                Database which records names other than the Standard Name under which a BWW
+                published. This field records the use on title-pages of pseudonymous, allusive, or
+                variant names: any form other than the standard.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Enter pseudonyms, used, and allusive names in the order in which they should read in
+                the final citation.</p><p> Pseudonyms should be entered as <q>Bob Short</q> or <q>A
+                Dissenter,</q> not <q>Short, Bob</q> or <q>Dissenter, A</q>. Allusive Author Names should be
+                entered as <q>The Author of David Simple</q>. Used Names should be entered as <q>Mrs
+                Humphry Ward,</q> not Ward, <q>Mrs Humphry</q>. Enter <q>Anonymous</q> when appropriate,
+                including instances of publishing as <q>A Lady</q>. </p>
+        </div>
+    </glossdef>
+</glossentry>

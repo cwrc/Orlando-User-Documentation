@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="pseudonym">
+    <glossterm>PSEUDONYM</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term is found in <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It must go inside a <term keyref="data-item">DATAITEM</term>.
+                PSEUDONYM includes all names -- both proper names and descriptive phrases (for
+                example, <q>A Lover of Her Sex</q> is a pseudonym for Mary Astell) -- if used in
+                publishing or circulating work. This tag has optional attributes of <term
+                    keyref="name-signifier">NAMESIGNIFIER</term>, <term keyref="reg">REG</term>, and
+                    <term keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;DATAITEM&gt;&lt;PSEUDONYM
+                WROTEORPUBLISHEDAS=&quot;WrotePublishedAsYes&quot;&gt;J. Calder
+                Ayrton&lt;/PSEUDONYM&gt;&lt;/DATAITEM&gt;</codeblock><codeblock>&lt;PSEUDONYM
+                WROTEORPUBLISHEDAS =wrotePublishedAsYes&gt;Francis
+                Meredith&lt;/PSEUDONYM&gt;</codeblock><codeblock>&lt;PSEUDONYM
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;
+                NAMESIGNIFIER=&quot;cryptic&quot;&gt;Mrs. Patt. Pindar&lt;/PSEUDONYM&gt;
+            </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Variations of her given or standard name should be entered as pseudonyms. For
+                example, Margery Louise Allingham published as <q>Louise A.</q>; Maria Abdy
+                published as <q>M. A.</q></p><p> Include ALL pseudonyms ever used by the writer. It
+                is crucial to a literary history of women's writing that we record, with scrupulous
+                accuracy and research, all pseudonyms and enter them within this element in the
+                Biography section of a writer’s entry.</p><p> All pseudonyms will have
+                    WROTEORPUBLISHEDAS=<q>wrotePublishedAsYes</q> attribute value.</p><p> "Written
+                by herself" is not considered a pseudonym but part of the long form of the
+                title.</p><p> Anonymous is not a pseudonym, see Authorship.</p><p> When the text was
+                published <q>By a Lady</q>, include <q>A Lady</q> as a pseudonym, leaving out the
+                    <q>By</q> and capitalizing the <q>A</q>. Do not regularize to <q>Lady, A.</q>
+                (Although <q>By a Lady</q> is counted in <term keyref="p-authorship"
+                    >PAUTHORSHIP</term> as anonymity rather than pseudonymity because it was at one
+                time so usual.)</p>
+            <p><q>The Author of [title]</q> has occasionally been listed as a pseudonym but this
+                practice should be avoided. (Remember to record this title-page identifier in the
+                Writing section under PAUTHORSHIP, using the <q>allusive</q> attribute.)</p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> If she published <q>By a Lady</q> is this a pseudonym?
+                    <b>Answer:</b> Yes, <q>A Lady</q> is a pseudonym for the purpose of <term
+                    keyref="person-name">PERSONNAME</term>. See above practice directive.</p><p>
+                <b>Question:</b> She uses <q>By the Author of . . . </q> on title-pages. Is this a
+                PSEUDONYM, and if I enter it as such do I include a <term keyref="title"
+                    >TITLE</term> tag? <b>Answer:</b> No, do not normally count this as a pseudonym.
+                If you have some special reason to do so, leave the title untagged.</p>
+        </div>
+    </glossdef>
+</glossentry>

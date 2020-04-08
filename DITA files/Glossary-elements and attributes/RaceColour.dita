@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="race-colour">
+    <glossterm>RACECOLOUR</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is found in <menucascade>
+                    <uicontrol><term keyref="">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="">CULTURALFORMATION</term></uicontrol>
+                </menucascade>. Within those tags, it might or might not also be within <term
+                    keyref="race-and-ethnicity">RACEANDETHNICITY</term>, captures information about
+                a person's perceived or lived racial identity. See RACEANDETHNICITY for a detailed
+                description of the complexities of this element. It encloses usually a single word,
+                occasionally more, and has optional attributes of <term keyref="forebear"
+                    >FOREBEAR</term>, <term keyref="self-defined">SELFDEFINED</term> and <term
+                    keyref="reg">REG</term> (allowing you to standardize the raceColour if this is
+                desirable but not feasible in your prose). We have tried to counter the effect of
+                    <q>white</q> as default by sentences like <q>She was presumably white</q> or by
+                inserting an empty RACECOLOUR tag with REG value
+            <userinput>white</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Both of Aguilar&apos;s parents were presumably &lt;RACECOLOUR
+                FOREBEAR=&quot;parents&quot;&gt;white&lt;/RACECOLOUR&gt; and of
+                &lt;NATIONALHERITAGE&gt;Spanish&lt;/NATIONALHERITAGE&gt; &lt;ETHNICITY
+                FOREBEAR=&quot;parents&quot;&gt;Jewish&lt;/ETHNICITY&gt;
+                descent.</codeblock><codeblock>MP is a &lt;RACECOLOUR&gt;black&lt;/RACECOLOUR&gt;
+                woman writer originally from the Caribbean. </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Although we do not want to insist on naming the presumed whiteness of British women
+                writers in every case where we presume whiteness, it is sometimes very effective to
+                do so. We especially want to do this in cases where there is some question about the
+                writer's whiteness (e.g. Elizabeth Barrett Browning). Whiteness should also be named
+                in the cases of colonial women travellers and everyone else from after World War II
+                when a sizeable resident non-white population re-established itself in Britain. To
+                do this, we ask that you open an empty RACECOLOUR element (if not already used in
+                the prose) and regularize the attribute to <q>white.</q></p>
+        </div>
+    </glossdef>
+</glossentry>

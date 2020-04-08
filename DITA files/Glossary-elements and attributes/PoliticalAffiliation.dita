@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="political-affiliation">
+    <glossterm>POLITICALAFFILIATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element within POLITICS and
+                    <term keyref="cultural-formation">CULTURALFORMATION</term> (in the <term
+                    keyref="biography">BIOGRAPHY</term> section of entries) tracks the beliefs,
+                affiliations, connections, activities, and associations which designate a person's
+                political life. Use it for mature commitment or for early exposure (like the devoted
+                Communist activism of Jackie Kay’s adoptive parents). Encloses the names of
+                political parties, but also of broader movements: imperialist or pacifist or
+                vegetarian. These affiliations can be both formal connections to a party or
+                organization and informal political positions held by the writer. We hope to point
+                our readers towards women writers associated with different political positions and
+                help researchers make links between political beliefs and writing. For this reason,
+                we are defining POLITICALAFFILIATIONs broadly and include things like <q>against
+                    capital punishment</q> or <q>strong supporter of the Empire</q> (imperialist),
+                or campaigner against vivisection or for animal rights, in addition to more
+                straightforward affiliations such as <q>marxist</q> or
+                <q>conservative.</q></p><p>POLITICALAFFILIATION has optional attributes of <term
+                    keyref="activism">ACTIVISM</term>, <term keyref="involvement"
+                >INVOLVEMENT</term>, <term keyref="membership">MEMBERSHIP</term> (for three
+                alternative levels of commitment: choose only one for a single element), and <term
+                    keyref="woman-gender-issue">WOMAN-GENDERISSUE</term>, to specify the level and
+                type of affiliation described. Other optional attributes are <term keyref="reg"
+                    >REG</term> (which allows you to use a standard term if you have been unable to
+                do in your prose: <q>strong supporter of the Empire" REG=”imperialist</q>), <term
+                    keyref="current-alternative-term">CURRENTALTERNATIVETERM</term> (for use when a
+                historical term has been replaced with a new one: Whig Reg=<q>Liberal</q>), and Id
+                (an attribute which is NOT to be used). Try to include at least one
+                POLITICALAFFILIATION sub-element in all <term keyref="politics">POLITICS</term>
+                elements.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>“1910: RS became a &lt;POLITICALAFFILIATION
+                Reg=”suffragist”&gt;suffrage&lt;/POLITICALAFFILIATION&gt; supporter.”
+                </codeblock><p>Working for suffrage was a common political activity and so can be
+                tagged as POLITICALAFFILIATION. If the term or some equivalent is not used, include
+                an empty PoliticalAffiliation element and capture this information in the Reg
+                attribute:</p><codeblock>She worked tirelessly for the cause of
+                &lt;POLITICALAFFILIATION REG=”suffragist”&gt;votes for
+                woman&lt;/POLITICALAFFILIATION&gt;. &lt;POLITICALAFFILIATION
+                woman-genderIssue=genderYes&gt;Enlightenment feminism&lt;/POLITICALAFFILIATION&gt;
+                &lt;POLITICALAFFILIATION
+                INVOLVEMENT=&quot;InvolvementYes&quot;&gt;Socialist&lt;/POLITICALAFFILIATION&gt;
+                &lt;POLITICALAFFILIATION REG=”pro-animal rights”&gt;working for animal
+                rights&lt;/POLITICALAFFILIATION</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Tag all organized political parties and organizations with <term keyref="org-name"
+                    >ORGNAME</term> (for example, Labour Party, PEN International). Tagging an
+                OrgName within Politics does not denote that the person supported this organization.
+                She may have protested vehemently against the Tory Party but Tory Party should be
+                given an ORGNAME element. If she was a full supporter of the Tory Party, then as
+                well as using ORGNAME, use a PoliticalAffiliation tag.</p><p> Try to use one the
+                attributes to specify the level of affiliation, but leave blank if unknown or if
+                they do not apply.</p><p> To the best of your ability, try to construct a sentence
+                which allows you to put a POLITICALAFFILIATION tag around a word or short phrase.
+                Instead of <q>She protested against the Darlington nuclear facility</q>, use <q>Her
+                    anti-nuclear position informed protest against the Darlington nuclear
+                    facility</q>, placing the tag around <q>anti-nuclear</q> rather than around
+                    <q>protested against the Darlington nuclear facility</q>. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> When all you know about a woman writer is that she wrote radical
+                feminist and working-class plays, how do you tag her POLITICALAFFILIATION?</p><p>
+                <b>Answer:</b> Discussion of political involvement will often involve making
+                judgement calls. While critical discussion of the politics of her plays will be
+                included in her writing document, think about using a phrase like <q>Although we
+                    have no evidence of practical activism, her work demonstrates support for
+                    radical feminist and working-class issues.</q></p>
+        </div>
+    </glossdef>
+</glossentry>

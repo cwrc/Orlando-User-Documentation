@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="reception">
+    <glossterm>RECEPTION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>RECEPTION is one of the three large
+                buckets in the <term keyref="writing">WRITING</term> section of entries (in addition
+                to <term keyref="textual-features">TEXTUALFEATURES</term> and <term
+                    keyref="production">PRODUCTION</term>). RECEPTION charts the effects and results
+                of an individual's writing, and the responses of self and others to individual texts
+                or whole oeuvres. May contain one or more <term keyref="chron-struct"
+                    >CHRONSTRUCT</term>s about a particular review, comment, or consequence. Like
+                TextualFeatures and Production, this element must be opened immediately after a
+                    <term keyref="div2">DIV2</term>. No text is allowed immediately within the
+                RECEPTION element; another element (<term keyref="chron-struct">CHRONSTRUCT</term>
+                or <term keyref="short-prose">SHORTPROSE</term>) must be opened first. The multiple
+                sub-elements conceptually attached to RECEPTION are prefaced by a small letter
+                    <q>r,</q> but you are free to use here any element prefaced by a <q>p,</q>
+                <q>r,</q> or <q>t</q> as your prose demands.</p></div>
+    </glossdef>
+</glossentry>

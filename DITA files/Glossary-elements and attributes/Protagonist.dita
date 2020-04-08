@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="protagonist">
+    <glossterm>PROTAGONIST</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This option attribute on <term
+                    keyref="t-character-type-role">TCHARACTERTYPEROLE</term> is conceptually linked
+                with <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="textual-features">TEXTUALFEATURES</term></uicontrol>
+                </menucascade>. It gives more information about the status of a character within a
+                fictional story. It has two values, <q>male</q> and <q>female.</q> Use only in
+                calling attention to a central character who is significant or noteworthy.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Angela Carter&apos;s Nights at the Circus features &lt;TCHARACTERTYPEROLE
+                PROTAGONIST=&quot;female&quot;&gt;a feathered heroine, a Winged
+                Victory&lt;/TCHARACTERTYPEROLE&gt; who achieves fame and notoriety on the
+                trapeze.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

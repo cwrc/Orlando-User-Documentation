@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="race-and-ethnicity">
+    <glossterm>RACEANDETHNICITY</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>RACEANETHNICITY is a significant
+                sub-element within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="cultural-formation"
+                        >CULTURALFORMATION</term></uicontrol>
+                </menucascade>. It encloses the structural elements containing the discussion of a
+                person's racial and ethnic subject position, capturing information and discussion in
+                light of the unstable, historically constituted categories of race and ethnicity. It
+                works in conjunction with four content, subject-specific sub-elements: <term
+                    keyref="race-colour">RACECOLOUR</term>, <term keyref="national-heritage"
+                    >NATIONALHERITAGE</term>, <term keyref="geog-heritage">GEOGHERITAGE</term>,
+                    <term keyref="ethnicity">ETHNICITY</term> (each of which can be used without
+                RACEANDETHNICITY). You can also access within it all the other sub-elements
+                appropriate to the discussion of CULTURALFORMATION: <term keyref="class"
+                    >CLASS</term>, <term keyref="denomination">DENOMINATION</term>, <term
+                    keyref="gender">GENDER</term>, <term keyref="language">LANGUAGE</term>, <term
+                    keyref="nationality">NATIONALITY</term>, <term keyref="political-affiliation"
+                    >POLITICALAFFILIATION</term>, and <term keyref="sexual-identity"
+                    >SEXUALIDENTITY</term>.</p><p>The following applies to both the general
+                discursive discussion of RACEANDETHNICITY and to the specific sub-element
+                categories.</p><p>Despite anxiety over the ways in which categories of race or
+                ethnicity circulate and serve various kinds of undesirable interests, to ignore the
+                question or choose a totally free-text route is not a responsible solution for this
+                project, though it would certainly be easier and simpler. The aim here is to make
+                the complexities of the question of race and ethnicity emerge, and to make it clear
+                that these are shifting, historically constituted, and interestedly deployed
+                categories whose use must be understood contextually. The discursiveness with which
+                we present these categories should, hopefully, help to do this and also allay the
+                anxiety we feel about <q>labelling in a vacuum</q>. In other words, the project has
+                no notion that we could or should come up with what is in any way an exact, fully
+                defined, or mutually exclusive set of categories: the point is the overlap within
+                them. Within this system, counting per se becomes highly problematic; the user has
+                to do some work (and some thinking/active defining) before arriving at any kind of
+                list or count, and will hopefully arrive at it with a sense of how problematic such
+                an activity is. We want, as we go, carefully to build sets of associations around
+                terms that are controversial or hard to interpret.</p><p>Despite anxiety over the
+                ways in which categories of race or ethnicity circulate and serve various kinds of
+                undesirable interests, to ignore the question or choose a totally free-text route is
+                not a responsible solution for this project, though it would certainly be easier and
+                simpler. The aim here is to make the complexities of the question of race and
+                ethnicity emerge, and to make it clear that these are shifting, historically
+                constituted, and interestedly deployed categories whose use must be understood
+                contextually. The discursiveness with which we present these categories should,
+                hopefully, help to do this and also allay the anxiety we feel about "labelling" in a
+                vacuum. In other words, the project has no notion that we could or should come up
+                with what is in any way an exact, fully defined, or mutually exclusive set of
+                categories: the point is the overlap within them. Within this system, counting per
+                se becomes highly problematic; the user has to do some work (and some
+                thinking/active defining) before arriving at any kind of list or count, and will
+                hopefully arrive at it with a sense of how problematic such an activity is. We want,
+                as we go, carefully to build sets of associations around terms that are
+                controversial or hard to interpret.</p><p>People tagging will use what terms seem to
+                them to be right for the context, tagging with the category or categories within
+                which they seem to fit, but they should be encouraged not to let race/ethnicity
+                become invisible or only an issue in relation to the marginalized. If we think it
+                will look silly if there is a statement in entry after entry on British women
+                writers saying that she was (presumably) white, that indicates the force of
+                biographical conventions and we should not let them dictate our practices. And we
+                should, as stressed by those concerned about <q>white</q> and <q>black</q> as
+                homogenizing categories, encourage people to reach for specificity through
+                multiplicity: i.e. generally attempt to include at least two of: <term
+                    keyref="race-colour">RACECOLOUR</term>; <term keyref="ethnicity"
+                    >ETHNCITIY</term>; <term keyref="nationality">NATIONALITY</term>, or <term
+                    keyref="national-heritage">NATIONALHERITAGE</term>. We have devised a structured
+                vocabulary for these tags, though the lists need not be mutually exclusive or even
+                internally consistent. Thus <q>Jewish</q> will be tagged as either RACECOLOUR or
+                ETHNICITY (as well as <term keyref="denomination">DENOMINATION</term>
+                <term keyref="REG">REG</term>=Judaism) or both; <q>Ukrainian</q> may appear in
+                either <term keyref="national-heritage">NATIONALHERITAGE</term> or
+                Ethnicity.</p><p>Parallel to the <q>issue</q> tags, this element is important
+                because this is such a charged issue, and has remained so through seismic shifts in
+                scientific and other concepts of race. This tag can be used to chart developments in
+                self-awareness as well as in social placing.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Anna Leonowens: &lt;RACEANDETHNICITY&gt; Although Leonowens herself, in
+                attempting to adopt an unequivocally &lt;NATIONALITY
+                SELF-IDENTIFIED=&quot;SelfYes&quot;&gt;English&lt;\NATIONALITY&gt; identity,
+                implicitly claimed that she was &lt;RACECOLOUR
+                SELF-IDENTIFIED=&quot;SelfYes&quot;&gt;white&lt;/RACECOLOUR&gt;, there is evidence
+                to suggest that although her father was &lt;NATIONALHERITAGE
+                FOREBEAR=&quot;father&quot; &gt; Welsh&lt;/NATIONALHERITAGE&gt; and presumably
+                &lt;RACECOLOUR FOREBEAR&gt;= &quot;father&quot;&gt;white&lt;/RACECOLOUR&gt;, her
+                mother was quite possibly &lt;RACECOLOUR FOREBEAR=&quot;mother&quot;&gt;
+                Eurasian&lt;/RACECOLOUR&gt;&gt;.&lt;BIBCIT&gt;Bristowe
+                23-31&lt;\BIBCIT&gt;&lt;/RACEANETHNICITY&lt;SCHOLARNOTE&gt;Eurasian is a “term used
+                during the Victorian period, in the context of the British colonization of India, to
+                connote a mixture of white, European and Asiatic, usually East Indian
+                parentage.&lt;BIBCIT&gt; OED&lt;\BIBCIT&gt;&lt;/SCHOLARNOTE&gt; Thesaurus/search
+                engine should include link between &quot;Eurasian&quot; and &quot;Anglo-Indian&quot;
+                and should include &quot;Eurasian&quot; in results for searches on word
+                &quot;Indian,&quot; and &quot;Welsh&quot; in searches under
+                &quot;British.&quot;</codeblock><codeblock>Pauline Johnson:
+                &lt;RACEANDETHNICITY&gt;Pauline Johnson was born to a &lt;RACECOLOUR
+                FOREBEAR=&quot;mother&quot;&gt;white&lt;/RACECOLOUR&gt; &lt;NATIONALHERITAGE
+                FOREBEAR=&quot;mother&quot;&gt;English&lt;/NATIONALHERITAGE&gt; mother and a
+                &lt;NATIONALHERITAGE FOREBEAR=&quot;father&quot;&gt;Mohawk&lt;/NATIONALHERITAGE&gt;
+                father.&lt;/RACEANDETHNICITY&gt;</codeblock><p>I consider the omission of <term
+                    keyref="race-colour">RACECOLOUR</term> for her father justifiable, because
+                although we don't want to assume that <q>English</q> connotes <q>white,</q> it would
+                be a very unusual case for someone <q>white</q> to belong to the Mohawk nation,
+                although one such case was cited on the student list. Thesaurus/search engine should
+                include <q>Mohawk</q> in results for searches on <q>North-American Indian,</q> (a
+                category I doubt we will be using) <codeph>&lt;ETHNICITY&gt;Native North
+                    American&lt;/ETHNICITY&gt;, &lt;NATIONALHERITAGE&gt;&quot;First
+                    nation,&quot;&lt;/NATIONALHERITAGE&gt; etc., as well as in searches on
+                    &lt;RACECOLOUR&gt; &quot;North-American
+                    aboriginal.&quot;&lt;/RACECOLOUR&gt;</codeph></p><codeblock>Andrea Levy:
+                &lt;RACEANDETHNICITY&gt;Her &lt;PLACE &gt; &lt;GEOG
+                REG=Jamaica&gt;Jamaican&lt;/GEOG&gt; &lt;AREA REG=Caribbean &gt; &lt;/AREA&gt;
+                &lt;/PLACE&gt;heritage too was mixed, comprehending forebears who were
+                &lt;RACECOLOUR SELF-DEFINED=SELFYES REG=Black &gt; Black &lt;/RACECOLOUR&gt; (the
+                earlier ones &lt;NATIONALHERITAGE FOREBEAR=OTHER SELF-DEFINED=SELFYES REG=African
+                &gt;African&lt;/NATIONALHERITAGE&gt;), &lt;RACECOLOUR SELF-DEFINED=SELFYES
+                REG=white&gt;white&lt;/RACECOLOUR&gt; (some &lt;NATIONALHERITAGE
+                FOREBEAR=GRANDFATHER SELF-DEFINED=SELFYES
+                REG=Scottish&gt;Scots&lt;/NATIONALHERITAGE&gt;, some British presumed
+                &lt;NATIONALHERITAGE &gt;English&lt;/NATIONALHERITAGE&gt;), &lt;RACECOLOUR
+                FOREBEAR=OTHER SELF-DEFINED=SELFYES REG=Native American&gt;Arawak or American Indian
+                &lt;/RACECOLOUR&gt;, and &lt;ETHNICITY SELF-DEFINED=SELFYES FOREBEAR=GRANDFATHER
+                REG=Jewish&gt;Jewish&lt;/ETHNICITY&gt;. . . .
+                .&lt;RACEANDETHNICITY&gt;</codeblock><codeblock>Grace Aguilar:
+                &lt;RACEANDETHNICITY&gt;Both of Aguilar&apos;s parents were presumably
+                &lt;RACECOLOUR FOREBEAR=&quot;parents&quot;&gt;white&lt;/RACECOLOUR&gt; and of
+                &lt;NATIONALHERITAGE&gt;Spanish&lt;/NATIONALHERITAGE&gt;-&lt;ETHNICITY
+                FOREBEAR=&quot;parents&quot; &gt;Jewish&lt;/ETHNICITY&gt; descent.
+                &lt;NATIONALITY&gt;English&lt;/NATIONALITY&gt; by birth, she identified strongly
+                with her &lt;RACECOLOUR SELFDEFINED=selfYes&gt;Jewish&lt;/RACECOLOUR&gt;
+                heritage.&lt;/RACEANDETHNICITY&gt;</codeblock><p>Designation of Jewish here as
+                racial is designed to reflect the way it was viewed in the nineteenth century.</p>
+        </div>
+    </glossdef>
+</glossentry>

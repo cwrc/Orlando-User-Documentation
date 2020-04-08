@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-press-run">
+    <glossterm>PPRESSRUN</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs in <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It records the number of copies in an issue or edition of a printed
+                text. This can be expressed in numeric form or in prose, such as <q>a short run.</q>
+                Encloses either a number or a statement. Not often mentioned, but useful historical
+                information when known. It has are no mandatory sub-elements or
+            attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PPRESSRUN&gt;HY had three hundred copies published
+                privately.&lt;/PPRESSRUN&gt;</codeblock><codeblock>&lt;PPRESSRUN&gt;After the book
+                hit the headlines a further three thousand copies were hastily printed
+                off.&lt;/PPRESSRUN&gt; </codeblock>
+        </div>
+    </glossdef>
+</glossentry>

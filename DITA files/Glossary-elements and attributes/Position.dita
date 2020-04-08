@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="position">
+    <glossterm>POSITION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional element is attached to <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="birth">BIRTH</term></uicontrol>
+                    <uicontrol><term keyref="birth-position">BIRTHPOSITION</term></uicontrol>
+                </menucascade>. It allows us to systematize information concerning women writers
+                through its values of <userinput>Eldest</userinput>, <userinput>Youngest</userinput>
+                and <userinput>Only</userinput>. If all you know is that she was the fifth child,
+                use this tag but leave the attribute blank.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;BIRTHPOSITION POSITION=&quot;eldest&quot;&gt;Because she was the eldest
+                in her family, she was responsible for helping to educate her younger
+                siblings.&lt;/BIRTHPOSITION&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>While we cannot systematize all birth positions, we are particularly interested in
+                the effects of being an only, eldest, or youngest child, therefore, include
+                attribute when known.</p>
+        </div>
+    </glossdef>
+</glossentry>

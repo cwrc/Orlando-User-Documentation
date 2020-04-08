@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="quote">
+    <glossterm>QUOTE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element is globally available. It is
+                modified by one attribute, <term keyref="direct">DIRECT</term>. The attribute
+                options are yes (y), no (n), or unspecified (unspecified). These govern whether the
+                words within the quote will be set off with single or double quotes. Use DIRECT=Y
+                attribute whenever words are not your own; use DIRECT=N for quote within quote.
+                Orlando convention is: supply comma or period at end of quote, inside tag, where
+                necessary for the sense; other punctuation not in the source, like semi-colon, dash,
+                etc., must go outside tag.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Question: Do I need to use a Quote element every time I want to use quotation marks?
+                Answer: Use a Quote element every time you use a quotation, but never enter
+                quotation marks in your documents. Quotation marks will be supplied by the system
+                for the Quote element as well as for a few other elements such as analytic titles
+                and words appearing in the <term keyref="so-called">SOCALLED</term> element. The
+                following is a brief summary of practice around the proper use of the Quote element.
+                Each issue listed here is discussed in detail with examples below.</p><p><ul>
+                    <li>A bibCit must follow every quote tag or small group of short quotes in bio
+                        and writing docs</li>
+                    <li>A bibCit is optional following a quote tag in events: since events are
+                        normally short, a single bibCit may suffice.</li>
+                    <li>Periods and commas should be placed inside the quote tag for quotes of three
+                        words or more.</li>
+                    <li>bibCits following quotes should be spaced as if they were not part of the
+                        document</li>
+                    <li>a person quoted from a source that she/he did not author must be referred to
+                        as "qtd. in" in the bibCit attributes</li>
+                    <li>the direct attribute on quote should be filled in to "y" unless one quote
+                        tag is embedded inside another at which point; in this case the outer tag
+                        should be DIRECT="y" and the inner tag should be DIRECT="n"</li>
+                    <li>page numbers in bibCits should not repeat numbers except in the teens (65-6
+                        NOT 65-66 but 17-19 NOT 17-9).</li>
+                </ul></p><p>See also SoCalled.</p><p/>
+            <div>
+                <u>Examples</u>
+                <p>It was originally opened by Queen Victoria as the People&apos;s Palace, a place
+                    of <codeph>&lt;QUOTE DIRECT=y&gt;rational and instructive entertainment and of
+                        artistic enjoyment&lt;/QUOTE&gt;&lt;BIBCIT&gt;Harte
+                        174&lt;/BIBCIT&gt;</codeph> for the people of East London. Note: no space
+                    between the end of the quote and the beginning of the <term keyref="bib-cit"
+                        >BIBCIT</term>, but there is a space after the BIBCIT before the following
+                    word.</p>
+                <p>If a single source is quoted many times in one sentence, the BIBCIT should
+                    immediately follow the end of the sentence.</p><p>Linking alcohol to higher
+                    incidents of domestic abuse and violence, LA goes on to describe how the law
+                    favours men and disfavours women. She details two points on which
+                        <codeph>&lt;QUOTE DIRECT=&quot;Y&quot;&gt;laws bear hard on
+                        women.&lt;/QUOTE&gt;&lt;BIBCIT Qtd. in “QtdInYes”&gt;Le Breton
+                        368-9&lt;/BIBCIT&gt;</codeph></p><p>The first concerns the <codeph>&lt;QUOTE
+                        DIRECT=&quot;Y&quot;&gt;want of a stricter hand against the inveiglers of
+                        girls for wicked purposes&lt;/QUOTE&gt;; the second deplores a man&apos;s
+                        right to child custody when his &lt;QUOTE DIRECT=&quot;Y&quot;&gt;offences
+                        have compelled an innocent wife to obtain a divorce from
+                        him.&lt;/QUOTE&gt;&lt;BIBCITqtd. in”QtdInYes”&gt; Le Breton
+                        368-9&lt;/BIBCIT&gt;</codeph></p><p>If a person other than the author of the
+                    work cited in the BIBCIT is quoted then use the <userinput>QtdInYes</userinput>
+                    value on the attribute <q>qtd. in</q> found on the BIBCIT element. In her last
+                    editorial, Hanna Sheehy Skeffington wrote <codeph>&lt;QUOTE
+                        DIRECT=&quot;Y&quot;&gt;the national struggle overshadows all
+                        else.&lt;/QUOTE&gt;&lt;BIBCIT qtd in “QtdInYes”&gt; McKillen
+                        84&lt;/BIBCIT&gt;</codeph></p><p>If both the author of the work cited in the
+                    bibCit and another person are quoted in a single quote tag, then embed one quote
+                    tag inside another. Do not adopt <q>qtd. in</q> practice for such examples.
+                    According to literary historian Chris Baldick, <codeph>&lt;QUOTE
+                        DIRECT=&quot;Y&quot;&gt;Maurice&apos;s own hope was that through the
+                        college&apos;s work, &lt;QUOTE DIRECT=&quot;N&quot;&gt;class may be united
+                        to class, not by necessity only, but by generous duties and common
+                        sympathies.&lt;/QUOTE&gt;&lt;/QUOTE&gt;&lt;BIBCIT&gt;Baldick
+                        63&lt;/BIBCIT&gt;</codeph></p><p>The direct attribute value is No for one
+                    QUOTE tag inside another. The inner of the two QUOTE tags has attribute value
+                    No. All other QUOTE tags should have the direct attribute value
+                        <userinput>Yes</userinput>.</p><p>Spacing should read properly with the
+                        <term keyref="bib-cit">BIBCIT</term> removed.</p>
+            </div>
+        </div>
+    </glossdef>
+</glossentry>

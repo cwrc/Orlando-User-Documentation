@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="publication-mode">
+    <glossterm>PUBLICATIONMODE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This optional attribute on the element
+                PMODEOFPUBLICATION, belonging to <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It allows you to identify how a text was published. Its allowable
+                values are <q>self-publication</q>, <q>privatelyPrinted</q>, <q>limitedEdition</q>,
+                    <q>subscription</q>, and <q>pirated.</q></p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PMODEOFPUBLICATION
+                PUBLICATIONMODE=&quot;self-published&quot;&gt;Elizabeth Cellier printed the pamphlet
+                and sold it from her own house.&lt;/PMODEOFPUBLICATION&gt;</codeblock><codeblock>&lt;PMODEOFPUBLICATION
+                PUBLICATIONMODE=&quot;pirated&quot;&gt;Once conveyed into print by Pope&apos;s
+                typically cloak-and-dagger methods, these books appeared to readers to legitimate
+                his complaints and prove he had been accurate in calling Mary Wortley Montagu a
+                libeller.&lt;/PMODEOFPUBLICATION&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

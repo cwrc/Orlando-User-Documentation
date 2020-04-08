@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="production">
+    <glossterm>PRODUCTION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>One of only three big-bucket tags in
+                    <term keyref="writing">WRITING</term> section of entries (in combination with
+                    <term keyref="textual-features">TEXTUALFEATURES</term> and <term
+                    keyref="reception">RECEPTION</term>). It should enclose information about the
+                process of a text's production whether they be material or cultural. All other
+                influences on the writer's life will be covered by the <term keyref="biography"
+                    >BIOGRAPHY</term> section. PRODUCTION addresses the facts and factors of text
+                creation and distribution, and the description of the text as object (bibliographic
+                description). This category can address a single text, or a group of texts in cases
+                where you want to make generalizations about them.</p><p>The WRITING schema has an
+                unusual structure, different from that of the Biography schema:
+                    <codeph>&lt;DIV1&gt;&lt;DIV2&gt;&lt;PRODUCTION&gt; etc etc
+                    &lt;/PRODUCTION&gt;&lt;/DIV2&gt;&lt;/DIV1&gt; (where the Biography schema has
+                    &lt;DIV1&gt;&lt;BIGBUCKETTAG&gt;&lt;DIV2&gt;&lt;/DIV2&gt;&lt;/BIGBUCKETTAG&gt;&lt;/DIV1&gt;.</codeph>
+                PRODUCTION encloses as many <term keyref="chronstruct">CHRONSTRUCT</term>s and <term
+                    keyref="short-prose">SHORTPROSE</term>s as are needed to relate how a text or
+                group of texts came into being: inspiration, conditions of work, copying or
+                publication, obstacles along the way, plus later embodiments in revised editions,
+                adaptations, etc. Subtags which belong logically or conceptually within Production
+                are flagged with an initial P in their name, like <term keyref="p-anthologization"
+                    >PANTHOLOGIZATION</term>, <term keyref="p-contract">PCONTRACT</term>, but any
+                tag named with an initial T or R (for <term keyref="textual-features"
+                    >TEXTUALFEATURES</term> or <term keyref="reception">RECEPTION</term>) is also
+                allowable within PRODUCTION, and vice versa (tags with initial P allowed in <term
+                    keyref="textual-features">TEXTUALFEATURES</term> and <term keyref="reception"
+                    >RECEPTION</term>). We chose this flexibility because of the interrelatedness of
+                the topics: production elements like decorative features may relate closely to
+                textual features like imagery, which in turn have elicited particular responses from
+                critics.</p><p>This element should enclose at least one paragraph if not more. Like
+                    <term keyref="textual-features">TEXTUALFEATURES</term> and <term
+                    keyref="reception">RECEPTION</term>, it must be opened immediately after a <term
+                    keyref="div2">DIV2</term>. No text is allowed directly within the Production
+                element; another element (Chronstruct or Shortprose plus &lt;P&gt;) must be opened
+                first. The many sub-elements that are conceptually linked to the production of a
+                text, and are prefaced by a small <q>p</q>, are available in <term
+                    keyref="textual-features">TEXTUALFEATURES</term> and <term keyref="reception"
+                        >RECEPTION</term> as well as in PRODUCTION element. PRODUCTION can validly
+                include any of the elements prefaced by <q>r</q> or <q>t</q> as well as
+                <q>p</q>.</p></div>
+    </glossdef>
+</glossentry>

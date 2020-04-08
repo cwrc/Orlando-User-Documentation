@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="punctuation">
+    <glossterm>PUNCTUATION</glossterm>
+    <glossdef>
+        <div><u>Definition</u><p>See practice issues below.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock> 1. paste the example from the GDrive document and make sure you correct all
+                the well-formedness errors Oxygen will point out. 2. copy the corrected fragment
+                from Oxygen and escape special characters at <xref
+                    href="https://www.freeformatter.com/xml-escape.html#ad-output"
+                    >https://www.freeformatter.com/xml-escape.html#ad-output</xref> 3. Copy the
+                escaped text back into OXygen to replace the non-escaped code </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Punctuation goes inside structure tags but always outside content tags.</p><p>
+                <codeph>&lt;CHRONPROSE&gt;EHY died from &lt;CAUSE&gt;lung
+                    cancer&lt;/CAUSE&gt;.&lt;/CHRONPROSE&gt;</codeph></p><p> The period is outside
+                the content element of "cause" even though it ends the sentence, but inside the
+                structure tag of <q><term keyref="chron-prose">CHRONRPOSE</term>.</q></p><p>
+                Punctuate quotations generally in MLA style. The commonest punctuation marks (comma,
+                period) go inside quotation marks even if not so in the original; semi-colons,
+                dashes, etc., if not in original, go outside quote marks. EXCEPTION: because of the
+                nature of our tagging, place period BEFORE a bibcit (according to MLA style periods
+                go after parenthetical citations, but we judge that <term keyref="bib-cit"
+                    >BIBCIT</term>s display better outside punctuation).</p><p> If you are using the
+                quote tag and wondering about how to punctuate, use the following guidelines: put
+                punctuation inside sentences and longish phrases; outside punctuation for mere words
+                and phrases (three words or less). We can be less strict about the use of
+                punctuation around the quote tag because the content inside it will not be sorted in
+                the same way that the information within a title tag will be sorted. For instance,
+                our delivery system would not be able to equate <q>The Waves</q> with <q>The
+                    Waves.</q> because of the period, but we will never be sorting quotations in
+                quite the same way.</p><p>Please use a comma before the final <q>and</q> in lists.
+                For example, write <q>x, y, and z</q> rather than <q>x, y and z.</q></p><p>Do not
+                punctuate titles such as Mrs and Mr, etc. if the final letter of the word is present
+                in the abbreviation. See also Abbreviations.</p><p>If you wish to use a long dash
+                for emphasis in your writing, please use the entity emdash (look under entities).
+                Use it with no spaces on either side.</p><p>When using ellipses, please place a
+                space between the periods: . . . . Four periods indicate that the omission contained
+                a period, three that it did not. Don’t render the three periods in an ellipsis
+                without spaces between them.</p>
+        </div>
+    </glossdef>
+</glossentry>

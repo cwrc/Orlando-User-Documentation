@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="P-rarities-features-decorations">
+    <glossterm>PRARITIESFEATURESDECORATIONS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This element belongs conceptually in <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">PRODUCTION</term></uicontrol>
+                </menucascade>. It is meant to capture a significant and interesting statement or
+                discussion about any rare or decorative features of the book as a physical text:
+                material most obviously about illustrations, but also special bindings, experiments
+                with typeface, inscriptions, even systematic annotation of a copy. It has no
+                mandatory sub-elements or attributes.</p></div>
+    </glossdef>
+</glossentry>
