@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="reg">
+    <glossterm>REG</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>An attribute attached to many different
+                elements in the schemas. Used to identify for searching purposes a conventional,
+                recognizable, or usual form of words or terms which may be given differently in the
+                prose captured by the element. The element <term keyref="name">NAME</term> has a <term keyref="standard">STANDARD</term> attribute but not
+                REG. (In this it differs from <term keyref="org-name">ORGNAME</term>, which has both attributes, for distinguishing
+                the most enduring form of an organization name from a form which was current at a
+                particular period -- both of which might differ from the name as used within the
+                element.)</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>Her family held &lt;CLASS REG=”nobility”&gt;several ancient hereditary titles&lt;/CLASS&gt;.</codeblock>
+        </div>
+    </glossdef>
+</glossentry>

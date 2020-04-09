@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-recogntions">
+    <glossterm>RRECOGNITIONS</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This tag is associated with <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                </menucascade>. It encloses information about literary awards and prizes, and such
+                marks of honour as statues, plaques, or things named after an author. These awards
+                might be explained descriptively, or (only if your material calls for it) through
+                one of two affiliated sub-elements, <term keyref="r-recognition-name"
+                    >RRECOGNITIONNAME</term> and <term keyref="r-recognition-value"
+                    >RRECOGNITIONVALUE</term>. The title of the award may be captured in
+                RRECOGNITIONNAME, its value in monetary or numerical terms in RRECOGNITIONVALUE.
+                There are no other mandatory or optional sub-elements or attributes for
+                RRECOGNITIONS.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;HEADING&gt;&lt;RRECOGNITIONS&gt;One of Anne Grant&apos;s late efforts was
+                awarded the gold medal of the &lt;ORGNAME&gt;Highland
+                Society&lt;/ORGNAME&gt;.&lt;/HEADING&gt;</codeblock><codeblock>&lt;HEADING&gt;&lt;RRECOGNITIONS&gt;Annie
+                Proulx won the &lt;RRECOGNITIONNAME&gt; Pulitzer&lt;/RRECOGNITIONNAME&gt; for
+                Shipping News in 1994.&lt;/RRECOGNITIONS&gt;&lt;/HEADING&gt;</codeblock><codeblock>
+                &lt;RRECOGNITIONS&gt;Hannah More was presented with a version of her poem written in
+                Cingalese on palm leaves and beautifully boxed.&lt;/RRECOGNITIONS&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>Like RPENALTIES, these results or consequences should be event-centred and should not discuss individual reviews or overall movements.</p>
+        </div>
+    </glossdef>
+</glossentry>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="relation">
+    <glossterm>RELATION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>RELATION is a required attribute attached
+                to <term keyref="member">MEMBER</term> within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="family">FAMILY</term></uicontrol>
+                </menucascade>. It specifies how the family member discussed within the Member
+                element is related to the subject of the entry. You must therefore choose an
+                attribute value from a list containing the following relations:
+                    <userinput>Mother</userinput>, <userinput>Father</userinput>,
+                    <userinput>Sister</userinput>, <userinput>Brother</userinput>,
+                    <userinput>Aunt</userinput>, <userinput>Uncle</userinput>,
+                    <userinput>Grandfather</userinput>, <userinput>Grandmother</userinput>,
+                    <userinput>Granddaughter</userinput>, <userinput>Grandson</userinput>,
+                    <userinput>Nephew</userinput>, <userinput>Stepsister</userinput>,
+                    <userinput>Stepbrother</userinput>, <userinput>Stepfather</userinput>,
+                    <userinput>Stepmother</userinput>, <userinput>Cousin</userinput>,
+                    <userinput>Forebear</userinput>, <userinput>Other</userinput>,
+                    <userinput>Son</userinput>, <userinput>Daughter</userinput>,
+                    <userinput>Stepson</userinput>, <userinput>Stepdaughter</userinput>,
+                    <userinput>Guardian</userinput>, <userinput>Niece</userinput>,
+                    <userinput>Husband</userinput>, <userinput>Wife</userinput>,
+                    <userinput>Child</userinput>, <userinput>Partner</userinput>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;MEMBER
+                RELATION=&quot;grandfather&quot;&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;LF&apos;s
+                paternal grandfather,&lt;NAME STANDARD=”Hawker, Peter”&gt;Colonel Peter
+                Hawker&lt;/NAME&gt;, was the author of Instructions to Young
+                Sportsmen.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/MEMBER&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>When the precise relationship is not indicated in a value (e.g. father-in-law or
+                great uncle on her mother's side) you may use the value
+                <userinput>Other</userinput>, OR use a near-equivalent value
+                    (<userinput>Uncle</userinput> for a Great-uncle). In either of these cases, try
+                to explain the relation in your prose.</p><p> Use <userinput>Partner</userinput> for
+                instances where the person is an equivalent to spouse.</p><p> Use
+                    <userinput>Child</userinput> when you are discussing a specific child but do not
+                know its gender. Otherwise, use <userinput>Son</userinput> or
+                    <userinput>Daughter</userinput>. This attribute value has sometimes been used to
+                cover several individuals, female and male, but this is incorrect: material on
+                several people ought to be in a <term keyref="children">CHILDREN</term> tag, not
+                MEMBER. </p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> How should I tag Charlotte Smith's father-in-law, who had a
+                significant impact on her life?</p><p>
+                <b>Answer:</b> Use a member attribute and specify the relation as
+                    <userinput>Other</userinput>, mentioning that he was her father-in-law in the
+                prose. </p>
+        </div>
+    </glossdef>
+</glossentry>

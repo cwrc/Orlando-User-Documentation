@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="region">
+    <glossterm>REGION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>REGION, a globally available sub-element
+                of <term keyref="place">PLACE</term>, captures the name of the place only and
+                excludes all punctuation. It must be followed by a <term keyref="geog">GEOG</term>
+                tag (except in cases where a REGION straddles more than one GEOG), and has optional
+                attributes <term keyref="current">CURRENT</term> and <term keyref="reg">REG</term>.
+                It captures the following geographical and political units:</p><p>
+                <ul>
+                    <li>Political regions (counties) of the British Isles: Cornwall, Durham,
+                        Hampshire</li>
+                    <li>Political regions (provinces or states) of other countries: Alberta, Madras,
+                        California</li>
+                    <li>Topographical features: all mountain ranges, individual mountains, islands
+                        (when not nation states), valleys, forests, etc.</li>
+                    <li>Bodies of Water (including oceans, rivers, lakes): Lake Simcoe, English
+                        Channel, Nile, Atlantic Ocean.</li>
+                    <li>Geographical regions: Lake District, Scottish Highlands, Welsh border,
+                        Tibetan border.</li>
+                </ul>
+            </p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;PLACE&gt;&lt;REGION&gt;Virginia&lt;/REGION&gt;&lt;GEOG
+                CURRENT=&quot;USA&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; became a Crown
+                Colony.</codeblock><codeblock>TH was born
+                at&lt;PLACE&gt;&lt;SETTLEMENT&gt;Uffington&lt;/SETTLEMENT&gt; in
+                &lt;REGION&gt;Berkshire&lt;/REGION&gt;&lt;GEOG
+                REG=&quot;England&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;.</codeblock><codeblock>
+                &lt;PLACE&gt;&lt;REGION&gt;Lake Ontario&lt;/REGION&gt;,
+                &lt;GEOG&gt;Canada&lt;/GEOG&gt;&lt;/PLACE&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="place">PLACE</term> for general practice issues.</p><p>For all
+                settlements in the British Isles, Canada, the US, and Australia a <term
+                    keyref="region">REGION</term> and a <term keyref="geog">GEOG</term> sub-element
+                must be included. If you do not want to include the name of the region/geog in your
+                prose, use an empty tag with text in the <term keyref="reg">REG</term> attribute
+                only.</p>
+        </div>
+        <div>
+            <u>Standard Vocabulary for Regions of the British Isles</u>
+            <p>The following is a list of regions (counties) that the Orlando Project uses to
+                standardize regions in the British Isles. All places within the British Isles
+                require one of these names. For specific practice issues around the use of these
+                regions, see <u>Practice Issues</u> discussions which follow these lists. The
+                abbreviations may be found in your source, but Orlando does not use them.</p>
+            <p>England:</p><p><ul>
+                    <li>Avon (county taking in Bristol and Bath, which lasted only 1974-98)</li>
+                    <li> Bedfordshire (Beds)</li>
+                    <li> Berkshire (Berks)</li>
+                    <li> Buckinghamshire (Bucks)</li>
+                    <li> Cambridgeshire (Cambs)</li>
+                    <li> Cheshire</li>
+                    <li> Cornwall</li>
+                    <li> Cumberland (now abolished, amalgamated with Westmorland as Cumbria)</li>
+                    <li> Derbyshire (Derby)</li>
+                    <li> Devon (do not use Devonshire, Dorsetshire, or Somersetshire, tho they may
+                        be found in source).</li>
+                    <li> Dorset</li>
+                    <li> Durham</li>
+                    <li> Essex</li>
+                    <li> Gloucestershire (Glos)</li>
+                    <li> Hampshire(Hants)</li>
+                    <li> Herefordshire (recently amalgamated with its neighbour to form Hereford and
+                        Worcester: during 1974-98)</li>
+                    <li> Hertfordshire (Herts)</li>
+                    <li> Kent</li>
+                    <li> Lancashire (Lancs)</li>
+                    <li> Leicestershire (Leics)</li>
+                    <li> Lincolnshire (Lincs)</li>
+                    <li> Merseyside (recently created; used to be partly Lancs, partly
+                        Cheshire)</li>
+                    <li> Middlesex (defunct)</li>
+                    <li> Norfolk</li>
+                    <li> Northamptonshire (Northants)</li>
+                    <li> Northumberland</li>
+                    <li> Nottinghamshire (Notts)</li>
+                    <li> Oxfordshire (Oxon)</li>
+                    <li> Rutland (used to be smallest county: gone)</li>
+                    <li> Shropshire (Salop)</li>
+                    <li> Somerset (Som)</li>
+                    <li> Staffordshire (Staffs)</li>
+                    <li> Suffolk</li>
+                    <li> Surrey</li>
+                    <li> Sussex (now administratively divided into West and East)</li>
+                    <li> Tyne and Wear (recently created from partly Durham, partly
+                        Northumberland)</li>
+                    <li> Warwickshire (Warwicks)</li>
+                    <li> West Midlands (recent creation; do not know why they didn't call it Greater
+                        Birmingham on analogy with London/ Manchester)</li>
+                    <li> Westmorland (see Cumberland)</li>
+                    <li> Wiltshire (Wilts)</li>
+                    <li> Worcestershire (Worcs: see note on Hereford)</li>
+                    <li> Yorkshire (Yorks: now divided administratively into North, West, and South
+                        Yorks, though historical division was into Ridings: North, West, and
+                        East)</li>
+                </ul>
+            </p><p>[In general use historic county names, with explanatory <term
+                    keyref="scholar-note">SCHOLARNOTE</term> as necessary. A SCHOLARNOTE is welcome,
+                too, in cases of boundary change. Do not say Somersetshire, Devonshire, or
+                Dorsetshire.]</p>
+            <p>Wales:</p><p><ul>
+                    <li>Anglesey, island of (now in Gwynedd)</li>
+                    <li> Brecknock (now part of Powys)</li>
+                    <li> Caernarvon (now in Gwynedd)</li>
+                    <li> Cardigan (now part of Dyfed)</li>
+                    <li> Carmarthen (now part of Dyfed)</li>
+                    <li> Clwyd (used to be Denbigh and Flint)</li>
+                    <li> Denbigh (now part of Clwyd)</li>
+                    <li> Dyfed (used to be Cardigan, Carmarthen, and Pembroke)</li>
+                    <li> Flint (now part of Clwyd)</li>
+                    <li> Glamorgan (Glam: the industrial part, name amazingly survived; now divided
+                        into West Glam, Mid Glam and South Glam)</li>
+                    <li> Gwent (used to be Monmouth)</li>
+                    <li> Gwynedd (used to be Caernarvon, Merioneth, and the separate island of
+                        Anglesey)</li>
+                    <li> Merioneth (now in Gwynedd)</li>
+                    <li> Monmouth (now Gwent)</li>
+                    <li> Montgomery (now in Powys)</li>
+                    <li> Pembroke (now part of Dyfed)</li>
+                    <li> Powys (used to be Montgomery, Radnor, and Brecknock)</li>
+                    <li> Radnor (now part of Powys)</li>
+                </ul>
+            </p><p>[Note: The old Welsh county names often come with <q>-shire</q> attached, but
+                it's not correct. Unlike practice with English names, use current names when
+                possible, as courtesy to the Welsh language. Fill in <term keyref="reg">REG</term>
+                tag with traditional (English) name if it’s in your source, and repeat present-day
+                name in <term keyref="current">CURRENT</term> attribute so that both come up in
+                search results.]</p>
+            <p>Scotland:</p><p><ul>
+                    <li>Aberdeen (now part of Grampian)</li>
+                    <li> Angus (now in Tayside)</li>
+                    <li> Argyll (now in Strathclyde)</li>
+                    <li> Ayr (now in Strathclyde)</li>
+                    <li> Banff (now part of Grampian)</li>
+                    <li> Berwick (now part of Borders)</li>
+                    <li> Borders (a new entity swallowing up Berwick, Peebles, Roxburgh,
+                        Selkirk)</li>
+                    <li> Caithness (now in Highland)</li>
+                    <li> Bute (now in Strathclyde)</li>
+                    <li> Caithness (now in Highland)</li>
+                    <li> Central (used to be Clackmannan, Stirling, and part of Perth)</li>
+                    <li> Clackmannan (smallest Scots county, now in Central)</li>
+                    <li> Cromarty (now in Highland)</li>
+                    <li> Dumfries and Galloway (new entity, taking in Dumfries, Kirkcudbright, and
+                        Wigtown)</li>
+                    <li> Dunbarton (now in Strathclyde)</li>
+                    <li> Fife (used to be Kinross and Fife)</li>
+                    <li> Galloway (see Dumfries)</li>
+                    <li> Grampian (used to be Aberdeen, Banff, Kincardine, Moray)</li>
+                    <li> Hebrides (see Inner and Outer)</li>
+                    <li> Highland (used to be Caithness, Inverness, Nairn, Ross and Cromarty - a
+                        doublet - and Sutherland)</li>
+                    <li> Inner Hebrides (now divided between Highland and Strathclyde)</li>
+                    <li> Inverness (now in Highland)</li>
+                    <li> Kincardine (now in Grampian)</li>
+                    <li> Kinross (now part of Fife)</li>
+                    <li> Kirkcudbright, pronounced Kircoobry (now part of Dumfries and
+                        Galloway)</li>
+                    <li> Lanark (now in Strathclyde)</li>
+                    <li> Lothian (used to be West Lothian, Midlothian, East Lothian)</li>
+                    <li> Moray (now in Grampian)</li>
+                    <li> Nairn (now in Highland)</li>
+                    <li> Orkney (separate group of islands, administratively a county of
+                        Scotland)</li>
+                    <li> Outer Hebrides (now officially known by traditional name of Western
+                        Isles)</li>
+                    <li> Peebles (now part of Borders)</li>
+                    <li> Perth (now in Tayside and Central)</li>
+                    <li> Renfrew (now in Strathclyde)</li>
+                    <li> Ross and Cromarty (now in Highland)</li>
+                    <li> Roxburgh (now part of Borders)</li>
+                    <li> Selkirk (now part of Borders)</li>
+                    <li> Shetland (separate group of islands, administratively a county of
+                        Scotland)</li>
+                    <li> Stirling (now in Central)</li>
+                    <li> Strathclyde (used to be Argyll, Ayr, Bute, Dunbarton, Lanark, Renfrew)</li>
+                    <li> Sutherland and Cromarty (now in Highland)</li>
+                    <li> Tayside (used to be Angus, Kinross, Perth)</li>
+                    <li> Western Isles (= Outer Hebrides)</li>
+                    <li> Wigtown (now part of Dumfries and Galloway)</li>
+                    <li> Zetland, old name for Shetland</li>
+                </ul>
+            </p><p>[Note: Most Scottish county names do not use <q>shire</q>.]</p>
+            <p>Other Scottish area names which are old but may still be used:</p><p><ul>
+                    <li>Badenoch (now in Highland)</li>
+                    <li> Breadalbane (now in Tayside)</li>
+                    <li> Braemar (now in Grampian)</li>
+                    <li> Buchan (in Grampian)</li>
+                    <li> Carrick (in Strathclyde)</li>
+                    <li> Cunningham (in Strathclyde)</li>
+                    <li> Dundee (in Tayside)</li>
+                    <li> Lochaber (in Highland)</li>
+                </ul>
+            </p><p>Orlando practice is much less clear over Scotland than over England or Wales.
+                    <q>Hebrides</q> has been used as a <term keyref="region">REGION</term>, which is
+                accurate geographically if not administratively. It seems a shame for ancient names
+                like Badenoch and Braemar to vanish into composite bureaucratic abstractions. We are
+                still using Midlothian as the REGION for Edinburgh. Just follow your source; try to
+                use the attributes <term keyref="current">CURRENT</term> and <term keyref="reg"
+                    >REG</term> helpfully for users; remember if you use one of these you need to
+                use both to keep both in play.</p>
+            <p>Ireland:</p><p><ul>
+                    <li>Carlow</li>
+                    <li> Cavan</li>
+                    <li> Clare</li>
+                    <li> Connemara</li>
+                    <li> Cork</li>
+                    <li> Donegal</li>
+                    <li> Dublin</li>
+                    <li> Galway</li>
+                    <li> Kerry</li>
+                    <li> Kilkenny</li>
+                    <li> Laoghis</li>
+                    <li> Leitrim</li>
+                    <li> Limerick</li>
+                    <li> Longford</li>
+                    <li> Louth</li>
+                    <li> Mayo</li>
+                    <li> Meath</li>
+                    <li> Monaghan</li>
+                    <li> Offaly</li>
+                    <li> Roscommon</li>
+                    <li> Sligo</li>
+                    <li> Wicklow</li>
+                    <li> Tipperary</li>
+                    <li> Waterford</li>
+                    <li> Westmeath</li>
+                    <li> Wexford</li>
+                    <li> Wicklow</li>
+                </ul>
+            </p><p>Older sources often give <q>County Mayo</q>, <q>County Clare</q>, etc. (for some
+                English counties too). If you follow this, use <term keyref="reg">REG</term>
+                attribute value without the <userinput>County</userinput>. Of ancient Irish
+                kingdoms: Connaught or Connacht included: Mayo, Roscommon, Galway; Munster included
+                Limerick, Kerry, Cork, part of Tipperary. Connacht and Munster can be used as
+                REGIONs too.</p>
+            <p>Northern Ireland:</p><p><ul>
+                    <li>Antrim</li>
+                    <li> Armagh</li>
+                    <li> Down</li>
+                    <li> Fermanagh</li>
+                    <li> Londonderry</li>
+                    <li> Tyrone</li>
+                </ul>
+            </p>
+            <p>Do NOT abbreviate names of regions: not <q>Glos</q> but <q>Gloucestershire</q>. The
+                abbreviated names provided above are simply to identify short forms used in other
+                reference sources. If you do not wish to spell out the region in prose, do so in a
+                    <term keyref="reg">REG</term> attribute.</p><p>Do NOT use <q>co</q> for counties
+                even if your source does (i.e. use <q>Durham</q> and not <q>Co.
+                Durham</q>).</p><p>For all places in Northern Ireland, include one of the six
+                counties. Irish placenames pose some particular problems because of the changing
+                political constitution of the region. For example, Belfast. By making sure to
+                include a region sub-element for all places in Northern Ireland, we can
+                geographically locate the places rather than entering into the politically fractious
+                debate about Ireland vs. Northern Ireland and the histories thereof. Only the <term
+                    keyref="geog">GEOG</term> changes for the Six Counties, from being part of
+                Ireland to becoming part of Northern Ireland: in these cases use <term
+                    keyref="current">CURRENT</term> attribute on the Geog.</p><p>Islands are regions
+                except when they are nation states. For example, Crete is a REGION with a GEOG
+                sub-element for Greece, whereas Barbados (topographically an island) is a
+                GEOG.</p><p>Standard way of referring to Isle of Skye is <q>Isle of Skye</q> and not
+                just <q>Skye</q>.</p><p>Mountain Ranges: try to include a GEOG element when one
+                country embraces the range, and use the formal title (e.g. Rocky Mountains not
+                Rockies). Do not include <q>the</q> in the REGION sub-element. If you don’t know
+                which GEOG is meant, omit this tag.</p><p><codeph>&lt;PLACE&gt;the
+                    &lt;REGION&gt;Rocky Mountains&lt;/REGION&gt;&lt;GEOG
+                    REG=&quot;Canada&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt; OR &lt;PLACE&gt;the
+                    &lt;REGION&gt;Rocky Mountains&lt;/REGION&gt;&lt;GEOG
+                    REG=&quot;USA&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeph></p>
+            <p>Topographical regions: here are some standard allowable topographical REGIONs:</p><p><ul>
+                    <li>Blackdown Hills: Devon and Somerset</li>
+                    <li> Bowland Forest (Yorks, Lancs)</li>
+                    <li> Brecon Beacons: Brecknock (don't confuse w next)</li>
+                    <li> Bredon Hill: Worcs</li>
+                    <li> Brendon Hills: Somerset</li>
+                    <li> Cheviot Hills (Northumberland and Roxburgh [now Borders], Scotland)</li>
+                    <li> Chiltern Hills, Bucks, Oxon</li>
+                    <li> Cleveland Hills: Yorks</li>
+                    <li> Cotswold Hills, Oxon, Glos</li>
+                    <li> The Dales: Yorks and Durham</li>
+                    <li> Dartmoor: in Devon</li>
+                    <li> The Dukeries: Notts</li>
+                    <li> Epping Forest: Essex</li>
+                    <li> Forest of Dean: in Glos</li>
+                    <li> Exmoor: Devon and Somerset</li>
+                    <li> Galloway: Kirkcudbright and Wigtown</li>
+                    <li> Hambleton Hills: Yorks</li>
+                    <li> Home Counties: originally Kent, Surrey, Essex, Middlesex; later incl Bucks,
+                        Berks, Herts and Sussex (source, Brewer).</li>
+                    <li> The Lake District: Cumberland and Westmorland</li>
+                    <li> Macgillicuddy's Reeks: Kerry</li>
+                    <li> Mendip Hills, Somerset</li>
+                    <li> The New Forest, in Hants</li>
+                    <li> North Downs: in Kent and Surrey</li>
+                    <li> Ochil Hills: Perth, Clackmannan, Kinross</li>
+                    <li> The Peak District: Derbyshire</li>
+                    <li> Pennine Hills (Cumberland, Westmorland, Durham, Yorks)</li>
+                    <li> Pentland Hills (Lanark, Midlothian)</li>
+                    <li> The Potteries: Staffs</li>
+                    <li> Quantock Hills, Somerset</li>
+                    <li> Romney Marsh, Kent</li>
+                    <li> South Downs: in Kent and Sussex</li>
+                    <li> Sedgemoor: Somerset</li>
+                    <li> Sherwood Forest: Notts</li>
+                    <li> The Shires: Leics, Northants, Rutland</li>
+                    <li> Thames Valley: Surrey, Berks, Bucks, Oxon</li>
+                    <li> The Weald: Kent, Sussex</li>
+                    <li> The Wolds: Yorks, Lincs</li>
+                </ul>
+            </p><p>[Note: Remember, articles are not placed inside sub-elements]</p>
+            <p>Valleys can be tagged as REGIONs; try to include an identifiable GEOG. Bodies of
+                waters are REGIONs but, wherever possible, situate them within a regularized
+                attribute of an identifiable GEOG or other REGION. Include the name of the type of
+                body of water within the prose (for example, river, lake,
+                    ocean).</p><p><codeph>&lt;PLACE&gt;the &lt;REGION&gt;River
+                    Nile&lt;REGION/&gt;&lt;GEOG REG=&quot;Egypt&quot;&gt;&lt;/GEOG&gt; but
+                    &lt;PLACE&gt;&lt;REGION&gt;River Danube&lt;/REGION&gt;&lt;/PLACE&gt;</codeph>
+                [since it flows through more than one GEOG].</p>
+            <p>When a place was formerly a geo-political entity but is now a Region within a
+                country, or vice versa (for example, Upper Canada or Newfoundland) make use of the
+                Current attribute:</p><p><codeph>&lt;PLACE&gt;&lt;REGION&gt;Upper
+                    Canada&lt;/REGION&gt;&lt;GEOG
+                    CURRENT=&quot;Canada&quot;&gt;&lt;/GEOG&gt;&lt;/PLACE&gt;</codeph>
+                <codeph>&lt;PLACE&gt;&lt;REGION&gt;Newfoundland&lt;/REGION&gt;&lt;geog
+                    CURRENT=”Canada” REG=”Newfoundland”&gt;&lt;/PLACE&gt;</codeph></p>
+            <p>When a border is tagged, the term <codeph>&quot;border&quot; must be included in the
+                    prose of the Region sub-element: &lt;REGION&gt;Welsh
+                    Borders&lt;/REGION&gt;&lt;GEOG REG=”Wales”&gt;&lt;/GEOG&gt;</codeph></p>
+        </div>
+        <div>
+            <u>Troubleshooting</u>
+            <p><b>Question:</b> Are the Balkan Countries a region?</p><p>
+                <b>Answer:</b> No. They're a <term keyref="geog">GEOG</term>. Regions apply only to areas which are
+                conceptually smaller than nation states. If the place is a collection of nation
+                states, enter as a GEOG. </p>
+        </div>
+    </glossdef>
+</glossentry>

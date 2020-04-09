@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="recognition-name">
+    <glossterm>RECOGNITIONNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term that is closely related to and
+                often placed within the Recognitions element belongs conceptually within <menucascade>
+                    <uicontrol><term keyref="">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="">RECEPTION</term></uicontrol>
+                </menucascade>. It supplies the name of a particular award or prize given to an
+                author. Generally encloses one or two words, the name of an award, but can enclose
+                more words, e.g. <q>short-listed</q> for or <q>runner-up to</q>. The <term
+                    keyref="reg">REG</term> attribute offers a way to chart the changes of name
+                often undergone by awards, like the Bailey’s Prize / the Orange Prize for Women’s
+                Writing. Use the textbase itself to ascertain our practice in each case. This
+                element has no mandatory or optional sub-elements.</p></div>
+        <div>
+            <u>Practice Issues</u>
+            <p>particular publications rather than a summary concluding Reputation paragraph. But
+                you might also say in an <term keyref="author-summary">AUTHORSUMMARY</term> or a
+                concluding discussion that <q>the tremendous critical acclaim that greeted her work
+                    garnered her twenty-five Booker Prizes by the end of her career.</q></p><p> When
+                including the fact that a woman writer received a CBE, DBE, or OBE in recognition of
+                her literary achievements, the practice is to use the acronyms for the awards in
+                your prose and spell out their meaning in the attributes as follows: CBE Commander
+                of the Order of the British Empire; DBE Dame Commander of the Order of the British
+                Empire; OBE Officer of the Order of the British Empire. Anyone needing further info
+                can go to the textbase itself, or to: <xref
+                    href="http://www.kcl.ac.uk/lhcma/misc/medals.htm"
+                    >http://www.kcl.ac.uk/lhcma/misc/medals.htm</xref>.</p><p>Although the full
+                recognition names include Most Excellent, as in Dame Commander, Most Excellent Order
+                of the British Empire, we do not need to include that part.</p><p> The above
+                designations, CBE, DBE, and OBE, almost always belong in the writing docs. This
+                designation would be discussed in the biography (without the tag) only if it was
+                nothing to do with her writing, but rewarded some other activity. </p>
+        </div>
+    </glossdef>
+</glossentry>

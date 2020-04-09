@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="r-recognition-value">
+    <glossterm>RRECOGNITIONVALUE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This term, often used with <term
+                    keyref="r-recogntions">RRECOGNITIONS</term>
+                <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="reception">RECEPTION</term></uicontrol>
+                </menucascade>. It defines the numeric or non-monetary value of the recognition given
+                for literary work. Generally encloses just a named sum, the amount of a literary
+                prize, but its contents can be longer if a scholarship or travel grant is involved.
+                This element has no mandatory or optional sub-elements or attributes.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RRECOGNITIONVALUE&gt;¥50,000 and one year at Oxford.&lt;/RRECOGNITIONVALUE&gt;</codeblock>
+        </div>
+    </glossdef>
+</glossentry>
