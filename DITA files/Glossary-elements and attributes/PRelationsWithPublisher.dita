@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="p-relations-with-publisher">
+    <glossterm>PRELATIONSWITHPUBLISHER</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This tag belongs within <menucascade>
+                    <uicontrol><term keyref="writing">WRITING</term></uicontrol>
+                    <uicontrol><term keyref="production">PRODUCTION</term></uicontrol>
+                </menucascade>. It is designed to capture the mainly professional relationship
+                between a writer and her publisher (or, in the case of dramatists, her producer).
+                Encloses a sentence or more: a detailed account of a 50-year relationship or the
+                briefest summary. Publisher includes literary agent, theatre producer, etc. There
+                are no mandatory sub-elements for this element, but if possible tag the publisher's
+                    <term keyref="name">NAME</term> or <term keyref="org-name">ORGNAME</term>. An
+                optional attribute, <term keyref="relationship-type">RELATIONSHIPTYPE</term>, allows
+                you to designate whether the relationship was <userinput>personal</userinput> or
+                    <userinput>professional</userinput>. If you need both attribute values, arrange
+                your prose accordingly.</p></div>
+        <div>
+            <u>Example</u><p>Here, you can explain that the publisher encouraged her for six years,
+                or that he gave her bad advice on copyright.</p>
+            <codeblock>&lt;PRELATIONSWITHPUBLISHER&gt;During the publication of subsequent editions,
+                DB had fierce disagreements with publishers including James Laughlin at
+                &lt;ORGNAME&gt;New
+                Directions.&lt;/ORGNAME&gt;&lt;/PRELATIONSWITHPUBLISHER&gt;</codeblock><codeblock>
+                &lt;PRELATIONSWITHPUBLISHER&gt;The second edition or issue, printed that same year
+                by a publisher in Fleet Street, seems to indicate that EF was displeased with the
+                publishers she had first chosen.&lt;/PRELATIONSWITHPUBLISHER&gt;</codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>This element involves a judgement call on the part of the researcher. If you think
+                the aspects of the relationship which you wish to discuss are purely personal, then
+                you might want to discuss the friendship in the <term keyref="biography">BIOGRAPHY</term> section. If the
+                relationship was more professional, or a mixture of personal and professional, or if
+                its personal character was significant for her writing, then the writing section is
+                the place.</p>
+        </div>
+    </glossdef>
+</glossentry>

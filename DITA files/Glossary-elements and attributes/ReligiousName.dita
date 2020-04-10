@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="religious-name">
+    <glossterm>RELIGIOUSNAME</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>This sub-element is found within <menucascade>
+                    <uicontrol><term keyref="biography">BIOGRAPHY</term></uicontrol>
+                    <uicontrol><term keyref="person-name">PERSONNAME</term></uicontrol>
+                </menucascade>. It captures all names a person acquired through religion. For
+                example, her name change on entering a convent or a name she used for religious
+                reasons, or the Pope taking a new name on being elected Pope. BWW Lady Lucy Herbert
+                took the religious name Sister Teresa Joseph. This tag goes inside a <term
+                    keyref="data-item">DATAITEM</term> and encloses just a name, not prose. It has
+                attributes for <term keyref="reg">REG</term> and <term
+                    keyref="wrote-or-published-as">WROTEORPUBLISHEDAS</term>.</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;RELIGIOUSNAME&gt;Dame Lucy
+                Magdalena&lt;/RELIGIOUSNAME&gt;</codeblock><codeblock> &lt;RELIGIOUSNAME
+                WROTEORPUBLISHEDAS=&quot;wrotePublishedAsYes&quot;&gt;Sister Mary
+                Agnes&lt;/RELIGIOUSNAME&gt;</codeblock><codeblock>&lt;RELIGIOUSNAME&gt;Mary in
+                God&lt;/RELIGIOUSNAME&gt;</codeblock><codeblock>&lt;SHORTPROSE&gt;&lt;P&gt;After 1620, EF signed with her
+                chosen &lt;RELIGIOUSNAME&gt; religous name&lt;/RELIGIOUSNAME&gt;.
+                &lt;/P&gt;&lt;/SHORTPROSE&gt; </codeblock>
+        </div>
+        <div>
+            <u>Practice Issues</u>
+            <p>See <term keyref="person-name">PERSONNAME</term> for general name practices.</p>
+        </div>
+    </glossdef>
+</glossentry>

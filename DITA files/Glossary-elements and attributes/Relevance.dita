@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="relevance">
+    <glossterm>RELEVANCE</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>Relevance is a sister attribute to <term
+                    keyref="chron-column">CHRONCOLUMN</term>, attached to each and every <term
+                    keyref="chron-struct">CHRONSTRUCT</term>. This element assigns significance to
+                the CHRONSTRUCT you have just created with categories for (in order of increasing
+                importance) <userinput>Comprehensive</userinput> (showing everything in the
+                textbase), <userinput>Decade</userinput> (winnowing out the events of limited or
+                individual interest, retaining what a researcher into that decade might want to
+                know), <userinput>Period</userinput> (a smaller selection, of concern to
+                investigators of the whole period), and <userinput>Selective</userinput> (headline
+                news only).</p>
+            <p>This is a matter of judgement, but our conventions are that <term keyref="birth"
+                    >BIRTH</term>, <term keyref="death">DEATH</term>, at least one writing event for
+                each entry need a <userinput>Selective</userinput> tag to place this writer in
+                literary history. (Publication of every book by Woolf is
+                    <userinput>Selective</userinput>; some other writer might have 11 publication
+                dates at <userinput>Decade</userinput> and just one at
+                    <userinput>Selective</userinput>). In <term keyref="biography">BIOGRAPHY</term>
+                sections, the norm for RELEVANCE is <userinput>Comprehensive</userinput>, since such
+                events are important to the individual but only occasionally important in literary
+                history. But Birth and <userinput>Death</userinput> are
+                    <userinput>Selective</userinput>. When more than one <term keyref="chron-column"
+                    >CHRONCOLUMN</term> attribute is allocated to an event, it may take different
+                RELEVANCE values: e.g. contribution to a historic anthology might be tagged firstly
+                as British Women Writers (RELEVANCE: <userinput>Period</userinput>) and second as
+                Writing Climate (RELEVANCE: <userinput>Selective</userinput>).</p></div>
+        <div>
+            <u>Practice Guidelines</u>
+            <p>Here are some general guidelines when assigning RELEVANCE. In bio sections, <term
+                    keyref="birth">BIRTH</term> and <term keyref="death">DEATH</term> are selective
+                (and chosen as such by the system); everything else is usually
+                    <userinput>Comprehensive</userinput>. If your event is of wider significance,
+                then you might use a different value on the <term keyref="chron-column"
+                    >CHRONCOLUMN</term> attribute. In writing sections, each of which needs to
+                contain at least one <userinput>Selective</userinput> event, you might want to use
+                    <userinput>Selective</userinput> for first and last as well as most significant
+                literary events; in some entries you may wish to tag almost everything
+                    <userinput>Selective</userinput>. Generally, however, you will use an assortment
+                of <userinput>Selective</userinput>, <userinput>Period</userinput>, and
+                    <userinput>Decade</userinput> rankings, with
+                    <userinput>Comprehensive</userinput> only for rather minor events like the date
+                of a letter, a review of the BWW, or a stage in manuscript history. </p>
+        </div>
+    </glossdef>
+</glossentry>

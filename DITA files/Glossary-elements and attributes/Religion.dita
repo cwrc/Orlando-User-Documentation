@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="religion">
+    <glossterm>RELIGION</glossterm>
+    <glossdef>
+        <div><u>Definition, Placement, Relationships</u><p>RELIGION is one of the issues (along with
+                SEXUALITY, RACEANDETHNICITY, LANGUAGE, CLASS, and NATIONALITY) we have defined as
+                significant in discussing the CULTURALFORMATION of a writer (in the BIOGRAPHY
+                section of her entry). This DIV1 content element captures discussions of her
+                RELIGION as an identity, as an issue in her life and her religious beliefs and
+                affiliations; it makes a space to elaborate on the basic, defining DENOMINATION with
+                attention to the significance in a life of belief or of seeking belief. We are
+                interested in the effect of a religious upbringing on a woman writer and emphasize
+                the inclusion of her family's DENOMINATION in a CULTURALFORMATION element, sometimes
+                also within a RELIGION element to capture discussion or elaboration, whether or not
+                she practised that religion for her life. We are interested in women's relationships
+                with institutions and therefore wish to capture in this element information
+                regarding religious institutions. We are also interested in the crucial role
+                religious movements have had in women's writing, particularly in the early modern
+                periods: users will wish to be able to trace the influence of Quakerism, for
+                example, on women's writing and lives.</p>
+            <p>If her religion cannot be discussed in isolation from the other elements available
+                within CULTURALFORMATION, do not use a RELIGION element but include a DENOMINATION
+                element to capture her religious background. The element RELIGION can be used to
+                capture both general overviews of her religion (eg., <q>She was raised a Catholic
+                    and remained devout her entire life</q>) and specific religious events (e.g.
+                    <q>1975 She converted to Catholicism.</q>) Use multiple RELIGION elements to
+                capture information about developments in her ongoing religious life in the
+                appropriate chronological order. Do not include the whole discussion of her
+                religious life within the opening CULTURALFORMATION tag if it involves extensive
+                discussion out of chronological order. </p>
+            <p>The related content sub-element DENOMINATION can be used without the RELIGION
+                element, just as the other sub-elements appropriate to the discussion of cultural
+                formation - CLASS, ETHNICITY, GENDER, <term keyref="geog-heritage"
+                    >GEOGHERITAGE</term>, <term keyref="language">LANGUAGE</term>, <term
+                    keyref="national-heritage">NATIONALHERITAGE</term>, <term keyref="nationality"
+                    >NATIONALITY</term>, <term keyref="political-affiliation"
+                    >POLITICALAFFILIATION</term>, <term keyref="race-colour">RACECOLOUR</term>, and
+                    <term keyref="sexual-identity">SEXUALIDENTITY</term>, can be used with or
+                without a broader sub-element (<term keyref="class-issue">CLASSISSUE</term>
+                etc.).</p></div>
+        <div>
+            <u>Example</u>
+            <codeblock>&lt;CULTURALFORMATION&gt;&lt;RELIGION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;SM
+                broke away from her family&apos;s faith and became an idealistic
+                &lt;DENOMINATION&gt;agnostic&lt;/DENOMINATION&gt; before her
+                marriage.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/RELIGION&gt;&lt;/CULTURALFORMATION&gt;</codeblock><codeblock>
+                &lt;CULTURALFORMATION&gt;&lt;RELIGION&gt;&lt;DIV2&gt;&lt;SHORTPROSE&gt;&lt;P&gt;RT
+                was originally a &lt;Denomination&gt;Baptist&lt;/&gt; and was converted to
+                &lt;DENOMINATION&gt;Quakerism&lt;/DENOMINATION&gt; by James Nayler. She remained
+                loyal to Nayler, even after he was disgraced and condemned by George Fox. RT
+                organized the first women&apos;s meetings of the Quakers in London. She was also the
+                only woman to attend regularly the Six Weeks Meeting, which was held in her home,
+                and the London Meeting of
+                Ministers.&lt;/P&gt;&lt;/SHORTPROSE&gt;&lt;/DIV2&gt;&lt;/RELIGION&gt;&lt;/CULTURALFORMATION&gt;
+            </codeblock>
+        </div>
+    </glossdef>
+</glossentry>
