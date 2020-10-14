@@ -6,20 +6,20 @@
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p> The XREF element, available everywhere
                 in the textbase and its documentation in which prose is permitted, surrounds a URL
-                which you wish to make into a hyperlink. It has one required attribute, <term
-                    keyref="resp">RESP</term>. The URL attribute must be filled in full, including
+                which you wish to make into a hyperlink. It has two required attributes, <term
+                    keyref="resp">RESP</term>, and <term>URL</term>. The URL attribute must be filled in full, including
                 the http and www portions.</p></div>
         <div>
             <u>Example</u>
             <codeblock>&lt;XREF RESP=&apos;&apos;SIB&quot;
-                URL=&apos;&apos;http://www.gutenberg.org/etext/2374&quot;&gt;&lt;/XREF&gt;</codeblock>
+                URL=&apos;&apos;http://www.gutenberg.org/etext/2374&quot;&gt;Gutenberg Library&lt;/XREF&gt;</codeblock>
         </div>
         <div>
             <u>Practice Issues</u>
-            <p>Some long URLs contain strings of characters which A/E might confuse with entity
-                references. If this happens, you will get a validation error. Contact the textbase
-                coordinator for the best means of revising the URL without losing the necessary
-                information.</p>
+            <p>Some long URLs contain strings of characters which your XML editing tool might
+                confuse with entity references. If this happens, you will get a validation error.
+                Contact the textbase coordinator for the best means of revising the URL without
+                losing the necessary information.</p>
         </div>
     </glossdef>
 </glossentry>

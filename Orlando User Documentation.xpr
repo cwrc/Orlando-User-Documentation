@@ -6,6 +6,10 @@
             <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>keys.context</String>
+                        <String>${pdu}/DITA%20maps/orlando_user_manual.ditamap</String>
+                    </entry>
+                    <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
@@ -137,36 +141,6 @@
                                     <list>
                                         <ditaParameter>
                                             <field name="name">
-                                                <String>fix.external.refs.com.oxygenxml</String>
-                                            </field>
-                                            <field name="description">
-                                                <null/>
-                                            </field>
-                                            <field name="value">
-                                                <String>true</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <String>false</String>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>4</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <String-array>
-                                                    <String>true</String>
-                                                    <String>false</String>
-                                                    <null/>
-                                                </String-array>
-                                            </field>
-                                            <field name="possibleValuesDescriptions">
-                                                <String-array>
-                                                    <String></String>
-                                                    <String></String>
-                                                </String-array>
-                                            </field>
-                                        </ditaParameter>
-                                        <ditaParameter>
-                                            <field name="name">
                                                 <String>args.figurelink.style</String>
                                             </field>
                                             <field name="description">
@@ -224,6 +198,36 @@
                                             <field name="possibleValuesDescriptions">
                                                 <String-array>
                                                     <String></String>
+                                                    <String></String>
+                                                    <String></String>
+                                                </String-array>
+                                            </field>
+                                        </ditaParameter>
+                                        <ditaParameter>
+                                            <field name="name">
+                                                <String>fix.external.refs.com.oxygenxml</String>
+                                            </field>
+                                            <field name="description">
+                                                <null/>
+                                            </field>
+                                            <field name="value">
+                                                <String>true</String>
+                                            </field>
+                                            <field name="defaultValue">
+                                                <String>false</String>
+                                            </field>
+                                            <field name="type">
+                                                <Integer>4</Integer>
+                                            </field>
+                                            <field name="possibleValues">
+                                                <String-array>
+                                                    <String>true</String>
+                                                    <String>false</String>
+                                                    <null/>
+                                                </String-array>
+                                            </field>
+                                            <field name="possibleValuesDescriptions">
+                                                <String-array>
                                                     <String></String>
                                                     <String></String>
                                                 </String-array>

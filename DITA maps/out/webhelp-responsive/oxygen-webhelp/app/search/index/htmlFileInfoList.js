@@ -1,3 +1,0 @@
-define(function () {
-return ["DITA files/Glossary-elements and attributes/Activism.html@@@ACTIVISM@@@...","DITA files/Glossary-elements and attributes/Religious.html@@@RELIGIOUS@@@...","DITA files/Glossary-elements and attributes/Remuneration.html@@@REMUNERATION@@@...","DITA files/Glossary-elements and attributes/ResearchNote.html@@@RESEARCHNOTE@@@...","DITA files/Glossary-elements and attributes/StudentBody.html@@@STUDENTBODY@@@...","DITA files/Glossary-elements and attributes/Styled.html@@@STYLED@@@..."];
-});
