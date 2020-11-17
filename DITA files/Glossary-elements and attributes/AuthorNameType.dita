@@ -2,7 +2,7 @@
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <glossentry id="author-name-type">
-    <glossterm>AuthorNameType</glossterm>
+    <glossterm>AUTHORNAMETYPE</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>This attribute is attached to <term
                     keyref="p-authorship">PAUTHORSHIP</term> and belongs conceptually to <menucascade>

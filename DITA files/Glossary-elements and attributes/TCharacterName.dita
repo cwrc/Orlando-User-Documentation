@@ -2,7 +2,7 @@
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <glossentry id="t-character-name">
-    <glossterm>ELEMENT/ATTRIBUTE NAME (just as in the ORLANDO XML documents, in allcaps)</glossterm>
+    <glossterm>TCHARACTERNAME</glossterm>
     <glossdef>
         <div><u>Definition, Placement, Relationships</u><p>TCHARACTERNAME, an element in the <term
                     keyref="writing">WRITING</term> section of entries, conceptually part of the
